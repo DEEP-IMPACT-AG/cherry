@@ -146,25 +146,4 @@ p {
 
 footer {
 	text-align: center;
-
-	& a {
-		display: inline-block;
-		text-align: center;
-		margin: auto;
-		box-sizing: border-box;
-		padding: 20px;
-		transition: all 0.5s ease;
-
-		& img {
-			display: inline-block;
-			transform: perspective(400px) rotateY(0) scale(1);
-			transition: all 0.5s ease;
-		}
-
-		&:hover {
-			& img {
-				transform: perspective(400px) rotateY(180deg) scale(1);
-			}
-		}
-	}
 }
