@@ -1,0 +1,155 @@
+@import './variables.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
+@import '../../../node_modules/normalize.css/normalize.css';
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: var(--font-text);
+	font-size: var(--default-font-size);
+	line-height: var(--default-line-height);
+}
+
+body {
+	font-size-adjust: none;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: none;
+}
+
+* {
+	box-sizing: border-box;
+
+	&::selection {
+		background: var(--black);
+		color: var(--white);
+	}
+}
+
+a, button {
+	outline: none;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+figure {
+	margin: 0;
+}
+
+svg {
+	transition: all 0.3s ease;
+
+	& * {
+		transition: all 0.3s ease;
+	}
+}
+
+strong,
+b {
+	font-family: var(--font-head);
+	font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-head);
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: var(--h1-font-size);
+	line-height: var(--h1-line-height);
+
+	@media (--screen-mobile) {
+		font-size: var(--h1-font-size-mobile);
+		line-height: var(--h1-line-height-mobile);
+	}
+}
+
+h2 {
+	font-size: var(--h2-font-size);
+	line-height: var(--h2-line-height);
+
+	@media (--screen-mobile) {
+		font-size: var(--h2-font-size-mobile);
+		line-height: var(--h2-line-height-mobile);
+	}
+}
+
+h3 {
+	font-size: var(--h3-font-size);
+	line-height: var(--h3-line-height);
+
+	@media (--screen-mobile) {
+		font-size: var(--h3-font-size-mobile);
+		line-height: var(--h3-line-height-mobile);
+	}
+}
+
+h4 {
+	font-size: var(--h4-font-size);
+	line-height: var(--h4-line-height);
+
+	@media (--screen-mobile) {
+		font-size: var(--h4-font-size-mobile);
+		line-height: var(--h4-line-height-mobile);
+	}
+}
+
+h5 {
+	font-size: var(--h5-font-size);
+	line-height: var(--h5-line-height);
+
+	@media (--screen-mobile) {
+		font-size: var(--h5-font-size-mobile);
+		line-height: var(--h5-line-height-mobile);
+	}
+}
+
+h6 {
+	font-size: var(--h6-font-size);
+	line-height: var(--h6-line-height);
+
+	@media (--screen-mobile) {
+		font-size: var(--h6-font-size-mobile);
+		line-height: var(--h6-line-height-mobile);
+	}
+}
+
+p {
+	font-family: var(--font-text);
+	font-size: var(--default-font-size);
+	line-height: var(--default-line-height);
+	color: var(--medium-gray);
+}
+
+footer {
+	text-align: center;
+
+	& a {
+		display: inline-block;
+		text-align: center;
+		margin: auto;
+		box-sizing: border-box;
+		padding: 20px;
+		transition: all .5s ease;
+
+		& img {
+			display: inline-block;
+			transition: all .5s ease;
+		}
+
+		&:hover {
+			& img {
+				transform: perspective(400px) rotateY(180deg) scale(1);
+			}
+		}
+	}
+}
