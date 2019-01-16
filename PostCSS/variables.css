@@ -123,5 +123,4 @@ Variables & Mixins
 	/* --> List ------------------------------------------------------- */
 	--size-mobile-list: var(--size-mobile-text);
 	--size-desktop-list: var(--size-desktop-text);
-
 }
