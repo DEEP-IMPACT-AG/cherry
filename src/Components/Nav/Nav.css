@@ -5,14 +5,13 @@
 	line-height: 2em;
 	background-color: var(--primary-color);
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 
 	& .logo {
 		box-sizing: border-box;
 		padding: 20px;
 
 		& img {
-			width: 22px;
 			height: 20px;
 			vertical-align: middle;
 			margin-right: 10px;

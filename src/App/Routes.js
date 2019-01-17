@@ -40,7 +40,7 @@ export default ({ staticContext }) => (
 			<Route render={routeProps => <UniversalComponent page="NotFound" {...routeProps} />} />
 		</Switch>
 		<footer>
-			<a href="https://www.riangle.com/">
+			<a href="https://www.deep-impact.ch/">
 				<img src={riangle} alt="Riangle Logo" />
 			</a>
 		</footer>

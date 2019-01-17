@@ -8,25 +8,7 @@ function Nav() {
 		<div className={styles.navigation}>
 			<Link to="/" className={styles.logo}>
 				<img src={logo} alt="Logo" />
-				<span>React SSR Boilerplate</span>
 			</Link>
-			<ul className={styles.menu}>
-				<li>
-					<NavLink to="/about" activeClassName={styles.active}>
-						About
-					</NavLink>
-				</li>
-				<li>
-					<NavLink to="/article" activeClassName={styles.active}>
-						Article
-					</NavLink>
-				</li>
-				<li>
-					<a href="https://github.com/luangjokaj/react-ssr-boilerplate" target="_blank">
-						GitHub
-					</a>
-				</li>
-			</ul>
 		</div>
 	);
 }

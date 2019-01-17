@@ -6,11 +6,8 @@ import styles from './Home.css';
 function Home({ match }) {
 	return (
 		<div>
-			<Head title="React SSR Boilerplate • Home" />
-			<div className={styles.intro}>
-				<h1 className={styles.title}>React Boilerplate</h1>
-				Hello
-			</div>
+			<Head title="🍒 Cherry • Design System" />
+			<div className={styles.intro} />
 		</div>
 	);
 }
