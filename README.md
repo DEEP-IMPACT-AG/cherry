@@ -1,5 +1,5 @@
-[![Cheery Logo](./Utilities/logo.svg)](https://www.deep-impact.ch/)
+[![Cheery Logo](./Cherry/logo.svg)](https://www.deep-impact.ch/)
 
 ## PostCSS
-- [Variables](./PostCSS/variables.css)
-- [Globals](./PostCSS/globals.css)
+- [Variables](./Cherry/variables.css)
+- [Globals](./Cherry/globals.css)
