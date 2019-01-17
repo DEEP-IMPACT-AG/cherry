@@ -11,13 +11,10 @@ export default class extends React.Component {
 	}
 
 	render() {
-		const isEn = location.pathname.substr(1, 2) == 'en' && 'en';
-		const isDe = location.pathname.substr(1, 2) == 'de' && 'de';
-		const currentLang = isEn || isDe || 'en';
 		return (
 			<Router>
 				<ScrollToTop>
-					<Routes lang={navigator && currentLang} />
+					<Routes />
 				</ScrollToTop>
 			</Router>
 		);

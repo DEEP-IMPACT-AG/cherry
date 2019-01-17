@@ -13,21 +13,10 @@ import guessLocale from '../client-locale/guessLocale';
 import { LOCALE_COOKIE_NAME, COOKIE_MAX_AGE } from '../client-locale/constants';
 
 export default ({ clientStats }) => (req, res) => {
-	const userLocales = extractLocalesFromReq(req);
-	let lang = guessLocale(['de', 'en'], userLocales, 'en');
-
-	if (req.originalUrl.substr(1, 2) == 'de') {
-		lang = 'de';
-	}
-
-	if (req.originalUrl.substr(1, 2) == 'en') {
-		lang = 'en';
-	}
-
 	const context = {};
 	const app = renderToString(
 		<StaticRouter location={req.originalUrl} context={context}>
-			<Routes lang={lang} />
+			<Routes />
 		</StaticRouter>,
 	);
 
@@ -72,9 +61,8 @@ export default ({ clientStats }) => (req, res) => {
 
 	res
 		.status(status)
-		.cookie(LOCALE_COOKIE_NAME, lang, { maxAge: COOKIE_MAX_AGE, httpOnly: false })
 		.send(
-			`<!doctype html><html lang="${lang}"><head><meta name="theme-color" content="#000000"/>${styles}${
+			`<!doctype html><html lang="en"><head><meta name="theme-color" content="#000000"/>${styles}${
 				helmet.title
 			}${helmet.meta.toString()}${helmet.link.toString()}</head><body><div id="react-root">${app}</div>${js}${cssHash}</body></html>`,
 		);

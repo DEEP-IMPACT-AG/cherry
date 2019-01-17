@@ -5,7 +5,6 @@ import Nav from '../Components/Nav';
 import '../assets/css/globals.css';
 import Head from '../Components/Head';
 import Loading from '../Components/Loading';
-import { RedirectWithStatus } from '../Components/RedirectStatus';
 import riangle from '../assets/images/riangle.svg';
 
 const UniversalComponent = universal(props => import(`../Views/${props.page}`), {
@@ -13,27 +12,31 @@ const UniversalComponent = universal(props => import(`../Views/${props.page}`), 
 	ignoreBabelRename: true,
 });
 
-export default ({ staticContext, lang }) => (
+export default ({ staticContext }) => (
 	<div>
 		<Head />
-		<Nav lang={lang} />
+		<Nav />
 		<Switch>
 			<Route
 				exact
-				path="/:lang"
+				path="/index.html"
 				render={routeProps => <UniversalComponent page="Home" {...routeProps} />}
 			/>
 			<Route
 				exact
-				path="/:lang/about"
+				path="/"
+				render={routeProps => <UniversalComponent page="Home" {...routeProps} />}
+			/>
+			<Route
+				exact
+				path="/about"
 				render={routeProps => <UniversalComponent page="About" {...routeProps} />}
 			/>
 			<Route
 				exact
-				path="/:lang/article"
+				path="/article"
 				render={routeProps => <UniversalComponent page="Article" {...routeProps} />}
 			/>
-			<RedirectWithStatus status={301} exact from="/" to={`/${lang}`} />
 			<Route render={routeProps => <UniversalComponent page="NotFound" {...routeProps} />} />
 		</Switch>
 		<footer>
