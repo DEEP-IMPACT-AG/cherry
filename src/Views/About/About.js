@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from '../../Components/Head';
 import Content from '../../Components/Content';
-const MarkdownData = require('../../../data/post.md');
+const MarkdownData = require('../../../README.md');
 const imagePath = require('../../assets/images/logo.svg');
 import styles from './About.css';
 
