@@ -27,16 +27,6 @@ export default ({ staticContext }) => (
 				path="/"
 				render={routeProps => <UniversalComponent page="Home" {...routeProps} />}
 			/>
-			<Route
-				exact
-				path="/about"
-				render={routeProps => <UniversalComponent page="About" {...routeProps} />}
-			/>
-			<Route
-				exact
-				path="/article"
-				render={routeProps => <UniversalComponent page="Article" {...routeProps} />}
-			/>
 			<Route render={routeProps => <UniversalComponent page="NotFound" {...routeProps} />} />
 		</Switch>
 	</div>
