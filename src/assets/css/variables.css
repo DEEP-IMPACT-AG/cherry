@@ -17,11 +17,11 @@ Variables & Mixins
 
 :root {
 
-	/* Body Padding --------------------------------------------------- */
+	/* Body Padding ----------------------------------------------- */
 	--padding-body-top-desktop: 0;
 	--padding-body-top-mobile: 66px;
 
-	/* Colors --------------------------------------------------------- */
+	/* Colors ----------------------------------------------------- */
 	--color-primary: #1F2D3D;
 	--color-secondary: #8492A6;
 	--color-tertiary: #F9FAFC;
@@ -38,14 +38,14 @@ Variables & Mixins
 	--color-warning: #ffc107;
 	--color-info: #17a2b8;
 
-	/* Fonts ---------------------------------------------------------- */
+	/* Fonts ------------------------------------------------------ */
 	--font-text: 'Roboto', sans-serif;
 	--font-head: 'Roboto', sans-serif;
 	--font-special: var(--font-text);
 	--font-mono: 'Roboto Mono', monospace;
 
-	/* Font Sizes ----------------------------------------------------- */
-	/* --> Hero ------------------------------------------------------- */
+	/* Font Sizes ------------------------------------------------- */
+	/* --> Hero --------------------------------------------------- */
 	--size-mobile-hero1: 44px;
 	--lineheight-mobile-hero1: 1.35;
 	--size-desktop-hero1: 54px;
@@ -61,13 +61,13 @@ Variables & Mixins
 	--size-desktop-hero3: 34px;
 	--lineheight-desktop-hero3: 1.5;
 
-	/* --> Eyebrow ---------------------------------------------------- */
+	/* --> Eyebrow ------------------------------------------------ */
 	--size-mobile-eyebrow: 14px;
 	--lineheight-mobile-eyebrow: 1.5;
 	--size-desktop-eyebrow: 16px;
 	--lineheight-desktop-eyebrow: 1.5;
 
-	/* --> Heading ---------------------------------------------------- */
+	/* --> Heading ------------------------------------------------ */
 	--size-mobile-h1: 28px;
 	--lineheight-mobile-h1: 1.35;
 	--size-desktop-h1: 44px;
@@ -98,35 +98,36 @@ Variables & Mixins
 	--size-desktop-h6: 12px;
 	--lineheight-desktop-h6: 1.2;
 
-	/* --> Subtitle --------------------------------------------------- */
+	/* --> Subtitle ----------------------------------------------- */
 	--size-mobile-subtitle: 18px;
 	--lineheight-mobile-subtitle: 1.75;
 	--size-desktop-subtitle: 20px;
 	--lineheight-desktop-subtitle: 1.75;
 	
-	/* --> Lead ------------------------------------------------------- */
+
+	/* --> Lead --------------------------------------------------- */
 	--size-mobile-lead: 16px;
 	--lineheight-mobile-lead: 1.5;
 	--size-desktop-lead: 18px;
 	--lineheight-desktop-lead: 1.75;
 
-	/* --> Text ------------------------------------------------------- */
+	/* --> Text --------------------------------------------------- */
 	--size-mobile-text: 16px;
 	--lineheight-mobile-text: 1.5;
 	--size-desktop-text: 18px;
 	--lineheight-desktop-text: 1.7;
 
-	/* --> Small ------------------------------------------------------ */
+	/* --> Small -------------------------------------------------- */
 	--size-mobile-small: 12px;
 	--lineheight-mobile-small: 1.2;
 	--size-desktop-small: 14px;
 	--lineheight-desktop-small: 1.2;
 
-	/* --> Blockquote ------------------------------------------------- */
+	/* --> Blockquote --------------------------------------------- */
 	--size-mobile-blockquote: var(--size-mobile-h3);
 	--size-desktop-blockquote: var(--size-desktop-h3);
 
-	/* --> List ------------------------------------------------------- */
+	/* --> List --------------------------------------------------- */
 	--size-mobile-list: var(--size-mobile-text);
 	--size-desktop-list: var(--size-desktop-text);
 }
