@@ -5,7 +5,9 @@ import Nav from '../Components/Nav';
 import '../assets/css/globals.css';
 import Head from '../Components/Head';
 import Loading from '../Components/Loading';
+import Content from '../Components/Content';
 import riangle from '../assets/images/riangle.svg';
+import github from '../assets/images/github.svg';
 
 const UniversalComponent = universal(props => import(`../Views/${props.page}`), {
 	loading: () => <Loading />,
@@ -27,22 +29,13 @@ export default ({ staticContext }) => (
 				path="/"
 				render={routeProps => <UniversalComponent page="Home" {...routeProps} />}
 			/>
-			<Route
-				exact
-				path="/about"
-				render={routeProps => <UniversalComponent page="About" {...routeProps} />}
-			/>
-			<Route
-				exact
-				path="/article"
-				render={routeProps => <UniversalComponent page="Article" {...routeProps} />}
-			/>
 			<Route render={routeProps => <UniversalComponent page="NotFound" {...routeProps} />} />
 		</Switch>
 		<footer>
-			<a href="https://www.deep-impact.ch/">
-				<img src={riangle} alt="Riangle Logo" />
-			</a>
+			<Content>
+				<a href="https://github.com/DEEP-IMPACT-AG/cherry" target="_blank"><img src={github} alt="GitHub"/></a>
+			</Content>
 		</footer>
 	</div>
 );
+

@@ -1,21 +1,26 @@
 module.exports = {
-	name: 'React SSR Boilerplate',
-	short_name: 'Boilerplate',
+	name: 'Cherry Design System',
+	short_name: 'Cherry',
 	icons: [
 		{
-			src: 'https://i.imgur.com/j2UuUt7.png',
-			size: '152x152',
-			type: 'image/png',
+			src: 'https://res.cloudinary.com/deep-impact-ag/image/upload/cherry/manifest/120.jpg',
+			size: '120x120',
+			type: 'image/jpg',
 		},
 		{
-			src: 'https://i.imgur.com/mMOR6Y7.png',
+			src: 'https://res.cloudinary.com/deep-impact-ag/image/upload/cherry/manifest/180.jpg',
+			size: '180x180',
+			type: 'image/jpg',
+		},
+		{
+			src: 'https://res.cloudinary.com/deep-impact-ag/image/upload/cherry/manifest/192.jpg',
 			size: '192x192',
-			type: 'image/png',
+			type: 'image/jpg',
 		},
 		{
-			src: 'https://i.imgur.com/NJSbBsO.png',
+			src: 'https://res.cloudinary.com/deep-impact-ag/image/upload/cherry/manifest/512.jpg',
 			size: '512x512',
-			type: 'image/png',
+			type: 'image/jpg',
 		},
 	],
 	start_url: './',

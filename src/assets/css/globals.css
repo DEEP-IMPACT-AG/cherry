@@ -24,10 +24,12 @@ body {
 	font-family: var(--font-text);
 	font-size: var(--size-mobile-text);
 	line-height: var(--lineheight-mobile-text);
+	padding-top: 66px;
 
 	@media (--screen-lg) {
 		font-size: var(--size-desktop-text);
 		line-height: var(--lineheight-desktop-text);
+		padding-top: 0;
 	}
 }
 
@@ -70,7 +72,7 @@ h4,
 h5,
 h6 {
 	font-family: var(--font-head);
-	font-weight: 700;
+	font-weight: 300;
 	margin: 0;
 	padding: 0;
 }
@@ -136,7 +138,7 @@ h6 {
 }
 
 p {
-	color: var(--medium-gray);
+	color: var(--color-secondary);
 	font-size: var(--size-mobile-text);
 	line-height: var(--lineheight-mobile-text);
 

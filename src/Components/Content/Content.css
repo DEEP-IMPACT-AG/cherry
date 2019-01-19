@@ -2,10 +2,29 @@
 
 .content {
 	box-sizing: border-box;
-	max-width: 1300px;
-	margin: auto;
+	width: 100%;
+	transform: translateY(-30px);
+	opacity: 0;
+	transition: all 0.5s ease;
+	
+	@media (--screen-lg) {
+		padding-left: 30%;
+	}
 
-	@media (--screen-middle-max) {
-		padding: 0 20px;
+	@media (--screen-xl) {
+		padding-left: 20%;
+	}
+
+	&.visible {
+		transform: translateY(0);
+		opacity: 1;
+	}
+
+	& > * {
+		padding: 20px;
+
+		@media (--screen-lg) {
+			padding: 64px;
+		}
 	}
 }
