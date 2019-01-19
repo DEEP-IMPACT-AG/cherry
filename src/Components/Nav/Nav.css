@@ -1,59 +1,81 @@
 @import '../../assets/css/variables.css';
 
 .navigation {
-	width: 100%;
-	line-height: 2em;
-	background-color: var(--primary-color);
-	display: flex;
-	justify-content: center;
+	border-right: solid 1px var(--color-gray-light);
+	width: 20%;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
 
 	& .logo {
-		box-sizing: border-box;
-		padding: 20px;
+		display: block;
+		padding: 64px;
+		position: relative;
 
-		& img {
-			height: 20px;
-			vertical-align: middle;
-			margin-right: 10px;
+		& h1 {
+			pointer-events: none;
+			color: var(--color-light);
+			position: absolute;
+			font-size: 1px;
 		}
 
 		& span {
-			vertical-align: middle;
-			color: var(--white);
-			font-weight: bold;
-			font-size: var(--h5-font-size);
+			position: absolute;
+			left: 50%;
+			transform: translateY(-10px) translateX(-50%);
+			color: var(--color-secondary);
+			text-transform: uppercase;
+			font-size: var(--size-mobile-small);
 		}
+		
 	}
 
-	& .menu {
-		box-sizing: border-box;
+	& .list {
 		list-style: none;
-		margin: 0;
 		padding: 0;
-		display: flex;
-		padding: 0 10px 0 0;
+		margin: 0;
+		display: block;
+		border-top: solid 1px var(--color-gray-light);
 
-		& li {
-			box-sizing: border-box;
-			padding: 0;
-			margin: 0;
+		& .navItem,
+		& > li {
+			display: block;
+			border-bottom: solid 1px var(--color-gray-light);
 
+			& .link,
 			& a {
-				display: inline-block;
-				color: var(--white);
-				box-sizing: border-box;
-				font-size: var(--h5-font-size);
-				font-weight: 400;
-				padding: 20px 10px;
+				color: var(--color-secondary);
+				display: block;
+				width: 100%;
+				padding: 20px;
+			}
 
-				&:hover {
-					color: var(--extra-color);
+			&.opened {
+				& * {
+					color: red;
+				}
+			}
+
+			& .sub {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				display: block;
+
+				& li {
+					&:first-child {
+						border-top: solid 1px var(--color-gray-light);
+					}
 				}
 
-				&.active {
-					color: var(--extra-color);
+				& .link,
+				& a {
+					border-bottom: none;
+					border-top: none;
 				}
 			}
 		}
 	}
+
 }

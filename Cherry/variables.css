@@ -16,9 +16,9 @@ Variables & Mixins
 :root {
 
 	/* Colors --------------------------------------------------------- */
-	--color-primary: #f16521;
-	--color-secondary: #d85a1d;
-	--color-tertiary: #c0501a;
+	--color-primary: #1F2D3D;
+	--color-secondary: #8492A6;
+	--color-tertiary: #F9FAFC;
 
 	--color-dark: #000;
 	--color-light: #fff;
@@ -33,7 +33,7 @@ Variables & Mixins
 	--color-info: #17a2b8;
 
 	/* Fonts ---------------------------------------------------------- */
-	--font-text: 'Fira Sans', sans-serif;
+	--font-text: 'Roboto', sans-serif;
 	--font-head: 'Roboto', sans-serif;
 	--font-special: var(--font-text);
 	--font-mono: 'Roboto Mono', monospace;
@@ -113,7 +113,7 @@ Variables & Mixins
 	/* --> Small ------------------------------------------------------ */
 	--size-mobile-small: 12px;
 	--lineheight-mobile-small: 1.2;
-	--size-desktop-small: 12px;
+	--size-desktop-small: 14px;
 	--lineheight-desktop-small: 1.2;
 
 	/* --> Blockquote ------------------------------------------------- */
