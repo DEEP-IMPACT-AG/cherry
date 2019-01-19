@@ -44,52 +44,47 @@ class Nav extends Component {
 					>
 						<span />
 					</button>
-					<ul className={styles.list}>
+					<ul className={classNames(styles.list, {
+						[styles.active]: menu,
+					})}>
 						<NavItem title="Overview" link="/" active>
 							<ul className={styles.sub}>
 								<li>
-									<NavLink to="/" activeClassName={styles.active}>
+									<NavLink to="/" activeClassName={styles.active} onClick={this.closeMenu}>
 										Introduction
 									</NavLink>
 								</li>
 								<li>
-									<a href="#">Code Guidelines</a>
+									<a href="#">
+										Coming Soon
+									</a>
 								</li>
 							</ul>
 						</NavItem>
 						<NavItem title="Design" link="/">
 							<ul className={styles.sub}>
 								<li>
-									<NavLink to="/" activeClassName={styles.active}>
-										Introduction
-									</NavLink>
-								</li>
-								<li>
-									<a href="#">Code Guidelines</a>
+									<a href="#">
+										Coming Soon
+									</a>
 								</li>
 							</ul>
 						</NavItem>
 						<NavItem title="CSS" link="/">
 							<ul className={styles.sub}>
 								<li>
-									<NavLink to="/" activeClassName={styles.active}>
-										Introduction
-									</NavLink>
-								</li>
-								<li>
-									<a href="#">Code Guidelines</a>
+									<a href="#">
+										Coming Soon
+									</a>
 								</li>
 							</ul>
 						</NavItem>
 						<NavItem title="Components" link="/">
 							<ul className={styles.sub}>
 								<li>
-									<NavLink to="/" activeClassName={styles.active}>
-										Introduction
-									</NavLink>
-								</li>
-								<li>
-									<a href="#">Code Guidelines</a>
+									<a href="#">
+										Coming Soon
+									</a>
 								</li>
 							</ul>
 						</NavItem>

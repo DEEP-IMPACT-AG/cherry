@@ -139,7 +139,7 @@ h6 {
 }
 
 p {
-	color: var(--medium-gray);
+	color: var(--color-secondary);
 	font-size: var(--size-mobile-text);
 	line-height: var(--lineheight-mobile-text);
 

@@ -19,9 +19,94 @@
 	}
 
 	& .list {
-		opacity: 0;
-		pointer-events: none;
+		@mixin noList;
+		display: block;
+		border-top: solid 1px var(--color-gray-light);
+		background: var(--color-light);
+		height: calc(100vh - 66px);
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+		opacity: 1;
+		pointer-events: all;
 		position: absolute;
+		width: 100%;
+		opacity: 0;
+		transform: translateY(-20px);
+		transition: all 0.5s ease;
+		pointer-events: none;
+
+		&.active {
+			opacity: 1;
+			transform: translateY(0);
+			pointer-events: all;
+		}
+
+		& .navItem,
+		& > li {
+			display: block;
+			border-bottom: solid 1px var(--color-gray-light);
+
+			& .link,
+			& a {
+				color: var(--color-primary);
+				display: block;
+				width: 100%;
+				padding: 20px;
+				font-size: var(--size-desktop-subtitle);
+				position: relative;
+
+				& .arrow {
+					position: absolute;
+					right: 20px;
+					top: 30px;
+					transition: all 0.5s ease;
+				}
+
+				6.active {
+					color: var(--color-primary);
+				}
+			}
+
+			&.opened {
+				& .link,
+				& a {
+					& .arrow {
+						transform: rotate(180deg);
+					}
+				}
+
+				& .sub {
+					max-height: 1000px;
+					padding: 20px;
+					border-top: solid 1px var(--color-gray-light);
+				}
+			}
+
+			& .sub {
+				@mixin noList;
+				display: block;
+				background: var(--color-tertiary);
+				padding: 0 20px;
+				border-top: solid 1px transparent;
+				max-height: 0;
+				overflow: hidden;
+				transition: all 0.3s ease;
+
+				& .link,
+				& a {
+					border-bottom: none;
+					border-top: none;
+					color: var(--color-secondary);
+					font-size: var(--size-desktop-eyebrow);
+					padding: 10px;
+
+					&:hover,
+					&.active {
+						color: var(--color-primary);
+					}
+				}
+			}
+		}
 	}
 
 	& .logo {
@@ -73,83 +158,11 @@
 		}
 
 		& .list {
-			@mixin noList;
-			display: block;
-			border-top: solid 1px var(--color-gray-light);
-			background: var(--color-light);
-			height: calc(100vh - 260px);
-			overflow-y: auto;
-			-webkit-overflow-scrolling: touch;
-			opacity: 1;
-			pointer-events: all;
 			position: static;
-
-			& .navItem,
-			& > li {
-				display: block;
-				border-bottom: solid 1px var(--color-gray-light);
-
-				& .link,
-				& a {
-					color: var(--color-primary);
-					display: block;
-					width: 100%;
-					padding: 20px;
-					font-size: var(--size-desktop-subtitle);
-					position: relative;
-
-					& .arrow {
-						position: absolute;
-						right: 20px;
-						top: 30px;
-						transition: all 0.5s ease;
-					}
-
-					6.active {
-						color: var(--color-primary);
-					}
-				}
-
-				&.opened {
-					& .link,
-					& a {
-						& .arrow {
-							transform: rotate(180deg);
-						}
-					}
-
-					& .sub {
-						max-height: 1000px;
-						padding: 20px;
-						border-top: solid 1px var(--color-gray-light);
-					}
-				}
-
-				& .sub {
-					@mixin noList;
-					display: block;
-					background: var(--color-tertiary);
-					padding: 0 20px;
-					border-top: solid 1px transparent;
-					max-height: 0;
-					overflow: hidden;
-					transition: all 0.3s ease;
-
-					& .link,
-					& a {
-						border-bottom: none;
-						border-top: none;
-						color: var(--color-secondary);
-						font-size: var(--size-desktop-eyebrow);
-						padding: 10px;
-
-						&:hover,
-						&.active {
-							color: var(--color-primary);
-						}
-					}
-				}
-			}
+			opacity: 1;
+			transform: none;
+			pointer-events: all;
+			height: calc(100vh - 260px);
 		}
 	}
 
