@@ -11,7 +11,7 @@
 	transition: all 0.5s ease;
 	transform: translateX(-100px) scale(0.9) perspective(400px) rotateY(15deg);
 
-	&:global(.visible) {
+	&.visible {
 		opacity: 1;
 		transform: translate(0) scale(1) perspective(400px) rotateY(0);
 		transition-delay: 0.3s;

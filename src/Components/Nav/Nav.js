@@ -9,7 +9,7 @@ import NavItem from './NavItem';
 
 function Nav() {
 	return (
-		<AppearAfter className={styles.navigation}>
+		<AppearAfter className={styles.navigation} visibleClassName={styles.visible}>
 			<header>
 				<Link to="/" className={styles.logo}>
 					<img src={logo} alt="Logo" />
