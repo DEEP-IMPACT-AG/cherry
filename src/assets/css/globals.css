@@ -25,10 +25,12 @@ body {
 	font-family: var(--font-text);
 	font-size: var(--size-mobile-text);
 	line-height: var(--lineheight-mobile-text);
+	padding-top: 66px;
 
 	@media (--screen-lg) {
 		font-size: var(--size-desktop-text);
 		line-height: var(--lineheight-desktop-text);
+		padding-top: 0;
 	}
 }
 

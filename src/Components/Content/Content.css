@@ -21,6 +21,10 @@
 	}
 
 	& > * {
-		padding: 64px;
+		padding: 20px;
+
+		@media (--screen-lg) {
+			padding: 64px;
+		}
 	}
 }
