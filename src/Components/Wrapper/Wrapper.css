@@ -5,4 +5,5 @@
 	width: 100%;
 	max-width: 1024px;
 	margin: auto;
+	min-height: 100vh;
 }
