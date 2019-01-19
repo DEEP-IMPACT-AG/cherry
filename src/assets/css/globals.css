@@ -42,7 +42,8 @@ body {
 	}
 }
 
-a, button {
+a,
+button {
 	outline: none;
 	text-decoration: none;
 	transition: all 0.3s ease;
@@ -52,6 +53,7 @@ figure {
 	margin: 0;
 }
 
+img,
 svg {
 	transition: all 0.3s ease;
 

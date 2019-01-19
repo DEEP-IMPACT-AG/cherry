@@ -5,6 +5,7 @@ import Nav from '../Components/Nav';
 import '../assets/css/globals.css';
 import Head from '../Components/Head';
 import Loading from '../Components/Loading';
+import Footer from '../Components/Footer';
 import Content from '../Components/Content';
 import riangle from '../assets/images/riangle.svg';
 import github from '../assets/images/github.svg';
@@ -31,11 +32,11 @@ export default ({ staticContext }) => (
 			/>
 			<Route render={routeProps => <UniversalComponent page="NotFound" {...routeProps} />} />
 		</Switch>
-		<footer>
+		<Footer>
 			<Content>
 				<a href="https://github.com/DEEP-IMPACT-AG/cherry" target="_blank"><img src={github} alt="GitHub"/></a>
 			</Content>
-		</footer>
+		</Footer>
 	</div>
 );
 

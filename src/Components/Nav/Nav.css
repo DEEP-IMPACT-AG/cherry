@@ -256,6 +256,22 @@
 			& a {
 				display: inline-block;
 				padding: 10px;
+
+				& img {
+					transform: scale(1);
+				}
+
+				&:hover {
+					& img {
+						transform: scale(1.1);
+					}
+				}
+
+				&:active {
+					& img {
+						transform: scale(1);
+					}
+				}
 			}
 		}
 	}
