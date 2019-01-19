@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import classNames from 'classnames';
 import { Link, NavLink } from 'react-router-dom';
 import styles from './Nav.css';
+import arrow from '../../assets/images/arrow.svg';
 
 class NavItem extends Component {
 	constructor(props) {
 		super(props);
 
 		this.state = {
-			opened: false,
+			opened: props.active ? true : false,
 		};
 	}
 
@@ -22,7 +23,10 @@ class NavItem extends Component {
 
 		return (
 			<li className={classNames(styles.navItem, className, { [styles.opened]: opened, [styles.childless]: !children })}>
-				<NavLink to={link} onClick={children ? this.toggleAccordion : undefined} className={styles.link} activeClassName={styles.active}>{title}</NavLink>
+				<NavLink to={link} onClick={children ? this.toggleAccordion : undefined} className={styles.link} activeClassName={styles.active}>
+					{title}
+					<img src={arrow} alt="Drop Down" className={styles.arrow} />
+				</NavLink>
 				{children && children}
 			</li>
 		);

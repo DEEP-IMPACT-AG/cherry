@@ -41,11 +41,13 @@
 	}
 
 	& .list {
-		list-style: none;
-		padding: 0;
-		margin: 0;
+		@mixin noList;
 		display: block;
 		border-top: solid 1px var(--color-gray-light);
+		background: var(--color-light);
+		height: calc(100vh - 260px);
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
 
 		& .navItem,
 		& > li {
@@ -59,6 +61,14 @@
 				width: 100%;
 				padding: 20px;
 				font-size: var(--size-desktop-subtitle);
+				position: relative;
+
+				& .arrow {
+					position: absolute;
+					right: 20px;
+					top: 30px;
+					transition: all 0.5s ease;
+				}
 
 				6.active {
 					color: var(--color-primary);
@@ -66,22 +76,29 @@
 			}
 
 			&.opened {
-				& * {
-					color: red;
+				& .link,
+				& a {
+					& .arrow {
+						transform: rotate(180deg);
+					}
+				}
+
+				& .sub {
+					max-height: 1000px;
+					padding: 20px;
+					border-top: solid 1px var(--color-gray-light);
 				}
 			}
 
 			& .sub {
-				list-style: none;
-				padding: 0;
-				margin: 0;
+				@mixin noList;
 				display: block;
-
-				& li {
-					&:first-child {
-						border-top: solid 1px var(--color-gray-light);
-					}
-				}
+				background: var(--color-tertiary);
+				padding: 0 20px;
+				border-top: solid 1px transparent;
+				max-height: 0;
+				overflow: hidden;
+				transition: all 0.3s ease;
 
 				& .link,
 				& a {
@@ -89,9 +106,36 @@
 					border-top: none;
 					color: var(--color-secondary);
 					font-size: var(--size-desktop-eyebrow);
+					padding: 10px;
+
+					&:hover,
+					&.active {
+						color: var(--color-primary);
+					}
 				}
 			}
 		}
 	}
 
+	& .poweredBy {
+		@mixin noList;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin: auto;
+		padding: 10px;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		border-top: solid 1px var(--color-gray-light);
+		transform: translateX(-50%);
+		
+
+		& li {
+			& a {
+				display: inline-block;
+				padding: 10px;
+			}
+		}
+	}
 }

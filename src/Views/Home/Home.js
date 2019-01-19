@@ -7,7 +7,9 @@ function Home({ match }) {
 	return (
 		<div>
 			<Head title="🍒 Cherry • Design System" />
-			<div className={styles.intro} />
+			<div>
+				Hello world
+			</div>
 		</div>
 	);
 }
