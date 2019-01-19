@@ -126,7 +126,7 @@
 		& svg {
 			max-width: 109px;
 			width: 100%;
-			height: auto;
+			height: 41px;
 
 			& :global(.text) {
 				display: none;
@@ -152,6 +152,7 @@
 
 			& svg {
 				max-width: 209px;
+				height: auto;
 
 				& :global(.text) {
 					display: initial;
