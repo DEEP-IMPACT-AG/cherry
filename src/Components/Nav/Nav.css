@@ -7,6 +7,15 @@
 	position: fixed;
 	left: 0;
 	top: 0;
+	opacity: 0;
+	transition: all 0.5s ease;
+	transform: translateX(-100px) scale(0.9) perspective(400px) rotateY(15deg);
+
+	&:global(.visible) {
+		opacity: 1;
+		transform: translate(0) scale(1) perspective(400px) rotateY(0);
+		transition-delay: 0.3s;
+	}
 
 	& .logo {
 		display: block;
@@ -45,10 +54,15 @@
 
 			& .link,
 			& a {
-				color: var(--color-secondary);
+				color: var(--color-primary);
 				display: block;
 				width: 100%;
 				padding: 20px;
+				font-size: var(--size-desktop-subtitle);
+
+				6.active {
+					color: var(--color-primary);
+				}
 			}
 
 			&.opened {
@@ -73,6 +87,8 @@
 				& a {
 					border-bottom: none;
 					border-top: none;
+					color: var(--color-secondary);
+					font-size: var(--size-desktop-eyebrow);
 				}
 			}
 		}

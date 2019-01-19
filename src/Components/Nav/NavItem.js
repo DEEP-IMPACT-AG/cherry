@@ -18,11 +18,11 @@ class NavItem extends Component {
 
 	render() {
 		const { opened } = this.state;
-		const { children, title, className } = this.props;
+		const { children, title, className, link } = this.props;
 
 		return (
 			<li className={classNames(styles.navItem, className, { [styles.opened]: opened, [styles.childless]: !children })}>
-				<a href="#" onClick={children ? this.toggleAccordion : undefined} className={styles.link}>{title}</a>
+				<NavLink to={link} onClick={children ? this.toggleAccordion : undefined} className={styles.link} activeClassName={styles.active}>{title}</NavLink>
 				{children && children}
 			</li>
 		);
