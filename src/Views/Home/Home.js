@@ -8,7 +8,7 @@ const data = require('./data.md');
 function Home({ match }) {
 	return (
 		<div>
-			<Head title="🍒 Cherry • Design System" />
+			<Head title="Cherry • Design System" />
 			<Content>
 				<Wrapper>
 					<h1>Introduction</h1>

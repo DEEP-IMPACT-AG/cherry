@@ -5,6 +5,8 @@ Variables & Mixins
 **********************************************************************
 *********************************************************************/
 
+@import './mixins.css';
+
 @custom-media --screen-xs (min-width: 0);
 @custom-media --screen-sm (min-width: 576px);
 @custom-media --screen-md (min-width: 768px);
