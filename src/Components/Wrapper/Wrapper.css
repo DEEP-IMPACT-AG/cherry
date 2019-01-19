@@ -3,7 +3,7 @@
 .wrapper {
 	box-sizing: border-box;
 	width: 100%;
-	max-width: 1024px;
+	max-width: 992px;
 	margin: auto;
 	min-height: 100vh;
 }

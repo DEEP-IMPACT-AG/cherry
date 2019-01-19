@@ -113,8 +113,8 @@ Variables & Mixins
 	/* --> Text ------------------------------------------------------- */
 	--size-mobile-text: 16px;
 	--lineheight-mobile-text: 1.5;
-	--size-desktop-text: 16px;
-	--lineheight-desktop-text: 1.5;
+	--size-desktop-text: 18px;
+	--lineheight-desktop-text: 1.7;
 
 	/* --> Small ------------------------------------------------------ */
 	--size-mobile-small: 12px;
