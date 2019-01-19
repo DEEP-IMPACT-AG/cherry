@@ -6,7 +6,12 @@ import AppearAfter from '../../Components/AppearAfter';
 function Loading() {
 	return (
 		<div className={styles.loading}>
-			<img src={logo} alt="Loading Logo" />
+			<div className={styles.wrapper}>
+				<div class={styles.spinner}>
+					<div class={styles.bubble1}></div>
+					<div class={styles.bubble2}></div>
+				</div>
+			</div>
 		</div>
 	);
 }
