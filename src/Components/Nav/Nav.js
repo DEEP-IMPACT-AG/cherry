@@ -53,7 +53,7 @@ class Nav extends Component {
 						<NavItem
 							title="Overview"
 							link="/"
-							active={location.pathname == '/' || '/code-guidelines' ? true : false}
+							active={location.pathname == '/' || location.pathname == '/code-guidelines'  ? true : false}
 						>
 							<ul className={styles.sub}>
 								<li>
