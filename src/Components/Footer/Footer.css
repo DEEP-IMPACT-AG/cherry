@@ -6,6 +6,16 @@
 	margin: auto;
 	text-align: center;
 
+	& > div {
+		& > * {
+			padding: 20px;
+
+			@media (--screen-lg) {
+				padding: 20px;
+			}
+		}
+	}
+
 	& a {
 		& img {
 			transform: scale(1);
