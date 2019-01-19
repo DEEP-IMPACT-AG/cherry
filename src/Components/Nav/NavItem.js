@@ -23,10 +23,10 @@ class NavItem extends Component {
 
 		return (
 			<li className={classNames(styles.navItem, className, { [styles.opened]: opened, [styles.childless]: !children })}>
-				<NavLink to={link} onClick={children ? this.toggleAccordion : undefined} className={styles.link} activeClassName={styles.active}>
+				<button to={link} onClick={children ? this.toggleAccordion : undefined} className={styles.link} activeClassName={styles.active}>
 					{title}
 					<img src={arrow} alt="Drop Down" className={styles.arrow} />
-				</NavLink>
+				</button>
 				{children && children}
 			</li>
 		);

@@ -11,6 +11,7 @@ function Home({ match }) {
 			<Head title="Cherry • Design System" />
 			<Content>
 				<Wrapper>
+					
 					<h1>Introduction</h1>
 					<div
 						className={styles.content}

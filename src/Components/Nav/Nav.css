@@ -48,6 +48,8 @@
 
 			& .link,
 			& a {
+				@mixin resetButton;
+				text-align: left;
 				color: var(--color-primary);
 				display: block;
 				width: 100%;
@@ -162,7 +164,8 @@
 			opacity: 1;
 			transform: none;
 			pointer-events: all;
-			height: calc(100vh - 260px);
+			height: calc(100vh - 194px);
+			padding-bottom: 64px;
 		}
 	}
 
@@ -247,6 +250,7 @@
 		border-top: solid 1px var(--color-gray-light);
 		transform: translateX(-50%);
 		display: none;
+		background: var(--color-light);
 
 		@media (--screen-lg) {
 			display: flex;

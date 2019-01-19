@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import AppearAfter from '../AppearAfter';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, withRouter } from 'react-router-dom';
 import styles from './Nav.css';
 import logo from '../../assets/images/logo.svg';
 import riangle from '../../assets/images/riangle.svg';
@@ -28,6 +28,7 @@ class Nav extends Component {
 	
 	render() {
 		const { menu } = this.state;
+		const { location } = this.props;
 
 		return (
 			<AppearAfter className={styles.navigation} visibleClassName={styles.visible}>
@@ -47,7 +48,7 @@ class Nav extends Component {
 					<ul className={classNames(styles.list, {
 						[styles.active]: menu,
 					})}>
-						<NavItem title="Overview" link="/" active>
+						<NavItem title="Overview" link="/" active={location.pathname == '/' ? true : false}>
 							<ul className={styles.sub}>
 								<li>
 									<NavLink to="/" activeClassName={styles.active} onClick={this.closeMenu}>
@@ -61,7 +62,7 @@ class Nav extends Component {
 								</li>
 							</ul>
 						</NavItem>
-						<NavItem title="Design" link="/">
+						<NavItem title="Design" link="/" active={location.pathname == '/design' ? true : false}>
 							<ul className={styles.sub}>
 								<li>
 									<a href="#">
@@ -70,7 +71,7 @@ class Nav extends Component {
 								</li>
 							</ul>
 						</NavItem>
-						<NavItem title="CSS" link="/">
+						<NavItem title="CSS" link="/" active={location.pathname == '/css' ? true : false}>
 							<ul className={styles.sub}>
 								<li>
 									<a href="#">
@@ -79,7 +80,7 @@ class Nav extends Component {
 								</li>
 							</ul>
 						</NavItem>
-						<NavItem title="Components" link="/">
+						<NavItem title="Components" link="/" active={location.pathname == '/components' ? true : false}>
 							<ul className={styles.sub}>
 								<li>
 									<a href="#">
@@ -107,4 +108,4 @@ class Nav extends Component {
 	}
 }
 
-export default Nav;
+export default withRouter(Nav);
