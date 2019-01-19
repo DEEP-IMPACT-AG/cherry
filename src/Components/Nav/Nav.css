@@ -1,141 +1,143 @@
 @import '../../assets/css/variables.css';
 
 .navigation {
-	border-right: solid 1px var(--color-gray-light);
-	width: 20%;
-	height: 100vh;
-	position: fixed;
-	left: 0;
-	top: 0;
-	opacity: 0;
-	transition: all 0.5s ease;
-	transform: translateX(-100px) scale(0.9) perspective(400px) rotateY(15deg);
+	@media (--screen-lg) {
+		border-right: solid 1px var(--color-gray-light);
+		width: 30%;
+		height: 100vh;
+		position: fixed;
+		left: 0;
+		top: 0;
+		opacity: 0;
+		transition: all 0.5s ease;
+		transform: translateX(-100px) scale(0.9) perspective(400px) rotateY(15deg);
 
-	&.visible {
-		opacity: 1;
-		transform: translate(0) scale(1) perspective(400px) rotateY(0);
-		transition-delay: 0.3s;
-	}
-
-	& .logo {
-		display: block;
-		padding: 64px;
-		position: relative;
-
-		& h1 {
-			pointer-events: none;
-			color: var(--color-light);
-			position: absolute;
-			font-size: 1px;
+		&.visible {
+			opacity: 1;
+			transform: translate(0) scale(1) perspective(400px) rotateY(0);
+			transition-delay: 0.3s;
 		}
 
-		& span {
-			position: absolute;
-			left: 50%;
-			transform: translateY(-10px) translateX(-50%);
-			color: var(--color-secondary);
-			text-transform: uppercase;
-			font-size: var(--size-mobile-small);
-		}
-		
-	}
-
-	& .list {
-		@mixin noList;
-		display: block;
-		border-top: solid 1px var(--color-gray-light);
-		background: var(--color-light);
-		height: calc(100vh - 260px);
-		overflow-y: auto;
-		-webkit-overflow-scrolling: touch;
-
-		& .navItem,
-		& > li {
+		& .logo {
 			display: block;
-			border-bottom: solid 1px var(--color-gray-light);
+			padding: 64px;
+			position: relative;
 
-			& .link,
-			& a {
-				color: var(--color-primary);
-				display: block;
-				width: 100%;
-				padding: 20px;
-				font-size: var(--size-desktop-subtitle);
-				position: relative;
-
-				& .arrow {
-					position: absolute;
-					right: 20px;
-					top: 30px;
-					transition: all 0.5s ease;
-				}
-
-				6.active {
-					color: var(--color-primary);
-				}
+			& h1 {
+				pointer-events: none;
+				color: var(--color-light);
+				position: absolute;
+				font-size: 1px;
 			}
 
-			&.opened {
+			& img {
+				max-width: 209px;
+				width: 100%;
+			}
+			
+		}
+
+		& .list {
+			@mixin noList;
+			display: block;
+			border-top: solid 1px var(--color-gray-light);
+			background: var(--color-light);
+			height: calc(100vh - 260px);
+			overflow-y: auto;
+			-webkit-overflow-scrolling: touch;
+
+			& .navItem,
+			& > li {
+				display: block;
+				border-bottom: solid 1px var(--color-gray-light);
+
 				& .link,
 				& a {
+					color: var(--color-primary);
+					display: block;
+					width: 100%;
+					padding: 20px;
+					font-size: var(--size-desktop-subtitle);
+					position: relative;
+
 					& .arrow {
-						transform: rotate(180deg);
+						position: absolute;
+						right: 20px;
+						top: 30px;
+						transition: all 0.5s ease;
+					}
+
+					6.active {
+						color: var(--color-primary);
+					}
+				}
+
+				&.opened {
+					& .link,
+					& a {
+						& .arrow {
+							transform: rotate(180deg);
+						}
+					}
+
+					& .sub {
+						max-height: 1000px;
+						padding: 20px;
+						border-top: solid 1px var(--color-gray-light);
 					}
 				}
 
 				& .sub {
-					max-height: 1000px;
-					padding: 20px;
-					border-top: solid 1px var(--color-gray-light);
+					@mixin noList;
+					display: block;
+					background: var(--color-tertiary);
+					padding: 0 20px;
+					border-top: solid 1px transparent;
+					max-height: 0;
+					overflow: hidden;
+					transition: all 0.3s ease;
+
+					& .link,
+					& a {
+						border-bottom: none;
+						border-top: none;
+						color: var(--color-secondary);
+						font-size: var(--size-desktop-eyebrow);
+						padding: 10px;
+
+						&:hover,
+						&.active {
+							color: var(--color-primary);
+						}
+					}
 				}
 			}
+		}
 
-			& .sub {
-				@mixin noList;
-				display: block;
-				background: var(--color-tertiary);
-				padding: 0 20px;
-				border-top: solid 1px transparent;
-				max-height: 0;
-				overflow: hidden;
-				transition: all 0.3s ease;
+		& .poweredBy {
+			@mixin noList;
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			margin: auto;
+			padding: 10px;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			border-top: solid 1px var(--color-gray-light);
+			transform: translateX(-50%);
+			
 
-				& .link,
+			& li {
 				& a {
-					border-bottom: none;
-					border-top: none;
-					color: var(--color-secondary);
-					font-size: var(--size-desktop-eyebrow);
+					display: inline-block;
 					padding: 10px;
-
-					&:hover,
-					&.active {
-						color: var(--color-primary);
-					}
 				}
 			}
 		}
 	}
 
-	& .poweredBy {
-		@mixin noList;
-		display: flex;
-		justify-content: center;
-		width: 100%;
-		margin: auto;
-		padding: 10px;
-		position: absolute;
-		bottom: 0;
-		left: 50%;
-		border-top: solid 1px var(--color-gray-light);
-		transform: translateX(-50%);
-		
-
-		& li {
-			& a {
-				display: inline-block;
-				padding: 10px;
-			}
-		}
+	@media (--screen-xl) {
+		width: 20%;
 	}
 }

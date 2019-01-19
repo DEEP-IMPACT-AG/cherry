@@ -14,7 +14,6 @@ function Nav() {
 				<Link to="/" className={styles.logo}>
 					<img src={logo} alt="Logo" />
 					<h1>Cherry - Design System</h1>
-					<span>Design System</span>
 				</Link>
 				<ul className={styles.list}>
 					<NavItem title="Overview" link="/" active>
