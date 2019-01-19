@@ -30,6 +30,11 @@ export default ({ staticContext }) => (
 				path="/"
 				render={routeProps => <UniversalComponent page="Home" {...routeProps} />}
 			/>
+			<Route
+				exact
+				path="/code-guidelines"
+				render={routeProps => <UniversalComponent page="CodeGuidelines" {...routeProps} />}
+			/>
 			<Route render={routeProps => <UniversalComponent page="NotFound" {...routeProps} />} />
 		</Switch>
 		<Footer>
