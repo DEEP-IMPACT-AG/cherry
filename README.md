@@ -2,5 +2,5 @@
 
 ## PostCSS
 
-- [Variables](./Cherry/variables.css)
-- [Globals](./Cherry/globals.css)
+- [Variables](./src/assets/css/variables.css)
+- [Globals](./src/assets/css/globals.css)

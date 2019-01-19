@@ -17,6 +17,10 @@ Variables & Mixins
 
 :root {
 
+	/* Body Padding --------------------------------------------------- */
+	--padding-body-top-desktop: 0;
+	--padding-body-top-mobile: 66px;
+
 	/* Colors --------------------------------------------------------- */
 	--color-primary: #1F2D3D;
 	--color-secondary: #8492A6;
