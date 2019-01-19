@@ -10,12 +10,12 @@ function NotFound() {
 		<Fragment>
 			<Head title="React SSR Boilerplate • Not Found" />
 			<Status code={404} />
-				<Content>
-					<Wrapper>
-						<h1>Not Found</h1>
-						<div>404 Error - Page not found.</div>
-					</Wrapper>
-				</Content>
+			<Content>
+				<Wrapper>
+					<h1>Not Found</h1>
+					<div>404 Error - Page not found.</div>
+				</Wrapper>
+			</Content>
 		</Fragment>
 	);
 }

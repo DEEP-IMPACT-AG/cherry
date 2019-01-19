@@ -5,7 +5,11 @@ import AppearAfter from '../AppearAfter';
 
 function Content({ className, children }) {
 	return (
-		<AppearAfter className={classNames(styles.content, className)} visibleClassName={styles.visible} delay={600}>
+		<AppearAfter
+			className={classNames(styles.content, className)}
+			visibleClassName={styles.visible}
+			delay={600}
+		>
 			<div>{children}</div>
 		</AppearAfter>
 	);

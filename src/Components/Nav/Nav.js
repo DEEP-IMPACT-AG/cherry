@@ -25,7 +25,7 @@ class Nav extends Component {
 	closeMenu = () => {
 		this.setState({ menu: false });
 	};
-	
+
 	render() {
 		const { menu } = this.state;
 		const { location } = this.props;
@@ -45,9 +45,11 @@ class Nav extends Component {
 					>
 						<span />
 					</button>
-					<ul className={classNames(styles.list, {
-						[styles.active]: menu,
-					})}>
+					<ul
+						className={classNames(styles.list, {
+							[styles.active]: menu,
+						})}
+					>
 						<NavItem title="Overview" link="/" active={location.pathname == '/' ? true : false}>
 							<ul className={styles.sub}>
 								<li>
@@ -56,36 +58,32 @@ class Nav extends Component {
 									</NavLink>
 								</li>
 								<li>
-									<a href="#">
-										Coming Soon
-									</a>
+									<a href="#">Coming Soon</a>
 								</li>
 							</ul>
 						</NavItem>
 						<NavItem title="Design" link="/" active={location.pathname == '/design' ? true : false}>
 							<ul className={styles.sub}>
 								<li>
-									<a href="#">
-										Coming Soon
-									</a>
+									<a href="#">Coming Soon</a>
 								</li>
 							</ul>
 						</NavItem>
 						<NavItem title="CSS" link="/" active={location.pathname == '/css' ? true : false}>
 							<ul className={styles.sub}>
 								<li>
-									<a href="#">
-										Coming Soon
-									</a>
+									<a href="#">Coming Soon</a>
 								</li>
 							</ul>
 						</NavItem>
-						<NavItem title="Components" link="/" active={location.pathname == '/components' ? true : false}>
+						<NavItem
+							title="Components"
+							link="/"
+							active={location.pathname == '/components' ? true : false}
+						>
 							<ul className={styles.sub}>
 								<li>
-									<a href="#">
-										Coming Soon
-									</a>
+									<a href="#">Coming Soon</a>
 								</li>
 							</ul>
 						</NavItem>

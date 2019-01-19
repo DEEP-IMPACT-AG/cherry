@@ -11,12 +11,8 @@ function Home({ match }) {
 			<Head title="Cherry • Design System" />
 			<Content>
 				<Wrapper>
-					
 					<h1>Introduction</h1>
-					<div
-						className={styles.content}
-						dangerouslySetInnerHTML={{ __html: data.__content }}
-					/>
+					<div className={styles.content} dangerouslySetInnerHTML={{ __html: data.__content }} />
 				</Wrapper>
 			</Content>
 		</div>

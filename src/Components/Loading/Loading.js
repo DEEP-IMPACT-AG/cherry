@@ -8,8 +8,8 @@ function Loading() {
 		<div className={styles.loading}>
 			<div className={styles.wrapper}>
 				<div class={styles.spinner}>
-					<div class={styles.bubble1}></div>
-					<div class={styles.bubble2}></div>
+					<div class={styles.bubble1} />
+					<div class={styles.bubble2} />
 				</div>
 			</div>
 		</div>

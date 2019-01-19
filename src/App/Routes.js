@@ -34,9 +34,10 @@ export default ({ staticContext }) => (
 		</Switch>
 		<Footer>
 			<Content>
-				<a href="https://github.com/DEEP-IMPACT-AG/cherry" target="_blank"><img src={github} alt="GitHub"/></a>
+				<a href="https://github.com/DEEP-IMPACT-AG/cherry" target="_blank">
+					<img src={github} alt="GitHub" />
+				</a>
 			</Content>
 		</Footer>
 	</div>
 );
-
