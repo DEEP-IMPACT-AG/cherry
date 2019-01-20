@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Head from '../../Components/Head';
 import Content from '../../Components/Content';
 import Wrapper from '../../Components/Wrapper';
@@ -7,29 +7,37 @@ const data = require('./data.md');
 import Sketch from './Logos/Sketch.svg';
 import PostCSS from './Logos/PostCSS.svg';
 import ReactLogo from './Logos/React.svg';
+import hljs from 'highlight.js/lib/highlight';
+import javascript from 'highlight.js/lib/languages/javascript';
+hljs.registerLanguage('javascript', javascript);
 
-function Home({ match }) {
-	return (
-		<div>
-			<Head title="Cherry • Design System" />
-			<Content>
-				<Wrapper>
-					<div className={styles.content} dangerouslySetInnerHTML={{ __html: data.__content }} />
-					<ul className={styles.technologies}>
-						<li>
-							<img src={Sketch} alt="Sketch"/>
-						</li>
-						<li>
-							<img src={PostCSS} alt="PostCSS"/>
-						</li>
-						<li>
-							<img src={ReactLogo} alt="React"/>
-						</li>
-					</ul>
-				</Wrapper>
-			</Content>
-		</div>
-	);
+class Home extends Component {
+	componentDidMount() {
+		hljs.initHighlightingOnLoad();
+	}
+	render() {
+		return (
+			<div>
+				<Head title="Cherry • Design System" />
+				<Content>
+					<Wrapper>
+						<div className={styles.content} dangerouslySetInnerHTML={{ __html: data.__content }} />
+						<ul className={styles.technologies}>
+							<li>
+								<img src={Sketch} alt="Sketch"/>
+							</li>
+							<li>
+								<img src={PostCSS} alt="PostCSS"/>
+							</li>
+							<li>
+								<img src={ReactLogo} alt="React"/>
+							</li>
+						</ul>
+					</Wrapper>
+				</Content>
+			</div>
+		);
+	}
 }
 
 export default Home;
