@@ -9,6 +9,7 @@ import javascript from 'highlight.js/lib/languages/javascript';
 import css from 'highlight.js/lib/languages/css';
 hljs.registerLanguage('javascript', javascript);
 hljs.registerLanguage('css', css);
+
 class CodeGuidelines extends Component {
 	componentDidMount() {
 		const cdx = document.getElementsByTagName('pre');
