@@ -6,6 +6,7 @@ import '../assets/css/globals.css';
 import Head from '../Components/Head';
 import Footer from '../Components/Footer';
 import { Content, Loading } from '../Components/Layout';
+import GoogleTagManager from '../Components/GoogleTagManager';
 
 const UniversalComponent = universal(props => import(`../Views/${props.page}`), {
 	loading: () => <Loading />,
@@ -14,6 +15,7 @@ const UniversalComponent = universal(props => import(`../Views/${props.page}`), 
 
 export default ({ staticContext }) => (
 	<div>
+		<GoogleTagManager gtmId="GTM-K8M4PWZ" />
 		<Head />
 		<Nav />
 		<Switch>
