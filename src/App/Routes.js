@@ -4,9 +4,8 @@ import { Route, Switch, Redirect } from 'react-router';
 import Nav from '../Components/Nav';
 import '../assets/css/globals.css';
 import Head from '../Components/Head';
-import Loading from '../Components/Loading';
 import Footer from '../Components/Footer';
-import { Content } from '../Components/Layout';
+import { Content, Loading } from '../Components/Layout';
 import riangle from '../assets/images/riangle.svg';
 import github from '../assets/images/github.svg';
 
