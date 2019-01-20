@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import { Link, NavLink } from 'react-router-dom';
+import { Arrow } from '../../assets/svg';
 import styles from './Nav.css';
-import arrow from '../../assets/images/arrow.svg';
 
 class NavItem extends Component {
 	constructor(props) {
@@ -34,7 +34,7 @@ class NavItem extends Component {
 					className={styles.link}
 				>
 					{title}
-					<img src={arrow} alt="Drop Down" className={styles.arrow} />
+					<Arrow className={styles.arrow} />
 				</button>
 				{children && children}
 			</li>

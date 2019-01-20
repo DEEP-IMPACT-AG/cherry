@@ -3,9 +3,7 @@ import Head from '../../Components/Head';
 import { Content, Wrapper } from '../../Components/Layout';
 import styles from './Home.css';
 const data = require('./data-home.md');
-import Sketch from './Logos/Sketch.svg';
-import PostCSS from './Logos/PostCSS.svg';
-import ReactLogo from './Logos/React.svg';
+import { Sketch, PostCSS, ReactLogo } from '../../assets/svg';
 import hljs from 'highlight.js/lib/highlight';
 import javascript from 'highlight.js/lib/languages/javascript';
 import css from 'highlight.js/lib/languages/css';
@@ -32,13 +30,13 @@ class Home extends Component {
 						<div className={styles.content} dangerouslySetInnerHTML={{ __html: data.__content }} />
 						<ul className={styles.technologies}>
 							<li>
-								<img src={Sketch} alt="Sketch"/>
+								<Sketch />
 							</li>
 							<li>
-								<img src={PostCSS} alt="PostCSS"/>
+								<PostCSS />
 							</li>
 							<li>
-								<img src={ReactLogo} alt="React"/>
+								<ReactLogo />
 							</li>
 						</ul>
 					</Wrapper>

@@ -6,8 +6,6 @@ import '../assets/css/globals.css';
 import Head from '../Components/Head';
 import Footer from '../Components/Footer';
 import { Content, Loading } from '../Components/Layout';
-import riangle from '../assets/images/riangle.svg';
-import github from '../assets/images/github.svg';
 
 const UniversalComponent = universal(props => import(`../Views/${props.page}`), {
 	loading: () => <Loading />,
@@ -41,12 +39,6 @@ export default ({ staticContext }) => (
 			/>
 			<Route render={routeProps => <UniversalComponent page="NotFound" {...routeProps} />} />
 		</Switch>
-		<Footer>
-			<Content>
-				<a href="https://github.com/DEEP-IMPACT-AG/cherry" target="_blank">
-					<img src={github} alt="GitHub" />
-				</a>
-			</Content>
-		</Footer>
+		<Footer />
 	</div>
 );

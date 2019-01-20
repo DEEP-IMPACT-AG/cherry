@@ -3,11 +3,9 @@ import classNames from 'classnames';
 import AppearAfter from '../AppearAfter';
 import { Link, NavLink, withRouter } from 'react-router-dom';
 import styles from './Nav.css';
-import logo from '../../assets/images/logo.svg';
-import riangle from '../../assets/images/riangle.svg';
-import di from '../../assets/images/di.svg';
+
 import NavItem from './NavItem';
-import { Logo } from '../../assets/svg';
+import { Logo, Riangle, DeepImpact } from '../../assets/svg';
 
 class Nav extends Component {
 	constructor(props) {
@@ -107,12 +105,12 @@ class Nav extends Component {
 					<ul className={styles.poweredBy}>
 						<li>
 							<a href="https://www.deep-impact.ch/" target="_blank">
-								<img src={di} alt="Deep Impact AG" />
+								<DeepImpact />
 							</a>
 						</li>
 						<li>
 							<a href="https://www.riangle.com/" target="_blank">
-								<img src={riangle} alt="Riangle" />
+								<Riangle />
 							</a>
 						</li>
 					</ul>

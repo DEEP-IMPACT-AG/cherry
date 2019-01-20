@@ -1,4 +1,4 @@
-[![Cheery Logo](./src/assets/images/logo.svg)](https://cherry.design/)
+[![Cheery Logo](https://svgur.com/i/AcT.svg)](https://cherry.design/)
 
 ## PostCSS
 

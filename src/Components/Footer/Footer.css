@@ -17,18 +17,18 @@
 	}
 
 	& a {
-		& img {
+		& svg {
 			transform: scale(1);
 		}
 
 		&:hover {
-			& img {
+			& svg {
 				transform: scale(1.1);
 			}
 		}
 
 		&:active {
-			& img {
+			& svg {
 				transform: scale(1);
 			}
 		}
