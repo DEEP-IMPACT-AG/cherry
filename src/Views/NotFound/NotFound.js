@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import Head from '../../Components/Head';
-import Content from '../../Components/Content';
-import Wrapper from '../../Components/Wrapper';
+import { Content, Wrapper } from '../../Components/Layout';
 import styles from './NotFound.css';
 import { Status } from '../../Components/Status';
 

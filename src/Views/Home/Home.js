@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Head from '../../Components/Head';
-import Content from '../../Components/Content';
-import Wrapper from '../../Components/Wrapper';
+import { Content, Wrapper } from '../../Components/Layout';
 import styles from './Home.css';
 const data = require('./data-home.md');
 import Sketch from './Logos/Sketch.svg';

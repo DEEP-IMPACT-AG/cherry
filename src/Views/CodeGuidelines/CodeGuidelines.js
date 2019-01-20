@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Head from '../../Components/Head';
-import Content from '../../Components/Content';
-import Wrapper from '../../Components/Wrapper';
+import { Content, Wrapper} from '../../Components/Layout';
 import styles from './CodeGuidelines.css';
 const data = require('./data-codeguidelines.md');
 import hljs from 'highlight.js/lib/highlight';

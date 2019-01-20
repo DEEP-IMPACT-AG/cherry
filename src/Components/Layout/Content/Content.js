@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import styles from './Content.css';
-import AppearAfter from '../AppearAfter';
+import AppearAfter from '../../AppearAfter';
 
 function Content({ className, children }) {
 	return (
