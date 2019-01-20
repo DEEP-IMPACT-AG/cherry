@@ -676,6 +676,11 @@ svg {
 	}
 }
 
+img {
+	max-width: 100%;
+	width: 100%;
+}
+
 strong,
 b {
 	font-weight: 700;
