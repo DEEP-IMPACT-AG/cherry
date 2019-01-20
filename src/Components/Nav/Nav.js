@@ -72,10 +72,16 @@ class Nav extends Component {
 								</li>
 							</ul>
 						</NavItem>
-						<NavItem title="Design" link="/" active={location.pathname == '/design' ? true : false}>
+						<NavItem title="Design" link="/" active={location.pathname == '/design' || location.pathname == '/sketch' ? true : false}>
 							<ul className={styles.sub}>
 								<li>
-									<a href="#">Coming Soon</a>
+									<NavLink
+										to="/sketch"
+										activeClassName={styles.active}
+										onClick={this.closeMenu}
+									>
+										Sketch
+									</NavLink>
 								</li>
 							</ul>
 						</NavItem>

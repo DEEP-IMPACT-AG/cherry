@@ -655,6 +655,14 @@ button {
 	transition: all 0.3s ease;
 }
 
+a {
+	color: var(--color-primary);
+
+	&:hover {
+		color: var(--color-secondary);
+	}
+}
+
 figure {
 	margin: 0;
 }
