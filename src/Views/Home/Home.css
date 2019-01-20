@@ -16,11 +16,11 @@
 
 		& svg {
 			margin: auto;
-			max-width: 60px;
-			width: 100%;
+			width: 60px;
+			height: auto;
 
 			@media (--screen-lg) {
-				max-width: 100%;
+				width: 85px
 			}
 		}
 	}
