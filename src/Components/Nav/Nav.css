@@ -6,7 +6,7 @@
 	top: 0;
 	opacity: 0;
 	transition: all 0.5s ease;
-	transform: translateY(-100px) perspective(400px) rotateX(15deg);
+	transform: translateY(-66px) perspective(400px) rotateX(15deg);
 	width: 100%;
 	border-bottom: solid 1px var(--color-gray-light);
 	background: var(--color-light);
