@@ -19,7 +19,7 @@ class NavItem extends Component {
 
 	render() {
 		const { opened } = this.state;
-		const { children, title, className, link } = this.props;
+		const { children, title, className, link, label } = this.props;
 
 		return (
 			<li
@@ -33,7 +33,7 @@ class NavItem extends Component {
 					onClick={children ? this.toggleAccordion : undefined}
 					className={styles.link}
 				>
-					{title}
+					{title} {label && <span className={styles.label}>{label}</span>}
 					<Arrow className={styles.arrow} />
 				</button>
 				{children && children}

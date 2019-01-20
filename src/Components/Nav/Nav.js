@@ -70,7 +70,7 @@ class Nav extends Component {
 								</li>
 							</ul>
 						</NavItem>
-						<NavItem title="Design" link="/" active={location.pathname == '/design' || location.pathname == '/sketch' ? true : false}>
+						<NavItem title="Design" link="/" active={location.pathname == '/design' || location.pathname == '/sketch' ? true : false} label="New">
 							<ul className={styles.sub}>
 								<li>
 									<NavLink
