@@ -32,7 +32,6 @@ class NavItem extends Component {
 					to={link}
 					onClick={children ? this.toggleAccordion : undefined}
 					className={styles.link}
-					activeClassName={styles.active}
 				>
 					{title}
 					<img src={arrow} alt="Drop Down" className={styles.arrow} />

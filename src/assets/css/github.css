@@ -1,10 +1,18 @@
+@import './variables.css';
+
 :global {
+	& code {
+		padding: 5px;
+		color: var(--color-secondary);
+		background: var(--color-tertiary);
+	}
+
 	& .hljs {
 		display: block;
 		overflow-x: auto;
 		padding: 0.5em;
-		color: #333;
-		background: #f8f8f8;
+		color: var(--color-secondary);
+		background: var(--color-tertiary);
 	}
 
 	& .hljs-comment,
@@ -16,7 +24,7 @@
 	& .hljs-keyword,
 	& .hljs-selector-tag,
 	& .hljs-subst {
-		color: #333;
+		color: var(--color-secondary);
 		font-weight: bold;
 	}
 

@@ -66,6 +66,7 @@ svg {
 strong,
 b {
 	font-weight: 700;
+	color: var(--color-primary);
 }
 
 h1,
@@ -149,4 +150,9 @@ p {
 		font-size: var(--size-desktop-text);
 		line-height: var(--lineheight-desktop-text);
 	}
+}
+
+hr {
+	border: none;
+	border-bottom: solid 1px var(--color-gray-light);
 }

@@ -5,7 +5,7 @@ const isProd = process.env.NODE_ENV === 'production';
 
 function Head({
 	title = 'Cherry • Design System',
-	description = 'Cherry is a live inventory of definitions for the UI components, design patterns, brand assets and code guidelines.',
+	description = 'Cherry is a live inventory of definitions for the UI components, design patterns, naming conventions, brand assets and code guidelines.',
 	image = 'https://res.cloudinary.com/deep-impact-ag/image/upload/cherry/og.jpg',
 	children,
 }) {
