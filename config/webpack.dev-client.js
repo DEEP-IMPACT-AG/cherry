@@ -79,7 +79,10 @@ module.exports = {
 		new ExtractCssChunks({
 			filename: '[name].[contenthash].css',
 			chunkFilename: '[name]-[hash:8].css',
-			hot: true,
+			hot: true, 
+			orderWarning: true, 
+			reloadAll: true, 
+			cssModules: true
 		}),
 		new webpack.DefinePlugin({
 			'process.env': {
