@@ -1,3 +1,3 @@
 module.exports = `User-Agent: *
 Allow: *
-Sitemap: https://react-ssr-boilerplate.herokuapp.com/sitemap.xml`;
+Sitemap: https://cherry.design/sitemap.xml`;
