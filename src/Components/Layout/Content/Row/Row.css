@@ -1,0 +1,16 @@
+@import '../../../../assets/css/variables.css';
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -12px;
+	margin-left: -12px;
+}
+
+.alignItemsCenter {
+	align-items: center;
+}
+
+.justifyContentCenter {
+	justify-content: center;
+}

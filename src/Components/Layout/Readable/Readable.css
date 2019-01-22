@@ -1,11 +1,15 @@
 @import '../../../assets/css/variables.css';
 
-.wrapper {
+.readable {
 	box-sizing: border-box;
 	width: 100%;
 	max-width: 992px;
-	margin: auto;
+	margin: 20px auto;
 	min-height: 100vh;
+
+	@media (--screen-lg) {
+		margin: 64px auto;
+	}
 
 	& h1,
 	& h2,
@@ -13,10 +17,7 @@
 	& h4,
 	& h5,
 	& h6 {
-		padding: 20px 0;
-	}
-
-	& + > {
-		padding-top: 0;
+		padding: 0;
+		margin: 20px 0;
 	}
 }

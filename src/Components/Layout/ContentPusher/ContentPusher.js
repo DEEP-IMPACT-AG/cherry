@@ -1,12 +1,12 @@
 import React from 'react';
 import classNames from 'classnames';
-import styles from './Content.css';
+import styles from './ContentPusher.css';
 import AppearAfter from '../../AppearAfter';
 
-function Content({ className, children }) {
+function ContentPusher({ className, children }) {
 	return (
 		<AppearAfter
-			className={classNames(styles.content, className)}
+			className={classNames(styles.contentPusher, className)}
 			visibleClassName={styles.visible}
 			delay={600}
 		>
@@ -15,4 +15,4 @@ function Content({ className, children }) {
 	);
 }
 
-export default Content;
+export default ContentPusher;

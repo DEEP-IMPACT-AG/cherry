@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import React, { Component, Fragment } from 'react';
 import Head from '../../Components/Head';
-import { Content, Wrapper} from '../../Components/Layout';
+import { ContentPusher, Container, Readable } from '../../Components/Layout';
 import styles from './CodeGuidelines.css';
 const data = require('./data-codeguidelines.md');
 import hljs from 'highlight.js/lib/highlight';
@@ -23,14 +22,19 @@ class CodeGuidelines extends Component {
 
 	render() {
 		return (
-			<div>
+			<Fragment>
 				<Head title="Code Guidelines - Cherry • Design System" />
-				<Content>
-					<Wrapper>
-						<div className={styles.content} dangerouslySetInnerHTML={{ __html: data.__content }} />
-					</Wrapper>
-				</Content>
-			</div>
+				<ContentPusher>
+					<Container>
+						<Readable>
+							<div
+								className={styles.content}
+								dangerouslySetInnerHTML={{ __html: data.__content }}
+							/>
+						</Readable>
+					</Container>
+				</ContentPusher>
+			</Fragment>
 		);
 	}
 }

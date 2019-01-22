@@ -1,3 +1,5 @@
-import Content from './Content';
+import Col from './Col';
+import Row from './Row';
+import Container from './Container';
 
-export default Content;
+export { Col, Row, Container };

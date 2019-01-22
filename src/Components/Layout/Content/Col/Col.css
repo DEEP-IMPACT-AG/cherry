@@ -1,0 +1,549 @@
+@import '../../../../assets/css/variables.css';
+
+:root {
+	--col : {
+		position: relative;
+		width: 100%;
+		min-height: 1px;
+		padding-right: 12px;
+		padding-left: 12px;
+
+		flex-basis: 0;
+		flex-grow: 1;
+		max-width: 100%;
+	}
+
+	--colAuto : {
+		flex: 0 0 auto;
+		width: auto;
+		max-width: none;
+	}
+
+	--col1 : {
+		flex: 0 0 8.333333%;
+		max-width: 8.333333%;
+	}
+
+	--col2 : {
+		flex: 0 0 16.666667%;
+		max-width: 16.666667%;
+	}
+
+	--col3 : {
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+
+	--col4 : {
+		flex: 0 0 33.333333%;
+		max-width: 33.333333%;
+	}
+
+	--col5 : {
+		flex: 0 0 41.666667%;
+		max-width: 41.666667%;
+	}
+
+	--col6 : {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	--col7 : {
+		flex: 0 0 58.333333%;
+		max-width: 58.333333%;
+	}
+
+	--col8 : {
+		flex: 0 0 66.666667%;
+		max-width: 66.666667%;
+	}
+
+	--col9 : {
+		flex: 0 0 75%;
+		max-width: 75%;
+	}
+
+	--col10 : {
+		flex: 0 0 83.333333%;
+		max-width: 83.333333%;
+	}
+
+	--col11 : {
+		flex: 0 0 91.666667%;
+		max-width: 91.666667%;
+	}
+
+	--col12 : {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+
+.col {
+	@apply --col;
+}
+
+.colAuto {
+	@apply --colAuto;
+}
+
+.col1 {
+	@apply --col1;
+}
+
+.col2 {
+	@apply --col2;
+}
+
+.col3 {
+	@apply --col3;
+}
+
+.col4 {
+	@apply --col4;
+}
+
+.col5 {
+	@apply --col5;
+}
+
+.col6 {
+	@apply --col6;
+}
+
+.col7 {
+	@apply --col7;
+}
+
+.col8 {
+	@apply --col8;
+}
+
+.col9 {
+	@apply --col9;
+}
+
+.col10 {
+	@apply --col10;
+}
+
+.col11 {
+	@apply --col11;
+}
+
+.col12 {
+	@apply --col12;
+}
+
+.orderFirst {
+	order: -1;
+}
+
+.orderLast {
+	order: 13;
+}
+
+@media (--screen-sm) {
+	.colSm {
+		@apply --col;
+	}
+
+	.colSm {
+		@apply --col;
+	}
+
+	.colSmAuto {
+		@apply --colAuto;
+	}
+
+	.colSm1 {
+		@apply --col1;
+	}
+
+	.colSm2 {
+		@apply --col2;
+	}
+
+	.colSm3 {
+		@apply --col3;
+	}
+
+	.colSm4 {
+		@apply --col4;
+	}
+
+	.colSm5 {
+		@apply --col5;
+	}
+
+	.colSm6 {
+		@apply --col6;
+	}
+
+	.colSm7 {
+		@apply --col7;
+	}
+
+	.colSm8 {
+		@apply --col8;
+	}
+
+	.colSm9 {
+		@apply --col9;
+	}
+
+	.colSm10 {
+		@apply --col10;
+	}
+
+	.colSm11 {
+		@apply --col11;
+	}
+
+	.colSm12 {
+		@apply --col12;
+	}
+
+	.orderSmFirst {
+		order: -1;
+	}
+
+	.orderSmLast {
+		order: 13;
+	}
+}
+
+@media (--screen-md) {
+	.colMd {
+		@apply --col;
+	}
+
+	.colMd {
+		@apply --col;
+	}
+
+	.colMdAuto {
+		@apply --colAuto;
+	}
+
+	.colMd1 {
+		@apply --col1;
+	}
+
+	.colMd2 {
+		@apply --col2;
+	}
+
+	.colMd3 {
+		@apply --col3;
+	}
+
+	.colMd4 {
+		@apply --col4;
+	}
+
+	.colMd5 {
+		@apply --col5;
+	}
+
+	.colMd6 {
+		@apply --col6;
+	}
+
+	.colMd7 {
+		@apply --col7;
+	}
+
+	.colMd8 {
+		@apply --col8;
+	}
+
+	.colMd9 {
+		@apply --col9;
+	}
+
+	.colMd10 {
+		@apply --col10;
+	}
+
+	.colMd11 {
+		@apply --col11;
+	}
+
+	.colMd12 {
+		@apply --col12;
+	}
+
+	.orderMdFirst {
+		order: -1;
+	}
+
+	.orderMdLast {
+		order: 13;
+	}
+}
+
+@media (--screen-lg) {
+	.colLg {
+		@apply --col;
+	}
+
+	.colLgAuto {
+		@apply --colAuto;
+	}
+
+	.colLg1 {
+		@apply --col1;
+	}
+
+	.colLg2 {
+		@apply --col2;
+	}
+
+	.colLg3 {
+		@apply --col3;
+	}
+
+	.colLg4 {
+		@apply --col4;
+	}
+
+	.colLg5 {
+		@apply --col5;
+	}
+
+	.colLg6 {
+		@apply --col6;
+	}
+
+	.colLg7 {
+		@apply --col7;
+	}
+
+	.colLg8 {
+		@apply --col8;
+	}
+
+	.colLg9 {
+		@apply --col9;
+	}
+
+	.colLg10 {
+		@apply --col10;
+	}
+
+	.colLg11 {
+		@apply --col11;
+	}
+
+	.colLg12 {
+		@apply --col12;
+	}
+
+	.orderLgFirst {
+		order: -1;
+	}
+
+	.orderLgLast {
+		order: 13;
+	}
+}
+
+@media (--screen-xl) {
+	.colXl {
+		@apply --col;
+	}
+
+	.colXlAuto {
+		@apply --colAuto;
+	}
+
+	.colXl1 {
+		@apply --col1;
+	}
+
+	.colXl2 {
+		@apply --col2;
+	}
+
+	.colXl3 {
+		@apply --col3;
+	}
+
+	.colXl4 {
+		@apply --col4;
+	}
+
+	.colXl5 {
+		@apply --col5;
+	}
+
+	.colXl6 {
+		@apply --col6;
+	}
+
+	.colXl7 {
+		@apply --col7;
+	}
+
+	.colXl8 {
+		@apply --col8;
+	}
+
+	.colXl9 {
+		@apply --col9;
+	}
+
+	.colXl10 {
+		@apply --col10;
+	}
+
+	.colXl11 {
+		@apply --col11;
+	}
+
+	.colXl12 {
+		@apply --col12;
+	}
+
+	.orderXlFirst {
+		order: -1;
+	}
+
+	.orderXlLast {
+		order: 13;
+	}
+}
+
+@media (--screen-xxl) {
+	.colXxl {
+		@apply --col;
+	}
+
+	.colXxlAuto {
+		@apply --colAuto;
+	}
+
+	.colXxl1 {
+		@apply --col1;
+	}
+
+	.colXxl2 {
+		@apply --col2;
+	}
+
+	.colXxl3 {
+		@apply --col3;
+	}
+
+	.colXxl4 {
+		@apply --col4;
+	}
+
+	.colXxl5 {
+		@apply --col5;
+	}
+
+	.colXxl6 {
+		@apply --col6;
+	}
+
+	.colXxl7 {
+		@apply --col7;
+	}
+
+	.colXxl8 {
+		@apply --col8;
+	}
+
+	.colXxl9 {
+		@apply --col9;
+	}
+
+	.colXxl10 {
+		@apply --col10;
+	}
+
+	.colXxl11 {
+		@apply --col11;
+	}
+
+	.colXxl12 {
+		@apply --col12;
+	}
+
+	.orderXxlFirst {
+		order: -1;
+	}
+
+	.orderXxlLast {
+		order: 13;
+	}
+}
+
+@media (--screen-xxxl) {
+	.colXxxl {
+		@apply --col;
+	}
+
+	.colXxxlAuto {
+		@apply --colAuto;
+	}
+
+	.colXxxl1 {
+		@apply --col1;
+	}
+
+	.colXxxl2 {
+		@apply --col2;
+	}
+
+	.colXxxl3 {
+		@apply --col3;
+	}
+
+	.colXxxl4 {
+		@apply --col4;
+	}
+
+	.colXxxl5 {
+		@apply --col5;
+	}
+
+	.colXxxl6 {
+		@apply --col6;
+	}
+
+	.colXxxl7 {
+		@apply --col7;
+	}
+
+	.colXxxl8 {
+		@apply --col8;
+	}
+
+	.colXxxl9 {
+		@apply --col9;
+	}
+
+	.colXxxl10 {
+		@apply --col10;
+	}
+
+	.colXxxl11 {
+		@apply --col11;
+	}
+
+	.colXxxl12 {
+		@apply --col12;
+	}
+
+	.orderXxxlFirst {
+		order: -1;
+	}
+
+	.orderXxxlLast {
+		order: 13;
+	}
+}

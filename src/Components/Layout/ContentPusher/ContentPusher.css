@@ -1,6 +1,6 @@
 @import '../../../assets/css/variables.css';
 
-.content {
+.contentPusher {
 	box-sizing: border-box;
 	width: 100%;
 	transform: translateY(-30px);
@@ -21,10 +21,10 @@
 	}
 
 	& > * {
-		padding: 20px;
+		padding: 0 20px;
 
 		@media (--screen-lg) {
-			padding: 64px;
+			padding: 0 64px;
 		}
 	}
 }

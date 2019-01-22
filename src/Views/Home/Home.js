@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Head from '../../Components/Head';
-import { Content, Wrapper } from '../../Components/Layout';
+import { ContentPusher, Container, Readable } from '../../Components/Layout';
+import { Sketch, PostCSS, ReactLogo } from '../../assets/svg';
 import styles from './Home.css';
 const data = require('./data-home.md');
-import { Sketch, PostCSS, ReactLogo } from '../../assets/svg';
 import hljs from 'highlight.js/lib/highlight';
 import javascript from 'highlight.js/lib/languages/javascript';
 import css from 'highlight.js/lib/languages/css';
@@ -23,25 +23,30 @@ class Home extends Component {
 
 	render() {
 		return (
-			<div>
+			<Fragment>
 				<Head title="Cherry • Design System" />
-				<Content>
-					<Wrapper>
-						<div className={styles.content} dangerouslySetInnerHTML={{ __html: data.__content }} />
-						<ul className={styles.technologies}>
-							<li>
-								<Sketch />
-							</li>
-							<li>
-								<PostCSS />
-							</li>
-							<li>
-								<ReactLogo />
-							</li>
-						</ul>
-					</Wrapper>
-				</Content>
-			</div>
+				<ContentPusher>
+					<Container>
+						<Readable>
+							<div
+								className={styles.content}
+								dangerouslySetInnerHTML={{ __html: data.__content }}
+							/>
+							<ul className={styles.technologies}>
+								<li>
+									<Sketch />
+								</li>
+								<li>
+									<PostCSS />
+								</li>
+								<li>
+									<ReactLogo />
+								</li>
+							</ul>
+						</Readable>
+					</Container>
+				</ContentPusher>
+			</Fragment>
 		);
 	}
 }

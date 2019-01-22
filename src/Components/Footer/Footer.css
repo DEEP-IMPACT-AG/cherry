@@ -4,20 +4,17 @@
 	box-sizing: border-box;
 	width: 100%;
 	margin: auto;
+	padding: 0;
 	text-align: center;
-
-	& > div {
-		& > * {
-			padding: 20px;
-
-			@media (--screen-lg) {
-				padding: 20px;
-			}
-		}
-	}
+	border-top: solid 1px var(--color-gray-light);
 
 	& a {
+		height: 60px;
+		display: flex;
+
 		& svg {
+			vertical-align: middle;
+			margin: auto;
 			transform: scale(1);
 		}
 

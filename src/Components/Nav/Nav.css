@@ -126,7 +126,7 @@
 
 	& .logo {
 		display: inline-block;
-		padding: 20px 20px 5px;
+		padding: 20px 20px 2px;
 		position: relative;
 
 		& h1 {
@@ -178,8 +178,7 @@
 			opacity: 1;
 			transform: none;
 			pointer-events: all;
-			height: calc(100vh - 194px);
-			padding-bottom: 64px;
+			height: calc(100vh - 262px);
 		}
 	}
 
@@ -257,7 +256,7 @@
 		justify-content: center;
 		width: 100%;
 		margin: auto;
-		padding: 10px;
+		padding: 0;
 		position: absolute;
 		bottom: 0;
 		left: 50%;
@@ -265,15 +264,19 @@
 		transform: translateX(-50%);
 		display: none;
 		background: var(--color-light);
+		height: 61px;
 
 		@media (--screen-lg) {
 			display: flex;
 		}
 
 		& li {
+			display: flex;
+
 			& a {
 				display: inline-block;
 				padding: 10px;
+				margin: auto;
 
 				& svg {
 					transform: scale(1);
