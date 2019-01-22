@@ -5,18 +5,16 @@ import styles from './Row.css';
 function Row({
 	className,
 	children,
-	fluid = false,
-	narrow = false,
-	alignItemsCenter = false,
-	justifyContentCenter = false,
+	alignItems,
+	justifyContent,
 }) {
 	return (
 		<div
 			className={classNames(
 				styles.row,
 				{
-					[styles.alignItemsCenter]: alignItemsCenter,
-					[styles.justifyContentCenter]: justifyContentCenter,
+					[styles[`alignItems-${alignItems}`]]: alignItems,
+					[styles[`justifyContent-${justifyContent}`]]: justifyContent,
 				},
 				className,
 			)}

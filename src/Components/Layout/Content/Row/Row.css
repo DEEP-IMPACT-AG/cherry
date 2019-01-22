@@ -3,14 +3,30 @@
 .row {
 	display: flex;
 	flex-wrap: wrap;
-	margin-right: -12px;
-	margin-left: -12px;
+	margin-right: -20px;
+	margin-left: -20px;
 }
 
-.alignItemsCenter {
+.alignItems-center {
 	align-items: center;
 }
 
-.justifyContentCenter {
+.alignItems-flex-end {
+	align-items: flex-end;
+}
+
+.alignItems-flex-start {
+	align-items: flex-start;
+}
+
+.justifyContent-center {
 	justify-content: center;
+}
+
+.justifyContent-space-between {
+	justify-content: space-between;
+}
+
+.justifyContent-space-around {
+	justify-content: space-around;
 }
