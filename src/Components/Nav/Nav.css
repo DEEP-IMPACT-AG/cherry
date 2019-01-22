@@ -274,11 +274,12 @@
 			display: flex;
 
 			& a {
-				display: inline-block;
+				display: flex;
 				padding: 10px;
 				margin: auto;
 
 				& svg {
+					margin: auto;
 					transform: scale(1);
 				}
 
