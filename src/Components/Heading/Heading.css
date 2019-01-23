@@ -27,3 +27,7 @@
 .like-h6 {
 	@mixin h6;
 }
+
+.bold {
+	font-weight: 900;
+}

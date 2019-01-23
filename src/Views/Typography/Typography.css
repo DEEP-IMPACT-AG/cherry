@@ -1,0 +1,17 @@
+@import '../../assets/css/variables.css';
+
+.hero1 {
+	@mixin hero1;
+}
+
+.hero2 {
+	@mixin hero2;
+}
+
+.hero3 {
+	@mixin hero3;
+}
+
+.soft {
+	color: var(--color-secondary);
+}

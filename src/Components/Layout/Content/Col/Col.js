@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import styles from './Col.css';
 
 function Col({
+	textAlign,
 	className,
 	id,
 	children,
@@ -34,6 +35,7 @@ function Col({
 			className={classNames(
 				styles.col,
 				{
+					[styles[`textAlign-${textAlign || ''}`]]: textAlign,
 					[styles[`col${xs || ''}`]]: xs,
 					[styles[`colSm${sm || ''}`]]: sm,
 					[styles[`colMd${md || ''}`]]: md,

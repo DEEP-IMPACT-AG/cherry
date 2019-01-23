@@ -35,6 +35,36 @@
 	padding: 0;
 }
 
+@define-mixin hero1 {
+	font-size: var(--size-mobile-hero1);
+	line-height: var(--lineheight-mobile-hero1);
+
+	@media (--screen-lg) {
+		font-size: var(--size-desktop-hero1);
+		line-height: var(--lineheight-desktop-hero1);
+	}
+}
+
+@define-mixin hero2 {
+	font-size: var(--size-mobile-hero2);
+	line-height: var(--lineheight-mobile-hero2);
+
+	@media (--screen-lg) {
+		font-size: var(--size-desktop-hero2);
+		line-height: var(--lineheight-desktop-hero2);
+	}
+}
+
+@define-mixin hero3 {
+	font-size: var(--size-mobile-hero3);
+	line-height: var(--lineheight-mobile-hero3);
+
+	@media (--screen-lg) {
+		font-size: var(--size-desktop-hero3);
+		line-height: var(--lineheight-desktop-hero3);
+	}
+}
+
 @define-mixin h1 {
 	font-size: var(--size-mobile-h1);
 	line-height: var(--lineheight-mobile-h1);
