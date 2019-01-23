@@ -11,6 +11,7 @@ function Head({
 }) {
 	return (
 		<Helmet encodeSpecialCharacters={true}>
+			<meta name="google-site-verification" content="faiA8UXuBoMevueS2UNKmSDFsNQAJsLh1nGnQYnCfYI" />
 			<meta http-equiv="" content="IE=edge" />
 			<meta name="viewport" content="width=device-width, initial-scale=1" />
 			<meta name="description" content={description} />
