@@ -20,6 +20,10 @@ Cherry can be integrated and used in any technology or workflow. You can use it 
 
 `--gutter-col-desktop`
 
+`--margin-conainer-mobile`
+
+`--margin-conainer-desktop`
+
 ---
 
 - **Media Queries**
@@ -634,19 +638,23 @@ Variables & Mixins
 
 :root {
 
-	/* Body Padding ----------------------------------------------- */
+	/* Spacing ----------------------------------------------- */
+	--padding-body-top-mobile: 70px;
 	--padding-body-top-desktop: 0;
-	--padding-body-top-mobile: 66px;
+	--gutter-col-mobile: 10px;
+	--gutter-col-desktop: 10px;
+	--margin-conainer-mobile: 20px;
+	--margin-conainer-desktop: 20px;
 
 	/* Colors ----------------------------------------------------- */
-	--color-primary: #1f2d3d;
-	--color-secondary: #8492a6;
-	--color-tertiary: #f9fafc;
+	--color-primary: #1F2D3D;
+	--color-secondary: #8492A6;
+	--color-tertiary: #F9FAFC;
 
 	--color-dark: #000;
 	--color-light: #fff;
 
-	--color-gray-light: #e5e5e5;
+	--color-gray-light: #E5E5E5;
 	--color-gray-medium: #666666;
 	--color-gray-dark: #4a4a4a;
 
@@ -663,63 +671,64 @@ Variables & Mixins
 
 	/* Font Sizes ------------------------------------------------- */
 	/* --> Hero --------------------------------------------------- */
-	--size-mobile-hero1: 44px;
+	--size-mobile-hero1: 52px;
 	--lineheight-mobile-hero1: 1.35;
-	--size-desktop-hero1: 54px;
+	--size-desktop-hero1: 62px;
 	--lineheight-desktop-hero1: 1.15;
 
-	--size-mobile-hero2: 34px;
-	--lineheight-mobile-hero2: 1.5;
-	--size-desktop-hero2: 44px;
-	--lineheight-desktop-hero2: 1.35;
+	--size-mobile-hero2: 42px;
+	--lineheight-mobile-hero2: 1.35;
+	--size-desktop-hero2: 52px;
+	--lineheight-desktop-hero2: 1.15;
 
-	--size-mobile-hero3: 24px;
-	--lineheight-mobile-hero3: 1.8;
-	--size-desktop-hero3: 34px;
-	--lineheight-desktop-hero3: 1.5;
+	--size-mobile-hero3: 32px;
+	--lineheight-mobile-hero3: 1.35;
+	--size-desktop-hero3: 42px;
+	--lineheight-desktop-hero3: 1.15;
 
 	/* --> Eyebrow ------------------------------------------------ */
 	--size-mobile-eyebrow: 14px;
-	--lineheight-mobile-eyebrow: 1.5;
+	--lineheight-mobile-eyebrow: 1.35;
 	--size-desktop-eyebrow: 16px;
-	--lineheight-desktop-eyebrow: 1.5;
+	--lineheight-desktop-eyebrow: 1.15;
 
 	/* --> Heading ------------------------------------------------ */
-	--size-mobile-h1: 28px;
+	--size-mobile-h1: 38px;
 	--lineheight-mobile-h1: 1.35;
-	--size-desktop-h1: 44px;
-	--lineheight-desktop-h1: 1.35;
+	--size-desktop-h1: 40px;
+	--lineheight-desktop-h1: 1.15;
 
-	--size-mobile-h2: 23px;
-	--lineheight-mobile-h2: 1.4;
-	--size-desktop-h2: 34px;
-	--lineheight-desktop-h2: 1.25;
+	--size-mobile-h2: 28px;
+	--lineheight-mobile-h2: 1.35;
+	--size-desktop-h2: 32px;
+	--lineheight-desktop-h2: 1.15;
 
-	--size-mobile-h3: 19px;
+	--size-mobile-h3: 24px;
 	--lineheight-mobile-h3: 1.35;
-	--size-desktop-h3: 21px;
-	--lineheight-desktop-h3: 1.35;
+	--size-desktop-h3: 28px;
+	--lineheight-desktop-h3: 1.15;
 
-	--size-mobile-h4: 16px;
-	--lineheight-mobile-h4: 1.5;
-	--size-desktop-h4: 18px;
-	--lineheight-desktop-h4: 1.75;
+	--size-mobile-h4: 22px;
+	--lineheight-mobile-h4: 1.35;
+	--size-desktop-h4: 24px;
+	--lineheight-desktop-h4: 1.15;
 
-	--size-mobile-h5: 12px;
-	--size-mobile-h5: 1.2;
-	--size-desktop-h5: 16px;
-	--lineheight-desktop-h5: 1.75;
+	--size-mobile-h5: 18px;
+	--lineheight-mobile-h5: 1.35;
+	--size-desktop-h5: 20px;
+	--lineheight-desktop-h5: 1.15;
 
-	--size-mobile-h6: 10px;
-	--lineheight-mobile-h6: 1.2;
-	--size-desktop-h6: 12px;
-	--lineheight-desktop-h6: 1.2;
+	--size-mobile-h6: 14px;
+	--lineheight-mobile-h6: 1.35;
+	--size-desktop-h6: 16px;
+	--lineheight-desktop-h6: 1.15;
 
 	/* --> Subtitle ----------------------------------------------- */
 	--size-mobile-subtitle: 18px;
-	--lineheight-mobile-subtitle: 1.75;
+	--lineheight-mobile-subtitle: 1.35;
 	--size-desktop-subtitle: 20px;
-	--lineheight-desktop-subtitle: 1.75;
+	--lineheight-desktop-subtitle: 1.15;
+	
 
 	/* --> Lead --------------------------------------------------- */
 	--size-mobile-lead: 16px;
@@ -842,87 +851,42 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: var(--font-head);
-	font-weight: 300;
-	margin: 0;
-	padding: 0;
+	@mixin heading;
 }
 
 h1 {
-	font-size: var(--size-mobile-h1);
-	line-height: var(--lineheight-mobile-h1);
-
-	@media (--screen-lg) {
-		font-size: var(--size-desktop-h1);
-		line-height: var(--lineheight-desktop-h1);
-	}
+	@mixin h1;
 }
 
 h2 {
-	font-size: var(--size-mobile-h2);
-	line-height: var(--lineheight-mobile-h2);
-
-	@media (--screen-lg) {
-		font-size: var(--size-desktop-h2);
-		line-height: var(--lineheight-desktop-h2);
-	}
+	@mixin h2;
 }
 
 h3 {
-	font-size: var(--size-mobile-h3);
-	line-height: var(--lineheight-mobile-h3);
-
-	@media (--screen-lg) {
-		font-size: var(--size-desktop-h3);
-		line-height: var(--lineheight-desktop-h3);
-	}
+	@mixin h3;
 }
 
 h4 {
-	font-size: var(--size-mobile-h4);
-	line-height: var(--lineheight-mobile-h4);
-
-	@media (--screen-lg) {
-		font-size: var(--size-desktop-h4);
-		line-height: var(--lineheight-desktop-h4);
-	}
+	@mixin h4;
 }
 
 h5 {
-	font-size: var(--size-mobile-h5);
-	line-height: var(--lineheight-mobile-h5);
-
-	@media (--screen-lg) {
-		font-size: var(--size-desktop-h5);
-		line-height: var(--lineheight-desktop-h5);
-	}
+	@mixin h5;
 }
 
 h6 {
-	font-size: var(--size-mobile-h6);
-	line-height: var(--lineheight-mobile-h6);
-
-	@media (--screen-lg) {
-		font-size: var(--size-desktop-h6);
-		line-height: var(--lineheight-desktop-h6);
-	}
+	@mixin h6;
 }
 
 p {
-	color: var(--color-secondary);
-	font-size: var(--size-mobile-text);
-	line-height: var(--lineheight-mobile-text);
-
-	@media (--screen-lg) {
-		font-size: var(--size-desktop-text);
-		line-height: var(--lineheight-desktop-text);
-	}
+	@mixin paragraph;
 }
 
 hr {
 	border: none;
 	border-bottom: solid 1px var(--color-gray-light);
 }
+
 ```
 
 ## Mixins.css
@@ -944,6 +908,114 @@ hr {
 	& li {
 		padding: 0;
 		margin: 0;
+	}
+}
+
+@define-mixin paragraph {
+	color: var(--color-secondary);
+	font-size: var(--size-mobile-text);
+	line-height: var(--lineheight-mobile-text);
+
+	@media (--screen-lg) {
+		font-size: var(--size-desktop-text);
+		line-height: var(--lineheight-desktop-text);
+	}
+}
+
+@define-mixin heading {
+	font-family: var(--font-head);
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+}
+
+@define-mixin hero1 {
+	font-size: var(--size-mobile-hero1);
+	line-height: var(--lineheight-mobile-hero1);
+
+	@media (--screen-lg) {
+		font-size: var(--size-desktop-hero1);
+		line-height: var(--lineheight-desktop-hero1);
+	}
+}
+
+@define-mixin hero2 {
+	font-size: var(--size-mobile-hero2);
+	line-height: var(--lineheight-mobile-hero2);
+
+	@media (--screen-lg) {
+		font-size: var(--size-desktop-hero2);
+		line-height: var(--lineheight-desktop-hero2);
+	}
+}
+
+@define-mixin hero3 {
+	font-size: var(--size-mobile-hero3);
+	line-height: var(--lineheight-mobile-hero3);
+
+	@media (--screen-lg) {
+		font-size: var(--size-desktop-hero3);
+		line-height: var(--lineheight-desktop-hero3);
+	}
+}
+
+@define-mixin h1 {
+	font-size: var(--size-mobile-h1);
+	line-height: var(--lineheight-mobile-h1);
+
+	@media (--screen-lg) {
+		font-size: var(--size-desktop-h1);
+		line-height: var(--lineheight-desktop-h1);
+	}
+}
+
+@define-mixin h2 {
+	font-size: var(--size-mobile-h2);
+	line-height: var(--lineheight-mobile-h2);
+
+	@media (--screen-lg) {
+		font-size: var(--size-desktop-h2);
+		line-height: var(--lineheight-desktop-h2);
+	}
+}
+
+@define-mixin h3 {
+	font-size: var(--size-mobile-h3);
+	line-height: var(--lineheight-mobile-h3);
+
+	@media (--screen-lg) {
+		font-size: var(--size-desktop-h3);
+		line-height: var(--lineheight-desktop-h3);
+	}
+}
+
+@define-mixin h4 {
+	font-size: var(--size-mobile-h4);
+	line-height: var(--lineheight-mobile-h4);
+
+	@media (--screen-lg) {
+		font-size: var(--size-desktop-h4);
+		line-height: var(--lineheight-desktop-h4);
+	}
+}
+
+@define-mixin h5 {
+	font-size: var(--size-mobile-h5);
+	line-height: var(--lineheight-mobile-h5);
+
+	@media (--screen-lg) {
+		font-size: var(--size-desktop-h5);
+		line-height: var(--lineheight-desktop-h5);
+	}
+}
+
+@define-mixin h6 {
+	font-size: var(--size-mobile-h6);
+	line-height: var(--lineheight-mobile-h6);
+
+	@media (--screen-lg) {
+		font-size: var(--size-desktop-h6);
+		line-height: var(--lineheight-desktop-h6);
 	}
 }
 ```

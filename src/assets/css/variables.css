@@ -22,6 +22,8 @@ Variables & Mixins
 	--padding-body-top-desktop: 0;
 	--gutter-col-mobile: 10px;
 	--gutter-col-desktop: 10px;
+	--margin-conainer-mobile: 20px;
+	--margin-conainer-desktop: 20px;
 
 	/* Colors ----------------------------------------------------- */
 	--color-primary: #1F2D3D;
