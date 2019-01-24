@@ -10,7 +10,19 @@ Cherry can be integrated and used in any technology or workflow. You can use it 
 
 ## Variables
 
-**Media Queries**
+- **Spacing**
+
+`--padding-body-top-mobile`
+
+`--padding-body-top-desktop`
+
+`--gutter-col-mobile`
+
+`--gutter-col-desktop`
+
+---
+
+- **Media Queries**
 
 `--screen-xs: 0`
 
@@ -627,14 +639,14 @@ Variables & Mixins
 	--padding-body-top-mobile: 66px;
 
 	/* Colors ----------------------------------------------------- */
-	--color-primary: #1F2D3D;
-	--color-secondary: #8492A6;
-	--color-tertiary: #F9FAFC;
+	--color-primary: #1f2d3d;
+	--color-secondary: #8492a6;
+	--color-tertiary: #f9fafc;
 
 	--color-dark: #000;
 	--color-light: #fff;
 
-	--color-gray-light: #E5E5E5;
+	--color-gray-light: #e5e5e5;
 	--color-gray-medium: #666666;
 	--color-gray-dark: #4a4a4a;
 
@@ -708,7 +720,6 @@ Variables & Mixins
 	--lineheight-mobile-subtitle: 1.75;
 	--size-desktop-subtitle: 20px;
 	--lineheight-desktop-subtitle: 1.75;
-	
 
 	/* --> Lead --------------------------------------------------- */
 	--size-mobile-lead: 16px;
