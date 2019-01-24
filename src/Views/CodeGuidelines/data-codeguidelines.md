@@ -18,7 +18,7 @@ Cherry can be integrated and used in any technology or workflow. You can use it 
 
 `--screen-md: 768px`
 
-`--screen-lg: 992px`
+`--screen-lg: 992px` - Considered as Desktop
 
 `--screen-xl: 1200px`
 
