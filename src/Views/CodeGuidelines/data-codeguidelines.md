@@ -12,17 +12,17 @@ Cherry can be integrated and used in any technology or workflow. You can use it 
 
 - **Spacing**
 
-`--padding-body-top-mobile`
+`--padding-top-body-mobile`
 
-`--padding-body-top-desktop`
+`--padding-top-body-desktop`
 
 `--gutter-col-mobile`
 
 `--gutter-col-desktop`
 
-`--margin-conainer-mobile`
+`--margin-container-mobile`
 
-`--margin-conainer-desktop`
+`--margin-container-desktop`
 
 ---
 
