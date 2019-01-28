@@ -639,12 +639,12 @@ Variables & Mixins
 :root {
 
 	/* Spacing ----------------------------------------------- */
-	--padding-body-top-mobile: 70px;
-	--padding-body-top-desktop: 0;
+	--padding-top-body-mobile: 70px;
+	--padding-top-body-desktop: 0;
 	--gutter-col-mobile: 10px;
 	--gutter-col-desktop: 10px;
-	--margin-conainer-mobile: 20px;
-	--margin-conainer-desktop: 20px;
+	--margin-container-mobile: 20px;
+	--margin-container-desktop: 20px;
 
 	/* Colors ----------------------------------------------------- */
 	--color-primary: #1F2D3D;
@@ -788,12 +788,12 @@ body {
 	font-family: var(--font-text);
 	font-size: var(--size-mobile-text);
 	line-height: var(--lineheight-mobile-text);
-	padding-top: var(--padding-body-top-mobile);
+	padding-top: var(--padding-top-body-mobile);
 
 	@media (--screen-lg) {
 		font-size: var(--size-desktop-text);
 		line-height: var(--lineheight-desktop-text);
-		padding-top: var(--padding-body-top-desktop);
+		padding-top: var(--padding-top-body-desktop);
 	}
 }
 

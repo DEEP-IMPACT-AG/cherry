@@ -5,7 +5,7 @@
 	width: 100%;
 	max-width: 992px;
 	margin: 20px auto;
-	min-height: calc(100vh - var(--padding-body-top-mobile));
+	min-height: calc(100vh - var(--padding-top-body-mobile));
 
 	@media (--screen-lg) {
 		min-height: 100vh;

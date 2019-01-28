@@ -2,40 +2,40 @@
 
 .container {
 	width: 100%;
-	padding-right: var(--margin-conainer-mobile);
-	padding-left: var(--margin-conainer-mobile);
+	padding-right: var(--margin-container-mobile);
+	padding-left: var(--margin-container-mobile);
 	margin-right: auto;
 	margin-left: auto;
 
 	@media (--screen-lg) {
-		padding-right: var(--margin-conainer-desktop);
-		padding-left: var(--margin-conainer-desktop);
+		padding-right: var(--margin-container-desktop);
+		padding-left: var(--margin-container-desktop);
 	}
 }
 
 .containerFluid {
 	width: 100%;
 	max-width: initial;
-	padding-right: var(--margin-conainer-mobile);
-	padding-left: var(--margin-conainer-mobile);
+	padding-right: var(--margin-container-mobile);
+	padding-left: var(--margin-container-mobile);
 	margin-right: auto;
 	margin-left: auto;
 
 	@media (--screen-lg) {
-		padding-right: var(--margin-conainer-desktop);
-		padding-left: var(--margin-conainer-desktop);
+		padding-right: var(--margin-container-desktop);
+		padding-left: var(--margin-container-desktop);
 	}
 }
 
 .containerFixed {
 	max-width: 1440px;
 	margin: auto;
-	padding-right: var(--margin-conainer-mobile);
-	padding-left: var(--margin-conainer-mobile);
+	padding-right: var(--margin-container-mobile);
+	padding-left: var(--margin-container-mobile);
 
 	@media (--screen-lg) {
-		padding-right: var(--margin-conainer-desktop);
-		padding-left: var(--margin-conainer-desktop);
+		padding-right: var(--margin-container-desktop);
+		padding-left: var(--margin-container-desktop);
 	}
 
 	@media (--screen-xxxl) {
