@@ -1,5 +1,3 @@
-@import './variables.css';
-
 :global {
 	& code {
 		padding: 5px;
