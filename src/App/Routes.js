@@ -6,7 +6,7 @@ import Nav from '../Components/Nav';
 import Footer from '../Components/Footer';
 import { Route, Switch, Redirect } from 'react-router';
 import { Loading } from '../Components/Layout';
-import '../assets/css/globals.css';
+import '../assets/css/styles.css';
 
 const UniversalComponent = universal(props => import(`../Views/${props.page}`), {
 	loading: () => <Loading />,
