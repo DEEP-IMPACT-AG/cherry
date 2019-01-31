@@ -59,6 +59,16 @@ figure {
 	margin: 0;
 }
 
+hr {
+	border: none;
+	border-bottom: solid 1px var(--color-gray-light);
+}
+
+fieldset {
+	appearance: none;
+	border: none;
+}
+
 img,
 svg {
 	transition: all 0.3s ease;
@@ -114,9 +124,4 @@ h6 {
 
 p {
 	@mixin paragraph;
-}
-
-hr {
-	border: none;
-	border-bottom: solid 1px var(--color-gray-light);
 }

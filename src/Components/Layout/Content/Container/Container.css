@@ -1,15 +1,18 @@
 @import '../../../../assets/css/variables.css';
 
 .container {
-	width: 100%;
+	max-width: 1440px;
+	margin: auto;
 	padding-right: var(--margin-container-mobile);
 	padding-left: var(--margin-container-mobile);
-	margin-right: auto;
-	margin-left: auto;
 
 	@media (--screen-lg) {
 		padding-right: var(--margin-container-desktop);
 		padding-left: var(--margin-container-desktop);
+	}
+
+	@media (--screen-xxxl) {
+		max-width: 1704px;
 	}
 }
 
@@ -24,21 +27,5 @@
 	@media (--screen-lg) {
 		padding-right: var(--margin-container-desktop);
 		padding-left: var(--margin-container-desktop);
-	}
-}
-
-.containerFixed {
-	max-width: 1440px;
-	margin: auto;
-	padding-right: var(--margin-container-mobile);
-	padding-left: var(--margin-container-mobile);
-
-	@media (--screen-lg) {
-		padding-right: var(--margin-container-desktop);
-		padding-left: var(--margin-container-desktop);
-	}
-
-	@media (--screen-xxxl) {
-		max-width: 1704px;
 	}
 }

@@ -616,7 +616,14 @@ Cherry can be integrated and used in any technology or workflow. You can use it 
 
 # Default CSS Files
 
-## Variables.css
+## styles.css
+```css
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
+@import '../../../node_modules/normalize.css/normalize.css';
+@import './globals.css';
+```
+
+## variables.css
 
 ```css
 /*********************************************************************
@@ -758,7 +765,7 @@ Variables & Mixins
 }
 ```
 
-## Global.css
+## global.css
 
 ```css
 /*********************************************************************
@@ -769,9 +776,6 @@ Global Styles
 *********************************************************************/
 
 @import './variables.css';
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
-@import '../../../node_modules/normalize.css/normalize.css';
-@import './github.css';
 
 html,
 body {
@@ -823,6 +827,16 @@ a {
 
 figure {
 	margin: 0;
+}
+
+hr {
+	border: none;
+	border-bottom: solid 1px var(--color-gray-light);
+}
+
+fieldset {
+	appearance: none;
+	border: none;
 }
 
 img,
@@ -881,15 +895,9 @@ h6 {
 p {
 	@mixin paragraph;
 }
-
-hr {
-	border: none;
-	border-bottom: solid 1px var(--color-gray-light);
-}
-
 ```
 
-## Mixins.css
+## mixins.css
 
 ```css
 @define-mixin resetButton {
