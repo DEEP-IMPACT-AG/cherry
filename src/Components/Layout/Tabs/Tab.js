@@ -6,18 +6,19 @@ class Tab extends Component {
 	constructor(props) {
 		super(props);
 	}
+
 	render() {
 		const {
 			onClick,
 			activeTab,
 			label,
 			date,
-		} = this;
+		} = this.props;
 
 		const className = classNames(styles.tabButton, { [styles.active]: activeTab === label });
 
 		return (
-			<li className={className} onClick={onClick}>
+			<li className={className} onClick={this.onClick}>
 				<span>{label}</span> {date && <small>{date}</small>}
 			</li>
 		);

@@ -12,10 +12,6 @@ class Tabs extends Component {
 		};
 	}
 
-	componentDidMount(){
-		console.log(this.props.children, 'children')
-	}
-
 	render() {
 		const {
 			onClickTabItem,
@@ -24,13 +20,14 @@ class Tabs extends Component {
 			wrap,
 			classNameTabList,
 			classNameTabContent,
-			activeTab,
-		} = this;
+		} = this.props;
+
+		const { activeTab } = this.state;
 
 		return (
 			<div className={classNames(styles.tabsWrapper, className, { [styles.wrap]: wrap })}>
 				<ol className={classNames(styles.tabList, classNameTabList)}>
-					{children && children.map(child => {
+					{children.map(child => {
 						const { label, date } = child.props;
 
 						return (
@@ -39,13 +36,13 @@ class Tabs extends Component {
 								key={label}
 								label={label}
 								date={date}
-								onClick={onClickTabItem}
+								onClick={this.onClickTabItem}
 							/>
 						);
 					})}
 				</ol>
 				<div className={classNames(styles.tabContent, classNameTabContent)}>
-					{children && children.map(child => {
+					{children.map(child => {
 						if (child.props.label !== activeTab) {
 							return undefined;
 						}

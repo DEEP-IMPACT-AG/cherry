@@ -29,10 +29,10 @@ class Home extends Component {
 					<Container>
 						<Readable>
 							<Tabs>
-								<Tab label="Hello World">
-									Hello world content
+								<Tab label="naanana">
+								naanana
 								</Tab>
-								<Tab label="Hello World2">
+								<Tab label="ujhuhuhu">
 									Hello world content2
 								</Tab>
 							</Tabs>
