@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import Tab from './tab';
 import styles from './Tabs.css';
+import Tab from './Tab';
 
 class Tabs extends Component {
 	constructor(props) {
@@ -10,6 +10,10 @@ class Tabs extends Component {
 		this.state = {
 			activeTab: this.props.children[0].props.label,
 		};
+	}
+
+	componentDidMount(){
+		console.log(this.props.children, 'children')
 	}
 
 	render() {
@@ -26,7 +30,7 @@ class Tabs extends Component {
 		return (
 			<div className={classNames(styles.tabsWrapper, className, { [styles.wrap]: wrap })}>
 				<ol className={classNames(styles.tabList, classNameTabList)}>
-					{children.map((child) => {
+					{children && children.map(child => {
 						const { label, date } = child.props;
 
 						return (
@@ -35,13 +39,13 @@ class Tabs extends Component {
 								key={label}
 								label={label}
 								date={date}
-								onClick={this.onClickTabItem}
+								onClick={onClickTabItem}
 							/>
 						);
 					})}
 				</ol>
 				<div className={classNames(styles.tabContent, classNameTabContent)}>
-					{children.map((child) => {
+					{children && children.map(child => {
 						if (child.props.label !== activeTab) {
 							return undefined;
 						}
@@ -53,7 +57,7 @@ class Tabs extends Component {
 		);
 	}
 
-	onClickTabItem = (tab) => {
+	onClickTabItem = tab => {
 		this.setState({ activeTab: tab });
 	};
 }

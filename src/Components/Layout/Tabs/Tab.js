@@ -3,10 +3,15 @@ import classNames from 'classnames';
 import styles from './Tabs.css';
 
 class Tab extends Component {
-	public render() {
+	constructor(props) {
+		super(props);
+	}
+	render() {
 		const {
 			onClick,
-			props: { activeTab, label, date },
+			activeTab,
+			label,
+			date,
 		} = this;
 
 		const className = classNames(styles.tabButton, { [styles.active]: activeTab === label });
@@ -18,7 +23,7 @@ class Tab extends Component {
 		);
 	}
 
-	private readonly onClick = () => {
+	onClick = () => {
 		const { label, onClick } = this.props;
 		onClick(label);
 	};

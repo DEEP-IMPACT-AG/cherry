@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import Head from '../../Components/Head';
-import { ContentPusher, Container, Readable } from '../../Components/Layout';
+import { ContentPusher, Container, Readable, Tabs, Tab } from '../../Components/Layout';
 import { Sketch, PostCSS, ReactLogo } from '../../assets/svg';
 import styles from './Home.css';
 const data = require('./data-home.md');
@@ -28,6 +28,14 @@ class Home extends Component {
 				<ContentPusher>
 					<Container>
 						<Readable>
+							<Tabs>
+								<Tab label="Hello World">
+									Hello world content
+								</Tab>
+								<Tab label="Hello World2">
+									Hello world content2
+								</Tab>
+							</Tabs>
 							<div
 								className={styles.content}
 								dangerouslySetInnerHTML={{ __html: data.__content }}
