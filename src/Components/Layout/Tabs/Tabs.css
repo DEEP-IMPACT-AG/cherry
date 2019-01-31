@@ -13,87 +13,42 @@
 		@mixin noList;
 		display: flex;
 		flex-wrap: nowrap;
-		border-radius: 20px;
+		border-radius: 5px;
 		border: solid 1px var(--color-gray-light);
 		background: var(--color-light);
 		padding: 0;
 		position: relative;
 		z-index: 10;
 
-		& .tabButton {
-			box-sizing: border-box;
-			padding: 5px 10px;
-			margin: 3px;
-			border-radius: 30px;
-			cursor: pointer;
-			transition: all 0.3s ease;
-			white-space: nowrap;
-			text-overflow: ellipsis;
-			hyphens: auto;
-			overflow: hidden;
-			font-weight: 500;
-
-			@media (--screen-mobile) {
-				padding: 5px 10px;
-				border-radius: 0;
-				font-size: var(--size-desktop-text);
-				text-align: center;
-				flex: 1;
-				position: relative;
-				background: var(--super-gray);
-				margin: 0;
-				display: flex;
-				flex-wrap: wrap;
-
-				&:after {
-					content: '';
-					display: block;
-					position: absolute;
-					left: 0;
-					bottom: 0;
-					width: 0;
-					transition: all 0.3s ease;
-				}
-			}
-
+		& .tabListItem {
 			&.active {
-				background: var(--color-primary);
-				color: var(--color-light);
-				border-radius: 30px;
+				& .tabButton {
+					background: var(--color-primary);
+					color: var(--color-light);
+					border-radius: 5px;
 
-				@media (--screen-mobile) {
-					border-radius: 0;
-					background: var(--color-light);
-					color: var(--black);
-
-					&:after {
-						width: 100%;
-						height: 4px;
+					&:hover {
 						background: var(--color-primary);
 					}
 				}
 			}
 
-			& em, & span {
-				@media (--screen-mobile) {
-					margin: auto;
-					display: block;
-					width: 100%;
-					text-align: center;
-					font-size: var(--size-desktop-h5);
-				}
-			}
+			& .tabButton {
+				@mixin resetButton;
+				box-sizing: border-box;
+				padding: 5px 10px;
+				margin: 3px;
+				border-radius: 5px;
+				cursor: pointer;
+				transition: all 0.3s ease;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				hyphens: auto;
+				overflow: hidden;
+				font-weight: 500;
 
-			& small {
-				vertical-align: middle;
-				font-weight: 400;
-
-				@media (--screen-mobile) {
-					display: block;
-					line-height: 1;
-					margin-bottom: 5px;
-					width: 100%;
-					color: color-mod(var(--color-dark) alpha(50%));
+				&:hover {
+					background: color-mod(var(--color-primary) alpha(10%));
 				}
 			}
 		}
@@ -106,12 +61,7 @@
 		padding: 40px 20px 20px;
 		font-size: var(--size-desktop-text);
 		font-style: normal;
-		border-bottom-left-radius: 30px;
-		border-bottom-right-radius: 30px;
-
-		@media (--screen-mobile) {
-			border-bottom-left-radius: 0;
-			border-bottom-right-radius: 0;
-		}
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
 	}
 }

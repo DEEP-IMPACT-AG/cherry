@@ -28,14 +28,13 @@ class Tabs extends Component {
 			<div className={classNames(styles.tabsWrapper, className, { [styles.wrap]: wrap })}>
 				<ol className={classNames(styles.tabList, classNameTabList)}>
 					{children.map(child => {
-						const { label, date } = child.props;
+						const { label } = child.props;
 
 						return (
 							<Tab
 								activeTab={activeTab}
 								key={label}
 								label={label}
-								date={date}
 								onClick={this.onClickTabItem}
 							/>
 						);
