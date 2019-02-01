@@ -1,8 +1,18 @@
 @import '../../../assets/css/variables.css';
 
 .text {
+	@mixin paragraph;
+
 	&.eyebrow {
 		@mixin eyebrow;
+	}
+
+	&.subtitle {
+		@mixin subtitle;
+	}
+
+	&.small {
+		@mixin small;
 	}
 
 	&.textLeft {

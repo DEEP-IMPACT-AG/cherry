@@ -1,7 +1,15 @@
 import React, { Component, Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import Head from '../../Components/Head';
-import { ContentPusher, Container, Readable, Button, Row, Col, Text } from '../../Components/Layout';
+import {
+	ContentPusher,
+	Container,
+	Readable,
+	Button,
+	Row,
+	Col,
+	Text,
+} from '../../Components/Layout';
 import { H1, H2, H3, H4, H5, H6 } from '../../Components/Heading';
 import { Sketch as SketchIcon } from '../../assets/svg';
 import styles from './Typography.css';
@@ -50,7 +58,7 @@ class Typography extends Component {
 							<div className={styles.soft}>
 								<Row alignItems="center" justifyContent="space-between">
 									<Col xs={12} lg={12}>
-										<Text eyebrow>This is how an eyebrow look like</Text>
+										<Text eyebrow>This is how an eyebrow looks like</Text>
 									</Col>
 								</Row>
 								<hr />
@@ -79,7 +87,42 @@ class Typography extends Component {
 								</Row>
 								<hr />
 							</div>
-							<p>To be continued...</p>
+							<H3>Subtitle</H3>
+							<div className={styles.soft}>
+								<Row alignItems="center" justifyContent="space-between">
+									<Col xs={12} lg={12}>
+										<Text subtitle>You are reading a Subtitle</Text>
+									</Col>
+								</Row>
+								<hr />
+							</div>
+							<H3>Text</H3>
+							<div className={styles.soft}>
+								<Row alignItems="center" justifyContent="space-between">
+									<Col xs={12} lg={12}>
+										<Text>
+											Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit
+											libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod.
+											Nullam id dolor id nibh ultricies vehicula ut id elit.
+										</Text>
+									</Col>
+								</Row>
+								<hr />
+							</div>
+							<H3>Small</H3>
+							<div className={styles.soft}>
+								<Row alignItems="center" justifyContent="space-between">
+									<Col xs={12} lg={12}>
+										<Text small>
+											Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
+											odio sem nec elit. Maecenas faucibus mollis interdum. Vestibulum id ligula
+											porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat
+											porttitor ligula, eget lacinia odio sem nec elit.
+										</Text>
+									</Col>
+								</Row>
+								<hr />
+							</div>
 						</Readable>
 					</Container>
 				</ContentPusher>
