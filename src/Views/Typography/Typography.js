@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import Head from '../../Components/Head';
-import { ContentPusher, Container, Readable, Button, Row, Col } from '../../Components/Layout';
+import { ContentPusher, Container, Readable, Button, Row, Col, Text } from '../../Components/Layout';
 import { H1, H2, H3, H4, H5, H6 } from '../../Components/Heading';
 import { Sketch as SketchIcon } from '../../assets/svg';
 import styles from './Typography.css';
@@ -46,6 +46,15 @@ class Typography extends Component {
 								</Row>
 								<hr />
 							</div>
+							<H3>Eyebrow</H3>
+							<div className={styles.soft}>
+								<Row alignItems="center" justifyContent="space-between">
+									<Col xs={12} lg={12}>
+										<Text eyebrow>Eyebrow Text</Text>
+									</Col>
+								</Row>
+								<hr />
+							</div>
 							<H3>Heading</H3>
 							<div className={styles.soft}>
 								<Row alignItems="center" justifyContent="space-between">
@@ -68,8 +77,8 @@ class Typography extends Component {
 										<H6>Heading 6</H6>
 									</Col>
 								</Row>
+								<hr />
 							</div>
-							<hr />
 							<p>To be continued...</p>
 						</Readable>
 					</Container>

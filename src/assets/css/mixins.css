@@ -65,6 +65,26 @@
 	}
 }
 
+@define-mixin eyebrow {
+	position: relative;
+	font-size: var(--size-mobile-eyebrow);
+	line-height: var(--lineheight-mobile-eyebrow);
+	margin: 10px 0;
+
+	&:before {
+		content: '';
+		display: block;
+		width: 60px;
+		border-top: solid 2px var(--color-primary);
+		margin-bottom: 20px;
+	}
+
+	@media (--screen-lg) {
+		font-size: var(--size-desktop-eyebrow);
+		line-height: var(--size-desktop-eyebrow);
+	}
+}
+
 @define-mixin h1 {
 	font-size: var(--size-mobile-h1);
 	line-height: var(--lineheight-mobile-h1);

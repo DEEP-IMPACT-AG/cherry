@@ -1,0 +1,7 @@
+@import '../../../assets/css/variables.css';
+
+.text {
+	&.eyebrow {
+		@mixin eyebrow;
+	}
+}
