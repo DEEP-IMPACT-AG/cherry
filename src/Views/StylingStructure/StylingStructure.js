@@ -1,9 +1,10 @@
 import React, { Component, Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import Head from '../../Components/Head';
-import { ContentPusher, Container, Readable, Button } from '../../Components/Layout';
+import { ContentPusher, Container, Readable, Button, Tabs, Tab } from '../../Components/Layout';
 import styles from './StylingStructure.css';
-const data = require('./data-stylingstructure.md');
+const dataPostCSS = require('./data-stylingstructure-postcss.md');
+const dataCSS = require('./data-stylingstructure-css.md');
 import hljs from 'highlight.js/lib/highlight';
 import javascript from 'highlight.js/lib/languages/javascript';
 import css from 'highlight.js/lib/languages/css';
@@ -24,14 +25,24 @@ class StylingStructure extends Component {
 	render() {
 		return (
 			<Fragment>
-				<Head title="CSS Styling Structure - Cherry • Design System" />
+				<Head title="Styling Structure - Cherry • Design System" />
 				<ContentPusher>
 					<Container>
 						<Readable>
-							<div
-								className={styles.content}
-								dangerouslySetInnerHTML={{ __html: data.__content }}
-							/>
+							<Tabs>
+								<Tab label="PostCSS">
+									<div
+										className={styles.content}
+										dangerouslySetInnerHTML={{ __html: dataPostCSS.__content }}
+									/>
+								</Tab>
+								<Tab label="Compiled CSS">
+									<div
+										className={styles.content}
+										dangerouslySetInnerHTML={{ __html: dataCSS.__content }}
+									/>
+								</Tab>
+							</Tabs>
 						</Readable>
 					</Container>
 				</ContentPusher>

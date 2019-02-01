@@ -105,7 +105,7 @@ class Nav extends Component {
 							<ul className={styles.sub}>
 								<li>
 									<NavLink to="/styling-structure" activeClassName={styles.active} onClick={this.closeMenu}>
-										CSS Styling Structure
+										Styling Structure
 									</NavLink>
 								</li>
 							</ul>
