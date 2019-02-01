@@ -2,10 +2,10 @@
 
 ## PostCSS
 
-- [Globals](./src/assets/css/globals.css) - Appying the cherry variables to the global styles.
-- [Mixins](./src/assets/css/mixins.css) - Chunks of reusable css.
 - [Styles](./src/assets/css/styles.css) - Main entry point with all imports.
 - [Variables](./src/assets/css/variables.css) - Variable definitions.
+- [Mixins](./src/assets/css/mixins.css) - Chunks of reusable css.
+- [Globals](./src/assets/css/globals.css) - Appying the cherry variables to the global styles.
 
 ### Browser Support
 
