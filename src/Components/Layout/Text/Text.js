@@ -26,9 +26,15 @@ class Text extends Component {
 		if (blockquote) {
 			return (
 				<blockquote className={ownClassName}>
-					<Quote />
+					<span className={classNames(styles.quoteIcon, styles.first)}>
+						<Quote />
+						<Quote />
+					</span>
 					{children}
-					<Quote />
+					<span className={classNames(styles.quoteIcon, styles.last)}>
+						<Quote />
+						<Quote />
+					</span>
 				</blockquote>
 			);
 		}

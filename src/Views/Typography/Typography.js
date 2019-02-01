@@ -123,6 +123,20 @@ class Typography extends Component {
 								</Row>
 								<hr />
 							</div>
+							<H3>Blockquote</H3>
+							<div className={styles.soft}>
+								<Row alignItems="center" justifyContent="space-between">
+									<Col xs={12} lg={12}>
+										<Text blockquote>
+											Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
+											odio sem nec elit. Maecenas faucibus mollis interdum. Vestibulum id ligula
+											porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat
+											porttitor ligula, eget lacinia odio sem nec elit.
+										</Text>
+									</Col>
+								</Row>
+								<hr />
+							</div>
 						</Readable>
 					</Container>
 				</ContentPusher>

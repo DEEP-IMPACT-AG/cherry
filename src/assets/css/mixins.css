@@ -181,6 +181,9 @@
 	font-size: var(--size-mobile-text);
 	line-height: var(--lineheight-mobile-text);
 	position: relative;
+	display: block;
+	margin: 0;
+	padding: 0;
 
 	@media (--screen-lg) {
 		font-size: var(--size-desktop-text);
