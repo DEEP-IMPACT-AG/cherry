@@ -50,7 +50,7 @@ class Typography extends Component {
 							<div className={styles.soft}>
 								<Row alignItems="center" justifyContent="space-between">
 									<Col xs={12} lg={12}>
-										<Text eyebrow>Eyebrow Text</Text>
+										<Text eyebrow>This is how an eyebrow look like</Text>
 									</Col>
 								</Row>
 								<hr />
