@@ -190,3 +190,80 @@
 		line-height: var(--lineheight-desktop-text);
 	}
 }
+
+@define-mixin unorderedList {
+	@mixin noList;
+	display: block;
+
+	& li {
+		display: inline-block;
+		width: 100%;
+		position: relative;
+		padding: 0 0 0 15px;
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background: var(--color-primary);
+			top: 10px;
+			left: 0;
+		}
+	}
+}
+
+@define-mixin orderedList {
+	@mixin noList;
+	display: block;
+
+	& li {
+		display: inline-block;
+		width: 100%;
+		position: relative;
+		padding: 0 0 0 20px;
+
+		&:first-child {
+			counter-reset: section;
+		}
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			border-radius: 50%;
+			top: 0;
+			left: 0;
+			counter-increment: section;
+			content: counters(section, '.') '.';
+			font-weight: bold;
+			color: var(--color-primary);
+		}
+	}
+}
+
+@define-mixin specialList {
+	@mixin noList;
+	display: block;
+
+	& li {
+		display: inline-block;
+		width: 100%;
+		position: relative;
+		padding: 0 0 0 25px;
+
+		&:before {
+			content: '🍒';
+			display: block;
+			position: absolute;
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background: var(--color-primary);
+			top: 3px;
+			left: 0;
+		}
+	}
+}

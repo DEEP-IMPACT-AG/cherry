@@ -36,6 +36,18 @@
 		}
 	}
 
+	& ul {
+		@mixin unorderedList;
+
+		&:global([data-special]) {
+			@mixin specialList;
+		}
+	}
+	
+	& ol {
+		@mixin orderedList;
+	}
+
 	&.textLeft {
 		text-align: left;
 	}

@@ -137,6 +137,41 @@ class Typography extends Component {
 								</Row>
 								<hr />
 							</div>
+							<H3>Lists</H3>
+							<div className={styles.soft}>
+								<Row alignItems="center" justifyContent="space-between">
+									<Col xs={12} lg={4}>
+										<H4>Unordered List</H4>
+										<Text>
+											<ul>
+												<li>Item 1</li>
+												<li>Item 2</li>
+												<li>Item 3</li>
+											</ul>
+										</Text>
+									</Col>
+									<Col xs={12} lg={4}>
+										<H4>Ordered List</H4>
+										<Text>
+											<ol>
+												<li>Item 1</li>
+												<li>Item 2</li>
+												<li>Item 3</li>
+											</ol>
+										</Text>
+									</Col>
+									<Col xs={12} lg={4}>
+										<H4>Special List</H4>
+										<Text>
+											<ul data-special="true">
+												<li>Item 1</li>
+												<li>Item 2</li>
+												<li>Item 3</li>
+											</ul>
+										</Text>
+									</Col>
+								</Row>
+							</div>
 						</Readable>
 					</Container>
 				</ContentPusher>
