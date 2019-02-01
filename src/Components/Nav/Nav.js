@@ -99,7 +99,9 @@ class Nav extends Component {
 						<NavItem
 							title="CSS"
 							link="/"
-							active={location.pathname == '/css' ? true : false}
+							active={
+								location.pathname == '/css' || location.pathname == '/styling-structure' ? true : false
+							}
 							label="New"
 						>
 							<ul className={styles.sub}>
