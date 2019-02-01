@@ -175,3 +175,14 @@
 		line-height: var(--lineheight-desktop-small);
 	}
 }
+
+@define-mixin blockquote {
+	font-size: var(--size-mobile-text);
+	line-height: var(--lineheight-mobile-text);
+	position: relative;
+
+	@media (--screen-lg) {
+		font-size: var(--size-desktop-text);
+		line-height: var(--lineheight-desktop-text);
+	}
+}
