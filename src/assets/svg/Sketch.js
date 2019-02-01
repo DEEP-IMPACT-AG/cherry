@@ -1,8 +1,14 @@
 import React from 'react';
 
-function Svg() {
+function Svg({ className }) {
 	return (
-		<svg xmlns="http://www.w3.org/2000/svg" width="85" height="76" viewBox="0 0 85 76">
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="85"
+			height="76"
+			viewBox="0 0 85 76"
+			className={className}
+		>
 			<g fill="none" fillRule="evenodd">
 				<polygon
 					fill="#FDB300"

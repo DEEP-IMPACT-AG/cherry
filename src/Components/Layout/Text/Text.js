@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import { Quote } from '../../../assets/svg';
 import styles from './Text.css';
 
 class Text extends Component {
@@ -23,7 +24,13 @@ class Text extends Component {
 		}
 
 		if (blockquote) {
-			return <blockquote className={ownClassName}>{children}</blockquote>;
+			return (
+				<blockquote className={ownClassName}>
+					<Quote />
+					{children}
+					<Quote />
+				</blockquote>
+			);
 		}
 
 		return <div className={ownClassName}>{children}</div>;

@@ -1,8 +1,14 @@
 import React from 'react';
 
-function Svg() {
+function Svg({ className }) {
 	return (
-		<svg xmlns="http://www.w3.org/2000/svg" width="209" height="66" viewBox="0 0 209 66">
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="209"
+			height="66"
+			viewBox="0 0 209 66"
+			className={className}
+		>
 			<defs>
 				<radialGradient
 					id="logo-a"
