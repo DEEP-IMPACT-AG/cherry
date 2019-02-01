@@ -41,6 +41,11 @@ export default ({ staticContext }) => (
 			/>
 			<Route
 				exact
+				path="/styling-structure"
+				render={routeProps => <UniversalComponent page="StylingStructure" {...routeProps} />}
+			/>
+			<Route
+				exact
 				path="/typography"
 				render={routeProps => <UniversalComponent page="Typography" {...routeProps} />}
 			/>
