@@ -167,6 +167,7 @@
 }
 
 @define-mixin small {
+	display: inline-block;
 	font-size: var(--size-mobile-small);
 	line-height: var(--lineheight-mobile-small);
 
