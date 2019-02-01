@@ -4,4 +4,16 @@
 	&.eyebrow {
 		@mixin eyebrow;
 	}
+
+	&.textLeft {
+		text-align: left;
+	}
+
+	&.textCenter {
+		text-align: center;
+	}
+
+	&.textRight {
+		text-align: right;
+	}
 }
