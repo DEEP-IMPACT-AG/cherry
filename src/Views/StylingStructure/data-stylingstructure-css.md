@@ -412,9 +412,9 @@ Variables & Mixins
 	--lineheight-desktop-hero3: 1.15;
 
 	/* --> Eyebrow ------------------------------------------------ */
-	--size-mobile-eyebrow: 14px;
+	--size-mobile-eyebrow: 16px;
 	--lineheight-mobile-eyebrow: 1.35;
-	--size-desktop-eyebrow: 16px;
+	--size-desktop-eyebrow: 18px;
 	--lineheight-desktop-eyebrow: 1.15;
 
 	/* --> Heading ------------------------------------------------ */
@@ -469,9 +469,9 @@ Variables & Mixins
 
 	/* --> Small -------------------------------------------------- */
 	--size-mobile-small: 12px;
-	--lineheight-mobile-small: 1.2;
+	--lineheight-mobile-small: 1.7;
 	--size-desktop-small: 14px;
-	--lineheight-desktop-small: 1.2;
+	--lineheight-desktop-small: 1.7;
 
 	/* --> Blockquote --------------------------------------------- */
 	--size-mobile-blockquote: var(--size-mobile-h3);
@@ -587,6 +587,23 @@ b {
 	font-weight: 700;
 	color: #1F2D3D;
 	color: var(--color-primary);
+}
+
+small {
+	display: inline-block;
+	font-size: 12px;
+	font-size: var(--size-mobile-small);
+	line-height: 1.7;
+	line-height: var(--lineheight-mobile-small);
+}
+
+@media (min-width: 992px) {
+	small {
+		font-size: 14px;
+		font-size: var(--size-desktop-small);
+		line-height: 1.7;
+		line-height: var(--lineheight-desktop-small);
+	}
 }
 
 h1,
