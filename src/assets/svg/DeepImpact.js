@@ -1,8 +1,14 @@
 import React from 'react';
 
-function Svg() {
+function Svg({ className }) {
 	return (
-		<svg xmlns="http://www.w3.org/2000/svg" width="25" height="16" viewBox="0 0 25 16">
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="25"
+			height="16"
+			viewBox="0 0 25 16"
+			className={className}
+		>
 			<g fill="none">
 				<path
 					fill="#000"

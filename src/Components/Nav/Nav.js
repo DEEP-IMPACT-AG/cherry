@@ -51,7 +51,9 @@ class Nav extends Component {
 						<NavItem
 							title="Overview"
 							link="/"
-							active={location.pathname == '/' || location.pathname == '/code-guidelines'  ? true : false}
+							active={
+								location.pathname == '/' || location.pathname == '/code-guidelines' ? true : false
+							}
 						>
 							<ul className={styles.sub}>
 								<li>
@@ -70,14 +72,16 @@ class Nav extends Component {
 								</li>
 							</ul>
 						</NavItem>
-						<NavItem title="Design" link="/" active={location.pathname == '/sketch' || location.pathname == '/typography' ? true : false} label="New">
+						<NavItem
+							title="Design"
+							link="/"
+							active={
+								location.pathname == '/sketch' || location.pathname == '/typography' ? true : false
+							}
+						>
 							<ul className={styles.sub}>
 								<li>
-									<NavLink
-										to="/sketch"
-										activeClassName={styles.active}
-										onClick={this.closeMenu}
-									>
+									<NavLink to="/sketch" activeClassName={styles.active} onClick={this.closeMenu}>
 										Sketch
 									</NavLink>
 								</li>
@@ -92,10 +96,19 @@ class Nav extends Component {
 								</li>
 							</ul>
 						</NavItem>
-						<NavItem title="CSS" link="/" active={location.pathname == '/css' ? true : false}>
+						<NavItem
+							title="CSS"
+							link="/"
+							active={
+								location.pathname == '/css' || location.pathname == '/styling-structure' ? true : false
+							}
+							label="New"
+						>
 							<ul className={styles.sub}>
 								<li>
-									<a href="#">Coming Soon</a>
+									<NavLink to="/styling-structure" activeClassName={styles.active} onClick={this.closeMenu}>
+										Styling Structure
+									</NavLink>
 								</li>
 							</ul>
 						</NavItem>

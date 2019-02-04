@@ -66,9 +66,9 @@ Variables & Mixins
 	--lineheight-desktop-hero3: 1.15;
 
 	/* --> Eyebrow ------------------------------------------------ */
-	--size-mobile-eyebrow: 14px;
+	--size-mobile-eyebrow: 16px;
 	--lineheight-mobile-eyebrow: 1.35;
-	--size-desktop-eyebrow: 16px;
+	--size-desktop-eyebrow: 18px;
 	--lineheight-desktop-eyebrow: 1.15;
 
 	/* --> Heading ------------------------------------------------ */
@@ -123,9 +123,9 @@ Variables & Mixins
 
 	/* --> Small -------------------------------------------------- */
 	--size-mobile-small: 12px;
-	--lineheight-mobile-small: 1.2;
+	--lineheight-mobile-small: 1.7;
 	--size-desktop-small: 14px;
-	--lineheight-desktop-small: 1.2;
+	--lineheight-desktop-small: 1.7;
 
 	/* --> Blockquote --------------------------------------------- */
 	--size-mobile-blockquote: var(--size-mobile-h3);

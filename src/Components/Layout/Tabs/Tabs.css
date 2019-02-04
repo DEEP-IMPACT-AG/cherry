@@ -56,11 +56,13 @@
 
 	& .tabContent {
 		border: solid 1px var(--color-gray-light);
-		padding-top: 20px;
 		margin-top: -20px;
-		padding: 40px 20px 20px;
+		padding: 20px 20px 0;
 		border-bottom-left-radius: 5px;
 		border-bottom-right-radius: 5px;
-		@mixin paragraph;
+		
+		& p {
+			@mixin paragraph;
+		}
 	}
 }

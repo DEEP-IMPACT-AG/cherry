@@ -89,6 +89,10 @@ b {
 	color: var(--color-primary);
 }
 
+small {
+	@mixin small;
+}
+
 h1,
 h2,
 h3,
