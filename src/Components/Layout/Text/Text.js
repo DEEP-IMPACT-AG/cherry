@@ -16,7 +16,7 @@ class Text extends Component {
 				[styles.small]: small,
 				[styles.blockquote]: blockquote,
 			},
-			styles.text,
+			styles.text
 		);
 
 		if (small) {

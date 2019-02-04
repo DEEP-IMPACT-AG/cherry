@@ -58,7 +58,7 @@ function Col({
 					[styles.orderXxlLast]: lastXxl,
 					[styles.orderXxxlLast]: lastXxxl,
 				},
-				className,
+				className
 			)}
 		>
 			{children}

@@ -16,7 +16,7 @@ function Row({
 					[styles[`alignItems-${alignItems}`]]: alignItems,
 					[styles[`justifyContent-${justifyContent}`]]: justifyContent,
 				},
-				className,
+				className
 			)}
 		>
 			{children}

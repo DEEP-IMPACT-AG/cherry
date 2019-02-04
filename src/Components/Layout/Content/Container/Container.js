@@ -10,7 +10,7 @@ function Container({ className, children, fluid = false  }) {
 				{
 					[styles.containerFluid]: fluid,
 				},
-				className,
+				className
 			)}
 		>
 			{children}
