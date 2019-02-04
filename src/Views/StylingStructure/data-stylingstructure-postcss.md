@@ -90,9 +90,9 @@ Variables & Mixins
 	--lineheight-desktop-hero3: 1.15;
 
 	/* --> Eyebrow ------------------------------------------------ */
-	--size-mobile-eyebrow: 14px;
+	--size-mobile-eyebrow: 16px;
 	--lineheight-mobile-eyebrow: 1.35;
-	--size-desktop-eyebrow: 16px;
+	--size-desktop-eyebrow: 18px;
 	--lineheight-desktop-eyebrow: 1.15;
 
 	/* --> Heading ------------------------------------------------ */
@@ -147,9 +147,9 @@ Variables & Mixins
 
 	/* --> Small -------------------------------------------------- */
 	--size-mobile-small: 12px;
-	--lineheight-mobile-small: 1.2;
+	--lineheight-mobile-small: 1.7;
 	--size-desktop-small: 14px;
-	--lineheight-desktop-small: 1.2;
+	--lineheight-desktop-small: 1.7;
 
 	/* --> Blockquote --------------------------------------------- */
 	--size-mobile-blockquote: var(--size-mobile-h3);
@@ -232,6 +232,26 @@ Chunks of reusable css.
 	}
 }
 
+@define-mixin eyebrow {
+	position: relative;
+	font-size: var(--size-mobile-eyebrow);
+	line-height: var(--lineheight-mobile-eyebrow);
+	margin: 10px 0;
+
+	&:before {
+		content: '';
+		display: block;
+		width: 60px;
+		border-top: solid 2px var(--color-primary);
+		margin-bottom: 20px;
+	}
+
+	@media (--screen-lg) {
+		font-size: var(--size-desktop-eyebrow);
+		line-height: var(--size-desktop-eyebrow);
+	}
+}
+
 @define-mixin h1 {
 	font-size: var(--size-mobile-h1);
 	line-height: var(--lineheight-mobile-h1);
@@ -289,6 +309,129 @@ Chunks of reusable css.
 	@media (--screen-lg) {
 		font-size: var(--size-desktop-h6);
 		line-height: var(--lineheight-desktop-h6);
+	}
+}
+
+
+@define-mixin subtitle {
+	font-size: var(--size-mobile-subtitle);
+	line-height: var(--lineheight-mobile-subtitle);
+
+	@media (--screen-lg) {
+		font-size: var(--size-desktop-subtitle);
+		line-height: var(--lineheight-desktop-subtitle);
+	}
+}
+
+@define-mixin lead {
+	font-size: var(--size-mobile-lead);
+	line-height: var(--lineheight-mobile-lead);
+
+	@media (--screen-lg) {
+		font-size: var(--size-desktop-lead);
+		line-height: var(--lineheight-desktop-lead);
+	}
+}
+
+@define-mixin small {
+	display: inline-block;
+	font-size: var(--size-mobile-small);
+	line-height: var(--lineheight-mobile-small);
+
+	@media (--screen-lg) {
+		font-size: var(--size-desktop-small);
+		line-height: var(--lineheight-desktop-small);
+	}
+}
+
+@define-mixin blockquote {
+	font-size: var(--size-mobile-text);
+	line-height: var(--lineheight-mobile-text);
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 0;
+
+	@media (--screen-lg) {
+		font-size: var(--size-desktop-text);
+		line-height: var(--lineheight-desktop-text);
+	}
+}
+
+@define-mixin unorderedList {
+	@mixin noList;
+	display: block;
+
+	& li {
+		display: inline-block;
+		width: 100%;
+		position: relative;
+		padding: 0 0 0 15px;
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background: var(--color-primary);
+			top: 10px;
+			left: 0;
+		}
+	}
+}
+
+@define-mixin orderedList {
+	@mixin noList;
+	display: block;
+
+	& li {
+		display: inline-block;
+		width: 100%;
+		position: relative;
+		padding: 0 0 0 20px;
+
+		&:first-child {
+			counter-reset: section;
+		}
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			border-radius: 50%;
+			top: 0;
+			left: 0;
+			counter-increment: section;
+			content: counters(section, '.') '.';
+			font-weight: bold;
+			color: var(--color-primary);
+		}
+	}
+}
+
+@define-mixin specialList {
+	@mixin noList;
+	display: block;
+
+	& li {
+		display: inline-block;
+		width: 100%;
+		position: relative;
+		padding: 0 0 0 25px;
+
+		&:before {
+			content: '🍒';
+			display: block;
+			position: absolute;
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background: var(--color-primary);
+			top: 3px;
+			left: 0;
+		}
 	}
 }
 ```
@@ -386,6 +529,10 @@ strong,
 b {
 	font-weight: 700;
 	color: var(--color-primary);
+}
+
+small {
+	@mixin small;
 }
 
 h1,
