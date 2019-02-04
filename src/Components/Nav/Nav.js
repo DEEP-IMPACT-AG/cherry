@@ -100,13 +100,19 @@ class Nav extends Component {
 							title="CSS"
 							link="/"
 							active={
-								location.pathname == '/css' || location.pathname == '/styling-structure' ? true : false
+								location.pathname == '/css' || location.pathname == '/styling-structure'
+									? true
+									: false
 							}
 							label="New"
 						>
 							<ul className={styles.sub}>
 								<li>
-									<NavLink to="/styling-structure" activeClassName={styles.active} onClick={this.closeMenu}>
+									<NavLink
+										to="/styling-structure"
+										activeClassName={styles.active}
+										onClick={this.closeMenu}
+									>
 										Styling Structure
 									</NavLink>
 								</li>
