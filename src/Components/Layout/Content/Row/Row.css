@@ -12,16 +12,16 @@
 	}
 }
 
-.alignItems-center {
-	align-items: center;
+.justifyContent-center {
+	justify-content: center;
 }
 
-.alignItems-flex-end {
-	align-items: flex-end;
+.justifyContent-flex-end {
+	justify-content: flex-end;
 }
 
-.alignItems-flex-start {
-	align-items: flex-start;
+.justifyContent-flex-start {
+	justify-content: flex-start;
 }
 
 .justifyContent-center {
