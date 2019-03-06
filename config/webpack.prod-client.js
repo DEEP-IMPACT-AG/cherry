@@ -43,7 +43,13 @@ module.exports = {
 			{
 				test: /\.css$/,
 				use: [
-					ExtractCssChunks.loader,
+					{
+						loader: ExtractCssChunks.loader,
+						options: {
+							hot: true,
+							modules: true,
+						},
+					},
 					{
 						loader: 'css-loader',
 						options: {
@@ -60,7 +66,7 @@ module.exports = {
 				],
 			},
 			{
-				test: /\.(jpg|svg|png|gif)$/,
+				test: /\.(jpg|svg|png|ico|gif|eot|woff|ttf)$/,
 				use: [
 					{
 						loader: 'file-loader',
