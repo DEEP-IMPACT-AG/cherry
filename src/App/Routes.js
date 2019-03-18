@@ -8,6 +8,8 @@ import { Route, Switch, Redirect } from 'react-router';
 import { Loading } from '../Components/Layout';
 import '../assets/css/styles.css';
 
+const isProd = process.env.NODE_ENV === 'production';
+
 const UniversalComponent = universal(props => import(`../Views/${props.page}`), {
 	loading: () => <Loading />,
 	ignoreBabelRename: true,
@@ -15,7 +17,7 @@ const UniversalComponent = universal(props => import(`../Views/${props.page}`), 
 
 export default ({ staticContext }) => (
 	<Fragment>
-		<GoogleTagManager gtmId="GTM-K8M4PWZ" />
+		{isProd ? <GoogleTagManager gtmId="GTM-K8M4PWZ" /> : ''}
 		<Head />
 		<Nav />
 		<Switch>
