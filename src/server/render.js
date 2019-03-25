@@ -5,7 +5,6 @@ import Routes from '../App/Routes';
 import { Helmet } from 'react-helmet';
 import sitemap from './sitemap';
 import robots from './robots';
-import manifest from './manifest';
 
 import { flushChunkNames } from 'react-universal-component/server';
 import flushChunks from 'webpack-flush-chunks';
@@ -42,13 +41,6 @@ export default ({ clientStats }) => (req, res) => {
 			.header('Content-Type', 'text/plain')
 			.status(status)
 			.send(robots);
-	}
-
-	if (req.url == '/manifest.json' || req.url == '/Manifest.json') {
-		return res
-			.header('Content-Type', 'application/manifest+json')
-			.status(status)
-			.send(manifest);
 	}
 
 	if (context.url) {

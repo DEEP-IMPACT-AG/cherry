@@ -32,10 +32,6 @@ function Head({
 				rel="apple-touch-icon-precomposed"
 				href="https://res.cloudinary.com/deep-impact-ag/image/upload/cherry/manifest/192.jpg"
 			/>
-			<link
-				rel="manifest"
-				href={`${isProd ? 'https://production/' : 'http://localhost:8080/'}manifest.json`}
-			/>
 			{children && children}
 			<title>{title}</title>
 		</Helmet>
