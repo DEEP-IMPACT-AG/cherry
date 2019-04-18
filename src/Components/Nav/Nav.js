@@ -116,6 +116,15 @@ class Nav extends Component {
 										Styling Structure
 									</NavLink>
 								</li>
+								<li>
+									<NavLink
+										to="/css-grid"
+										activeClassName={styles.active}
+										onClick={this.closeMenu}
+									>
+										CSS Grid
+									</NavLink>
+								</li>
 							</ul>
 						</NavItem>
 						<NavItem

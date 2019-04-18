@@ -51,6 +51,11 @@ export default ({ staticContext }) => (
 				path="/styling-structure"
 				render={routeProps => <UniversalComponent page="StylingStructure" {...routeProps} />}
 			/>
+			<Route
+				exact
+				path="/css-grid"
+				render={routeProps => <UniversalComponent page="CSSGrid" {...routeProps} />}
+			/>
 			<Route render={routeProps => <UniversalComponent page="NotFound" {...routeProps} />} />
 		</Switch>
 		<Footer />
