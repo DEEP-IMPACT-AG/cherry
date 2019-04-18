@@ -44,11 +44,12 @@ Variables & Mixins
 	/* Spacing ----------------------------------------------- */
 	--padding-top-body-mobile: 70px;
 	--padding-top-body-desktop: 0;
-	--gutter-col-mobile: 10px;
-	--gutter-col-desktop: 10px;
 	--margin-container-mobile: 20px;
 	--margin-container-desktop: 20px;
-	--max-width: 1440px;
+	--margin-row-mobile: -20px;
+	--margin-row-desktop: -20px;
+	--gutter-col-mobile: 10px;
+	--gutter-col-desktop: 10px;
 
 	/* Colors ----------------------------------------------------- */
 	--color-primary: #1F2D3D;
@@ -522,6 +523,7 @@ svg {
 }
 
 img {
+	display: block;
 	max-width: 100%;
 	width: 100%;
 }
