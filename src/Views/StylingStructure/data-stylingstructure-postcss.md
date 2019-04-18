@@ -48,6 +48,7 @@ Variables & Mixins
 	--gutter-col-desktop: 10px;
 	--margin-container-mobile: 20px;
 	--margin-container-desktop: 20px;
+	--max-width: 1440px;
 
 	/* Colors ----------------------------------------------------- */
 	--color-primary: #1F2D3D;

@@ -1,15 +1,19 @@
 @import '../../../../assets/css/variables.css';
+@import '../Col/Col.css';
 
-.row {
+@define-mixin row {
 	display: flex;
 	flex-wrap: wrap;
-	margin-right: calc(var(--gutter-col-mobile) - var(--gutter-col-mobile) * 2);
-	margin-left: calc(var(--gutter-col-mobile) - var(--gutter-col-mobile) * 2);
+	justify-content: space-between;
+	margin: 0 var(--margin-row-mobile);
 
 	@media (--screen-lg) {
-		margin-right: calc(var(--gutter-col-desktop) - var(--gutter-col-desktop) * 2);
-		margin-left: calc(var(--gutter-col-desktop) - var(--gutter-col-desktop) * 2);
+		margin: 0 var(--margin-row-desktop);
 	}
+}
+
+.row {
+	@mixin row;
 }
 
 .justifyContent-center {
