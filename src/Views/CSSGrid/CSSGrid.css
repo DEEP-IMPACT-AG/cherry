@@ -3,11 +3,6 @@
 @import '../../Components/Layout/Content/Row/Row.css';
 @import '../../Components/Layout/Content/Col/Col.css';
 
-.scrollHorizontal {
-	overflow-x: auto;
-	-webkit-overflow-scrolling: touch;
-}
-
 :global {
 	& .container {
 		@mixin container;
@@ -652,4 +647,9 @@
 		color: var(--color-secondary);
 		background: var(--color-tertiary);
 	}
+}
+
+.scrollHorizontal {
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
 }
