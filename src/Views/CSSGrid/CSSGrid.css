@@ -582,7 +582,9 @@
 			@mixin col12;
 		}
 	}
+}
 
+:global {
 	& .highlight {
 		background: var(--color-tertiary);
 		border: solid 1px var(--color-light);
