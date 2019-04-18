@@ -102,55 +102,55 @@ Cherry can be integrated and used in any technology or workflow. You can use it 
 
     ***
 
-    `--size-mobile-hero1`
+    `--size-hero1-mobile`
 
-    `--size-desktop-hero1`
+    `--size-hero1-desktop`
 
-    `--size-[mobile|desktop]-hero2`
+    `--size-hero2-[mobile|desktop]`
 
-    `--size-[mobile|desktop]-hero3`
-
-    ***
-
-    `--size-[mobile|desktop]-eyebrow`
+    `--size-hero3-[mobile|desktop]`
 
     ***
 
-    `--size-[mobile|desktop]-h1`
-
-    `--size-[mobile|desktop]-h2`
-
-    `--size-[mobile|desktop]-h3`
-
-    `--size-[mobile|desktop]-h4`
-
-    `--size-[mobile|desktop]-h5`
-
-    `--size-[mobile|desktop]-h6`
+    `--size-eyebrow-[mobile|desktop]`
 
     ***
 
-    `--size-[mobile|desktop]-subtitle`
+    `--size-h1-[mobile|desktop]`
+
+    `--size-h2-[mobile|desktop]`
+
+    `--size-h3-[mobile|desktop]`
+
+    `--size-h4-[mobile|desktop]`
+
+    `--size-h5-[mobile|desktop]`
+
+    `--size-h6-[mobile|desktop]`
 
     ***
 
-    `--size-[mobile|desktop]-lead`
+    `--size-subtitle-[mobile|desktop]`
 
     ***
 
-    `--size-[mobile|desktop]-text`
+    `--size-lead-[mobile|desktop]`
 
     ***
 
-    `--size-[mobile|desktop]-small`
+    `--size-text-[mobile|desktop]`
 
     ***
 
-    `--size-[mobile|desktop]-blockquotes`
+    `--size-small-[mobile|desktop]`
 
     ***
 
-    `--size-[mobile|desktop]-list`
+    `--size-blockquotes-[mobile|desktop]`
+
+    ***
+
+    `--size-list-[mobile|desktop]`
 
     ***
 
@@ -158,55 +158,55 @@ Cherry can be integrated and used in any technology or workflow. You can use it 
 
     ***
 
-    `--lineheight-mobile-hero1`
+    `--lineheight-hero1-mobile`
 
-    `--lineheight-desktop-hero1`
+    `--lineheight-hero1-desktop`
 
-    `--lineheight-[mobile|desktop]-hero2`
+    `--lineheight-hero2-[mobile|desktop]`
 
-    `--lineheight-[mobile|desktop]-hero3`
-
-    ***
-
-    `--lineheight-[mobile|desktop]-eyebrow`
+    `--lineheight-hero3-[mobile|desktop]`
 
     ***
 
-    `--lineheight-[mobile|desktop]-h1`
-
-    `--lineheight-[mobile|desktop]-h2`
-
-    `--lineheight-[mobile|desktop]-h3`
-
-    `--lineheight-[mobile|desktop]-h4`
-
-    `--lineheight-[mobile|desktop]-h5`
-
-    `--lineheight-[mobile|desktop]-h6`
+    `--lineheight-eyebrow-[mobile|desktop]`
 
     ***
 
-    `--lineheight-[mobile|desktop]-subtitle`
+    `--lineheight-h1-[mobile|desktop]`
+
+    `--lineheight-h2-[mobile|desktop]`
+
+    `--lineheight-h3-[mobile|desktop]`
+
+    `--lineheight-h4-[mobile|desktop]`
+
+    `--lineheight-h5-[mobile|desktop]`
+
+    `--lineheight-h6-[mobile|desktop]`
 
     ***
 
-    `--lineheight-[mobile|desktop]-lead`
+    `--lineheight-subtitle-[mobile|desktop]`
 
     ***
 
-    `--lineheight-[mobile|desktop]-text`
+    `--lineheight-lead-[mobile|desktop]`
 
     ***
 
-    `--lineheight-[mobile|desktop]-small`
+    `--lineheight-text-[mobile|desktop]`
 
     ***
 
-    `--lineheight-[mobile|desktop]-blockquotes`
+    `--lineheight-small-[mobile|desktop]`
 
     ***
 
-    `--lineheight-[mobile|desktop]-list`
+    `--lineheight-blockquotes-[mobile|desktop]`
+
+    ***
+
+    `--lineheight-list-[mobile|desktop]`
 
   ***
 

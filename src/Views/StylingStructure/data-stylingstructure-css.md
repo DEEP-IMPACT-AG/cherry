@@ -332,83 +332,83 @@ Variables & Mixins
 
   /* Font Sizes ------------------------------------------------- */
   /* --> Hero --------------------------------------------------- */
-  --size-mobile-hero1: 52px;
-  --lineheight-mobile-hero1: 1.35;
-  --size-desktop-hero1: 62px;
-  --lineheight-desktop-hero1: 1.15;
-  --size-mobile-hero2: 42px;
-  --lineheight-mobile-hero2: 1.35;
-  --size-desktop-hero2: 52px;
-  --lineheight-desktop-hero2: 1.15;
-  --size-mobile-hero3: 32px;
-  --lineheight-mobile-hero3: 1.35;
-  --size-desktop-hero3: 42px;
-  --lineheight-desktop-hero3: 1.15;
+  --size-hero1-mobile: 52px;
+  --lineheight-hero1-mobile: 1.35;
+  --size-hero1-desktop: 62px;
+  --lineheight-hero1-desktop: 1.15;
+  --size-hero2-mobile: 42px;
+  --lineheight-hero2-mobile: 1.35;
+  --size-hero2-desktop: 52px;
+  --lineheight-hero2-desktop: 1.15;
+  --size-hero3-mobile: 32px;
+  --lineheight-hero3-mobile: 1.35;
+  --size-hero3-desktop: 42px;
+  --lineheight-hero3-desktop: 1.15;
 
   /* --> Eyebrow ------------------------------------------------ */
-  --size-mobile-eyebrow: 16px;
-  --lineheight-mobile-eyebrow: 1.35;
-  --size-desktop-eyebrow: 18px;
-  --lineheight-desktop-eyebrow: 1.15;
+  --size-eyebrow-mobile: 16px;
+  --lineheight-eyebrow-mobile: 1.35;
+  --size-eyebrow-desktop: 18px;
+  --lineheight-eyebrow-desktop: 1.15;
 
   /* --> Heading ------------------------------------------------ */
-  --size-mobile-h1: 38px;
-  --lineheight-mobile-h1: 1.35;
-  --size-desktop-h1: 40px;
-  --lineheight-desktop-h1: 1.15;
-  --size-mobile-h2: 28px;
-  --lineheight-mobile-h2: 1.35;
-  --size-desktop-h2: 32px;
-  --lineheight-desktop-h2: 1.15;
-  --size-mobile-h3: 24px;
-  --lineheight-mobile-h3: 1.35;
-  --size-desktop-h3: 28px;
-  --lineheight-desktop-h3: 1.15;
-  --size-mobile-h4: 22px;
-  --lineheight-mobile-h4: 1.35;
-  --size-desktop-h4: 24px;
-  --lineheight-desktop-h4: 1.15;
-  --size-mobile-h5: 18px;
-  --lineheight-mobile-h5: 1.35;
-  --size-desktop-h5: 20px;
-  --lineheight-desktop-h5: 1.15;
-  --size-mobile-h6: 14px;
-  --lineheight-mobile-h6: 1.35;
-  --size-desktop-h6: 16px;
-  --lineheight-desktop-h6: 1.15;
+  --size-h1-mobile: 38px;
+  --lineheight-h1-mobile: 1.35;
+  --size-h1-desktop: 40px;
+  --lineheight-h1-desktop: 1.15;
+  --size-h2-mobile: 28px;
+  --lineheight-h2-mobile: 1.35;
+  --size-h2-desktop: 32px;
+  --lineheight-h2-desktop: 1.15;
+  --size-h3-mobile: 24px;
+  --lineheight-h3-mobile: 1.35;
+  --size-h3-desktop: 28px;
+  --lineheight-h3-desktop: 1.15;
+  --size-h4-mobile: 22px;
+  --lineheight-h4-mobile: 1.35;
+  --size-h4-desktop: 24px;
+  --lineheight-h4-desktop: 1.15;
+  --size-h5-mobile: 18px;
+  --lineheight-h5-mobile: 1.35;
+  --size-h5-desktop: 20px;
+  --lineheight-h5-desktop: 1.15;
+  --size-h6-mobile: 14px;
+  --lineheight-h6-mobile: 1.35;
+  --size-h6-desktop: 16px;
+  --lineheight-h6-desktop: 1.15;
 
   /* --> Subtitle ----------------------------------------------- */
-  --size-mobile-subtitle: 18px;
-  --lineheight-mobile-subtitle: 1.35;
-  --size-desktop-subtitle: 20px;
-  --lineheight-desktop-subtitle: 1.15;
+  --size-subtitle-mobile: 18px;
+  --lineheight-subtitle-mobile: 1.35;
+  --size-subtitle-desktop: 20px;
+  --lineheight-subtitle-desktop: 1.15;
 
 
   /* --> Lead --------------------------------------------------- */
-  --size-mobile-lead: 16px;
-  --lineheight-mobile-lead: 1.5;
-  --size-desktop-lead: 18px;
-  --lineheight-desktop-lead: 1.75;
+  --size-lead-mobile: 16px;
+  --lineheight-lead-mobile: 1.5;
+  --size-lead-desktop: 18px;
+  --lineheight-lead-desktop: 1.75;
 
   /* --> Text --------------------------------------------------- */
-  --size-mobile-text: 16px;
-  --lineheight-mobile-text: 1.5;
-  --size-desktop-text: 18px;
-  --lineheight-desktop-text: 1.7;
+  --size-text-mobile: 16px;
+  --lineheight-text-mobile: 1.5;
+  --size-text-desktop: 18px;
+  --lineheight-text-desktop: 1.7;
 
   /* --> Small -------------------------------------------------- */
-  --size-mobile-small: 12px;
-  --lineheight-mobile-small: 1.7;
-  --size-desktop-small: 14px;
-  --lineheight-desktop-small: 1.7;
+  --size-small-mobile: 12px;
+  --lineheight-small-mobile: 1.7;
+  --size-small-desktop: 14px;
+  --lineheight-small-desktop: 1.7;
 
   /* --> Blockquote --------------------------------------------- */
-  --size-mobile-blockquote: var(--size-mobile-h3);
-  --size-desktop-blockquote: var(--size-desktop-h3);
+  --size-blockquote-mobile: var(--size-h3-mobile);
+  --size-blockquote-desktop: var(--size-h3-desktop);
 
   /* --> List --------------------------------------------------- */
-  --size-mobile-list: var(--size-mobile-text);
-  --size-desktop-list: var(--size-desktop-text);
+  --size-list-mobile: var(--size-text-mobile);
+  --size-list-desktop: var(--size-text-desktop);
 }
 
 html,
@@ -426,9 +426,9 @@ body {
   font-family: 'Roboto', sans-serif;
   font-family: var(--font-text);
   font-size: 16px;
-  font-size: var(--size-mobile-text);
+  font-size: var(--size-text-mobile);
   line-height: 1.5;
-  line-height: var(--lineheight-mobile-text);
+  line-height: var(--lineheight-text-mobile);
   padding-top: 70px;
   padding-top: var(--padding-top-body-mobile);
 }
@@ -436,9 +436,9 @@ body {
 @media (min-width: 992px) {
   body {
     font-size: 18px;
-    font-size: var(--size-desktop-text);
+    font-size: var(--size-text-desktop);
     line-height: 1.7;
-    line-height: var(--lineheight-desktop-text);
+    line-height: var(--lineheight-text-desktop);
     padding-top: 0;
     padding-top: var(--padding-top-body-desktop);
   }
@@ -522,17 +522,17 @@ b {
 small {
   display: inline-block;
   font-size: 12px;
-  font-size: var(--size-mobile-small);
+  font-size: var(--size-small-mobile);
   line-height: 1.7;
-  line-height: var(--lineheight-mobile-small);
+  line-height: var(--lineheight-small-mobile);
 }
 
 @media (min-width: 992px) {
   small {
     font-size: 14px;
-    font-size: var(--size-desktop-small);
+    font-size: var(--size-small-desktop);
     line-height: 1.7;
-    line-height: var(--lineheight-desktop-small);
+    line-height: var(--lineheight-small-desktop);
   }
 }
 
@@ -551,97 +551,97 @@ h6 {
 
 h1 {
   font-size: 38px;
-  font-size: var(--size-mobile-h1);
+  font-size: var(--size-h1-mobile);
   line-height: 1.35;
-  line-height: var(--lineheight-mobile-h1);
+  line-height: var(--lineheight-h1-mobile);
 }
 
 @media (min-width: 992px) {
   h1 {
     font-size: 40px;
-    font-size: var(--size-desktop-h1);
+    font-size: var(--size-h1-desktop);
     line-height: 1.15;
-    line-height: var(--lineheight-desktop-h1);
+    line-height: var(--lineheight-h1-desktop);
   }
 }
 
 h2 {
   font-size: 28px;
-  font-size: var(--size-mobile-h2);
+  font-size: var(--size-h2-mobile);
   line-height: 1.35;
-  line-height: var(--lineheight-mobile-h2);
+  line-height: var(--lineheight-h2-mobile);
 }
 
 @media (min-width: 992px) {
   h2 {
     font-size: 32px;
-    font-size: var(--size-desktop-h2);
+    font-size: var(--size-h2-desktop);
     line-height: 1.15;
-    line-height: var(--lineheight-desktop-h2);
+    line-height: var(--lineheight-h2-desktop);
   }
 }
 
 h3 {
   font-size: 24px;
-  font-size: var(--size-mobile-h3);
+  font-size: var(--size-h3-mobile);
   line-height: 1.35;
-  line-height: var(--lineheight-mobile-h3);
+  line-height: var(--lineheight-h3-mobile);
 }
 
 @media (min-width: 992px) {
   h3 {
     font-size: 28px;
-    font-size: var(--size-desktop-h3);
+    font-size: var(--size-h3-desktop);
     line-height: 1.15;
-    line-height: var(--lineheight-desktop-h3);
+    line-height: var(--lineheight-h3-desktop);
   }
 }
 
 h4 {
   font-size: 22px;
-  font-size: var(--size-mobile-h4);
+  font-size: var(--size-h4-mobile);
   line-height: 1.35;
-  line-height: var(--lineheight-mobile-h4);
+  line-height: var(--lineheight-h4-mobile);
 }
 
 @media (min-width: 992px) {
   h4 {
     font-size: 24px;
-    font-size: var(--size-desktop-h4);
+    font-size: var(--size-h4-desktop);
     line-height: 1.15;
-    line-height: var(--lineheight-desktop-h4);
+    line-height: var(--lineheight-h4-desktop);
   }
 }
 
 h5 {
   font-size: 18px;
-  font-size: var(--size-mobile-h5);
+  font-size: var(--size-h5-mobile);
   line-height: 1.35;
-  line-height: var(--lineheight-mobile-h5);
+  line-height: var(--lineheight-h5-mobile);
 }
 
 @media (min-width: 992px) {
   h5 {
     font-size: 20px;
-    font-size: var(--size-desktop-h5);
+    font-size: var(--size-h5-desktop);
     line-height: 1.15;
-    line-height: var(--lineheight-desktop-h5);
+    line-height: var(--lineheight-h5-desktop);
   }
 }
 
 h6 {
   font-size: 14px;
-  font-size: var(--size-mobile-h6);
+  font-size: var(--size-h6-mobile);
   line-height: 1.35;
-  line-height: var(--lineheight-mobile-h6);
+  line-height: var(--lineheight-h6-mobile);
 }
 
 @media (min-width: 992px) {
   h6 {
     font-size: 16px;
-    font-size: var(--size-desktop-h6);
+    font-size: var(--size-h6-desktop);
     line-height: 1.15;
-    line-height: var(--lineheight-desktop-h6);
+    line-height: var(--lineheight-h6-desktop);
   }
 }
 
@@ -649,17 +649,17 @@ p {
   color: #8492a6;
   color: var(--color-secondary);
   font-size: 16px;
-  font-size: var(--size-mobile-text);
+  font-size: var(--size-text-mobile);
   line-height: 1.5;
-  line-height: var(--lineheight-mobile-text);
+  line-height: var(--lineheight-text-mobile);
 }
 
 @media (min-width: 992px) {
   p {
     font-size: 18px;
-    font-size: var(--size-desktop-text);
+    font-size: var(--size-text-desktop);
     line-height: 1.7;
-    line-height: var(--lineheight-desktop-text);
+    line-height: var(--lineheight-text-desktop);
   }
 }
 ```
