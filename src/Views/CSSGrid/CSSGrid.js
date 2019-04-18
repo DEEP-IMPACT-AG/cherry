@@ -4,6 +4,7 @@ import Head from '../../Components/Head';
 import { ContentPusher, Container, Readable, Button, Tabs, Tab } from '../../Components/Layout';
 import styles from './CSSGrid.css';
 const dataCSSGrid = require('./data-css-grid.md');
+const dataMediaQueries = require('./data-media-queries.md');
 import hljs from 'highlight.js/lib/highlight';
 import javascript from 'highlight.js/lib/languages/javascript';
 import css from 'highlight.js/lib/languages/css';
@@ -105,7 +106,8 @@ class CSSGrid extends Component {
 									</div>
 								</div>
 							</div>
-							<div><h1>Responsive Grid</h1></div>
+							<div><h1>Responsiveness</h1></div>
+							<p>See how aspects of the Cherry grid system work across multiple devices.</p>
 							<div className="container">
 								<div className="row">
 									<div className="col12-xs col6-lg highlight">
@@ -116,6 +118,10 @@ class CSSGrid extends Component {
 									</div>
 								</div>
 							</div>
+							<div
+								className={styles.content}
+								dangerouslySetInnerHTML={{ __html: dataMediaQueries.__content }}
+							/>
 						</Readable>
 					</Container>
 				</ContentPusher>

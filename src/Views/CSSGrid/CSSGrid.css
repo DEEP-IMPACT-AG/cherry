@@ -579,7 +579,7 @@
 	}
 
 	& .highlight {
-		background: color-mod(var(--color-gray-light) alpha(50%));
+		background: var(--color-tertiary);
 		border: solid 1px var(--color-light);
 		padding: 0;
 
@@ -590,6 +590,55 @@
 			text-overflow: ellipsis;
 			overflow: hidden;
 			font-size: var(--size-desktop-small);
+			color: var(--color-secondary);
 		}
+	}
+
+	& table {
+		border-collapse: collapse;
+		border: solid 1px var(--color-gray-light);
+		width: 100%;
+	}
+
+	& table td,
+	& table th {
+		font-weight: 400;
+		padding: 4px 7px;
+	}
+
+	& table th {
+		font-weight: 700;
+		background: var(--color-tertiary);
+	}
+
+	& table td {
+		color: var(--color-secondary);
+	}
+
+	& table th:first-child,
+	& table td:first-child {
+		padding-left: 8px;
+	}
+
+	& table tr th {
+		border: 0;
+	}
+
+	& table tr td {
+		border: 0;
+	}
+
+	& table tr:nth-child(even) {
+		background: var(--color-tertiary);
+	}
+
+	& table tr:nth-child(odd) {
+		background: var(--color-light);
+	}
+
+	& code {
+		padding: 5px;
+		color: var(--color-secondary);
+		background: var(--color-tertiary);
 	}
 }
