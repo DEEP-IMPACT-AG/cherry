@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import ReactDOM from 'react-dom';
+import classNames from 'classnames';
 import Head from '../../Components/Head';
 import { ContentPusher, Container, Readable, Button, Tabs, Tab } from '../../Components/Layout';
 import styles from './CSSGrid.css';
@@ -119,7 +119,7 @@ class CSSGrid extends Component {
 								</div>
 							</div>
 							<div
-								className={styles.content}
+								className={classNames(styles.content, styles.scrollHorizontal)}
 								dangerouslySetInnerHTML={{ __html: dataMediaQueries.__content }}
 							/>
 						</Readable>

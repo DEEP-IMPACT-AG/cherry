@@ -3,6 +3,11 @@
 @import '../../Components/Layout/Content/Row/Row.css';
 @import '../../Components/Layout/Content/Col/Col.css';
 
+.scrollHorizontal {
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
 :global {
 	& .container {
 		@mixin container;
@@ -604,6 +609,10 @@
 	& table th {
 		font-weight: 400;
 		padding: 4px 7px;
+		font-size: var(--size-desktop-small);
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
 	}
 
 	& table th {
