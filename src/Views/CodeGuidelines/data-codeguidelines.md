@@ -4,7 +4,7 @@ Cherry can be integrated and used in any technology or workflow. You can use it 
 
 ---
 
-**Naming:** `[property]-[screen(optional)]-[value]-[state's(optional)]`
+**Naming:** `[property]-[value]-[state's(optional)]-[screen(optional)]`
 
 ---
 
