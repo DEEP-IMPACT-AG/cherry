@@ -63,7 +63,7 @@
 					color: var(--color-light);
 					background: var(--color-secondary);
 					border-radius: 3px;
-					font-size: var(--size-mobile-small);
+					font-size: var(--size-small-mobile);
 					line-height: 1;
 					vertical-align: middle;
 					padding: 2px 4px;
