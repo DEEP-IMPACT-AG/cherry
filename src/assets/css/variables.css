@@ -18,6 +18,7 @@ Variables & Mixins
 :root {
 
 	/* Spacing ----------------------------------------------- */
+	--max-width: 1440px;
 	--padding-top-body-mobile: 70px;
 	--padding-top-body-desktop: 0;
 	--margin-container-mobile: 20px;
