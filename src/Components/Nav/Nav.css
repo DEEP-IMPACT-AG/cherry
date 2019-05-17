@@ -115,9 +115,14 @@
 					font-size: var(--size-eyebrow-desktop);
 					padding: 10px;
 
-					&:hover,
 					&.active {
 						color: var(--color-primary);
+					}
+
+					@media (hover: hover) {
+						&:hover {
+							color: var(--color-primary);
+						}
 					}
 				}
 			}
@@ -283,9 +288,11 @@
 					transform: scale(1);
 				}
 
-				&:hover {
-					& svg {
-						transform: scale(1.1);
+				@media (hover: hover) {
+					&:hover {
+						& svg {
+							transform: scale(1.1);
+						}
 					}
 				}
 

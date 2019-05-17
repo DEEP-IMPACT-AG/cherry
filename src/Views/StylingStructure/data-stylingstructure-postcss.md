@@ -494,8 +494,10 @@ button {
 a {
 	color: var(--color-primary);
 
-	&:hover {
-		color: var(--color-secondary);
+	@media (hover: hover) {
+		&:hover {
+			color: var(--color-secondary);
+		}
 	}
 }
 

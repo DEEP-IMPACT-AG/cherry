@@ -27,8 +27,10 @@
 					color: var(--color-light);
 					border-radius: 5px;
 
-					&:hover {
-						background: var(--color-primary);
+					@media (hover: hover) {
+						&:hover {
+							background: var(--color-primary);
+						}
 					}
 				}
 			}
@@ -47,8 +49,10 @@
 				overflow: hidden;
 				font-weight: 500;
 
-				&:hover {
-					background: color-mod(var(--color-primary) alpha(10%));
+				@media (hover: hover) {
+					&:hover {
+						background: color-mod(var(--color-primary) alpha(10%));
+					}
 				}
 			}
 		}

@@ -1,6 +1,22 @@
 # Code Guidelines
 
-Cherry can be integrated and used in any technology or workflow. You can use it with single-purpose classes, as PostCSS modules or even pre-build React components.
+Cherry can be integrated and used in any technology or workflow. You can use it with single-purpose classes (.className), as PostCSS modules or even pre-build React components.
+
+### Code Style
+
+- We use: **Tabs**
+- Tab size: **4**
+- Always leave an empty space when **nesting** CSS blocks 👇
+  ```
+  .parent {
+    color: var(--color-dark);
+
+    & .child {
+        color: var(--color-light);
+      }
+    }
+  }
+  ```
 
 ---
 

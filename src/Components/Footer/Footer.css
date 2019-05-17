@@ -19,9 +19,11 @@
 			transform: scale(1);
 		}
 
-		&:hover {
-			& svg {
-				transform: scale(1.1);
+		@media (hover: hover) {
+			&:hover {
+				& svg {
+					transform: scale(1.1);
+				}
 			}
 		}
 

@@ -127,17 +127,6 @@ class Nav extends Component {
 								</li>
 							</ul>
 						</NavItem>
-						<NavItem
-							title="Components"
-							link="/"
-							active={location.pathname == '/components' ? true : false}
-						>
-							<ul className={styles.sub}>
-								<li>
-									<a href="#">Coming Soon</a>
-								</li>
-							</ul>
-						</NavItem>
 					</ul>
 					<ul className={styles.poweredBy}>
 						<li>
