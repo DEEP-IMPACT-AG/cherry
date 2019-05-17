@@ -28,7 +28,11 @@
 		}
 	}
 
-	& ul {
+	& ul:not([class]) {
 		@mixin unorderedList;
+	}
+
+	& ol:not([class]) {
+		@mixin orderedList;
 	}
 }
