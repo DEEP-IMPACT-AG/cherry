@@ -75,7 +75,7 @@ Variables & Mixins
 	--lineheight-eyebrow-desktop: 1.15;
 
 	/* --> Heading ------------------------------------------------ */
-	--size-mobile-h1: 38px;
+	--size-h1-mobile: 38px;
 	--lineheight-h1-mobile: 1.35;
 	--size-h1-desktop: 40px;
 	--lineheight-h1-desktop: 1.15;
