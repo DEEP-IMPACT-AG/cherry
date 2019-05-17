@@ -13,8 +13,8 @@ Entry Points
   --padding-top-body-desktop: 0;
   --margin-container-mobile: 20px;
   --margin-container-desktop: 20px;
-  --margin-row-mobile: -20px;
-  --margin-row-desktop: -20px;
+  --margin-row-mobile: -10px;
+  --margin-row-desktop: -10px;
   --gutter-col-mobile: 10px;
   --gutter-col-desktop: 10px;
 }
@@ -808,13 +808,13 @@ Entry Points
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 -20px;
+  margin: 0 -10px;
   margin: 0 var(--margin-row-mobile);
 }
 
 @media (min-width: 992px) {
   .row {
-    margin: 0 -20px;
+    margin: 0 -10px;
     margin: 0 var(--margin-row-desktop);
   }
 }
@@ -871,7 +871,7 @@ Entry Points
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 -20px;
+  margin: 0 -10px;
   margin: 0 var(--margin-row-mobile);
 }
 

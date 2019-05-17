@@ -597,8 +597,8 @@ Entry Points
 	/* Spacing ----------------------------------------------- */
 	--margin-container-mobile: 20px;
 	--margin-container-desktop: 20px;
-	--margin-row-mobile: -20px;
-	--margin-row-desktop: -20px;
+	--margin-row-mobile: -10px;
+	--margin-row-desktop: -10px;
 	--gutter-col-mobile: 10px;
 	--gutter-col-desktop: 10px;
 }
