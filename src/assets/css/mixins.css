@@ -155,6 +155,10 @@
 	}
 }
 
+@define-mixin strong {
+	font-weight: 700;
+}
+
 @define-mixin text {
 	color: var(--color-secondary);
 	font-size: var(--size-text-mobile);

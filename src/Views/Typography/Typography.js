@@ -105,6 +105,15 @@ class Typography extends Component {
 								</Row>
 								<hr />
 							</div>
+							<H3>Strong</H3>
+							<div className={styles.soft}>
+								<Row alignItems="center" justifyContent="space-between">
+									<Col xs={12} lg={12}>
+										<Text strong>You are reading a Strong</Text>
+									</Col>
+								</Row>
+								<hr />
+							</div>
 							<H3>Text</H3>
 							<div className={styles.soft}>
 								<Row alignItems="center" justifyContent="space-between">
@@ -136,6 +145,7 @@ class Typography extends Component {
 							<div className={styles.soft}>
 								<Row alignItems="center" justifyContent="space-between">
 									<Col xs={12} lg={12}>
+										<br />
 										<Text blockquote>
 											Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
 											odio sem nec elit. Maecenas faucibus mollis interdum. Vestibulum id ligula
