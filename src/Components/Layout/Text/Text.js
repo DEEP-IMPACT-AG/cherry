@@ -5,12 +5,13 @@ import styles from './Text.css';
 
 class Text extends Component {
 	render() {
-		const { children, className, textAlign, eyebrow, subtitle, lead, small, blockquote } = this.props;
+		const { children, className, textAlign, eyebrow, subtitle, lead, strong, small, blockquote } = this.props;
 		const ownClassName = classNames(
 			{
 				[styles.eyebrow]: eyebrow,
 				[styles.subtitle]: subtitle,
 				[styles.lead]: lead,
+				[styles.strong]: strong,
 				[styles.textLeft]: textAlign === 'left',
 				[styles.textCenter]: textAlign === 'center',
 				[styles.textRight]: textAlign === 'right',

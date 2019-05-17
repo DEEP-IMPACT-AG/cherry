@@ -14,4 +14,8 @@
 
 .soft {
 	color: var(--color-secondary);
+
+	& hr {
+		margin: 40px 0;
+	}
 }

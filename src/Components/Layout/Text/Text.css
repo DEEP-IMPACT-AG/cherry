@@ -15,6 +15,10 @@
 		@mixin lead;
 	}
 
+	&.strong {
+		@mixin strong;
+	}
+
 	&.small {
 		@mixin small;
 	}
