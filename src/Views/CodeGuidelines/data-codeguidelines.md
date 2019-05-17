@@ -6,7 +6,7 @@ Cherry can be integrated and used in any technology or workflow. You can use it 
 
 - We use: **Tabs**
 - Tab size: **4**
-- Always leave an empty space when **nesting** CSS blocks 👇
+- Always leave an empty line before the **nested** CSS blocks 👇
   ```
   .parent {
     color: var(--color-dark);
@@ -16,7 +16,9 @@ Cherry can be integrated and used in any technology or workflow. You can use it 
       }
     }
   }
+
   ```
+  Another empty line at the end of each file ☝
 
 ---
 

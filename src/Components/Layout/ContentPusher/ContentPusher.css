@@ -27,4 +27,8 @@
 			padding: 0 64px;
 		}
 	}
+
+	& ul {
+		@mixin unorderedList;
+	}
 }
