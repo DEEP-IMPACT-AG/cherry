@@ -96,6 +96,15 @@ class Typography extends Component {
 								</Row>
 								<hr />
 							</div>
+							<H3>Lead</H3>
+							<div className={styles.soft}>
+								<Row alignItems="center" justifyContent="space-between">
+									<Col xs={12} lg={12}>
+										<Text lead>You are reading a Lead</Text>
+									</Col>
+								</Row>
+								<hr />
+							</div>
 							<H3>Text</H3>
 							<div className={styles.soft}>
 								<Row alignItems="center" justifyContent="space-between">

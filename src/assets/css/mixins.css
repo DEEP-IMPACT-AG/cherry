@@ -17,17 +17,6 @@
 	}
 }
 
-@define-mixin paragraph {
-	color: var(--color-secondary);
-	font-size: var(--size-text-mobile);
-	line-height: var(--lineheight-text-mobile);
-
-	@media (--screen-lg) {
-		font-size: var(--size-text-desktop);
-		line-height: var(--lineheight-text-desktop);
-	}
-}
-
 @define-mixin heading {
 	font-family: var(--font-head);
 	font-weight: 300;
@@ -163,6 +152,17 @@
 	@media (--screen-lg) {
 		font-size: var(--size-lead-desktop);
 		line-height: var(--lineheight-lead-desktop);
+	}
+}
+
+@define-mixin text {
+	color: var(--color-secondary);
+	font-size: var(--size-text-mobile);
+	line-height: var(--lineheight-text-mobile);
+
+	@media (--screen-lg) {
+		font-size: var(--size-text-desktop);
+		line-height: var(--lineheight-text-desktop);
 	}
 }
 

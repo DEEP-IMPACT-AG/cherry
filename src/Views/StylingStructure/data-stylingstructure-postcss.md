@@ -186,7 +186,7 @@ Chunks of reusable css.
 	}
 }
 
-@define-mixin paragraph {
+@define-mixin text {
 	color: var(--color-secondary);
 	font-size: var(--size-text-mobile);
 	line-height: var(--lineheight-text-mobile);
@@ -574,6 +574,6 @@ h6 {
 }
 
 p {
-	@mixin paragraph;
+	@mixin text;
 }
 ```
