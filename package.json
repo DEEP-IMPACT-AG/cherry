@@ -1,9 +1,22 @@
 {
-	"name": "react-ssr-boilerplate",
-	"version": "1.0.0",
+	"name": "cherry-design",
+	"version": "0.0.1",
 	"main": "main.js",
-	"description": "Webpack React SSR - Boilerplate",
-	"repository": "https://github.com/luangjokaj/react-ssr-boilerplate",
+	"description": "Design System",
+	"repository": "https://github.com/DEEP-IMPACT-AG/cherry",
+	"keywords": [
+		"cherry",
+		"design system",
+		"mobile-first",
+		"responsive",
+		"front-end",
+		"css",
+		"postcss",
+		"components",
+		"sketch",
+		"web",
+		"framework"
+	],
 	"license": "MIT",
 	"dependencies": {
 		"@babel/cli": "^7.4.4",
