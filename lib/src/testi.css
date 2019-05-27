@@ -1,6 +1,0 @@
-@import '../../src/assets/css/variables';
-
-.testi {
-	background: var(--color-primary);
-	color: var(--color-light);
-}
