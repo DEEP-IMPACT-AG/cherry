@@ -1,7 +1,8 @@
 {
 	"name": "cherry-design",
 	"version": "0.0.2",
-	"main": "./src/Components/Layout/index.js",
+	"main": "lib/build/cherry.js",
+	"module": "lib/build/cherry.module.js",
 	"description": "Design System",
 	"repository": "https://github.com/DEEP-IMPACT-AG/cherry",
 	"keywords": [
@@ -77,6 +78,14 @@
 		"react-router": "^5.0.0",
 		"react-router-dom": "^5.0.0",
 		"react-universal-component": "^4.0.0",
+		"rollup": "^1.12.4",
+		"rollup-plugin-babel": "^4.3.2",
+		"rollup-plugin-commonjs": "^10.0.0",
+		"rollup-plugin-node-resolve": "^5.0.0",
+		"rollup-plugin-postcss": "^2.0.3",
+		"rollup-plugin-replace": "^2.2.0",
+		"rollup-plugin-serve": "^1.0.1",
+		"rollup-watch": "^4.3.1",
 		"style-loader": "^0.23.1",
 		"stylelint": "^10.0.1",
 		"uglifyjs-webpack-plugin": "^2.1.3",
@@ -93,6 +102,8 @@
 	"scripts": {
 		"prod": "NODE_ENV=production node src/server/main.js",
 		"dev": "NODE_ENV=development nodemon --watch src/server --watch config --inspect src/server/main.js",
+		"build:lib": "rollup -c lib/rollup.config.babel.js",
+		"watch:lib": "rollup -c lib/rollup.config.babel.js  -w",
 		"lint:css": "stylelint src/**/*.css",
 		"lint:js": "eslint src src/**/*.js",
 		"lint:fix": "eslint src src/**/*.js --fix",

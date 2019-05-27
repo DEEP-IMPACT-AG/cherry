@@ -1,6 +1,7 @@
 # Distribution Files
 dist/
 build/
+!lib/build/
 
 # IDE & Editors
 .idea
