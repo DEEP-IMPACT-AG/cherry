@@ -1,7 +1,7 @@
 {
 	"name": "cherry-design",
 	"version": "0.0.1",
-	"main": "main.js",
+	"main": "./src/Components/Layout/index.js",
 	"description": "Design System",
 	"repository": "https://github.com/DEEP-IMPACT-AG/cherry",
 	"keywords": [
