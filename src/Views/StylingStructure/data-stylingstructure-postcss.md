@@ -6,7 +6,7 @@ Main entry point with all imports. Don't forget to add `npm install normalize.cs
 ```css
 /*********************************************************************
 **********************************************************************
-Cherry 0.0.1 - Design System
+Cherry - Design System
 Entry Points
 **********************************************************************
 *********************************************************************/
@@ -14,21 +14,12 @@ Entry Points
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
 @import '../../../node_modules/normalize.css/normalize.css';
 @import './globals.css';
-
-@import './utilities/github.css';
 ```
 
 ## variables.css
 Variable definitions.
 
 ```css
-/*********************************************************************
-**********************************************************************
-Cherry 0.0.1 - Design System
-Variables & Mixins
-**********************************************************************
-*********************************************************************/
-
 @import './mixins.css';
 
 @custom-media --screen-xs (min-width: 0);
@@ -42,6 +33,7 @@ Variables & Mixins
 :root {
 
 	/* Spacing ----------------------------------------------- */
+	--max-width: 1440px;
 	--padding-top-body-mobile: 70px;
 	--padding-top-body-desktop: 0;
 	--margin-container-mobile: 20px;
@@ -70,7 +62,7 @@ Variables & Mixins
 
 	/* Fonts ------------------------------------------------------ */
 	--font-text: 'Roboto', sans-serif;
-	--font-head: 'Roboto', sans-serif;
+	--font-head: var(--font-text);
 	--font-special: var(--font-text);
 	--font-mono: 'Roboto Mono', monospace;
 
@@ -164,7 +156,7 @@ Variables & Mixins
 ```
 
 ## mixins.css
-Chunks of reusable css.
+Chunks of reusable css. Don't forget to add `npm install postcss-mixins`
 
 ```css
 @define-mixin resetButton {
@@ -183,17 +175,6 @@ Chunks of reusable css.
 	& li {
 		padding: 0;
 		margin: 0;
-	}
-}
-
-@define-mixin text {
-	color: var(--color-secondary);
-	font-size: var(--size-text-mobile);
-	line-height: var(--lineheight-text-mobile);
-
-	@media (--screen-lg) {
-		font-size: var(--size-text-desktop);
-		line-height: var(--lineheight-text-desktop);
 	}
 }
 
@@ -335,6 +316,21 @@ Chunks of reusable css.
 	}
 }
 
+@define-mixin strong {
+	font-weight: 700;
+}
+
+@define-mixin text {
+	color: var(--color-secondary);
+	font-size: var(--size-text-mobile);
+	line-height: var(--lineheight-text-mobile);
+
+	@media (--screen-lg) {
+		font-size: var(--size-text-desktop);
+		line-height: var(--lineheight-text-desktop);
+	}
+}
+
 @define-mixin small {
 	display: inline-block;
 	font-size: var(--size-small-mobile);
@@ -369,6 +365,12 @@ Chunks of reusable css.
 		width: 100%;
 		position: relative;
 		padding: 0 0 0 15px;
+		color: var(--color-secondary);
+
+		& p {
+			margin: 0;
+			padding: 0;
+		}
 
 		&:before {
 			content: '';
@@ -393,6 +395,12 @@ Chunks of reusable css.
 		width: 100%;
 		position: relative;
 		padding: 0 0 0 20px;
+		color: var(--color-secondary);
+
+		& p {
+			margin: 0;
+			padding: 0;
+		}
 
 		&:first-child {
 			counter-reset: section;
@@ -422,6 +430,12 @@ Chunks of reusable css.
 		width: 100%;
 		position: relative;
 		padding: 0 0 0 25px;
+		color: var(--color-secondary);
+
+		& p {
+			margin: 0;
+			padding: 0;
+		}
 
 		&:before {
 			content: '🍒';
@@ -436,19 +450,42 @@ Chunks of reusable css.
 		}
 	}
 }
+
+@define-mixin container {
+	margin: auto;
+	max-width: var(--max-width);
+	padding-right: var(--margin-container-mobile);
+	padding-left: var(--margin-container-mobile);
+
+	@media (--screen-lg) {
+		padding-right: var(--margin-container-desktop);
+		padding-left: var(--margin-container-desktop);
+	}
+
+	@media (--screen-xxxl) {
+		max-width: 1704px;
+	}
+}
+
+@define-mixin containerFluid {
+	width: 100%;
+	max-width: initial;
+	padding-right: var(--margin-container-mobile);
+	padding-left: var(--margin-container-mobile);
+	margin-right: auto;
+	margin-left: auto;
+
+	@media (--screen-lg) {
+		padding-right: var(--margin-container-desktop);
+		padding-left: var(--margin-container-desktop);
+	}
+}
 ```
 
 ## globals.css 
 Appying the cherry variables to the global styles.
 
 ```css
-/*********************************************************************
-**********************************************************************
-Cherry 0.0.1 - Design System
-Global Styles
-**********************************************************************
-*********************************************************************/
-
 @import './variables.css';
 
 html,
