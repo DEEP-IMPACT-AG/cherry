@@ -56,6 +56,11 @@ export default ({ staticContext }) => (
 				path="/css-grid"
 				render={routeProps => <UniversalComponent page="CSSGrid" {...routeProps} />}
 			/>
+			<Route
+				exact
+				path="/react-components"
+				render={routeProps => <UniversalComponent page="ReactComponents" {...routeProps} />}
+			/>
 			<Route render={routeProps => <UniversalComponent page="NotFound" {...routeProps} />} />
 		</Switch>
 		<Footer />
