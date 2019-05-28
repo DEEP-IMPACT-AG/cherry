@@ -100,11 +100,10 @@ class Nav extends Component {
 							title="CSS"
 							link="/"
 							active={
-								location.pathname == '/css' || location.pathname == '/styling-structure'
+								location.pathname == '/styling-structure' || location.pathname == '/css-grid'
 									? true
 									: false
 							}
-							label="New"
 						>
 							<ul className={styles.sub}>
 								<li>
@@ -124,6 +123,18 @@ class Nav extends Component {
 									>
 										CSS Grid
 									</NavLink>
+								</li>
+							</ul>
+						</NavItem>
+						<NavItem
+							title="Components"
+							link="/"
+							active={location.pathname == '/components' ? true : false}
+							label="New"
+						>
+							<ul className={styles.sub}>
+								<li>
+									<a href="#">Coming Soon</a>
 								</li>
 							</ul>
 						</NavItem>
