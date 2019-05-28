@@ -662,12 +662,16 @@ Entry Points
 	@mixin row;
 }
 
-.justifyContent-flex-start {
-	justify-content: flex-start;
+.justifyContent-center {
+	justify-content: center;
 }
 
 .justifyContent-flex-end {
 	justify-content: flex-end;
+}
+
+.justifyContent-flex-start {
+	justify-content: flex-start;
 }
 
 .justifyContent-center {
@@ -681,38 +685,12 @@ Entry Points
 .justifyContent-space-around {
 	justify-content: space-around;
 }
-
-.justifyContent-initial {
-	justify-content: initial;
-}
-
-.alignItems-stretch {
-	align-items: stretch;
-}
-
-.alignItems-center {
-	align-items: center;
-}
-
-.alignItems-flex-start {
-	align-items: flex-start;
-}
-
-.alignItems-flex-end {
-	align-items: flex-end;
-}
-
-.alignItems-baseline {
-	align-items: baseline;
-}
-
-.alignItems-initial {
-	align-items: initial;
-}
 ```
 
 ## col.css
 ```css
+@import '../variables.css';
+
 @define-mixin col {
 	position: relative;
 	width: 100%;
@@ -722,6 +700,7 @@ Entry Points
 	flex-basis: 0;
 	flex-grow: 1;
 	max-width: 100%;
+	box-sizing: border-box;
 
 	@media (--screen-lg) {
 		padding-right: var(--gutter-col-desktop);

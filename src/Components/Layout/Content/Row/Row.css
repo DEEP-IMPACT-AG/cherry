@@ -1,5 +1,4 @@
 @import '../../../../assets/css/variables.css';
-@import '../Col/Col.css';
 
 @define-mixin row {
 	display: flex;
