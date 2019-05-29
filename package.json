@@ -102,8 +102,10 @@
 	"scripts": {
 		"prod": "NODE_ENV=production node src/server/main.js",
 		"dev": "NODE_ENV=development nodemon --watch src/server --watch config --inspect src/server/main.js",
-		"build:lib": "rollup -c lib/rollup.config.babel.js",
-		"watch:lib": "rollup -c lib/rollup.config.babel.js  -w",
+		"build:components": "rollup -c lib/rollup.config.components.js",
+		"build:css": "rollup -c lib/rollup.config.css.js",
+		"watch:components": "rollup -c lib/rollup.config.components.js  -w",
+		"watch:css": "rollup -c lib/rollup.config.css.js -w",
 		"lint:css": "stylelint src/**/*.css",
 		"lint:js": "eslint src src/**/*.js",
 		"lint:fix": "eslint src src/**/*.js --fix",
