@@ -1,6 +1,6 @@
 {
 	"name": "cherry-design",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"main": "lib/build/cherry.js",
 	"module": "lib/build/cherry.module.js",
 	"description": "Design System",
