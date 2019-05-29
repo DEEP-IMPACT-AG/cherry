@@ -1,4 +1,4 @@
-[![Cheery Logo](https://svgur.com/i/AcT.svg)](https://cherry.design/)
+[![Cheery Logo](https://res.cloudinary.com/deep-impact-ag/image/upload/v1559170058/cherry/cherry.svg)](https://cherry.design/)
 
 # Introduction
 
