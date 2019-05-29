@@ -4,8 +4,6 @@
 
 Cherry is a live inventory of definitions for the UI components, design patterns, naming conventions, brand assets and code guidelines which the whole design team at Deep Impact works from, keeping all of our products cohesive.
 
-Cherry is one kind of a process that unifies design and implementation ✌
-
 ---
 
 🍒 **Cherry** can be used as:
@@ -21,6 +19,24 @@ Cherry is one kind of a process that unifies design and implementation ✌
 - [Variables](./src/assets/css/variables.css) - Variable definitions.
 - [Mixins](./src/assets/css/mixins.css) - Chunks of reusable css.
 - [Globals](./src/assets/css/globals.css) - Appying the cherry variables to the global styles.
+
+# NPM Library
+
+Cherry is available through the [NPM library](https://www.npmjs.com/package/cherry-design). To use NPM, you need Node installed, [click here to download](https://nodejs.org/).
+
+**To install the package type:**
+```
+npm install cherry-design
+```
+
+### NPM Single Purpose Classes
+Import directly the compiled **CSS** from:
+```
+'cherry-design/lib/build/css/styles.css'
+```
+
+### NPM Components
+Read more about Components on the documentation Portal: https://cherry.design/react-components
 
 ### Browser Support
 
