@@ -1,8 +1,8 @@
 # Introduction
 
-Cherry is a live inventory of definitions for the UI components, design patterns, naming conventions, brand assets and code guidelines which the whole design team at Deep Impact works from, keeping all of our products cohesive.
+Cherry is a live inventory of definitions for the UI components, design patterns, naming conventions, brand assets and code guidelines. 
 
-Cherry is one kind of a process that unifies design and implementation ✌
+Cherry is technology agnostic – meaning that it can be applied independently of the technology stack. It defines the underlying design philosophy of your project and serve as the bridge between design and code. It is bundled with all the right tools you need to get started as fast as possible.
 
 ---
 
@@ -15,4 +15,29 @@ Cherry is one kind of a process that unifies design and implementation ✌
 
 ---
 
-We are just getting started, the evolution of Cherry will depend on the team. Any new rule or convention applied will have to be consensual.
+## PostCSS
+
+- [Styles](https://github.com/DEEP-IMPACT-AG/cherry/blob/master/src/assets/css/styles.css) - Main entry point with all imports.
+- [Variables](https://github.com/DEEP-IMPACT-AG/cherry/blob/master/src/assets/css/variables.css) - Variable definitions.
+- [Mixins](https://github.com/DEEP-IMPACT-AG/cherry/blob/master/src/assets/css/mixins.css) - Chunks of reusable css.
+- [Globals](https://github.com/DEEP-IMPACT-AG/cherry/blob/master/src/assets/css/globals.css) - Appying the cherry variables to the global styles.
+
+---
+
+# NPM Library
+
+Cherry is available through the [NPM library](https://www.npmjs.com/package/cherry-design). To use NPM, you need Node installed, [click here to download](https://nodejs.org/).
+
+**To install the package type:**
+```sh
+npm install cherry-design
+```
+
+### NPM Single Purpose Classes
+Import directly the compiled **CSS** from:
+```css
+@import url('cherry-design/lib/build/css/styles.css');
+```
+
+### NPM Components
+Read more about [Components](https://cherry.design/react-components) on the documentation portal.
