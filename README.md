@@ -43,3 +43,12 @@ Import directly the compiled **CSS** from:
 
 ### NPM Components
 Read more about [Components](https://cherry.design/react-components) on the documentation portal.
+
+---
+
+# Changelog
+
+Read what's 📦 new, 👌 improved, 🐛 fixed, and if 📖 docs got updated. 
+
+👉 Read the entire changelog at the GitHub [Release](https://github.com/DEEP-IMPACT-AG/cherry/releases) page.
+
