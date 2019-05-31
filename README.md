@@ -4,7 +4,7 @@
 
 Cherry is a live inventory of definitions for the UI components, design patterns, naming conventions, brand assets and code guidelines. 
 
-Cherry is technology agnostic – meaning that it can be applied independently of the technology stack. It defines the underlying design philosophy of your project and serve as the bridge between design and code. It is bundled with all the right tools you need to get started as fast as possible.
+Cherry is technology agnostic – meaning that it can be applied independently of the technology stack. It defines the underlying design philosophy of your project and serves as the bridge between design and code. It is bundled with all the right tools you need to get started as fast as possible.
 
 ---
 
