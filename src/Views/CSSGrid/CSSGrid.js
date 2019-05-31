@@ -35,7 +35,7 @@ class CSSGrid extends Component {
 								className={styles.content}
 								dangerouslySetInnerHTML={{ __html: dataIntro.__content }}
 							/>
-							<div className="container">
+							<div className="container containerFluid containerChild">
 								<div className="row">
 									<div className="col12 highlight">
 										<div>.col12</div>
@@ -110,7 +110,7 @@ class CSSGrid extends Component {
 							</div>
 							<div><h1>Responsiveness</h1></div>
 							<p>See how aspects of the Cherry grid system work across multiple devices.</p>
-							<div className="container">
+							<div className="container containerFluid containerChild">
 								<div className="row">
 									<div className="col12-xs col6-lg highlight">
 										<div>.col12-xs .col6-lg</div>

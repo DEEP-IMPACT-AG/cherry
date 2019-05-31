@@ -8,8 +8,20 @@
 		@mixin container;
 	}
 
+	& .containerFluid {
+		@mixin containerFluid;
+	}
+
+	& .containerChild {
+		@mixin containerChild;
+	}
+
 	& .row {
 		@mixin row;
+
+		& > * {
+			@mixin col;
+		}
 	}
 
 	& .col1 {
@@ -581,12 +593,13 @@
 
 :global {
 	& .highlight {
-		background: var(--color-tertiary);
-		border: solid 1px var(--color-light);
-		padding: 0;
+		padding: 5px;
 
 		& * {
+			background: var(--color-tertiary);
+			border: solid 1px var(--color-gray-light);
 			padding: 10px;
+			border-radius: 4px;
 			overflow: hidden;
 			box-sizing: border-box;
 			text-overflow: ellipsis;

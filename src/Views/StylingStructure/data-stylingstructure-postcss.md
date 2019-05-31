@@ -38,6 +38,8 @@ Variable definitions.
 	--padding-top-body-desktop: 0;
 	--margin-container-mobile: 20px;
 	--margin-container-desktop: 20px;
+	--margin-container-child-mobile: 10px;
+	--margin-container-child-desktop: 10px;
 	--margin-row-mobile: -10px;
 	--margin-row-desktop: -10px;
 	--gutter-col-mobile: 10px;
@@ -478,6 +480,30 @@ Chunks of reusable css. Don't forget to add `npm install postcss-mixins`
 	@media (--screen-lg) {
 		padding-right: var(--margin-container-desktop);
 		padding-left: var(--margin-container-desktop);
+	}
+}
+
+@define-mixin containerFluid {
+	width: 100%;
+	max-width: initial;
+	padding-right: var(--margin-container-mobile);
+	padding-left: var(--margin-container-mobile);
+	margin-right: auto;
+	margin-left: auto;
+
+	@media (--screen-lg) {
+		padding-right: var(--margin-container-desktop);
+		padding-left: var(--margin-container-desktop);
+	}
+}
+
+@define-mixin containerChild {
+	padding-right: var(--margin-container-child-mobile);
+	padding-left: var(--margin-container-child-mobile);
+
+	@media (--screen-lg) {
+		padding-right: var(--margin-container-child-desktop);
+		padding-left: var(--margin-container-child-desktop);
 	}
 }
 ```

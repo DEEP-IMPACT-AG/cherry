@@ -597,6 +597,8 @@ Entry Points
 	/* Spacing ----------------------------------------------- */
 	--margin-container-mobile: 20px;
 	--margin-container-desktop: 20px;
+	--margin-container-child-mobile: 10px;
+	--margin-container-child-desktop: 10px;
 	--margin-row-mobile: -10px;
 	--margin-row-desktop: -10px;
 	--gutter-col-mobile: 10px;
@@ -636,12 +638,40 @@ Entry Points
 	}
 }
 
+@define-mixin containerFluid {
+	width: 100%;
+	max-width: initial;
+	padding-right: var(--margin-container-mobile);
+	padding-left: var(--margin-container-mobile);
+	margin-right: auto;
+	margin-left: auto;
+
+	@media (--screen-lg) {
+		padding-right: var(--margin-container-desktop);
+		padding-left: var(--margin-container-desktop);
+	}
+}
+
+@define-mixin containerChild {
+	padding-right: var(--margin-container-child-mobile);
+	padding-left: var(--margin-container-child-mobile);
+
+	@media (--screen-lg) {
+		padding-right: var(--margin-container-child-desktop);
+		padding-left: var(--margin-container-child-desktop);
+	}
+}
+
 .container {
 	@mixin container;
 }
 
 .containerFluid {
 	@mixin containerFluid;
+}
+
+.containerChild {
+	@mixin containerChild;
 }
 ```
 
@@ -662,16 +692,12 @@ Entry Points
 	@mixin row;
 }
 
-.justifyContent-center {
-	justify-content: center;
+.justifyContent-flex-start {
+	justify-content: flex-start;
 }
 
 .justifyContent-flex-end {
 	justify-content: flex-end;
-}
-
-.justifyContent-flex-start {
-	justify-content: flex-start;
 }
 
 .justifyContent-center {
@@ -685,12 +711,38 @@ Entry Points
 .justifyContent-space-around {
 	justify-content: space-around;
 }
+
+.justifyContent-initial {
+	justify-content: initial;
+}
+
+.alignItems-stretch {
+	align-items: stretch;
+}
+
+.alignItems-center {
+	align-items: center;
+}
+
+.alignItems-flex-start {
+	align-items: flex-start;
+}
+
+.alignItems-flex-end {
+	align-items: flex-end;
+}
+
+.alignItems-baseline {
+	align-items: baseline;
+}
+
+.alignItems-initial {
+	align-items: initial;
+}
 ```
 
 ## col.css
 ```css
-@import '../variables.css';
-
 @define-mixin col {
 	position: relative;
 	width: 100%;
