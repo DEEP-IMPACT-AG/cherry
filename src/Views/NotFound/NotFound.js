@@ -7,7 +7,7 @@ import styles from './NotFound.css';
 function NotFound() {
 	return (
 		<Fragment>
-			<Head title="React SSR Boilerplate • Not Found" />
+			<Head title="Cherry • Not Found" />
 			<Status code={404} />
 			<ContentPusher>
 				<Container>
