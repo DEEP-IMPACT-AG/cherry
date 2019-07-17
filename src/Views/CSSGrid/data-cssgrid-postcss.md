@@ -638,20 +638,6 @@ Entry Points
 	}
 }
 
-@define-mixin containerFluid {
-	width: 100%;
-	max-width: initial;
-	padding-right: var(--margin-container-mobile);
-	padding-left: var(--margin-container-mobile);
-	margin-right: auto;
-	margin-left: auto;
-
-	@media (--screen-lg) {
-		padding-right: var(--margin-container-desktop);
-		padding-left: var(--margin-container-desktop);
-	}
-}
-
 @define-mixin containerChild {
 	padding-right: var(--margin-container-child-mobile);
 	padding-left: var(--margin-container-child-mobile);
