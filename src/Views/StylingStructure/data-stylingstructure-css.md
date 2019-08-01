@@ -501,7 +501,7 @@ svg * {
 }
 
 img {
-  display: block;
+  display: inline-block;
   max-width: 100%;
   width: 100%;
 }
