@@ -516,6 +516,7 @@ body {
 	font-size: var(--size-text-mobile);
 	line-height: var(--lineheight-text-mobile);
 	padding-top: var(--padding-top-body-mobile);
+	color: var(--color-dark);
 
 	@media (--screen-lg) {
 		font-size: var(--size-text-desktop);

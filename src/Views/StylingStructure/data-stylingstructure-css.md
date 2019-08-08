@@ -423,6 +423,7 @@ body {
   line-height: var(--lineheight-text-mobile);
   padding-top: 70px;
   padding-top: var(--padding-top-body-mobile);
+  color: var(--color-dark);
 }
 
 @media (min-width: 992px) {
