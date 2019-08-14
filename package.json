@@ -4,7 +4,7 @@
 	"main": "lib/build/cherry.js",
 	"module": "lib/build/cherry.module.js",
 	"description": "Design System",
-	"homepage": "https://cherry.design/",
+	"homepage": "https://cherry.design",
 	"repository": "https://github.com/DEEP-IMPACT-AG/cherry",
 	"keywords": [
 		"cherry",
