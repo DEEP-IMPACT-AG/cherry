@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -10,7 +10,7 @@ function Head({
 	children,
 }) {
 	return (
-		<Helmet encodeSpecialCharacters={true}>
+		<Helmet>
 			<meta name="google-site-verification" content="faiA8UXuBoMevueS2UNKmSDFsNQAJsLh1nGnQYnCfYI" />
 			<meta http-equiv="" content="IE=edge" />
 			<meta name="viewport" content="width=device-width, initial-scale=1" />

@@ -2,6 +2,7 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router';
 import Routes from '../App/Routes';
+import { HelmetProvider } from 'react-helmet-async';
 import { Helmet } from 'react-helmet';
 import sitemap from './sitemap';
 import robots from './robots';
@@ -11,13 +12,17 @@ import flushChunks from 'webpack-flush-chunks';
 
 export default ({ clientStats }) => (req, res) => {
 	const context = {};
+	const helmetContext = {};
+
 	const app = renderToString(
-		<StaticRouter location={req.originalUrl} context={context}>
-			<Routes />
-		</StaticRouter>
+		<HelmetProvider context={helmetContext}>
+			<StaticRouter location={req.originalUrl} context={context}>
+				<Routes />
+			</StaticRouter>
+		</HelmetProvider>
 	);
 
-	const helmet = Helmet.renderStatic();
+	const { helmet } = helmetContext;
 
 	const { js, styles, cssHash } = flushChunks(clientStats, {
 		chunkNames: flushChunkNames(),

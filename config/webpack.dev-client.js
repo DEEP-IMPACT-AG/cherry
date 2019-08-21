@@ -2,6 +2,10 @@ const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+const createStyledComponentsTransformer = require('typescript-plugin-styled-components')
+	.default;
+const styledComponentsTransformer = createStyledComponentsTransformer();
+
 module.exports = {
 	name: 'client',
 	entry: {
@@ -33,6 +37,21 @@ module.exports = {
 				],
 			},
 			{
+				test: /\.tsx?$/,
+				loader: [
+					'babel-loader',
+					{
+						loader: 'awesome-typescript-loader',
+						options: {
+							useCache: true,
+							getCustomTransformers: () => ({
+								before: [styledComponentsTransformer],
+							}),
+						},
+					},
+				],
+			},
+			{
 				test: /\.css$/,
 				use: [
 					'css-hot-loader',
@@ -44,7 +63,8 @@ module.exports = {
 							importLoaders: 1,
 							modules: {
 								mode: 'local',
-								localIdentName: '[name]__[local]--[hash:base64:5]',
+								localIdentName:
+									'[name]__[local]--[hash:base64:5]',
 							},
 						},
 					},
@@ -56,6 +76,10 @@ module.exports = {
 						},
 					},
 				],
+			},
+			{
+				test: /\.scss$/,
+				use: ['style-loader', 'css-loader', 'sass-loader'],
 			},
 			{
 				test: /\.(jpg|svg|png|ico|gif|eot|woff|ttf)$/,
@@ -82,6 +106,7 @@ module.exports = {
 		alias: {
 			'react-dom': '@hot-loader/react-dom',
 		},
+		extensions: ['.ts', '.tsx', '.js', '.json', '.jsx', '.scss'],
 	},
 	plugins: [
 		new MiniCssExtractPlugin({
