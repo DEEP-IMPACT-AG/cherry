@@ -5,8 +5,7 @@ import { ContentPusher, Container, Readable, Button, Tabs, Tab } from '../../Com
 import styles from './CSSGrid.css';
 const dataIntro = require('./data-cssgrid-intro.md');
 const dataMediaQueries = require('./data-cssgrid-mediaqueries.md');
-const dataPostCSS = require('./data-cssgrid-postcss.md');
-const dataCSS = require('./data-cssgrid-css.md');
+const dataOutro = require('./data-cssgrid-outro.md');
 import hljs from 'highlight.js/lib/highlight';
 import javascript from 'highlight.js/lib/languages/javascript';
 import css from 'highlight.js/lib/languages/css';
@@ -124,23 +123,10 @@ class CSSGrid extends Component {
 								className={classNames(styles.content, styles.scrollHorizontal)}
 								dangerouslySetInnerHTML={{ __html: dataMediaQueries.__content }}
 							/>
-
-							<br/>
-
-							<Tabs>
-								<Tab label="PostCSS">
-									<div
-										className={styles.content}
-										dangerouslySetInnerHTML={{ __html: dataPostCSS.__content }}
-									/>
-								</Tab>
-								<Tab label="Compiled CSS">
-									<div
-										className={styles.content}
-										dangerouslySetInnerHTML={{ __html: dataCSS.__content }}
-									/>
-								</Tab>
-							</Tabs>
+							<div
+								className={styles.content}
+								dangerouslySetInnerHTML={{ __html: dataOutro.__content }}
+							/>
 						</Readable>
 					</Container>
 				</ContentPusher>

@@ -24,21 +24,6 @@ Cherry is technology agnostic – meaning that it can be applied independently o
 
 ---
 
-# NPM Library
-
-Cherry is available through the [NPM library](https://www.npmjs.com/package/cherry-design). To use NPM, you need Node installed, [click here to download](https://nodejs.org/).
-
-**To install the package type:**
-```sh
-npm install cherry-design
-```
-
-### NPM Single Purpose Classes
-Import directly the compiled **CSS** from:
-```css
-@import url('cherry-design/lib/build/css/styles.css');
-```
-
 ### NPM Components
 Read more about [Components](https://cherry.design/react-components) on the documentation portal.
 

@@ -1,15 +1,16 @@
 # React Components
 
-Cherry is available through the [NPM library](https://www.npmjs.com/package/cherry-design). To use NPM, you need Node installed, [click here to download](https://nodejs.org/).
-
-**To install the package type:**
-```
-npm install cherry-design
-```
+Cherry comes with it's own modules. Every little part of the design system should be componentized and available as a NPM package. You install only what is being currently used.
 
 ## Cherry Grid
-Currenctly the [CSS Grid](https://cherry.design/css-grid) components are available on the library. Below you will find a typical example of the grid usage.
+The [CSS Grid](https://cherry.design/css-grid) components are available on the Cherry Grid Library.
 
+**To install the Cherry Grid package run:**
+```
+npm install cherry-grid
+```
+
+Below you will find a typical example of the grid usage.
 ```javascript
 import React from 'react';
 import styles from './App.css';
