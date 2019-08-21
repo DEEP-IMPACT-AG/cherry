@@ -3,7 +3,6 @@ import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router';
 import Routes from '../App/Routes';
 import { HelmetProvider } from 'react-helmet-async';
-import { Helmet } from 'react-helmet';
 import sitemap from './sitemap';
 import robots from './robots';
 
