@@ -15,7 +15,7 @@ Refer to page: [CSS Grid](https://cherry.design/css-grid) for more detailed expl
 ```javascript
 import React from 'react';
 import styles from './App.css';
-import { Container, Row, Col } from 'cherry-design';
+import { Container, Row, Col } from 'cherry-grid';
 
 function App() {
 	return (
