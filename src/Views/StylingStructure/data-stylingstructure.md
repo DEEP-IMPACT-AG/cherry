@@ -10,3 +10,12 @@ These are the pre-defined CSS styles.
 Add all your imports in: `styles.css`. Please note that only: `styles.css` and `variables.css` are supposed to be modified. The rest of the css is boilerplate template code, mapping the Cherry patterns, thus `mixins.css` and `globals.css` should stay untouched. 
 
 You can import additional mixins by adding them as imports on the `styles.css`.
+
+### File Structure
+```shell
+    ├── src/                     # Source files
+    │   ├── assets/              # Assets directory
+    │       ├── css/             # CSS files
+    │       ├── fonts/           # Fonts directory
+    │       ├── img/             # Image directory
+```

@@ -7,7 +7,7 @@ Cherry can be integrated and used in any technology or workflow. You can use it 
 - We use: **Tabs**
 - Tab size: **4**
 - Always leave an empty line before the **nested** CSS blocks 👇
-  ```
+  ```css
   .parent {
     color: var(--color-dark);
 
