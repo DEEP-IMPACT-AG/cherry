@@ -27,9 +27,10 @@ Cherry is technology agnostic – meaning that it can be applied independently o
 ---
 
 # NPM Libraries
-- [**Cherry Grid**](https://github.com/DEEP-IMPACT-AG/cherry-grid)
+To use NPM, you need Node installed, [click here to download](https://nodejs.org/).
 
-The 🍒 Cherry Grid is available through the [NPM library](https://www.npmjs.com/package/cherry-grid). To use NPM, you need Node installed, [click here to download](https://nodejs.org/).
+- **🍒 Cherry Grid** - [💾 Repository](https://github.com/DEEP-IMPACT-AG/cherry-grid) - [📦 NPM Package](https://www.npmjs.com/package/cherry-grid)
+
 
 ---
 
