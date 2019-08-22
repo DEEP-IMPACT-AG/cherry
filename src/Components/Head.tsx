@@ -34,16 +34,16 @@ function Head({
 			<link
 				rel="apple-touch-icon"
 				sizes="192x192"
-				href="https://res.cloudinary.com/deep-impact-ag/image/upload/v1564693542/cherry/reactfondue/icon192.png"
+				href="https://res.cloudinary.com/deep-impact-ag/image/upload/v1547922882/cherry/manifest/192.jpg"
 			/>
 			<link
 				rel="apple-touch-icon-precomposed"
-				href="https://res.cloudinary.com/deep-impact-ag/image/upload/v1565468890/cherry/reactfondue/icon192.png"
+				href="https://res.cloudinary.com/deep-impact-ag/image/upload/v1547922882/cherry/manifest/192.jpg"
 			/>
 			<link
 				rel="icon"
 				sizes="192x192"
-				href="https://res.cloudinary.com/deep-impact-ag/image/upload/v1565468890/cherry/reactfondue/icon192.png"
+				href="https://res.cloudinary.com/deep-impact-ag/image/upload/v1547922882/cherry/manifest/192.jpg"
 			/>
 			{description && <meta name="description" content={description} />}
 			{title && <meta property="og:title" content={title} />}
