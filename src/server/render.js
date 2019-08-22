@@ -3,6 +3,7 @@ import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router';
 import Routes from '../App/Routes';
 import { HelmetProvider } from 'react-helmet-async';
+import manifest from './manifest';
 import sitemap from './sitemap';
 import robots from './robots';
 
@@ -31,6 +32,13 @@ export default ({ clientStats }) => (req, res) => {
 
 	if (context.status == 404) {
 		console.log('Error 404: ', req.originalUrl);
+	}
+
+	if (req.url == '/manifest.json' || req.url == '/Manifest.json') {
+		return res
+			.header('Content-Type', 'application/manifest+json')
+			.status(status)
+			.send(manifest);
 	}
 
 	if (req.url == '/sitemap.xml') {
