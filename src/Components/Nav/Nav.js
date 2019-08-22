@@ -129,17 +129,17 @@ class Nav extends Component {
 						<NavItem
 							title="Components"
 							link="/"
-							active={location.pathname == '/react-components' ? true : false}
+							active={location.pathname == '/react-grid' ? true : false}
 							label="New"
 						>
 							<ul className={styles.sub}>
 								<li>
 									<NavLink
-										to="/react-components"
+										to="/react-grid"
 										activeClassName={styles.active}
 										onClick={this.closeMenu}
 									>
-										React Components
+										React Grid
 									</NavLink>
 								</li>
 							</ul>

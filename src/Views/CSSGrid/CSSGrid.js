@@ -5,24 +5,8 @@ import { ContentPusher, Container, Readable, Button, Tabs, Tab } from '../../Com
 import styles from './CSSGrid.css';
 const dataIntro = require('./data-cssgrid-intro.md');
 const dataMediaQueries = require('./data-cssgrid-mediaqueries.md');
-const dataOutro = require('./data-cssgrid-outro.md');
-import hljs from 'highlight.js/lib/highlight';
-import javascript from 'highlight.js/lib/languages/javascript';
-import css from 'highlight.js/lib/languages/css';
-hljs.registerLanguage('javascript', javascript);
-hljs.registerLanguage('css', css);
 
 class CSSGrid extends Component {
-	componentDidMount() {
-		const cdx = document.getElementsByTagName('pre');
-		if (cdx.length) {
-			let i;
-			for (i = 0; i < cdx.length; i++) {
-				hljs.highlightBlock(cdx[i]);
-			}
-		}
-	}
-
 	render() {
 		return (
 			<Fragment>
@@ -122,10 +106,6 @@ class CSSGrid extends Component {
 							<div
 								className={classNames(styles.content, styles.scrollHorizontal)}
 								dangerouslySetInnerHTML={{ __html: dataMediaQueries.__content }}
-							/>
-							<div
-								className={styles.content}
-								dangerouslySetInnerHTML={{ __html: dataOutro.__content }}
 							/>
 						</Readable>
 					</Container>

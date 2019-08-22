@@ -3,42 +3,10 @@
 		padding: 5px;
 		color: var(--color-secondary);
 		background: var(--color-tertiary);
-	}
 
-	& .hljs {
-		display: block;
-		overflow-x: auto;
-		padding: 0.5em;
-		color: var(--color-secondary);
-		background: var(--color-tertiary);
-	}
-
-	& .hljs-title,
-	& .hljs-section,
-	& .hljs-selector-id {
-		font-weight: normal;
-	}
-
-	& .hljs-subst {
-		font-weight: normal;
-	}
-
-	& .hljs-type,
-	& .hljs-class .hljs-title {
-		font-weight: normal;
-	}
-
-	& .hljs-tag,
-	& .hljs-name,
-	& .hljs-attribute {
-		font-weight: normal;
-	}
-
-	& .hljs-emphasis {
-		font-style: italic;
-	}
-
-	& .hljs-strong {
-		font-weight: normal;
+		&[class] {
+			display: block;
+			padding: 5px 10px;
+		}
 	}
 }

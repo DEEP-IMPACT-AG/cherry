@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import classNames from 'classnames';
 import styles from './Tabs.css';
 import Tab from './Tab';
-import hljs from 'highlight.js/lib/highlight';
-import javascript from 'highlight.js/lib/languages/javascript';
-import css from 'highlight.js/lib/languages/css';
-hljs.registerLanguage('javascript', javascript);
-hljs.registerLanguage('css', css);
 
 class Tabs extends Component {
 	constructor(props) {
@@ -15,16 +10,6 @@ class Tabs extends Component {
 		this.state = {
 			activeTab: this.props.children[0].props.label,
 		};
-	}
-
-	componentDidUpdate() {
-		const cdx = document.getElementsByTagName('pre');
-		if (cdx.length) {
-			let i;
-			for (i = 0; i < cdx.length; i++) {
-				hljs.highlightBlock(cdx[i]);
-			}
-		}
 	}
 
 	render() {

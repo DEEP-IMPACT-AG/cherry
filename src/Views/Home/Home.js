@@ -4,23 +4,8 @@ import { ContentPusher, Container, Readable } from '../../Components/Layout';
 import { Sketch, PostCSS, ReactLogo } from '../../assets/svg';
 import styles from './Home.css';
 const data = require('./data-home.md');
-import hljs from 'highlight.js/lib/highlight';
-import javascript from 'highlight.js/lib/languages/javascript';
-import css from 'highlight.js/lib/languages/css';
-hljs.registerLanguage('javascript', javascript);
-hljs.registerLanguage('css', css);
 
 class Home extends Component {
-	componentDidMount() {
-		const cdx = document.getElementsByTagName('pre');
-		if (cdx.length) {
-			let i;
-			for (i = 0; i < cdx.length; i++) {
-				hljs.highlightBlock(cdx[i]);
-			}
-		}
-	}
-
 	render() {
 		return (
 			<Fragment>

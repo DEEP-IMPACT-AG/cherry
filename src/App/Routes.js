@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, Component } from 'react';
 import universal from 'react-universal-component';
 import GoogleTagManager from '../Components/GoogleTagManager';
 import Head from '../Components/Head';
@@ -15,54 +15,60 @@ const UniversalComponent = universal(props => import(`../Views/${props.page}`), 
 	ignoreBabelRename: true,
 });
 
-export default ({ staticContext }) => (
-	<Fragment>
-		{isProd ? <GoogleTagManager gtmId="GTM-K8M4PWZ" /> : ''}
-		<Head />
-		<Nav />
-		<Switch>
-			<Route
-				exact
-				path="/index.html"
-				render={routeProps => <UniversalComponent page="Home" {...routeProps} />}
-			/>
-			<Route
-				exact
-				path="/"
-				render={routeProps => <UniversalComponent page="Home" {...routeProps} />}
-			/>
-			<Route
-				exact
-				path="/code-guidelines"
-				render={routeProps => <UniversalComponent page="CodeGuidelines" {...routeProps} />}
-			/>
-			<Route
-				exact
-				path="/sketch"
-				render={routeProps => <UniversalComponent page="Sketch" {...routeProps} />}
-			/>
-			<Route
-				exact
-				path="/typography"
-				render={routeProps => <UniversalComponent page="Typography" {...routeProps} />}
-			/>
-			<Route
-				exact
-				path="/styling-structure"
-				render={routeProps => <UniversalComponent page="StylingStructure" {...routeProps} />}
-			/>
-			<Route
-				exact
-				path="/css-grid"
-				render={routeProps => <UniversalComponent page="CSSGrid" {...routeProps} />}
-			/>
-			<Route
-				exact
-				path="/react-components"
-				render={routeProps => <UniversalComponent page="ReactComponents" {...routeProps} />}
-			/>
-			<Route render={routeProps => <UniversalComponent page="NotFound" {...routeProps} />} />
-		</Switch>
-		<Footer />
-	</Fragment>
-);
+export default class Routes extends Component {
+	render() {
+		const { staticContext } = this.props;
+
+		return (
+			<Fragment>
+				{isProd ? <GoogleTagManager gtmId="GTM-K8M4PWZ" /> : ''}
+				<Head />
+				<Nav />
+				<Switch>
+					<Route
+						exact
+						path="/index.html"
+						render={routeProps => <UniversalComponent page="Home" {...routeProps} />}
+					/>
+					<Route
+						exact
+						path="/"
+						render={routeProps => <UniversalComponent page="Home" {...routeProps} />}
+					/>
+					<Route
+						exact
+						path="/code-guidelines"
+						render={routeProps => <UniversalComponent page="CodeGuidelines" {...routeProps} />}
+					/>
+					<Route
+						exact
+						path="/sketch"
+						render={routeProps => <UniversalComponent page="Sketch" {...routeProps} />}
+					/>
+					<Route
+						exact
+						path="/typography"
+						render={routeProps => <UniversalComponent page="Typography" {...routeProps} />}
+					/>
+					<Route
+						exact
+						path="/styling-structure"
+						render={routeProps => <UniversalComponent page="StylingStructure" {...routeProps} />}
+					/>
+					<Route
+						exact
+						path="/css-grid"
+						render={routeProps => <UniversalComponent page="CSSGrid" {...routeProps} />}
+					/>
+					<Route
+						exact
+						path="/react-grid"
+						render={routeProps => <UniversalComponent page="ReactGrid" {...routeProps} />}
+					/>
+					<Route render={routeProps => <UniversalComponent page="NotFound" {...routeProps} />} />
+				</Switch>
+				<Footer />
+			</Fragment>
+		);
+	}
+}

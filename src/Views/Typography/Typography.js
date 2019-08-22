@@ -13,23 +13,8 @@ import {
 import { H1, H2, H3, H4, H5, H6 } from '../../Components/Heading';
 import { Sketch as SketchIcon } from '../../assets/svg';
 import styles from './Typography.css';
-import hljs from 'highlight.js/lib/highlight';
-import javascript from 'highlight.js/lib/languages/javascript';
-import css from 'highlight.js/lib/languages/css';
-hljs.registerLanguage('javascript', javascript);
-hljs.registerLanguage('css', css);
 
 class Typography extends Component {
-	componentDidMount() {
-		const cdx = document.getElementsByTagName('pre');
-		if (cdx.length) {
-			let i;
-			for (i = 0; i < cdx.length; i++) {
-				hljs.highlightBlock(cdx[i]);
-			}
-		}
-	}
-
 	render() {
 		return (
 			<Fragment>

@@ -1,16 +1,17 @@
-# React Components
+# React Grid
 
-Cherry comes with it's own modules. Every little part of the design system should be componentized and available as a NPM package. You install only what is being currently used.
+Cherry comes with it's own set of modules. Every little part of the design system should be componentized and available as a stand alone NPM package. This means that you install only what will be used.
 
-## Cherry Grid
-The [CSS Grid](https://cherry.design/css-grid) components are available on the Cherry Grid Library.
+---
 
-**To install the Cherry Grid package run:**
+## 🍒 Cherry Grid
+💾 [Repository](https://github.com/DEEP-IMPACT-AG/cherry-grid) - 📦 [NPM Package](https://www.npmjs.com/package/cherry-grid)
+
+**To install Cherry Grid, run the command:**
 ```
 npm install cherry-grid
 ```
-
-Below you will find a typical example of the grid usage.
+Refer to page: [CSS Grid](https://cherry.design/css-grid) for more detailed explanation on how the styling works. Below you will find a typical example of the grid usage.
 ```javascript
 import React from 'react';
 import styles from './App.css';

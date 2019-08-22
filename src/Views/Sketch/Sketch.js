@@ -5,23 +5,8 @@ import { ContentPusher, Container, Readable, Button, Row, Col } from '../../Comp
 import { Sketch as SketchIcon } from '../../assets/svg';
 import styles from './Sketch.css';
 const data = require('./data-sketch.md');
-import hljs from 'highlight.js/lib/highlight';
-import javascript from 'highlight.js/lib/languages/javascript';
-import css from 'highlight.js/lib/languages/css';
-hljs.registerLanguage('javascript', javascript);
-hljs.registerLanguage('css', css);
 
 class Sketch extends Component {
-	componentDidMount() {
-		const cdx = document.getElementsByTagName('pre');
-		if (cdx.length) {
-			let i;
-			for (i = 0; i < cdx.length; i++) {
-				hljs.highlightBlock(cdx[i]);
-			}
-		}
-	}
-
 	render() {
 		return (
 			<Fragment>
