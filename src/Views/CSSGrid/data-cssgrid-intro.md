@@ -5,7 +5,7 @@ Cherry’s grid system uses a series of containers, rows, and columns to layout 
 ---
 
 ## 🍒 Cherry Grid
-💾 [Repository](https://github.com/DEEP-IMPACT-AG/cherry-grid) - 📦 [NPM Package](https://www.npmjs.com/package/cherry-grid)
+💾 [Repository](https://github.com/DEEP-IMPACT-AG/cherry-grid) - 📦 [NPM Package](https://www.npmjs.com/package/cherry-grid) - 📌 [CSS Direct Link](https://raw.githubusercontent.com/DEEP-IMPACT-AG/cherry-grid/master/dist/css/styles.css) 
 
 **To install Cherry Grid, run the command:**
 ```
