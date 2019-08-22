@@ -9,14 +9,13 @@
 	border-radius: 30px;
 	margin: 10px 0;
 	white-space: nowrap;
+	
 	box-shadow: 0 0 0 0 var(--color-secondary);
 	transform: translate(0, 0);
 
-	@media (hover: hover) {
-		&:hover:not([disabled]) {
-			box-shadow: 0 5px 0 0 var(--color-primary);
-			transform: translate(0, -5px);
-		}
+	&:hover {
+		box-shadow: 0 5px 0 0 var(--color-primary);
+		transform: translate(0, -5px);
 	}
 
 	& svg {

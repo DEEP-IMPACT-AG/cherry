@@ -28,6 +28,10 @@
 		}
 	}
 
+	& img {
+		width: auto;
+	}
+
 	& ul:not([class]) {
 		@mixin unorderedList;
 	}

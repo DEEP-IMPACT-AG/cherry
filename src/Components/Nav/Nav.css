@@ -115,14 +115,9 @@
 					font-size: var(--size-eyebrow-desktop);
 					padding: 10px;
 
+					&:hover,
 					&.active {
 						color: var(--color-primary);
-					}
-
-					@media (hover: hover) {
-						&:hover {
-							color: var(--color-primary);
-						}
 					}
 				}
 			}
@@ -131,7 +126,7 @@
 
 	& .logo {
 		display: inline-block;
-		padding: 20px 20px 2px;
+		padding: 15px 20px 7px;
 		position: relative;
 
 		& h1 {
@@ -142,7 +137,7 @@
 		}
 
 		& svg {
-			max-width: 109px;
+			max-width: 150px;
 			width: 100%;
 			height: 41px;
 
@@ -150,7 +145,6 @@
 				display: none;
 			}
 		}
-		
 	}
 
 	@media (--screen-lg) {
@@ -169,7 +163,7 @@
 			padding: 64px;
 
 			& svg {
-				max-width: 209px;
+				max-width: 100%;
 				height: auto;
 
 				& :global(.text) {
