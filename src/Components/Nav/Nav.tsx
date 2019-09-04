@@ -39,7 +39,7 @@ class Nav extends Component<NavProps, NavState> {
 		return (
 			<AppearAfter className={styles.navigation} visibleClassName={styles.visible}>
 				<header>
-					<Link to={`/${lang}`} className={styles.logo}>
+					<Link to="/" className={styles.logo}>
 						<Logo />
 						<h1>Cherry - Design System</h1>
 					</Link>
