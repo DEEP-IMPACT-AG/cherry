@@ -1,6 +1,7 @@
 :global {
 	& code {
 		padding: 5px;
+		border-radius: 6px;
 		color: var(--color-secondary);
 		background: var(--color-tertiary);
 
