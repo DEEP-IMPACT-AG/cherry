@@ -42,6 +42,7 @@ body {
 
 a,
 button {
+	cursor: pointer;
 	outline: none;
 	text-decoration: none;
 	transition: all 0.3s ease;
