@@ -1,10 +1,17 @@
-import React, { Component, Fragment } from 'react';
-import classNames from 'classnames';
-import Head from '../../Components/Head';
-import { ContentPusher, Container, Readable, Button, Tabs, Tab } from '../../Components/Layout';
-const styles = require('./CSSGrid.css');
-const dataIntro = require('./data-cssgrid-intro.md');
-const dataMediaQueries = require('./data-cssgrid-mediaqueries.md');
+import React, { Component, Fragment } from "react";
+import classNames from "classnames";
+import Head from "../../Components/Head";
+import {
+	ContentPusher,
+	Container,
+	Readable,
+	Button,
+	Tabs,
+	Tab,
+} from "../../Components/Layout";
+const styles = require("./CSSGrid.css");
+const dataIntro = require("./data-cssgrid-intro.md");
+const dataMediaQueries = require("./data-cssgrid-mediaqueries.md");
 
 class CSSGrid extends Component {
 	render() {
@@ -16,7 +23,9 @@ class CSSGrid extends Component {
 						<Readable>
 							<div
 								className={styles.content}
-								dangerouslySetInnerHTML={{ __html: dataIntro.__content }}
+								dangerouslySetInnerHTML={{
+									__html: dataIntro.__content,
+								}}
 							/>
 							<div className="container containerFluid containerChild">
 								<div className="row">
@@ -91,8 +100,13 @@ class CSSGrid extends Component {
 									</div>
 								</div>
 							</div>
-							<div><h1>Responsiveness</h1></div>
-							<p>See how aspects of the Cherry grid system work across multiple devices.</p>
+							<div>
+								<h1>Responsiveness</h1>
+							</div>
+							<p>
+								See how aspects of the Cherry grid system work
+								across multiple devices.
+							</p>
 							<div className="container containerFluid containerChild">
 								<div className="row">
 									<div className="col12-xs col6-lg highlight">
@@ -104,8 +118,13 @@ class CSSGrid extends Component {
 								</div>
 							</div>
 							<div
-								className={classNames(styles.content, styles.scrollHorizontal)}
-								dangerouslySetInnerHTML={{ __html: dataMediaQueries.__content }}
+								className={classNames(
+									styles.content,
+									styles.scrollHorizontal,
+								)}
+								dangerouslySetInnerHTML={{
+									__html: dataMediaQueries.__content,
+								}}
 							/>
 						</Readable>
 					</Container>

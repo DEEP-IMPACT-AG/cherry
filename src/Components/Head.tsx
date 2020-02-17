@@ -1,8 +1,8 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
-const favicon = require('../assets/img/favicon.ico');
+import React from "react";
+import { Helmet } from "react-helmet-async";
+const favicon = require("../assets/img/favicon.ico");
 
-const isProd = process.env.NODE_ENV === 'production';
+const isProd = process.env.NODE_ENV === "production";
 
 interface HeadProps {
 	description?: string;
@@ -12,14 +12,17 @@ interface HeadProps {
 }
 
 function Head({
-	title = 'Cherry • Design System',
-	description = 'Cherry is a live inventory of definitions for the UI components, design patterns, naming conventions, brand assets and code guidelines.',
-	image = 'https://res.cloudinary.com/deep-impact-ag/image/upload/cherry/og.jpg',
+	title = "Cherry • Design System",
+	description = "Cherry is a live inventory of definitions for the UI components, design patterns, naming conventions, brand assets and code guidelines.",
+	image = "https://res.cloudinary.com/deep-impact-ag/image/upload/cherry/og.jpg",
 	children,
 }: HeadProps) {
 	return (
 		<Helmet>
-			<meta name="author" content="Luan Gjokaj, Deep-Impact Design Team, and Cherry contributors" />
+			<meta
+				name="author"
+				content="Luan Gjokaj, Deep-Impact Design Team, and Cherry contributors"
+			/>
 			<meta
 				name="viewport"
 				content="width=device-width, initial-scale=1"

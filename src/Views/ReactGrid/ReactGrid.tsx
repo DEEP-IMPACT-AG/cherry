@@ -1,9 +1,14 @@
-import React, { Component, Fragment } from 'react';
-import ReactDOM from 'react-dom';
-import Head from '../../Components/Head';
-import { ContentPusher, Container, Readable, Button } from '../../Components/Layout';
-const styles = require('./ReactGrid.css');
-const dataReactGrid = require('./data-react-grid.md');
+import React, { Component, Fragment } from "react";
+import ReactDOM from "react-dom";
+import Head from "../../Components/Head";
+import {
+	ContentPusher,
+	Container,
+	Readable,
+	Button,
+} from "../../Components/Layout";
+const styles = require("./ReactGrid.css");
+const dataReactGrid = require("./data-react-grid.md");
 
 class ReactGrid extends Component {
 	render() {
@@ -15,7 +20,9 @@ class ReactGrid extends Component {
 						<Readable>
 							<div
 								className={styles.content}
-								dangerouslySetInnerHTML={{ __html: dataReactGrid.__content }}
+								dangerouslySetInnerHTML={{
+									__html: dataReactGrid.__content,
+								}}
 							/>
 						</Readable>
 					</Container>

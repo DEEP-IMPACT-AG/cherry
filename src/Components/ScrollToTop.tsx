@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { withRouter, RouteComponentProps } from 'react-router';
+import React, { Component } from "react";
+import { withRouter, RouteComponentProps } from "react-router";
 
 interface ScrollToTopProps {
 	children: any;

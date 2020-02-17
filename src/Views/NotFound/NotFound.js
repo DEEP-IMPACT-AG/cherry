@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react';
-import Head from '../../Components/Head';
-import { Status } from '../../Components/Status';
-import { ContentPusher, Container, Readable } from '../../Components/Layout';
-const styles = require('./NotFound.css');
+import React, { Fragment } from "react";
+import Head from "../../Components/Head";
+import { Status } from "../../Components/Status";
+import { ContentPusher, Container, Readable } from "../../Components/Layout";
+const styles = require("./NotFound.css");
 
 function NotFound() {
 	return (

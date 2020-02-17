@@ -1,3 +1,3 @@
-import StylingStructure from './StylingStructure';
+import StylingStructure from "./StylingStructure";
 
 export default StylingStructure;

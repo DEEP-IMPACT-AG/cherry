@@ -1,7 +1,7 @@
-import de from './de';
-import en from './en';
+import de from "./de";
+import en from "./en";
 
-const language = 'de';
+const language = "de";
 
 const translationsDe = {
 	...de,
@@ -18,16 +18,16 @@ interface Props {
 }
 
 const t = ({ lang, key, params }: Props) => {
-	const langTranslations = lang === 'de' ? translationsDe : translationsEn;
+	const langTranslations = lang === "de" ? translationsDe : translationsEn;
 	const translation = key
-		.split('.')
+		.split(".")
 		.reduce(
 			(acc, currKey) => (acc ? acc[currKey] : undefined),
 			langTranslations,
 		);
 
-	if (typeof translation !== 'string') {
-		console.warn('No translation found for', key);
+	if (typeof translation !== "string") {
+		console.warn("No translation found for", key);
 		return key;
 	}
 

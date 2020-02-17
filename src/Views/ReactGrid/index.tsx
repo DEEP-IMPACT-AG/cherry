@@ -1,3 +1,3 @@
-import ReactGrid from './ReactGrid';
+import ReactGrid from "./ReactGrid";
 
 export default ReactGrid;

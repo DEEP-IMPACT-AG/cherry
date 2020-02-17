@@ -1,3 +1,3 @@
-import CodeGuidelines from './CodeGuidelines';
+import CodeGuidelines from "./CodeGuidelines";
 
 export default CodeGuidelines;

@@ -1,10 +1,15 @@
-import React, { Component } from 'react';
-import classNames from 'classnames';
-import AppearAfter from '../AppearAfter';
-import { Link, NavLink, withRouter, RouteComponentProps } from 'react-router-dom';
-import NavItem from './NavItem';
-import { Logo, Riangle, DeepImpact } from '../../assets/svg';
-const styles = require('./Nav.css');
+import React, { Component } from "react";
+import classNames from "classnames";
+import AppearAfter from "../AppearAfter";
+import {
+	Link,
+	NavLink,
+	withRouter,
+	RouteComponentProps,
+} from "react-router-dom";
+import NavItem from "./NavItem";
+import { Logo, Riangle, DeepImpact } from "../../assets/svg";
+const styles = require("./Nav.css");
 
 interface NavProps {
 	location: any;
@@ -37,7 +42,10 @@ class Nav extends Component<NavProps, NavState> {
 		const { location, lang } = this.props;
 
 		return (
-			<AppearAfter className={styles.navigation} visibleClassName={styles.visible}>
+			<AppearAfter
+				className={styles.navigation}
+				visibleClassName={styles.visible}
+			>
 				<header>
 					<Link to="/" className={styles.logo}>
 						<Logo />
@@ -59,12 +67,20 @@ class Nav extends Component<NavProps, NavState> {
 						<NavItem
 							title="Overview"
 							active={
-								location.pathname == '/' || location.pathname == '/code-guidelines' ? true : false
+								location.pathname == "/" ||
+								location.pathname == "/code-guidelines"
+									? true
+									: false
 							}
 						>
 							<ul className={styles.sub}>
 								<li>
-									<NavLink to="/" activeClassName={styles.active} onClick={this.closeMenu} exact>
+									<NavLink
+										to="/"
+										activeClassName={styles.active}
+										onClick={this.closeMenu}
+										exact
+									>
 										Introduction
 									</NavLink>
 								</li>
@@ -82,12 +98,19 @@ class Nav extends Component<NavProps, NavState> {
 						<NavItem
 							title="Design"
 							active={
-								location.pathname == '/sketch' || location.pathname == '/typography' ? true : false
+								location.pathname == "/sketch" ||
+								location.pathname == "/typography"
+									? true
+									: false
 							}
 						>
 							<ul className={styles.sub}>
 								<li>
-									<NavLink to="/sketch" activeClassName={styles.active} onClick={this.closeMenu}>
+									<NavLink
+										to="/sketch"
+										activeClassName={styles.active}
+										onClick={this.closeMenu}
+									>
 										Sketch
 									</NavLink>
 								</li>
@@ -105,7 +128,8 @@ class Nav extends Component<NavProps, NavState> {
 						<NavItem
 							title="CSS"
 							active={
-								location.pathname == '/styling-structure' || location.pathname == '/css-grid'
+								location.pathname == "/styling-structure" ||
+								location.pathname == "/css-grid"
 									? true
 									: false
 							}
@@ -121,7 +145,11 @@ class Nav extends Component<NavProps, NavState> {
 									</NavLink>
 								</li>
 								<li>
-									<NavLink to="/css-grid" activeClassName={styles.active} onClick={this.closeMenu}>
+									<NavLink
+										to="/css-grid"
+										activeClassName={styles.active}
+										onClick={this.closeMenu}
+									>
 										CSS Grid
 									</NavLink>
 								</li>
@@ -129,7 +157,11 @@ class Nav extends Component<NavProps, NavState> {
 						</NavItem>
 						<NavItem
 							title="Components"
-							active={location.pathname == '/react-grid' ? true : false}
+							active={
+								location.pathname == "/react-grid"
+									? true
+									: false
+							}
 							label="New"
 						>
 							<ul className={styles.sub}>
@@ -147,7 +179,10 @@ class Nav extends Component<NavProps, NavState> {
 					</ul>
 					<ul className={styles.poweredBy}>
 						<li>
-							<a href="https://www.deep-impact.ch/" target="_blank">
+							<a
+								href="https://www.deep-impact.ch/"
+								target="_blank"
+							>
 								<DeepImpact />
 							</a>
 						</li>

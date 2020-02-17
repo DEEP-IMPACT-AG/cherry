@@ -1,3 +1,3 @@
-import CSSGrid from './CSSGrid';
+import CSSGrid from "./CSSGrid";
 
 export default CSSGrid;
