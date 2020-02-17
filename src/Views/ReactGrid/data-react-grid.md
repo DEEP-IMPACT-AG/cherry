@@ -76,6 +76,32 @@ Col stands for column. The `<Col>` component should **always** be a direct child
 - `lastXxl` - *boolean* - Define if the element should go last on `xxl` media query. Default: `false`.
 - `lastXxxl` - *boolean* - Define if the element should go last on `xxxl` media query. Default: `false`.
 
+# Add Cherry variables
+If you don't have the Cherry variables in the project yet, please add the minimum required for the Grid to work:
+```css
+@custom-media --screen-xs (min-width: 0);
+@custom-media --screen-sm (min-width: 576px);
+@custom-media --screen-md (min-width: 768px);
+@custom-media --screen-lg (min-width: 992px);
+@custom-media --screen-xl (min-width: 1200px);
+@custom-media --screen-xxl (min-width: 1440px);
+@custom-media --screen-xxxl (min-width: 1920px);
+
+:root {
+	--max-width: 1440px;
+
+	--margin-container-mobile: 20px;
+	--margin-container-desktop: 80px;
+	--margin-container-child-mobile: 10px;
+	--margin-container-child-desktop: 10px;
+
+	--margin-row-mobile: -20px;
+	--margin-row-desktop: -20px;
+	--gutter-col-mobile: 20px;
+	--gutter-col-desktop: 20px;
+}
+```
+
 ### Media queries
 
 |  |Extra Small|Small|Medium|Large|XL Large|XX Large|XXX Large|
