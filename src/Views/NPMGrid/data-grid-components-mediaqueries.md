@@ -6,4 +6,4 @@
 |Props|xs={12}|sm={12}|md={12}|lg={12}|lx={12}|xxl={12}|xxxl={12}|
 
 # Single purpose CSS classes
-[🔗 Documentation](https://cherry.design/css/css-grid)
+[🔗 Documentation](https://cherry.design/css/cherry-grid)
