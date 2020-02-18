@@ -15,7 +15,7 @@ class NPMGrid extends Component {
 	render() {
 		return (
 			<Fragment>
-				<Head title="Grid Components - Cherry • Design System" />
+				<Head title="NPM Cherry Grid - Cherry • Design System" />
 				<ContentPusher>
 					<Container>
 						<Readable>

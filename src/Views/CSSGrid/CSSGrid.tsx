@@ -17,7 +17,7 @@ class CSSGrid extends Component {
 	render() {
 		return (
 			<Fragment>
-				<Head title="CSS Grid - Cherry • Design System" />
+				<Head title="CSS Cherry Grid - Cherry • Design System" />
 				<ContentPusher>
 					<Container>
 						<Readable>
