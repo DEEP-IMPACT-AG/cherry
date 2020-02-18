@@ -128,6 +128,7 @@
 		display: inline-block;
 		padding: 15px 20px 7px;
 		position: relative;
+		width: 100%;
 
 		& h1 {
 			pointer-events: none;
@@ -137,9 +138,10 @@
 		}
 
 		& svg {
-			max-width: 150px;
-			width: 100%;
 			height: 41px;
+			width: auto;
+			max-width: 100%;
+			transform: translateY(5px) translateX(-3px);
 
 			& :global(.text) {
 				display: none;
@@ -160,11 +162,17 @@
 		}
 
 		& .logo {
-			padding: 64px;
+			padding: 44px;
+
+			@media (--screen-xxl) {
+				padding: 64px;
+			}
 
 			& svg {
 				max-width: 100%;
+				width: 100%;
 				height: auto;
+				transform: none;
 
 				& :global(.text) {
 					display: initial;
