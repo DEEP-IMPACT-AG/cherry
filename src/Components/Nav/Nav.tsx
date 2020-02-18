@@ -68,7 +68,8 @@ class Nav extends Component<NavProps, NavState> {
 							title="Overview"
 							active={
 								location.pathname == "/" ||
-								location.pathname == "/code-guidelines"
+								location.pathname == "/naming-convention" ||
+								location.pathname == "/code-style-lint"
 									? true
 									: false
 							}
@@ -86,11 +87,20 @@ class Nav extends Component<NavProps, NavState> {
 								</li>
 								<li>
 									<NavLink
-										to="/code-guidelines"
+										to="/naming-convention"
 										activeClassName={styles.active}
 										onClick={this.closeMenu}
 									>
-										Code Guidelines
+										Naming Convention
+									</NavLink>
+								</li>
+								<li>
+									<NavLink
+										to="/code-style-lint"
+										activeClassName={styles.active}
+										onClick={this.closeMenu}
+									>
+										Code Styles & Linting
 									</NavLink>
 								</li>
 							</ul>

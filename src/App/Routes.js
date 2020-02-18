@@ -44,10 +44,20 @@ export default class Routes extends Component {
 					/>
 					<Route
 						exact
-						path="/code-guidelines"
+						path="/naming-convention"
 						render={(routeProps) => (
 							<UniversalComponent
-								page="CodeGuidelines"
+								page="NamingConvention"
+								{...routeProps}
+							/>
+						)}
+					/>
+					<Route
+						exact
+						path="/code-style-lint"
+						render={(routeProps) => (
+							<UniversalComponent
+								page="CodeStyleLint"
 								{...routeProps}
 							/>
 						)}

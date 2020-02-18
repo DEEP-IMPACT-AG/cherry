@@ -1,14 +1,14 @@
 import React, { Component, Fragment } from "react";
 import Head from "../../Components/Head";
 import { ContentPusher, Container, Readable } from "../../Components/Layout";
-const styles = require("./CodeGuidelines.css");
-const data = require("./data-codeguidelines.md");
+const styles = require("./NamingConvention.css");
+const data = require("./data-namingconvention.md");
 
-class CodeGuidelines extends Component {
+class NamingConvention extends Component {
 	render() {
 		return (
 			<Fragment>
-				<Head title="Code Guidelines - Cherry • Design System" />
+				<Head title="Naming Convention - Cherry • Design System" />
 				<ContentPusher>
 					<Container>
 						<Readable>
@@ -26,4 +26,4 @@ class CodeGuidelines extends Component {
 	}
 }
 
-export default CodeGuidelines;
+export default NamingConvention;
