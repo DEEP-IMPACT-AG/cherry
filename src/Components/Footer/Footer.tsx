@@ -13,7 +13,7 @@ function Footer({ className }: FooterProps) {
 		<footer className={classNames(styles.footer, className)}>
 			<ContentPusher>
 				<a
-					href="https://github.com/luangjokaj/react-fondue"
+					href="https://github.com/DEEP-IMPACT-AG/cherry"
 					target="_blank"
 					rel="noopener"
 					aria-label="GitHub Repository"
