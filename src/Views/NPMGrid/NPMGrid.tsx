@@ -11,7 +11,7 @@ const styles = require("../CSSGrid/CSSGrid.css");
 const dataGridComponents = require("./data-grid-components.md");
 const dataMediaQueries = require("./data-grid-components-mediaqueries.md");
 
-class GridComponents extends Component {
+class NPMGrid extends Component {
 	render() {
 		return (
 			<Fragment>
@@ -59,4 +59,4 @@ class GridComponents extends Component {
 	}
 }
 
-export default GridComponents;
+export default NPMGrid;

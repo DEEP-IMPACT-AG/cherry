@@ -25,7 +25,7 @@ Cherry is technology agnostic – meaning that it can be applied independently o
 
 ---
 
-## PostCSS Plugin
+## PostCSS Plugins
 
 - [postcss-preset-env](https://preset-env.cssdb.org/)
 - [postcss-import](https://github.com/postcss/postcss-import)
@@ -37,9 +37,7 @@ Cherry is technology agnostic – meaning that it can be applied independently o
 # NPM Libraries
 To use NPM, you need Node installed, [click here to download](https://nodejs.org/).
 
-- **🍒 Cherry Grid** - 💾 [Repository](https://github.com/DEEP-IMPACT-AG/cherry-grid) - 📦 [NPM Package](https://www.npmjs.com/package/cherry-grid) 📂 [Documentation](#)
-
-# PostCSS Plugins
+- **🍒 Cherry Grid** - 💾 [Repository](https://github.com/DEEP-IMPACT-AG/cherry-grid) - 📦 [NPM Package](https://www.npmjs.com/package/cherry-grid) - 📂 [CSS Docs](https://cherry.design/css/cherry-grid) - 📂 [NPM Library Docs](https://cherry.design/npm/cherry-grid)
 
 ---
 
@@ -48,4 +46,3 @@ To use NPM, you need Node installed, [click here to download](https://nodejs.org
 Read what's 📦 new, 👌 improved, 🐛 fixed, and if 📖 docs got updated.
 
 👉 Read the entire changelog at the GitHub [Release](https://github.com/DEEP-IMPACT-AG/cherry/releases) page.
-

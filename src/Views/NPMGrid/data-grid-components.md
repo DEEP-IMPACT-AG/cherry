@@ -1,6 +1,6 @@
-# Grid Components
+# NPM Cherry Grid
 
-Cherry comes with it's own set of modules. Every little part of the design system should be componentized and available as a stand alone NPM package. This means that you install only what will be used.
+Cherry’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. Below is an example and an in-depth look at how the grid comes together.
 
 ---
 
@@ -104,3 +104,7 @@ Import the [mixins.css](https://raw.githubusercontent.com/DEEP-IMPACT-AG/cherry/
 	--gutter-col-desktop: 20px;
 }
 ```
+
+### 12 Column - Grid System
+Cherry's grid system allows up to 12 columns across the page.
+If you do not want to use all 12 column individually, you can group the columns together to create wider columns.

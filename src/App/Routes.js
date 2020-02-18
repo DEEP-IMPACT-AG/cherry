@@ -81,7 +81,7 @@ export default class Routes extends Component {
 					/>
 					<Route
 						exact
-						path="/css/css-grid"
+						path="/css/cherry-grid"
 						render={(routeProps) => (
 							<UniversalComponent
 								page="CSSGrid"
@@ -91,10 +91,10 @@ export default class Routes extends Component {
 					/>
 					<Route
 						exact
-						path="/npm/grid-components"
+						path="/npm/cherry-grid"
 						render={(routeProps) => (
 							<UniversalComponent
-								page="GridComponents"
+								page="NPMGrid"
 								{...routeProps}
 							/>
 						)}

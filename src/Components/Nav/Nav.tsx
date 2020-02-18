@@ -129,7 +129,7 @@ class Nav extends Component<NavProps, NavState> {
 							title="CSS"
 							active={
 								location.pathname == "/css/styling-structure" ||
-								location.pathname == "/css/css-grid"
+								location.pathname == "/css/cherry-grid"
 									? true
 									: false
 							}
@@ -146,11 +146,11 @@ class Nav extends Component<NavProps, NavState> {
 								</li>
 								<li>
 									<NavLink
-										to="/css/css-grid"
+										to="/css/cherry-grid"
 										activeClassName={styles.active}
 										onClick={this.closeMenu}
 									>
-										CSS Grid
+										Cherry Grid
 									</NavLink>
 								</li>
 							</ul>
@@ -158,7 +158,7 @@ class Nav extends Component<NavProps, NavState> {
 						<NavItem
 							title="NPM Libraries"
 							active={
-								location.pathname == "/npm/grid-components"
+								location.pathname == "/npm/cherry-grid"
 									? true
 									: false
 							}
@@ -167,11 +167,11 @@ class Nav extends Component<NavProps, NavState> {
 							<ul className={styles.sub}>
 								<li>
 									<NavLink
-										to="/npm/grid-components"
+										to="/npm/cherry-grid"
 										activeClassName={styles.active}
 										onClick={this.closeMenu}
 									>
-										Grid Components
+										Cherry Grid
 									</NavLink>
 								</li>
 							</ul>

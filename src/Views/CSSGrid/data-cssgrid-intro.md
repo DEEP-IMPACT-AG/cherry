@@ -1,4 +1,4 @@
-# CSS Grid
+# CSS Cherry Grid
 
 Cherry’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. Below is an example and an in-depth look at how the grid comes together.
 
@@ -6,7 +6,7 @@ Cherry’s grid system uses a series of containers, rows, and columns to layout 
 
 ## Install from NPM
 
-💾 [Repository](https://github.com/DEEP-IMPACT-AG/cherry-grid) - 📦 [NPM Package](https://www.npmjs.com/package/cherry-grid) - 📌 [CSS Direct Link](https://raw.githubusercontent.com/DEEP-IMPACT-AG/cherry-grid/master/dist/css/styles.css)
+💾 [Repository](https://github.com/DEEP-IMPACT-AG/cherry-grid) - 📦 [NPM Package](https://www.npmjs.com/package/cherry-grid) - 📌 [CSS Direct Link](https://cherry-design.s3-eu-west-1.amazonaws.com/cherry-grid.css)
 
 **To install Cherry Grid, run the command:**
 
@@ -59,6 +59,6 @@ Below you will find a typical example of the grid usage.
 </html>
 ```
 
-## 12 Column - Grid System
+### 12 Column - Grid System
 Cherry's grid system allows up to 12 columns across the page.
 If you do not want to use all 12 column individually, you can group the columns together to create wider columns:

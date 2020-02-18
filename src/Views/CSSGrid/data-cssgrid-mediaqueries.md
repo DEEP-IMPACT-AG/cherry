@@ -6,4 +6,4 @@
 |Class suffix|.col12-xs|.col12-sm|.col12-md|.col12-lg|.col12-xl|.col12-xxl|.col12-xxxl|
 
 # NPM Components
-[🔗 Documentation](https://cherry.design/npm/grid-components)
+[🔗 Documentation](https://cherry.design/npm/cherry-grid)

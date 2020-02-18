@@ -122,7 +122,7 @@ Cherry can be integrated and used in any technology or workflow. You can use it 
 
   ***
 
-- **Font Sizes (Unit: PX)a**
+- **Font Sizes (Unit: PX)**
 
   ***
 
