@@ -1,7 +1,7 @@
 import React from "react";
+import { Container } from "cherry-grid";
 import ContentPusher from "../ContentPusher";
 import Readable from "../Readable";
-import { Container } from "../Content";
 const styles = require("./Loading.css");
 
 function Loading() {

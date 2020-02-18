@@ -17,7 +17,13 @@ class CSSGrid extends Component {
 	render() {
 		return (
 			<Fragment>
-				<Head title="CSS Cherry Grid - Cherry • Design System" />
+				<Head title="CSS Cherry Grid - Cherry • Design System">
+					<link
+						rel="stylesheet"
+						type="text/css"
+						href="https://cherry-design.s3-eu-west-1.amazonaws.com/cherry-grid.css"
+					/>
+				</Head>
 				<ContentPusher>
 					<Container>
 						<Readable>
@@ -27,76 +33,76 @@ class CSSGrid extends Component {
 									__html: dataIntro.__content,
 								}}
 							/>
-							<div className="container containerFluid containerChild">
-								<div className="row">
-									<div className="col12 highlight">
-										<div>.col12</div>
+							<div className="container container-fluid container-child">
+								<div className="row data-custom-row">
+									<div className="col-12 highlight">
+										<div>.col .col-12</div>
 									</div>
-									<div className="col11 highlight">
-										<div>.col11</div>
+									<div className="col-11 highlight">
+										<div>.col .col-11</div>
 									</div>
-									<div className="col1 highlight">
-										<div>.col1</div>
+									<div className="col-1 highlight">
+										<div>.col .col-1</div>
 									</div>
-									<div className="col10 highlight">
-										<div>.col10</div>
+									<div className="col-10 highlight">
+										<div>.col .col-10</div>
 									</div>
-									<div className="col2 highlight">
-										<div>.col2</div>
+									<div className="col-2 highlight">
+										<div>.col .col-2</div>
 									</div>
-									<div className="col9 highlight">
-										<div>.col9</div>
+									<div className="col-9 highlight">
+										<div>.col .col-9</div>
 									</div>
-									<div className="col3 highlight">
-										<div>.col3</div>
+									<div className="col-3 highlight">
+										<div>.col .col-3</div>
 									</div>
-									<div className="col8 highlight">
-										<div>.col8</div>
+									<div className="col-8 highlight">
+										<div>.col .col-8</div>
 									</div>
-									<div className="col4 highlight">
-										<div>.col4</div>
+									<div className="col-4 highlight">
+										<div>.col .col-4</div>
 									</div>
-									<div className="col7 highlight">
-										<div>.col7</div>
+									<div className="col-7 highlight">
+										<div>.col .col-7</div>
 									</div>
-									<div className="col5 highlight">
-										<div>.col5</div>
+									<div className="col-5 highlight">
+										<div>.col .col-5</div>
 									</div>
-									<div className="col6 highlight">
-										<div>.col6</div>
+									<div className="col-6 highlight">
+										<div>.col .col-6</div>
 									</div>
-									<div className="col6 highlight">
-										<div>.col6</div>
+									<div className="col-6 highlight">
+										<div>.col .col-6</div>
 									</div>
-									<div className="col5 highlight">
-										<div>.col5</div>
+									<div className="col-5 highlight">
+										<div>.col .col-5</div>
 									</div>
-									<div className="col7 highlight">
-										<div>.col7</div>
+									<div className="col-7 highlight">
+										<div>.col .col-7</div>
 									</div>
-									<div className="col4 highlight">
-										<div>.col4</div>
+									<div className="col-4 highlight">
+										<div>.col .col-4</div>
 									</div>
-									<div className="col8 highlight">
-										<div>.col8</div>
+									<div className="col-8 highlight">
+										<div>.col .col-8</div>
 									</div>
-									<div className="col3 highlight">
-										<div>.col3</div>
+									<div className="col-3 highlight">
+										<div>.col-3</div>
 									</div>
-									<div className="col9 highlight">
-										<div>.col9</div>
+									<div className="col-9 highlight">
+										<div>.col .col-9</div>
 									</div>
-									<div className="col2 highlight">
-										<div>.col2</div>
+									<div className="col-2 highlight">
+										<div>.col .col-2</div>
 									</div>
-									<div className="col10 highlight">
-										<div>.col10</div>
+									<div className="col-10 highlight">
+										<div>.col .col-10</div>
 									</div>
-									<div className="col1 highlight">
-										<div>.col1</div>
+									<div className="col-1 highlight">
+										<div>.col .col-1</div>
 									</div>
-									<div className="col11 highlight">
-										<div>.col11</div>
+									<div className="col-11 highlight">
+										<div>.col .col-11</div>
 									</div>
 								</div>
 							</div>
@@ -107,13 +113,17 @@ class CSSGrid extends Component {
 								See how aspects of the Cherry's grid system work
 								across multiple devices.
 							</p>
-							<div className="container containerFluid containerChild">
-								<div className="row">
-									<div className="col12-xs col6-lg highlight">
-										<div>class="col12-xs col6-lg"</div>
+							<div className="container container-fluid container-child">
+								<div className="row data-custom-row">
+									<div className="col-xs-12 col-lg-6 highlight">
+										<div>
+											class="col col-xs-12 col-lg-6"
+										</div>
 									</div>
-									<div className="col12-xs col6-lg highlight">
-										<div>class="col12-xs col6-lg"</div>
+									<div className="col-xs-12 col-lg-6 highlight">
+										<div>
+											class="col col-xs-12 col-lg-6"
+										</div>
 									</div>
 								</div>
 							</div>

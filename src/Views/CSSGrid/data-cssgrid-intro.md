@@ -50,9 +50,9 @@ Below you will find a typical example of the grid usage.
 		<!--- Start Grid Container -->
 		<div class="container"><!--- Grid Container -->
 			<div class="row"><!--- Grid Row -->
-				<div class="col4-xs col6-lg">1</div><!--- Grid Column -->
-				<div class="col4-xs col6-lg">2</div><!--- Grid Column -->
-				<div class="col4-xs col12-lg">3</div><!--- Grid Column -->
+				<div class="col col-sm-4 col-lg-4">1</div><!--- Grid Column -->
+				<div class="col col-sm-4 col-lg-4">2</div><!--- Grid Column -->
+				<div class="col col-sm-4 col-lg-4">3</div><!--- Grid Column -->
 			</div>
 		</div>
 	</body>
