@@ -4,9 +4,20 @@ Cherry can be integrated and used in any technology or workflow. You can use it 
 
 ### Code Style
 
+---
+
 - We use: **Tabs**
+
+---
+
 - Tab size: **4**
+
+---
+
 - Always leave an empty line before the **nested** CSS blocks 👇
+
+---
+
   ```css
   .parent {
     color: var(--color-dark);
@@ -28,7 +39,11 @@ Cherry can be integrated and used in any technology or workflow. You can use it 
 
 ## Variables
 
+---
+
 - **Spacing**
+
+    ***
 
 `--max-width`
 
@@ -536,7 +551,11 @@ Cherry can be integrated and used in any technology or workflow. You can use it 
 
     `--align-[xs|sm|md|lg|xl|xxl|xxxl]-right`
 
+    ***
+
   - **Display**
+
+    ***
 
     `--display-inline`
 
@@ -578,6 +597,8 @@ Cherry can be integrated and used in any technology or workflow. You can use it 
 
     `--display-[xs|sm|md|lg|xl|xxl|xxxl]-none`
 
+    ***
+
   - **Position**
 
     ***
@@ -613,6 +634,8 @@ Cherry can be integrated and used in any technology or workflow. You can use it 
     `--position-[xs|sm|md|lg|xl|xxl|xxxl]-absolute`
 
     `--position-[xs|sm|md|lg|xl|xxl|xxxl]-fixed`
+
+    ***
 
   - **Radius**
 
