@@ -192,6 +192,7 @@ class Nav extends Component<NavProps, NavState> {
 							<a
 								href="https://www.deep-impact.ch/?ref=cherry.design"
 								target="_blank"
+								rel="noopener"
 							>
 								<DeepImpact />
 							</a>
@@ -200,6 +201,7 @@ class Nav extends Component<NavProps, NavState> {
 							<a
 								href="https://www.riangle.com/?ref=cherry.design"
 								target="_blank"
+								rel="noopener"
 							>
 								<Riangle />
 							</a>

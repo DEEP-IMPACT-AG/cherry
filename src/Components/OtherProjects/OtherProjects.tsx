@@ -11,6 +11,7 @@ function OtherProjects() {
 					<a
 						href="https://www.wordpressify.co"
 						target="_blank"
+						rel="noopener"
 						className={styles.linkLogo}
 					></a>
 					<span>Development workflow for WordPress themes.</span>
@@ -23,6 +24,7 @@ function OtherProjects() {
 							href="https://www.wordpressify.co"
 							className={styles.websiteUrl}
 							target="_blank"
+							rel="noopener"
 						>
 							Visit Website
 						</a>
@@ -32,6 +34,7 @@ function OtherProjects() {
 					<a
 						href="https://www.gopablo.co"
 						target="_blank"
+						rel="noopener"
 						className={styles.linkLogo}
 					></a>
 					<span>
@@ -46,6 +49,7 @@ function OtherProjects() {
 						<a
 							href="https://www.gopablo.co"
 							target="_blank"
+							rel="noopener"
 							className={styles.websiteUrl}
 						>
 							Visit Website
@@ -56,6 +60,7 @@ function OtherProjects() {
 					<a
 						href="https://www.fuzzymail.co"
 						target="_blank"
+						rel="noopener"
 						className={styles.linkLogo}
 					></a>
 					<span>
@@ -69,6 +74,7 @@ function OtherProjects() {
 						<a
 							href="https://www.fuzzymail.co"
 							target="_blank"
+							rel="noopener"
 							className={styles.websiteUrl}
 						>
 							Visit Website

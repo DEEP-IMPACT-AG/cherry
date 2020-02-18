@@ -6,7 +6,10 @@ Cherry is technology agnostic – meaning that it can be applied independently o
 
 ---
 
-🍒 **Cherry** can be used as:
+- 🍒 **Cherry** can be used as:
+
+---
+
 - 🤔 - A design philosophy
 - 💎 - Sketch library
 - 🎨 - PostCSS variables and mixins
@@ -33,6 +36,8 @@ Cherry is technology agnostic – meaning that it can be applied independently o
 - [postcss-mixins](https://github.com/postcss/postcss-mixins)
 - [postcss-calc](https://github.com/postcss/postcss-calc)
 - [postcss-flexbugs-fixes](https://github.com/luisrudge/postcss-flexbugs-fixes)
+
+---
 
 # NPM Libraries
 To use NPM, you need Node installed, [click here to download](https://nodejs.org/).

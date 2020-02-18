@@ -10,6 +10,7 @@ interface ButtonProps {
 	onClick?: () => void;
 	href?: string;
 	target?: string;
+	rel?: string;
 }
 
 function Button({
@@ -19,6 +20,7 @@ function Button({
 	onClick,
 	href,
 	target,
+	rel,
 }: ButtonProps) {
 	if (href) {
 		return (
@@ -27,6 +29,7 @@ function Button({
 				target={target}
 				className={classNames(styles.button, className)}
 				id={id}
+				rel={rel}
 			>
 				{children}
 			</a>

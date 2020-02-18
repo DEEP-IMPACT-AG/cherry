@@ -32,6 +32,7 @@ class Sketch extends Component {
 									<a
 										href="https://res.cloudinary.com/deep-impact-ag/image/upload/v1558092359/cherry/typography/1-typography-primary.jpg"
 										target="_blank"
+										rel="noopener"
 										title="Preview"
 									>
 										<img
@@ -44,6 +45,7 @@ class Sketch extends Component {
 									<a
 										href="https://res.cloudinary.com/deep-impact-ag/image/upload/v1558092359/cherry/typography/2-typography-secondary.jpg"
 										target="_blank"
+										rel="noopener"
 										title="Preview"
 									>
 										<img
@@ -56,6 +58,7 @@ class Sketch extends Component {
 									<a
 										href="https://res.cloudinary.com/deep-impact-ag/image/upload/v1558092359/cherry/typography/3-typography-tertiary.jpg"
 										target="_blank"
+										rel="noopener"
 										title="Preview"
 									>
 										<img
@@ -69,6 +72,7 @@ class Sketch extends Component {
 							<Button
 								href="https://drive.google.com/file/d/1p2CrJEANwMy2VeoexkH51cun847shgij/view?usp=sharing"
 								target="_blank"
+								rel="noopener"
 							>
 								<SketchIcon /> Download Sketch Template
 							</Button>
