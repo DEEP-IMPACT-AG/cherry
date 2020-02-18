@@ -17,7 +17,7 @@ class CSSGrid extends Component {
 	render() {
 		return (
 			<Fragment>
-				<Head title="CSSGrid - Cherry • Design System" />
+				<Head title="CSS Grid - Cherry • Design System" />
 				<ContentPusher>
 					<Container>
 						<Readable>
@@ -104,16 +104,16 @@ class CSSGrid extends Component {
 								<h1>Responsiveness</h1>
 							</div>
 							<p>
-								See how aspects of the Cherry grid system work
+								See how aspects of the Cherry's grid system work
 								across multiple devices.
 							</p>
 							<div className="container containerFluid containerChild">
 								<div className="row">
 									<div className="col12-xs col6-lg highlight">
-										<div>.col12-xs .col6-lg</div>
+										<div>class="col12-xs col6-lg"</div>
 									</div>
 									<div className="col12-xs col6-lg highlight">
-										<div>.col12-xs .col6-lg</div>
+										<div>class="col12-xs col6-lg"</div>
 									</div>
 								</div>
 							</div>

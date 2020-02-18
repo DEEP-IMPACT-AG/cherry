@@ -16,12 +16,12 @@ Cherry is technology agnostic – meaning that it can be applied independently o
 
 ---
 
-## PostCSS
+## PostCSS Main Styling Files
 
 - [Styles](https://github.com/DEEP-IMPACT-AG/cherry/blob/master/src/assets/css/styles.css) - Main entry point with all imports.
 - [Variables](https://github.com/DEEP-IMPACT-AG/cherry/blob/master/src/assets/css/variables.css) - Variable definitions.
 - [Mixins](https://github.com/DEEP-IMPACT-AG/cherry/blob/master/src/assets/css/mixins.css) - Chunks of reusable css.
-- [Globals](https://github.com/DEEP-IMPACT-AG/cherry/blob/master/src/assets/css/globals.css) - Appying the cherry variables to the global styles.
+- [Globals](https://github.com/DEEP-IMPACT-AG/cherry/blob/master/src/assets/css/globals.css) - Appying the Cherry's variables to the global styles.
 
 ---
 
@@ -37,7 +37,7 @@ Cherry is technology agnostic – meaning that it can be applied independently o
 # NPM Libraries
 To use NPM, you need Node installed, [click here to download](https://nodejs.org/).
 
-- **🍒 Cherry Grid** - 💾 [Repository](https://github.com/DEEP-IMPACT-AG/cherry-grid) - 📦 [NPM Package](https://www.npmjs.com/package/cherry-grid)
+- **🍒 Cherry Grid** - 💾 [Repository](https://github.com/DEEP-IMPACT-AG/cherry-grid) - 📦 [NPM Package](https://www.npmjs.com/package/cherry-grid) 📂 [Documentation](#)
 
 # PostCSS Plugins
 

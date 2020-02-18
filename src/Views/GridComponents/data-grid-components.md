@@ -1,17 +1,19 @@
-# React Grid
+# Grid Components
 
 Cherry comes with it's own set of modules. Every little part of the design system should be componentized and available as a stand alone NPM package. This means that you install only what will be used.
 
 ---
 
-## 🍒 Cherry Grid
+## Install from NPM
 💾 [Repository](https://github.com/DEEP-IMPACT-AG/cherry-grid) - 📦 [NPM Package](https://www.npmjs.com/package/cherry-grid)
 
 **To install Cherry Grid, run the command:**
 ```
 npm install cherry-grid
 ```
-Refer to page: [CSS Grid](https://cherry.design/css-grid) for more detailed explanation on how the styling works. Below you will find a typical example of the grid usage.
+
+### Sample usage
+Below you will find a typical example of the grid usage.
 ```javascript
 import React from 'react';
 import { Container, Row, Col } from 'cherry-grid';
@@ -21,9 +23,9 @@ function App() {
 	return (
 		<Container>
 			<Row>
-				<Col className={styles.border} xs={4}>1</Col>
-				<Col className={styles.border} xs={4}>2</Col>
-				<Col className={styles.border} xs={4}>3</Col>
+				<Col className={styles.border} xs={4} lg={6}>1</Col>
+				<Col className={styles.border} xs={4} lg={6}>2</Col>
+				<Col className={styles.border} xs={4} lg={12}>3</Col>
 			</Row>
 		</Container>
 	);
@@ -74,8 +76,8 @@ Col stands for column. The `<Col>` component should **always** be a direct child
 - `lastXxl` - *boolean* - Define if the element should go last on `xxl` media query. Default: `false`.
 - `lastXxxl` - *boolean* - Define if the element should go last on `xxxl` media query. Default: `false`.
 
-# Add Cherry variables
-If you don't have the Cherry variables in the project yet, please add the minimum required for the Grid to work.
+# Add Cherry's variables
+If you don't have the Cherry's variables in the project yet, please add the minimum required for the Grid to work.
 Import the [mixins.css](https://raw.githubusercontent.com/DEEP-IMPACT-AG/cherry/master/src/assets/css/mixins.css) and declare basic variables:
 ```css
 @import './mixins.css';
@@ -102,10 +104,3 @@ Import the [mixins.css](https://raw.githubusercontent.com/DEEP-IMPACT-AG/cherry/
 	--gutter-col-desktop: 20px;
 }
 ```
-
-### Media queries
-
-|  |Extra Small|Small|Medium|Large|XL Large|XX Large|XXX Large|
-|:-|:---|:---|:---|:---|:---|:---|:---|
-|Min container width|0|576px|768px|992px|1200px|1440px|1920px|
-|Class suffix|.col12-xs|.col12-sm|.col12-md|.col12-lg|.col12-xl|.col12-xxl|.col12-xxxl|

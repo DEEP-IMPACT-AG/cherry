@@ -3,9 +3,6 @@ import { renderToString } from "react-dom/server";
 import { StaticRouter } from "react-router";
 import Routes from "../App/Routes";
 import { HelmetProvider } from "react-helmet-async";
-import manifest from "./manifest";
-import sitemap from "./sitemap";
-import robots from "./robots";
 
 import { flushChunkNames } from "react-universal-component/server";
 import flushChunks from "webpack-flush-chunks";

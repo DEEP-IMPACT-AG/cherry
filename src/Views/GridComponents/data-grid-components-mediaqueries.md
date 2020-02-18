@@ -3,7 +3,7 @@
 |  |Extra Small|Small|Medium|Large|XL Large|XX Large|XXX Large|
 |:-|:---|:---|:---|:---|:---|:---|:---|
 |Min container width|0|576px|768px|992px|1200px|1440px|1920px|
-|Class suffix|.col12-xs|.col12-sm|.col12-md|.col12-lg|.col12-xl|.col12-xxl|.col12-xxxl|
+|Props|xs={12}|sm={12}|md={12}|lg={12}|lx={12}|xxl={12}|xxxl={12}|
 
-# NPM Components
-[🔗 Documentation](https://cherry.design/npm/grid-components)
+# Single purpose CSS classes
+[🔗 Documentation](https://cherry.design/css/css-grid)

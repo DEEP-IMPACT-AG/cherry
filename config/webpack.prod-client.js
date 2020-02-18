@@ -4,6 +4,7 @@ const ExtractCssChunks = require('extract-css-chunks-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 const BrotliPlugin = require('brotli-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const createStyledComponentsTransformer = require('typescript-plugin-styled-components')
 	.default;
@@ -112,7 +113,7 @@ module.exports = {
 				],
 			},
 			{
-				test: /\.(jpg|svg|png|ico|gif|eot|woff|woff2|ttf)$/,
+				test: /\.(jpg|svg|png|ico|gif|eot|otf|woff|woff2|ttf)$/,
 				use: [
 					{
 						loader: 'file-loader',
@@ -150,6 +151,11 @@ module.exports = {
 				WEBPACK: true,
 			},
 		}),
+		new CopyWebpackPlugin([
+			{
+				from: 'public',
+			},
+		]),
 		new CompressionPlugin({
 			algorithm: 'gzip',
 		}),

@@ -54,14 +54,14 @@ export default class Routes extends Component {
 					/>
 					<Route
 						exact
-						path="/sketch"
+						path="/design/sketch"
 						render={(routeProps) => (
 							<UniversalComponent page="Sketch" {...routeProps} />
 						)}
 					/>
 					<Route
 						exact
-						path="/typography"
+						path="/design/typography"
 						render={(routeProps) => (
 							<UniversalComponent
 								page="Typography"
@@ -71,7 +71,7 @@ export default class Routes extends Component {
 					/>
 					<Route
 						exact
-						path="/styling-structure"
+						path="/css/styling-structure"
 						render={(routeProps) => (
 							<UniversalComponent
 								page="StylingStructure"
@@ -81,7 +81,7 @@ export default class Routes extends Component {
 					/>
 					<Route
 						exact
-						path="/css-grid"
+						path="/css/css-grid"
 						render={(routeProps) => (
 							<UniversalComponent
 								page="CSSGrid"
@@ -91,10 +91,10 @@ export default class Routes extends Component {
 					/>
 					<Route
 						exact
-						path="/react-grid"
+						path="/npm/grid-components"
 						render={(routeProps) => (
 							<UniversalComponent
-								page="ReactGrid"
+								page="GridComponents"
 								{...routeProps}
 							/>
 						)}

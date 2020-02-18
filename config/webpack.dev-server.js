@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const externals = require('./node-externals');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const createStyledComponentsTransformer = require('typescript-plugin-styled-components')
 	.default;
@@ -90,7 +91,7 @@ module.exports = {
 				],
 			},
 			{
-				test: /\.(jpg|svg|png|ico|gif|eot|woff|woff2|ttf)$/,
+				test: /\.(jpg|svg|png|ico|gif|eot|otf|woff|woff2|ttf)$/,
 				use: [
 					{
 						loader: 'file-loader',
@@ -127,5 +128,10 @@ module.exports = {
 				NODE_ENV: JSON.stringify('development'),
 			},
 		}),
+		new CopyWebpackPlugin([
+			{
+				from: 'public',
+			},
+		]),
 	],
 };

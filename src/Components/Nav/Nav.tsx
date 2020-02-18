@@ -98,8 +98,8 @@ class Nav extends Component<NavProps, NavState> {
 						<NavItem
 							title="Design"
 							active={
-								location.pathname == "/sketch" ||
-								location.pathname == "/typography"
+								location.pathname == "/design/sketch" ||
+								location.pathname == "/design/typography"
 									? true
 									: false
 							}
@@ -107,7 +107,7 @@ class Nav extends Component<NavProps, NavState> {
 							<ul className={styles.sub}>
 								<li>
 									<NavLink
-										to="/sketch"
+										to="/design/sketch"
 										activeClassName={styles.active}
 										onClick={this.closeMenu}
 									>
@@ -116,7 +116,7 @@ class Nav extends Component<NavProps, NavState> {
 								</li>
 								<li>
 									<NavLink
-										to="/typography"
+										to="/design/typography"
 										activeClassName={styles.active}
 										onClick={this.closeMenu}
 									>
@@ -128,8 +128,8 @@ class Nav extends Component<NavProps, NavState> {
 						<NavItem
 							title="CSS"
 							active={
-								location.pathname == "/styling-structure" ||
-								location.pathname == "/css-grid"
+								location.pathname == "/css/styling-structure" ||
+								location.pathname == "/css/css-grid"
 									? true
 									: false
 							}
@@ -137,7 +137,7 @@ class Nav extends Component<NavProps, NavState> {
 							<ul className={styles.sub}>
 								<li>
 									<NavLink
-										to="/styling-structure"
+										to="/css/styling-structure"
 										activeClassName={styles.active}
 										onClick={this.closeMenu}
 									>
@@ -146,7 +146,7 @@ class Nav extends Component<NavProps, NavState> {
 								</li>
 								<li>
 									<NavLink
-										to="/css-grid"
+										to="/css/css-grid"
 										activeClassName={styles.active}
 										onClick={this.closeMenu}
 									>
@@ -156,9 +156,9 @@ class Nav extends Component<NavProps, NavState> {
 							</ul>
 						</NavItem>
 						<NavItem
-							title="Components"
+							title="NPM Libraries"
 							active={
-								location.pathname == "/react-grid"
+								location.pathname == "/npm/grid-components"
 									? true
 									: false
 							}
@@ -167,11 +167,11 @@ class Nav extends Component<NavProps, NavState> {
 							<ul className={styles.sub}>
 								<li>
 									<NavLink
-										to="/react-grid"
+										to="/npm/grid-components"
 										activeClassName={styles.active}
 										onClick={this.closeMenu}
 									>
-										Cherry Grid
+										Grid Components
 									</NavLink>
 								</li>
 							</ul>
@@ -180,14 +180,17 @@ class Nav extends Component<NavProps, NavState> {
 					<ul className={styles.poweredBy}>
 						<li>
 							<a
-								href="https://www.deep-impact.ch/"
+								href="https://www.deep-impact.ch/?ref=cherry.design"
 								target="_blank"
 							>
 								<DeepImpact />
 							</a>
 						</li>
 						<li>
-							<a href="https://www.riangle.com/" target="_blank">
+							<a
+								href="https://www.riangle.com/?ref=cherry.design"
+								target="_blank"
+							>
 								<Riangle />
 							</a>
 						</li>

@@ -23,7 +23,7 @@ Cherry is technology agnostic – meaning that it can be applied independently o
 - [Styles](./src/assets/css/styles.css) - Main entry point with all imports.
 - [Variables](./src/assets/css/variables.css) - Variable definitions.
 - [Mixins](./src/assets/css/mixins.css) - Chunks of reusable css.
-- [Globals](./src/assets/css/globals.css) - Appying the cherry variables to the global styles.
+- [Globals](./src/assets/css/globals.css) - Appying the Cherry's variables to the global styles.
 
 ---
 
