@@ -16,6 +16,7 @@ function Footer({ className }: FooterProps) {
 					href="https://github.com/luangjokaj/react-fondue"
 					target="_blank"
 					rel="noopener"
+					aria-label="GitHub Repository"
 				>
 					<GitHub />
 				</a>
