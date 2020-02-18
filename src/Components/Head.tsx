@@ -1,6 +1,11 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
-const favicon = require("../assets/img/favicon.ico");
+const favicon =
+	"https://cherry-design.s3-eu-west-1.amazonaws.com/meta/favicon.ico";
+const preview =
+	"https://cherry-design.s3-eu-west-1.amazonaws.com/meta/preview.jpg";
+const icon512 = "https://cherry-design.s3-eu-west-1.amazonaws.com/meta/512.png";
+const icon192 = "https://cherry-design.s3-eu-west-1.amazonaws.com/meta/192.jpg";
 
 const isProd = process.env.NODE_ENV === "production";
 
@@ -14,7 +19,7 @@ interface HeadProps {
 function Head({
 	title = "Cherry • Design System",
 	description = "Cherry is a live inventory of definitions for the UI components, design patterns, naming conventions, brand assets and code guidelines.",
-	image = "https://res.cloudinary.com/deep-impact-ag/image/upload/cherry/og.jpg",
+	image = preview,
 	children,
 }: HeadProps) {
 	return (
@@ -29,25 +34,10 @@ function Head({
 			/>
 			<link rel="shortcut icon" href={favicon} type="image/x-icon" />
 			<link rel="manifest" href="/manifest.json" />
-			<link
-				rel="apple-touch-icon"
-				sizes="512x512"
-				href="https://res.cloudinary.com/deep-impact-ag/image/upload/v1564693640/cherry/reactfondue/512.png"
-			/>
-			<link
-				rel="apple-touch-icon"
-				sizes="192x192"
-				href="https://res.cloudinary.com/deep-impact-ag/image/upload/v1547922882/cherry/manifest/192.jpg"
-			/>
-			<link
-				rel="apple-touch-icon-precomposed"
-				href="https://res.cloudinary.com/deep-impact-ag/image/upload/v1547922882/cherry/manifest/192.jpg"
-			/>
-			<link
-				rel="icon"
-				sizes="192x192"
-				href="https://res.cloudinary.com/deep-impact-ag/image/upload/v1547922882/cherry/manifest/192.jpg"
-			/>
+			<link rel="apple-touch-icon" sizes="512x512" href={icon512} />
+			<link rel="apple-touch-icon" sizes="192x192" href={icon192} />
+			<link rel="apple-touch-icon-precomposed" href={icon192} />
+			<link rel="icon" sizes="192x192" href={icon192} />
 			{description && <meta name="description" content={description} />}
 			{title && <meta property="og:title" content={title} />}
 			{description && (
