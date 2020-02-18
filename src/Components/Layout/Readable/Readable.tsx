@@ -10,9 +10,13 @@ interface ReadableProps {
 
 function Readable({ children, className, noLists }: ReadableProps) {
 	return (
-		<div className={classNames(styles.readable, className, {
-			[styles.noLists]: noLists,
-		})}>{children}</div>
+		<div
+			className={classNames(styles.readable, className, {
+				[styles.noLists]: noLists,
+			})}
+		>
+			{children}
+		</div>
 	);
 }
 
