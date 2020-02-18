@@ -191,7 +191,7 @@ class Nav extends Component<NavProps, NavState> {
 						<li>
 							<a
 								href="https://www.deep-impact.ch/?ref=cherry.design"
-								aria-label="DeepImpact AG Homepage">
+								aria-label="DeepImpact AG Homepage"
 								target="_blank"
 								rel="noopener"
 							>
@@ -201,7 +201,7 @@ class Nav extends Component<NavProps, NavState> {
 						<li>
 							<a
 								href="https://www.riangle.com/?ref=cherry.design"
-								aria-label="Riangle Homepage">
+								aria-label="Riangle Homepage"
 								target="_blank"
 								rel="noopener"
 							>
