@@ -14,7 +14,7 @@ Cherry is technology agnostic – meaning that it can be applied independently o
 - 🎨 - PostCSS variables and mixins
 - ✍ - Single purpose CSS classes
 - ⚛ - React components
-- ⚛ - Styles components
+- 💅 - Styled components
 
 ---
 
