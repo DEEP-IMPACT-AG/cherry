@@ -56,6 +56,7 @@ class Nav extends Component<NavProps, NavState> {
 						className={classNames(styles.burger, {
 							[styles.active]: menu,
 						})}
+						aria-label="Burger Menu"
 					>
 						<span />
 					</button>
