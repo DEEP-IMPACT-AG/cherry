@@ -114,5 +114,8 @@
 		"lint:fix": "eslint src src/**/*.js --fix",
 		"lint": "npm run lint:css && npm run lint:js",
 		"format": "prettier --write \"./src/**/*.{js,json,ts,tsx}\" \"!.node_modules/**\""
+	},
+	"engines": {
+		"node": "10"
 	}
 }
