@@ -9,11 +9,12 @@ Cherry is technology agnostic – meaning that it can be applied independently o
 ---
 
 🍒 **Cherry** can be used as:
-- ⚖ - A design philosophy
+- 🤔 - A design philosophy
 - 💎 - Sketch library
 - 🎨 - PostCSS variables and mixins
 - ✍ - Single purpose CSS classes
 - ⚛ - React components
+- ⚛ - Styles components
 
 ---
 
@@ -23,6 +24,17 @@ Cherry is technology agnostic – meaning that it can be applied independently o
 - [Variables](./src/assets/css/variables.css) - Variable definitions.
 - [Mixins](./src/assets/css/mixins.css) - Chunks of reusable css.
 - [Globals](./src/assets/css/globals.css) - Appying the cherry variables to the global styles.
+
+---
+
+## PostCSS Plugin
+
+- [postcss-preset-env](https://preset-env.cssdb.org/)
+- [postcss-import](https://github.com/postcss/postcss-import)
+- [postcss-for](https://github.com/antyakushev/postcss-for)
+- [postcss-mixins](https://github.com/postcss/postcss-mixins)
+- [postcss-calc](https://github.com/postcss/postcss-calc)
+- [postcss-flexbugs-fixes](https://github.com/luisrudge/postcss-flexbugs-fixes)
 
 ---
 

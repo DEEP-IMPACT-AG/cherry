@@ -7,11 +7,12 @@ Cherry is technology agnostic – meaning that it can be applied independently o
 ---
 
 🍒 **Cherry** can be used as:
-- ⚖ - A design philosophy
+- 🤔 - A design philosophy
 - 💎 - Sketch library
 - 🎨 - PostCSS variables and mixins
 - ✍ - Single purpose CSS classes
 - ⚛ - React components
+- 💅 - Styled components
 
 ---
 
@@ -24,10 +25,21 @@ Cherry is technology agnostic – meaning that it can be applied independently o
 
 ---
 
+## PostCSS Plugin
+
+- [postcss-preset-env](https://preset-env.cssdb.org/)
+- [postcss-import](https://github.com/postcss/postcss-import)
+- [postcss-for](https://github.com/antyakushev/postcss-for)
+- [postcss-mixins](https://github.com/postcss/postcss-mixins)
+- [postcss-calc](https://github.com/postcss/postcss-calc)
+- [postcss-flexbugs-fixes](https://github.com/luisrudge/postcss-flexbugs-fixes)
+
 # NPM Libraries
 To use NPM, you need Node installed, [click here to download](https://nodejs.org/).
 
 - **🍒 Cherry Grid** - 💾 [Repository](https://github.com/DEEP-IMPACT-AG/cherry-grid) - 📦 [NPM Package](https://www.npmjs.com/package/cherry-grid)
+
+# PostCSS Plugins
 
 ---
 
