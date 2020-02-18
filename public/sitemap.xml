@@ -8,37 +8,42 @@
 >
 	<url>
 		<loc>https://cherry.design/</loc>
-		<lastmod>2020-02-09T16:06:42+00:00</lastmod>
+		<lastmod>2020-02-18T14:17:14+00:00</lastmod>
 		<priority>1.00</priority>
 	</url>
 	<url>
-		<loc>https://cherry.design/code-guidelines</loc>
-		<lastmod>2020-02-09T16:06:42+00:00</lastmod>
-		<priority>0.90</priority>
+		<loc>https://cherry.design/naming-convention</loc>
+		<lastmod>2020-02-18T14:17:14+00:00</lastmod>
+		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://cherry.design/sketch</loc>
-		<lastmod>2020-02-09T16:06:42+00:00</lastmod>
-		<priority>0.90</priority>
+		<loc>https://cherry.design/code-style-lint</loc>
+		<lastmod>2020-02-18T14:17:14+00:00</lastmod>
+		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://cherry.design/typography</loc>
-		<lastmod>2020-02-09T16:06:42+00:00</lastmod>
-		<priority>0.90</priority>
+		<loc>https://cherry.design/design/sketch</loc>
+		<lastmod>2020-02-18T14:17:14+00:00</lastmod>
+		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://cherry.design/styling-structure</loc>
-		<lastmod>2020-02-09T16:06:42+00:00</lastmod>
-		<priority>0.90</priority>
+		<loc>https://cherry.design/design/typography</loc>
+		<lastmod>2020-02-18T14:17:14+00:00</lastmod>
+		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://cherry.design/css-grid</loc>
-		<lastmod>2020-02-09T16:06:42+00:00</lastmod>
-		<priority>0.90</priority>
+		<loc>https://cherry.design/css/styling-structure</loc>
+		<lastmod>2020-02-18T14:17:14+00:00</lastmod>
+		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://cherry.design/grid-components</loc>
-		<lastmod>2020-02-09T16:06:42+00:00</lastmod>
-		<priority>0.90</priority>
+		<loc>https://cherry.design/css/cherry-grid</loc>
+		<lastmod>2020-02-18T14:17:14+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://cherry.design/npm/cherry-grid</loc>
+		<lastmod>2020-02-18T14:17:14+00:00</lastmod>
+		<priority>0.80</priority>
 	</url>
 </urlset>
