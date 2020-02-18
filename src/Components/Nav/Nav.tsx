@@ -171,7 +171,7 @@ class Nav extends Component<NavProps, NavState> {
 										activeClassName={styles.active}
 										onClick={this.closeMenu}
 									>
-										React Grid
+										Cherry Grid
 									</NavLink>
 								</li>
 							</ul>
