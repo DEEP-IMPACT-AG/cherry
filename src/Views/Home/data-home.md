@@ -48,7 +48,7 @@ To use NPM, you need Node installed, [click here to download](https://nodejs.org
 
 ---
 
-# Changelog
+## Changelog
 
 Read what's 📦 new, 👌 improved, 🐛 fixed, and if 📖 docs got updated.
 
