@@ -15,7 +15,13 @@ class NPMGrid extends Component {
 	render() {
 		return (
 			<Fragment>
-				<Head title="NPM Cherry Grid - Cherry • Design System" />
+				<Head title="NPM Cherry Grid - Cherry • Design System">
+					<link
+						rel="stylesheet"
+						type="text/css"
+						href="https://cherry-design.s3-eu-west-1.amazonaws.com/cherry-grid.css"
+					/>
+				</Head>
 				<ContentPusher>
 					<Container>
 						<Readable>
@@ -32,12 +38,12 @@ class NPMGrid extends Component {
 								See how aspects of the Cherry's grid system work
 								across multiple devices.
 							</p>
-							<div className="container containerFluid containerChild">
-								<div className="row">
-									<div className="col12-xs col6-lg highlight">
+							<div className="container container-fluid container-child">
+								<div className="row data-custom-row">
+									<div className="col-xs-12 col-lg-6 highlight">
 										<div>{"<Col xs={12} lg={6}>"}</div>
 									</div>
-									<div className="col12-xs col6-lg highlight">
+									<div className="col-xs-12 col-lg-6 highlight">
 										<div>{"<Col xs={12} lg={6}>"}</div>
 									</div>
 								</div>
