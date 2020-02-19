@@ -41,25 +41,24 @@ export default App;
 ```
 
 ### Container
-The `<Container>` component is meant to be always the top level parent. They have a few properties available: 
-- `className` - *string* - You can pass a className. Default: *not set*.
+The `<Container>` component is meant to be always the top level parent. Available properties: 
+- `id` - *string* - Unique element id. Default: *not set*.
+- `className` - *string* - Additional classNames. Default: *not set*.
 - `fluid` - *boolean* - Defines wheather the container should go full width, thus fluid. Default: `false`.
-- `children` - *any* - Container children elements. Default: *not set*.
+- `child` - *boolean* - Defines wheather the container is a child of another container, thus removing additional paddings on the sides. Default: `false`.
 
 ### Row
-The `<Row>` component is a direct or non direct child of the `<Container>` component. Is comes with a few properties: 
-- `className` - *string* - You can pass a className. Default: *not set*.
-- `children` - *any* - Container children elements. Default: *not set*.
+The `<Row>` component is a direct or non direct child of the `<Container>` component. Available properties: 
+- `id` - *string* - Unique element id. Default: *not set*.
+- `className` - *string* - Additional classNames. Default: *not set*.
 - `alignItems` - *string* - Use the align-items property to align the items vertically. Default: *not set*.
 - `justifyContent` - *string* - Use the justify-content property to align the items horizontally. Default: *not set*.
 
 ### Col
 Col stands for column. The `<Col>` component should **always** be a direct child of the `<Row>`. Available properties: 
-- `id` - *string* - Columns can have html ID's. Default: *not set*.
-- `className` - *string* - You can pass a className. Default: *not set*.
-- `children` - *any* - Container children elements. Default: *not set*.
+- `id` - *string* - Unique element id. Default: *not set*.
+- `className` - *string* - Additional classNames. Default: *not set*.
 - `textAlign` - *string* - Text align property. Default: *not set*.
-- `children` - *any* - Container children elements. Default: *not set*.
 - `xs` - *number* - Define which grid layout should be rendered on `xs` media query. Default: *not set*.
 - `sm` - *number* - Define which grid layout should be rendered on `sm` media query. Default: *not set*.
 - `md` - *number* - Define which grid layout should be rendered on `md` media query. Default: *not set*.
