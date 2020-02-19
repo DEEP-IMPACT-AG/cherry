@@ -47,12 +47,20 @@ Below you will find a typical example of the grid usage.
 		/>
 	</head>
 	<body>
-		<!--- Start Grid Container -->
-		<div class="container"><!--- Grid Container -->
-			<div class="row"><!--- Grid Row -->
-				<div class="col col-sm-4 col-lg-4">1</div><!--- Grid Column -->
-				<div class="col col-sm-4 col-lg-4">2</div><!--- Grid Column -->
-				<div class="col col-sm-4 col-lg-4">3</div><!--- Grid Column -->
+		<!--- Grid Container -->
+		<div class="container">
+			<!--- Grid Row -->
+			<div class="row">
+				<!--- Grid Columns -->
+				<div class="col col-sm-4 col-lg-4">
+					<div>Child 1</div>
+				</div>
+				<div class="col col-sm-4 col-lg-4">
+					<div>Child 2</div>
+				</div>
+				<div class="col col-sm-4 col-lg-4">
+					<div>Child 3</div>
+				</div>
 			</div>
 		</div>
 	</body>

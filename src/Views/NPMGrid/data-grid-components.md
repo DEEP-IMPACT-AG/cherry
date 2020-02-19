@@ -23,9 +23,15 @@ function App() {
 	return (
 		<Container>
 			<Row>
-				<Col className={styles.border} xs={4} lg={6}>1</Col>
-				<Col className={styles.border} xs={4} lg={6}>2</Col>
-				<Col className={styles.border} xs={4} lg={12}>3</Col>
+				<Col xs={4} lg={6}>
+					<div>Child 1</div>
+				</Col>
+				<Col xs={4} lg={6}>
+					<div>Child 2</div>
+				</Col>
+				<Col xs={4} lg={12}>
+					<div>Child 3</div>
+				</Col>
 			</Row>
 		</Container>
 	);
