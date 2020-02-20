@@ -12,6 +12,8 @@ Cherry’s grid system uses a series of containers, rows, and columns to layout 
 npm install cherry-grid
 ```
 
+  ***
+
 ### Sample usage
 Below you will find a typical example of the grid usage.
 ```javascript
@@ -40,25 +42,48 @@ function App() {
 export default App;
 ```
 
+  ***
+
 ### Container
-The `<Container>` component is meant to be always the top level parent. Available properties: 
+The `<Container>` component is meant to be always the top level parent.
+  ***
+**Available properties:**
+  ***
 - `id` - *string* - Unique element id. Default: *not set*.
 - `className` - *string* - Additional classNames. Default: *not set*.
 - `fluid` - *boolean* - Defines wheather the container should go full width, thus fluid. Default: `false`.
 - `child` - *boolean* - Defines wheather the container is a child of another container, thus removing additional paddings on the sides. Default: `false`.
 
+
+  ***
+
 ### Row
-The `<Row>` component is a direct or non direct child of the `<Container>` component. Available properties: 
+The `<Row>` component is a direct or non direct child of the `<Container>` component.
+  ***
+**Available properties:**
+  ***
 - `id` - *string* - Unique element id. Default: *not set*.
 - `className` - *string* - Additional classNames. Default: *not set*.
 - `alignItems` - *string* - Use the align-items property to align the items vertically. Default: *not set*.
+
+	**Props:** stretch, center, flex-start, flex-end, baseline, initial.
 - `justifyContent` - *string* - Use the justify-content property to align the items horizontally. Default: *not set*.
 
+	**Props:** flex-start, flex-end, center, space-between, space-around, initial.
+
+
+  ***
+
 ### Col
-Col stands for column. The `<Col>` component should **always** be a direct child of the `<Row>`. Available properties: 
+Col stands for column. The `<Col>` component should **always** be a direct child of the `<Row>`.
+  ***
+**Available properties:**
+  ***
 - `id` - *string* - Unique element id. Default: *not set*.
 - `className` - *string* - Additional classNames. Default: *not set*.
 - `textAlign` - *string* - Text align property. Default: *not set*.
+
+	**Props:** right, left, center.
 - `xs` - *number* - Define which grid layout should be rendered on `xs` media query. Default: *not set*.
 - `sm` - *number* - Define which grid layout should be rendered on `sm` media query. Default: *not set*.
 - `md` - *number* - Define which grid layout should be rendered on `md` media query. Default: *not set*.
@@ -67,6 +92,7 @@ Col stands for column. The `<Col>` component should **always** be a direct child
 - `xxl` - *number* - Define which grid layout should be rendered on `xxl` media query. Default: *not set*.
 - `xxxl` - *number* - Define which grid layout should be rendered on `xxxl` media query. Default: *not set*.
 - `first` - *boolean* - Define if the element should go first. Default: `false`.
+- `firstXs` - *boolean* - Define if the element should go first on `xs` media query. Default: `false`.
 - `firstSm` - *boolean* - Define if the element should go first on `sm` media query. Default: `false`.
 - `firstMd` - *boolean* - Define if the element should go first on `md` media query. Default: `false`.
 - `firstLg` - *boolean* - Define if the element should go first on `lg` media query. Default: `false`.
@@ -74,12 +100,16 @@ Col stands for column. The `<Col>` component should **always** be a direct child
 - `firstXxl` - *boolean* - Define if the element should go first on `xxl` media query. Default: `false`.
 - `firstXxxl` - *boolean* - Define if the element should go first on `xxxl` media query. Default: `false`.
 - `last` - *boolean* - Define if the element should go last. Default: `false`.
-- `lastSm,` - *boolean* - Define if the element should go last on `sm` media query. Default: `false`.
+- `lastXs` - *boolean* - Define if the element should go last on `xs` media query. Default: `false`.
+- `lastSm` - *boolean* - Define if the element should go last on `sm` media query. Default: `false`.
 - `lastMd` - *boolean* - Define if the element should go last on `md` media query. Default: `false`.
 - `lastLg` - *boolean* - Define if the element should go last on `lg` media query. Default: `false`.
 - `lastXl` - *boolean* - Define if the element should go last on `xl` media query. Default: `false`.
 - `lastXxl` - *boolean* - Define if the element should go last on `xxl` media query. Default: `false`.
 - `lastXxxl` - *boolean* - Define if the element should go last on `xxxl` media query. Default: `false`.
+
+
+  ***
 
 # Add Cherry's variables
 If you don't have the Cherry's variables in the project yet, please add the minimum required for the Grid to work.
@@ -109,6 +139,8 @@ Import the [mixins.css](https://raw.githubusercontent.com/DEEP-IMPACT-AG/cherry/
 	--gutter-col-desktop: 20px;
 }
 ```
+
+  ***
 
 ### 12 Column - Grid System
 Cherry's grid system allows up to 12 columns across the page.
