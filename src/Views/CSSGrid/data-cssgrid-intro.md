@@ -55,13 +55,13 @@ Below you will find a typical example of the grid usage.
 			<!--- Grid Row -->
 			<div class="row">
 				<!--- Grid Columns -->
-				<div class="col col-sm-4 col-lg-4">
+				<div class="col-sm-4 col-lg-6">
 					<div>Child 1</div>
 				</div>
-				<div class="col col-sm-4 col-lg-4">
+				<div class="col-sm-4 col-lg-6">
 					<div>Child 2</div>
 				</div>
-				<div class="col col-sm-4 col-lg-4">
+				<div class="col-sm-4 col-lg-12">
 					<div>Child 3</div>
 				</div>
 			</div>
@@ -100,7 +100,6 @@ The `class="row"` element is a direct or non direct child of the `class="contain
 
 ### Col
 The `class="col"` elements should **always** be direct childen of the `class="row"` element. 
-All column elements start with the the first `class="col"` followed by the size definition: `class="col col-xs-12"`
 
   ***
 **Available variations:**
@@ -108,29 +107,31 @@ All column elements start with the the first `class="col"` followed by the size 
 - `text-align-[variation]` - *string* - Text align property.
 
 	**Variations:** right, left, center.
-- `class="col-xs-[1-12]"` - Define which grid layout should be displayed on `xs` media query.
-- `class="col-sm-[1-12]"` - Define which grid layout should be displayed on `sm` media query.
-- `class="col-md-[1-12]"` - Define which grid layout should be displayed on `md` media query.
-- `class="col-lg-[1-12]"` - Define which grid layout should be displayed on `lg` media query.
-- `class="col-xl-[1-12]"` - Define which grid layout should be displayed on `xl` media query.
-- `class="col-xxl-[1-12]"` - Define which grid layout should be displayed on `xxl` media query.
-- `class="col-xxxl-[1-12]"` - Define which grid layout should be displayed on `xxxl` media query.
-- `class="col-order-first-[1-12]"` - Define if the element should go first.
-- `class="col-xs-order-first-[1-12]"` - Define if the element should go first on `xs` media query.
-- `class="col-sm-order-first-[1-12]"` - Define if the element should go first on `sm` media query.
-- `class="col-md-order-first-[1-12]"` - Define if the element should go first on `md` media query.
-- `class="col-lg-order-first-[1-12]"` - Define if the element should go first on `lg` media query.
-- `class="col-xl-order-first-[1-12]"` - Define if the element should go first on `xl` media query.
-- `class="col-xxl-order-first-[1-12]"` - Define if the element should go first on `xxl` media query.
-- `class="col-xxxl-order-first-[1-12]"` - Define if the element should go first on `xxxl` media query.
-- `class="col-order-last-[1-12]"` - Define if the element should go last.
-- `class="col-xs-order-last-[1-12]",` - Define if the element should go last on `xs` media query.
-- `class="col-sm-order-last-[1-12]",` - Define if the element should go last on `sm` media query.
-- `class="col-md-order-last-[1-12]"` - Define if the element should go last on `md` media query.
-- `class="col-lg-order-last-[1-12]"` - Define if the element should go last on `lg` media query.
-- `class="col-xsl-order-last-[1-12]"` - Define if the element should go last on `xl` media query.
-- `class="col-xxl-order-last-[1-12]"` - Define if the element should go last on `xxl` media query.
-- `class="col-xxxl-order-last-[1-12]"` - Define if the element should go last on `xxxl` media query.
+- `class="col-[1-12|auto]"` - Column size for **all** media query.
+- `class="col-xs-[1-12|auto]"` - Define which grid layout should be displayed on `xs` media query.
+- `class="col-sm-[1-12|auto]"` - Define which grid layout should be displayed on `sm` media query.
+- `class="col-sm-[1-12|auto]"` - Define which grid layout should be displayed on `sm` media query.
+- `class="col-md-[1-12|auto]"` - Define which grid layout should be displayed on `md` media query.
+- `class="col-lg-[1-12|auto]"` - Define which grid layout should be displayed on `lg` media query.
+- `class="col-xl-[1-12|auto]"` - Define which grid layout should be displayed on `xl` media query.
+- `class="col-xxl-[1-12|auto]"` - Define which grid layout should be displayed on `xxl` media query.
+- `class="col-xxxl-[1-12|auto]"` - Define which grid layout should be displayed on `xxxl` media query.
+- `class="col-order-first"` - Define if the element should go first for **all** media query.
+- `class="col-xs-order-first"` - Define if the element should go first on `xs` media query.
+- `class="col-sm-order-first"` - Define if the element should go first on `sm` media query.
+- `class="col-md-order-first"` - Define if the element should go first on `md` media query.
+- `class="col-lg-order-first"` - Define if the element should go first on `lg` media query.
+- `class="col-xl-order-first"` - Define if the element should go first on `xl` media query.
+- `class="col-xxl-order-first"` - Define if the element should go first on `xxl` media query.
+- `class="col-xxxl-order-first"` - Define if the element should go first on `xxxl` media query.
+- `class="col-order-last"` - Define if the element should go last for **all** media query.
+- `class="col-xs-order-last"` - Define if the element should go last on `xs` media query.
+- `class="col-sm-order-last"` - Define if the element should go last on `sm` media query.
+- `class="col-md-order-last"` - Define if the element should go last on `md` media query.
+- `class="col-lg-order-last"` - Define if the element should go last on `lg` media query.
+- `class="col-xsl-order-last"` - Define if the element should go last on `xl` media query.
+- `class="col-xxl-order-last"` - Define if the element should go last on `xxl` media query.
+- `class="col-xxxl-order-last"` - Define if the element should go last on `xxxl` media query.
 
 
   ***

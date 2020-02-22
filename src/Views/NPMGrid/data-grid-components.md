@@ -84,13 +84,13 @@ Col stands for column. The `<Col>` component should **always** be a direct child
 - `textAlign` - *string* - Text align property. Default: *not set*.
 
 	**Props:** right, left, center.
-- `xs` - *number* - Define which grid layout should be rendered on `xs` media query. Default: *not set*.
-- `sm` - *number* - Define which grid layout should be rendered on `sm` media query. Default: *not set*.
-- `md` - *number* - Define which grid layout should be rendered on `md` media query. Default: *not set*.
-- `lg` - *number* - Define which grid layout should be rendered on `lg` media query. Default: *not set*.
-- `xl` - *number* - Define which grid layout should be rendered on `xl` media query. Default: *not set*.
-- `xxl` - *number* - Define which grid layout should be rendered on `xxl` media query. Default: *not set*.
-- `xxxl` - *number* - Define which grid layout should be rendered on `xxxl` media query. Default: *not set*.
+- `xs` - *number | "auto"* - Define which grid layout should be rendered on `xs` media query. Default: *not set*.
+- `sm` - *number | "auto"* - Define which grid layout should be rendered on `sm` media query. Default: *not set*.
+- `md` - *number | "auto"* - Define which grid layout should be rendered on `md` media query. Default: *not set*.
+- `lg` - *number | "auto"* - Define which grid layout should be rendered on `lg` media query. Default: *not set*.
+- `xl` - *number | "auto"* - Define which grid layout should be rendered on `xl` media query. Default: *not set*.
+- `xxl` - *number | "auto"* - Define which grid layout should be rendered on `xxl` media query. Default: *not set*.
+- `xxxl` - *number | "auto"* - Define which grid layout should be rendered on `xxxl` media query. Default: *not set*.
 - `first` - *boolean* - Define if the element should go first. Default: `false`.
 - `firstXs` - *boolean* - Define if the element should go first on `xs` media query. Default: `false`.
 - `firstSm` - *boolean* - Define if the element should go first on `sm` media query. Default: `false`.

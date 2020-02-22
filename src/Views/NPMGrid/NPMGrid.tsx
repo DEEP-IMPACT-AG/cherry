@@ -31,6 +31,79 @@ class NPMGrid extends Component {
 									__html: dataGridComponents.__content,
 								}}
 							/>
+							<div className="container container-fluid container-child">
+								<div className="row data-custom-row">
+									<div className="col-12 highlight">
+										<div>xs={12}</div>
+									</div>
+									<div className="col-11 highlight">
+										<div>xs={11}</div>
+									</div>
+									<div className="col-1 highlight">
+										<div>xs={1}</div>
+									</div>
+									<div className="col-10 highlight">
+										<div>xs={10}</div>
+									</div>
+									<div className="col-2 highlight">
+										<div>xs={2}</div>
+									</div>
+									<div className="col-9 highlight">
+										<div>xs={9}</div>
+									</div>
+									<div className="col-3 highlight">
+										<div>xs={3}</div>
+									</div>
+									<div className="col-8 highlight">
+										<div>.xs={8}</div>
+									</div>
+									<div className="col-4 highlight">
+										<div>xs={4}</div>
+									</div>
+									<div className="col-7 highlight">
+										<div>xs={7}</div>
+									</div>
+									<div className="col-5 highlight">
+										<div>xs={5}</div>
+									</div>
+									<div className="col-6 highlight">
+										<div>xs={6}</div>
+									</div>
+									<div className="col-6 highlight">
+										<div>xs={6}</div>
+									</div>
+									<div className="col-5 highlight">
+										<div>xs={5}</div>
+									</div>
+									<div className="col-7 highlight">
+										<div>xs={7}</div>
+									</div>
+									<div className="col-4 highlight">
+										<div>xs={4}</div>
+									</div>
+									<div className="col-8 highlight">
+										<div>xs={8}</div>
+									</div>
+									<div className="col-3 highlight">
+										<div>xs={3}</div>
+									</div>
+									<div className="col-9 highlight">
+										<div>xs={9}</div>
+									</div>
+									<div className="col-2 highlight">
+										<div>xs={2}</div>
+									</div>
+									<div className="col-10 highlight">
+										<div>xs={10}</div>
+									</div>
+									<div className="col-1 highlight">
+										<div>xs={1}</div>
+									</div>
+									<div className="col-11 highlight">
+										<div>xs={11}</div>
+									</div>
+								</div>
+							</div>
 							<div>
 								<h1>Responsiveness</h1>
 							</div>

@@ -1,10 +1,16 @@
 :global {
+	& pre {
+		width: 100%;
+		overflow: auto;
+	}
+
 	& code {
 		padding: 5px;
 		border-radius: 6px;
 		color: var(--color-secondary);
 		background: var(--color-tertiary);
 		white-space: pre-wrap;
+		min-width: 525px;
 
 		&[class] {
 			display: block;

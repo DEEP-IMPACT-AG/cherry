@@ -6,11 +6,16 @@
 		padding-left: 5px;
 	}
 
-	& .highlight {
+	& div.highlight {
 		padding: 5px;
 		white-space: nowrap;
 		text-overflow: ellipsis;
 		overflow: hidden;
+		margin: 0;
+
+		@media (--screen-lg) {
+			padding: 5px;
+		}
 
 		& * {
 			background: var(--color-tertiary);
