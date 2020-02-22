@@ -6,34 +6,7 @@
 		padding-left: 5px;
 	}
 
-	& div.highlight {
-		padding: 5px;
-		white-space: nowrap;
-		text-overflow: ellipsis;
-		overflow: hidden;
-		margin: 0;
-
-		@media (--screen-lg) {
-			padding: 5px;
-		}
-
-		& * {
-			background: var(--color-tertiary);
-			border: solid 1px var(--color-gray-light);
-			padding: 10px 15px;
-			border-radius: 4px;
-			overflow: hidden;
-			box-sizing: border-box;
-			text-overflow: ellipsis;
-			overflow: hidden;
-			font-size: var(--size-small-desktop);
-			color: var(--color-gray-dark);
-		}
-	}
-
 	& table {
-		border-collapse: collapse;
-		border: solid 1px var(--color-gray-light);
 		width: 100%;
 		display: block;
 		overflow-y: scroll;
@@ -44,49 +17,4 @@
 			overflow: auto;
 		}
 	}
-
-	& table td,
-	& table th {
-		font-weight: 400;
-		padding: 10px 15px;
-		font-size: var(--size-small-desktop);
-		white-space: nowrap;
-		text-overflow: ellipsis;
-		overflow: hidden;
-	}
-
-	& table th {
-		font-weight: 700;
-		background: var(--color-tertiary);
-	}
-
-	& table td {
-		color: var(--color-secondary);
-	}
-
-	& table th:first-child,
-	& table td:first-child {
-		padding-left: 15px;
-	}
-
-	& table tr th {
-		border: 0;
-	}
-
-	& table tr td {
-		border: 0;
-	}
-
-	& table tr:nth-child(even) {
-		background: var(--color-tertiary);
-	}
-
-	& table tr:nth-child(odd) {
-		background: var(--color-light);
-	}
-}
-
-.scrollHorizontal {
-	overflow-x: auto;
-	-webkit-overflow-scrolling: touch;
 }

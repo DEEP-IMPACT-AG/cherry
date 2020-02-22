@@ -120,11 +120,14 @@ class CSSGrid extends Component {
 							</p>
 							<div className="container container-fluid container-child">
 								<div className="row data-custom-row">
-									<div className="col-xs-12 col-lg-6 highlight">
-										<div>class="col-xs-12 col-lg-6"</div>
+									<div className="col-xs-6 col-lg-4 highlight">
+										<div>class="col-xs-6 col-lg-4"</div>
 									</div>
-									<div className="col-xs-12 col-lg-6 highlight">
-										<div>class="col-xs-12 col-lg-6"</div>
+									<div className="col-xs-6 col-lg-4 highlight">
+										<div>class="col-xs-6 col-lg-4"</div>
+									</div>
+									<div className="col-xs-12 col-lg-4 highlight">
+										<div>class="col-xs-12 col-lg-4"</div>
 									</div>
 								</div>
 							</div>

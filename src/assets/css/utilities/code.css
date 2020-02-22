@@ -44,14 +44,19 @@
 		& * {
 			background: var(--color-tertiary);
 			border: solid 1px var(--color-gray-light);
-			padding: 5px 15px;
+			padding: 5px;
 			border-radius: 4px;
 			overflow: hidden;
 			box-sizing: border-box;
 			text-overflow: ellipsis;
 			overflow: hidden;
-			font-size: var(--size-small-desktop);
+			font-size: var(--size-small-mobile);
 			color: var(--color-gray-dark);
+
+			@media (--screen-lg) {
+				padding: 5px 15px;
+				font-size: var(--size-small-desktop);
+			}
 		}
 	}
 

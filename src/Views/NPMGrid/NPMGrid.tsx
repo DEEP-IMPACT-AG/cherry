@@ -120,19 +120,19 @@ class NPMGrid extends Component {
 							</p>
 							<div className="container container-fluid container-child">
 								<div className="row data-custom-row">
-									<div className="col-xs-12 col-lg-6 highlight">
-										<div>{"<Col xs={12} lg={6}>"}</div>
+									<div className="col-xs-6 col-lg-4 highlight">
+										<div>{"<Col xs={6} lg={4}>"}</div>
 									</div>
-									<div className="col-xs-12 col-lg-6 highlight">
-										<div>{"<Col xs={12} lg={6}>"}</div>
+									<div className="col-xs-6 col-lg-4 highlight">
+										<div>{"<Col xs={6} lg={4}>"}</div>
+									</div>
+									<div className="col-xs-12 col-lg-4 highlight">
+										<div>{"<Col xs={12} lg={4}>"}</div>
 									</div>
 								</div>
 							</div>
 							<div
-								className={classNames(
-									styles.content,
-									styles.scrollHorizontal,
-								)}
+								className={classNames(styles.content)}
 								dangerouslySetInnerHTML={{
 									__html: dataMediaQueries.__content,
 								}}
