@@ -90,10 +90,10 @@ The `class="row"` element is a direct or non direct child of the `class="contain
   ***
 - `class="align-items-[variation]"` Use the align-items class name to align the items vertically.
 
-	**Variations:** stretch, center, flex-start, flex-end, baseline, initial.
+	**Variations:** `stretch`, `center`, `flex-start`, `flex-end`, `baseline`, `initial`.
 - `justify-content-[variation]` - *string* - Use the justify-content property to align the items horizontally.
 
-	**Variations:** flex-start, flex-end, center, space-between, space-around, initial.
+	**Variations:** `flex-start`, `flex-end`, `center`, `space-between`, `space-around`, `initial`.
 
 
   ***
@@ -106,7 +106,7 @@ The `class="col"` elements should **always** be direct childen of the `class="ro
   ***
 - `text-align-[variation]` - *string* - Text align property.
 
-	**Variations:** right, left, center.
+	**Variations:** `right`, `left`, `center`.
 - `class="col-[1-12|auto]"` - Column size for **all** media query.
 - `class="col-xs-[1-12|auto]"` - Define which grid layout should be displayed on `xs` media query.
 - `class="col-sm-[1-12|auto]"` - Define which grid layout should be displayed on `sm` media query.

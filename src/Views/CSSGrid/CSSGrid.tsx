@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import Prism from "prismjs";
 import classNames from "classnames";
 import Head from "../../Components/Head";
 import {
@@ -14,6 +15,10 @@ const dataIntro = require("./data-cssgrid-intro.md");
 const dataMediaQueries = require("./data-cssgrid-mediaqueries.md");
 
 class CSSGrid extends Component {
+	componentDidMount() {
+		Prism.highlightAll();
+	}
+
 	render() {
 		return (
 			<Fragment>
@@ -124,10 +129,7 @@ class CSSGrid extends Component {
 								</div>
 							</div>
 							<div
-								className={classNames(
-									styles.content,
-									styles.scrollHorizontal,
-								)}
+								className={styles.content}
 								dangerouslySetInnerHTML={{
 									__html: dataMediaQueries.__content,
 								}}

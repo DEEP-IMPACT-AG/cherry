@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from "react";
 import classNames from "classnames";
+import Prism from "prismjs";
+import "cherry-grid/dist/css/styles.css";
 import Head from "../../Components/Head";
 import {
 	ContentPusher,
@@ -7,11 +9,16 @@ import {
 	Readable,
 	Button,
 } from "../../Components/Layout";
+
 const styles = require("../CSSGrid/CSSGrid.css");
 const dataGridComponents = require("./data-grid-components.md");
 const dataMediaQueries = require("./data-grid-components-mediaqueries.md");
 
 class NPMGrid extends Component {
+	componentDidMount() {
+		Prism.highlightAll();
+	}
+
 	render() {
 		return (
 			<Fragment>

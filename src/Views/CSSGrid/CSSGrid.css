@@ -20,14 +20,14 @@
 		& * {
 			background: var(--color-tertiary);
 			border: solid 1px var(--color-gray-light);
-			padding: 10px;
+			padding: 10px 15px;
 			border-radius: 4px;
 			overflow: hidden;
 			box-sizing: border-box;
 			text-overflow: ellipsis;
 			overflow: hidden;
 			font-size: var(--size-small-desktop);
-			color: var(--color-secondary);
+			color: var(--color-gray-dark);
 		}
 	}
 
@@ -35,12 +35,20 @@
 		border-collapse: collapse;
 		border: solid 1px var(--color-gray-light);
 		width: 100%;
+		display: block;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+		
+		@media (--screen-lg) {
+			display: table;
+			overflow: auto;
+		}
 	}
 
 	& table td,
 	& table th {
 		font-weight: 400;
-		padding: 4px 7px;
+		padding: 10px 15px;
 		font-size: var(--size-small-desktop);
 		white-space: nowrap;
 		text-overflow: ellipsis;
@@ -58,7 +66,7 @@
 
 	& table th:first-child,
 	& table td:first-child {
-		padding-left: 8px;
+		padding-left: 15px;
 	}
 
 	& table tr th {
@@ -75,12 +83,6 @@
 
 	& table tr:nth-child(odd) {
 		background: var(--color-light);
-	}
-
-	& code {
-		padding: 5px;
-		color: var(--color-secondary);
-		background: var(--color-tertiary);
 	}
 }
 

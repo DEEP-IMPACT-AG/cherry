@@ -66,10 +66,10 @@ The `<Row>` component is a direct or non direct child of the `<Container>` compo
 - `className` - *string* - Additional classNames. Default: *not set*.
 - `alignItems` - *string* - Use the align-items property to align the items vertically. Default: *not set*.
 
-	**Props:** stretch, center, flex-start, flex-end, baseline, initial.
+	**Props:** `stretch`, `center`, `flex-start`, `flex-end`, `baseline`, `initial`.
 - `justifyContent` - *string* - Use the justify-content property to align the items horizontally. Default: *not set*.
 
-	**Props:** flex-start, flex-end, center, space-between, space-around, initial.
+	**Props:** `flex-start`, `flex-end`, `center`, `space-between`, `space-around`, `initial`.
 
 
   ***
@@ -83,7 +83,7 @@ Col stands for column. The `<Col>` component should **always** be a direct child
 - `className` - *string* - Additional classNames. Default: *not set*.
 - `textAlign` - *string* - Text align property. Default: *not set*.
 
-	**Props:** right, left, center.
+	**Props:** `right`, `left`, `center`.
 - `xs` - *number | "auto"* - Define which grid layout should be rendered on `xs` media query. Default: *not set*.
 - `sm` - *number | "auto"* - Define which grid layout should be rendered on `sm` media query. Default: *not set*.
 - `md` - *number | "auto"* - Define which grid layout should be rendered on `md` media query. Default: *not set*.
