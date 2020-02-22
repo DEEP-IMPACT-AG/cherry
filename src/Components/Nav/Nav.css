@@ -153,7 +153,7 @@
 	@media (--screen-lg) {
 		border-bottom: none;
 		border-right: solid 1px var(--color-gray-light);
-		width: 30%;
+		width: 335px;
 		height: 100vh;
 		transform: translateX(-100px) scale(0.9) perspective(400px) rotateY(15deg);
 
@@ -163,11 +163,8 @@
 		}
 
 		& .logo {
-			padding: 44px;
-
-			@media (--screen-xxl) {
-				padding: 64px;
-			}
+			padding: 64px;
+			max-height: 202px;
 
 			& svg {
 				max-width: 100%;
@@ -188,10 +185,6 @@
 			pointer-events: all;
 			height: calc(100vh - 262px);
 		}
-	}
-
-	@media (--screen-xl) {
-		width: 20%;
 	}
 
 	& .burger {

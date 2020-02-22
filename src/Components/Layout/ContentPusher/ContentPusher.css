@@ -1,3 +1,4 @@
+
 @import '../../../assets/css/variables.css';
 
 .contentPusher {
@@ -8,11 +9,7 @@
 	transition: all 0.5s ease;
 	
 	@media (--screen-lg) {
-		padding-left: 30%;
-	}
-
-	@media (--screen-xl) {
-		padding-left: 20%;
+		padding-left: 335px;
 	}
 
 	&.visible {
