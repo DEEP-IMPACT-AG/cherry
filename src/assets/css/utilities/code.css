@@ -2,7 +2,7 @@
 	& pre {
 		width: 100%;
 		overflow: auto;
-		padding: 10px;
+		padding: 5px 10px;
 		border-radius: 6px;
 		color: var(--color-gray-dark);
 		background: var(--color-tertiary);
@@ -44,7 +44,7 @@
 		& * {
 			background: var(--color-tertiary);
 			border: solid 1px var(--color-gray-light);
-			padding: 10px 15px;
+			padding: 5px 15px;
 			border-radius: 4px;
 			overflow: hidden;
 			box-sizing: border-box;

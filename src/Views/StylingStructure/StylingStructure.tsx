@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import ReactDOM from "react-dom";
+import Prism from "prismjs";
 import Head from "../../Components/Head";
 import {
 	ContentPusher,
@@ -13,6 +13,10 @@ const styles = require("./StylingStructure.css");
 const data = require("./data-stylingstructure.md");
 
 class StylingStructure extends Component {
+	componentDidMount() {
+		Prism.highlightAll();
+	}
+
 	render() {
 		return (
 			<Fragment>

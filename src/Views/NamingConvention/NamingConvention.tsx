@@ -1,10 +1,15 @@
 import React, { Component, Fragment } from "react";
+import Prism from "prismjs";
 import Head from "../../Components/Head";
 import { ContentPusher, Container, Readable } from "../../Components/Layout";
 const styles = require("./NamingConvention.css");
 const data = require("./data-namingconvention.md");
 
 class NamingConvention extends Component {
+	componentDidMount() {
+		Prism.highlightAll();
+	}
+
 	render() {
 		return (
 			<Fragment>

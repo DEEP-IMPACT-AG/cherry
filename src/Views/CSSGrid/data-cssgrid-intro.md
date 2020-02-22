@@ -11,13 +11,13 @@ Cherry’s grid system uses a series of containers, rows, and columns to layout 
 
 **To install Cherry Grid, run the command:**
 
-```
+```shell
 npm install cherry-grid
 ```
 
 Import the CSS grid file in your code:
 
-```
+```css
 @import 'cherry-grid/dist/css/styles.css';
 ```
 
