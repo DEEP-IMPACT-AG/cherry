@@ -6,16 +6,16 @@ Cherry is technology agnostic – meaning that it can be applied independently o
 
 ---
 
-- 🍒 **Cherry** can be used as:
+1. 🍒 **Cherry** can be used as:
 
 ---
 
-- 🤔 - A design philosophy
-- 💎 - Sketch library
-- 🎨 - PostCSS variables and mixins
-- ✍ - Single purpose CSS classes
-- 💅 - Styled components
-- 🚀 - React components
+1. 🤔 - A design philosophy
+2. 💎 - Sketch library
+3. 🎨 - PostCSS variables and mixins
+4. ✍ - Single purpose CSS classes
+5. 💅 - Styled components
+6. 🚀 - React components
 
 ---
 
@@ -43,8 +43,8 @@ Cherry is technology agnostic – meaning that it can be applied independently o
 To use NPM, you need Node installed, [click here to download](https://nodejs.org/).
 
 #### **🍒 Cherry Grid**
-- 💾 [Repository](https://github.com/DEEP-IMPACT-AG/cherry-grid) - 📦 [NPM Package](https://www.npmjs.com/package/cherry-grid) 
-- 📂 [CSS Grid Docs](https://cherry.design/css/cherry-grid) - 📂 [NPM Grid Docs](https://cherry.design/npm/cherry-grid)
+1. 💾 [Repository](https://github.com/DEEP-IMPACT-AG/cherry-grid) - 📦 [NPM Package](https://www.npmjs.com/package/cherry-grid) 
+2. 📂 [CSS Grid Docs](https://cherry.design/css/cherry-grid) - 📂 [NPM Grid Docs](https://cherry.design/npm/cherry-grid)
 
 ---
 

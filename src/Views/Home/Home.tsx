@@ -11,7 +11,7 @@ class Home extends Component {
 				<Head title="Cherry • Design System" />
 				<ContentPusher>
 					<Container>
-						<Readable noLists>
+						<Readable noOrderedLists>
 							<div
 								className={styles.content}
 								dangerouslySetInnerHTML={{

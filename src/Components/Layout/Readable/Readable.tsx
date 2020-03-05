@@ -5,14 +5,21 @@ const styles = require("./Readable.css");
 interface ReadableProps {
 	children: any;
 	className?: string;
-	noLists?: boolean;
+	noUnorderedLists?: boolean;
+	noOrderedLists?: boolean;
 }
 
-function Readable({ children, className, noLists }: ReadableProps) {
+function Readable({
+	children,
+	className,
+	noUnorderedLists,
+	noOrderedLists,
+}: ReadableProps) {
 	return (
 		<div
 			className={classNames(styles.readable, className, {
-				[styles.noLists]: noLists,
+				[styles.noUnorderedLists]: noUnorderedLists,
+				[styles.noOrderedLists]: noOrderedLists,
 			})}
 		>
 			{children}
