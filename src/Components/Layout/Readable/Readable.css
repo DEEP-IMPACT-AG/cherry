@@ -28,6 +28,14 @@
 		padding: 5px 0;
 	}
 
+	& ul,
+	& ol {
+		& a:not([class]) {
+			display: initial;
+			padding: 0;
+		}
+	}
+
 	&.noLists {
 		& ul,
 		& ol {
