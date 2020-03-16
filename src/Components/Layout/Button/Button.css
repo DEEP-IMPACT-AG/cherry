@@ -9,9 +9,11 @@
 	border-radius: 30px;
 	margin: 10px 0;
 	white-space: nowrap;
-	
+	font-size: var(--size-button-mobile);
 	box-shadow: 0 0 0 0 var(--color-secondary);
 	transform: translate(0, 0);
+	font-weight: 600;
+	text-transform: uppercase;
 
 	&:hover {
 		box-shadow: 0 5px 0 0 var(--color-primary);
@@ -23,5 +25,9 @@
 		height: 32px;
 		vertical-align: middle;
 		margin-right: 10px;
+	}
+
+	@media (--screen-lg) {
+		font-size: var(--size-button-mobile);
 	}
 }

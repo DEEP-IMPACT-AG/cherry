@@ -197,6 +197,10 @@ Another empty line at the end of each file ☝
 
 		***
 
+		`--size-button-[mobile|desktop]`
+
+		***
+
 	- **Line Height**
 
 		***
@@ -250,6 +254,10 @@ Another empty line at the end of each file ☝
 		***
 
 		`--lineheight-list-[mobile|desktop]`
+
+		***
+
+		`--lineheight-button-[mobile|desktop]`
 
 	***
 
