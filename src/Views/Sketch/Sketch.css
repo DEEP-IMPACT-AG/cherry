@@ -9,14 +9,4 @@
 		box-shadow: 0 5px 30px -20px color-mod(var(--color-primary) alpha(30%));
 		transition: all 0.3s ease;
 	}
-
-	& a {
-		@media (hover: hover) {
-			&:hover {
-				& img {
-					transform: scale(0.9);
-				}
-			}
-		}
-	}
 }

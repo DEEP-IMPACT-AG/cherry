@@ -19,7 +19,7 @@ class Sketch extends Component {
 			<Fragment>
 				<Head title="Sketch - Cherry • Design System" />
 				<ContentPusher>
-					<Container>
+					<Container className={styles.images}>
 						<Readable>
 							<div
 								className={styles.content}
@@ -27,50 +27,20 @@ class Sketch extends Component {
 									__html: data.__content,
 								}}
 							/>
-							<Row className={styles.images}>
-								<Col xs={4}>
-									<a
-										href="https://res.cloudinary.com/deep-impact-ag/image/upload/v1558092359/cherry/typography/1-typography-primary.jpg"
-										target="_blank"
-										rel="noopener"
-										title="Preview"
-									>
-										<img
-											src="https://res.cloudinary.com/deep-impact-ag/image/upload/v1558092359/cherry/typography/1-typography-primary.jpg"
-											alt="Cherry Primary Typography"
-										/>
-									</a>
-								</Col>
-								<Col xs={4}>
-									<a
-										href="https://res.cloudinary.com/deep-impact-ag/image/upload/v1558092359/cherry/typography/2-typography-secondary.jpg"
-										target="_blank"
-										rel="noopener"
-										title="Preview"
-									>
-										<img
-											src="https://res.cloudinary.com/deep-impact-ag/image/upload/v1558092359/cherry/typography/2-typography-secondary.jpg"
-											alt="Cherry Secondary Typography"
-										/>
-									</a>
-								</Col>
-								<Col xs={4}>
-									<a
-										href="https://res.cloudinary.com/deep-impact-ag/image/upload/v1558092359/cherry/typography/3-typography-tertiary.jpg"
-										target="_blank"
-										rel="noopener"
-										title="Preview"
-									>
-										<img
-											src="https://res.cloudinary.com/deep-impact-ag/image/upload/v1558092359/cherry/typography/3-typography-tertiary.jpg"
-											alt="Cherry Tertiary Typography"
-										/>
-									</a>
-								</Col>
-							</Row>
+							<a
+								href="https://gum.co/pdYIq"
+								target="_blank"
+								rel="noopener"
+								title="Preview"
+							>
+								<img
+									src="https://cherry-design.s3-eu-west-1.amazonaws.com/img/cherry.jpg"
+									alt="Cherry Sketch"
+								/>
+							</a>
 
 							<Button
-								href="https://drive.google.com/file/d/1p2CrJEANwMy2VeoexkH51cun847shgij/view?usp=sharing"
+								href="https://gum.co/pdYIq"
 								target="_blank"
 								rel="noopener"
 							>

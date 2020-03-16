@@ -114,6 +114,7 @@ class Nav extends Component<NavProps, NavState> {
 									? true
 									: false
 							}
+							label="New"
 						>
 							<ul className={styles.sub}>
 								<li>
@@ -173,7 +174,6 @@ class Nav extends Component<NavProps, NavState> {
 									? true
 									: false
 							}
-							label="New"
 						>
 							<ul className={styles.sub}>
 								<li>

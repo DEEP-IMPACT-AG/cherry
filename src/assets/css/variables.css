@@ -40,6 +40,10 @@
 	--color-warning: #ffc107;
 	--color-info: #17a2b8;
 
+	--color-border-primary: var(--color-gray-light);
+	--color-border-secondary: var(--color-gray-medium);
+	--color-border-tertiary: var(--color-gray-dark);
+
 	/* Fonts ------------------------------------------------------ */
 	--font-text: 'Roboto', sans-serif;
 	--font-head: var(--font-text);
@@ -132,4 +136,9 @@
 	/* --> List --------------------------------------------------- */
 	--size-list-mobile: var(--size-text-mobile);
 	--size-list-desktop: var(--size-text-desktop);
+
+	/* --> Buttons ------------------------------------------------ */
+	--size-button-mobile: var(--size-text-mobile);
+	--size-button-desktop: var(--size-text-desktop);
+
 }
