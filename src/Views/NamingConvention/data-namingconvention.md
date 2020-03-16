@@ -123,7 +123,7 @@ Another empty line at the end of each file ☝
 
 	***
 
-		`--color-border-primary`
+	`--color-border-primary`
 
 	`--color-border-secondary`
 
