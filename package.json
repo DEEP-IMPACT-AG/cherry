@@ -1,6 +1,6 @@
 {
 	"name": "cherry-design",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"main": "src/server/main.js",
 	"description": "Design System",
 	"homepage": "https://cherry.design",
