@@ -13,11 +13,14 @@ import { Sketch as SketchIcon } from "../../assets/svg";
 const styles = require("./Sketch.css");
 const data = require("./data-sketch.md");
 
+const image1 =
+	"https://cherry-design.s3-eu-west-1.amazonaws.com/img/cherry-preview.jpg";
+
 class Sketch extends Component {
 	render() {
 		return (
 			<Fragment>
-				<Head title="Sketch - Cherry • Design System" />
+				<Head title="Sketch - Cherry • Design System" image={image1} />
 				<ContentPusher>
 					<Container className={styles.images}>
 						<Readable>
