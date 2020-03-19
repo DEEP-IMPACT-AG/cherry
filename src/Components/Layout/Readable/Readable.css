@@ -3,7 +3,6 @@
 .readable {
 	box-sizing: border-box;
 	width: 100%;
-	max-width: 992px;
 	margin: 20px auto;
 	min-height: calc(100vh - 171px);
 	position: relative;
@@ -11,6 +10,7 @@
 	@media (--screen-lg) {
 		min-height: calc(100vh - 189px);
 		margin: 64px auto;
+		padding-left: 60px;
 	}
 
 	& h1,
