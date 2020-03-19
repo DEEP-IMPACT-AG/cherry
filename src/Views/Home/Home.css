@@ -6,10 +6,13 @@
 
 .row {
 	border: solid 1px blue;
-	margin: 0;
 
-	@media (--screen-lg) {
+	&[data-row] {
 		margin: 0;
+
+		@media (--screen-lg) {
+			margin: 0;
+		}
 	}
 }
 

@@ -30,7 +30,7 @@ class Home extends Component {
 									get started as fast as possible.
 								</p>
 							</div>
-							<div className={styles.row}>
+							<Row className={styles.row}>
 								<Col xs={12} lg={8} className={styles.col}>
 									<Row className={styles.row}>
 										<Col xs={12} lg={6} className={styles.col}>
@@ -42,7 +42,7 @@ class Home extends Component {
 									</Row>
 								</Col>
 								<Col xs={12} lg={4} className={styles.col}>2</Col>
-							</div>
+							</Row>
 						</Readable>
 					</Container>
 				</ContentPusher>
