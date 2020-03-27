@@ -1,0 +1,8 @@
+@import '../../../assets/css/variables.css';
+
+.iconElement {
+	& span,
+	& em {
+		font-style: normal;
+	}
+}

@@ -27,4 +27,4 @@ function Readable({
 	);
 }
 
-export default Readable;
+export { Readable };

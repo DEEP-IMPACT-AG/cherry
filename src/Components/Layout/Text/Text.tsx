@@ -69,4 +69,4 @@ class Text extends Component<TextProps> {
 	}
 }
 
-export default Text;
+export { Text };

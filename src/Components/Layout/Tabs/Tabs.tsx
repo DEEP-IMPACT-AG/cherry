@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import classNames from "classnames";
-import Tab from "./Tab";
+import { Tab } from "./Tab";
 const styles = require("./Tabs.css");
 
 interface TabProps {
@@ -78,4 +78,4 @@ class Tabs extends Component<TabProps, TabState> {
 	};
 }
 
-export default Tabs;
+export { Tabs };

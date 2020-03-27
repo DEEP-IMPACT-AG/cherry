@@ -1,1 +1,53 @@
 @import '../../assets/css/variables.css';
+
+.limit {
+	max-width: 534px;
+}
+
+.row {
+	&[data-row] {
+		margin: 0;
+
+		@media (--screen-lg) {
+			margin: 0;
+		}
+	}
+}
+
+.col {
+	&[data-col] {
+		padding: 0;
+		margin: 0;
+
+		@media (--screen-lg) {
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+
+.innerCol {
+	border: solid 1px var(--color-gray-light);
+	background: var(--color-tertiary);
+
+	@media (--screen-lg) {
+		&:not(:last-of-type) {
+			border-right: none;
+		}
+	}
+}
+
+.single {
+	@media (--screen-lg) {
+		border-left: none;
+	}
+}
+
+.colSpacing {
+	padding: 10px 20px;
+}
+
+.firstList {
+	@mixin noList;
+	color: var(--color-secondary);
+}

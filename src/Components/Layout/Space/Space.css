@@ -1,0 +1,41 @@
+@import '../../../assets/css/variables.css';
+
+.space {
+	display: block;
+
+	&.mobileOnly {
+		display: block;
+
+		@media (--screen-xl) {
+			display: none;
+		}
+	}
+
+	&.desktopOnly {
+		display: none;
+
+		@media (--screen-xl) {
+			display: block;
+		}
+	}
+
+	&.horizontal {
+		display: inline-block;
+
+		&.mobileOnly {
+			display: inline-block;
+
+			@media (--screen-xl) {
+				display: none;
+			}
+		}
+
+		&.desktopOnly {
+			display: none;
+
+			@media (--screen-xl) {
+				display: inline-block;
+			}
+		}
+	}
+}
