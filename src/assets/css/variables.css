@@ -143,8 +143,8 @@
 	--size-button-regular-desktop: var(--size-text-desktop);
 	--lineheight-button-regular-desktop: var(--lineheight-text-desktop);
 
-	--size-button-big-mobile: var(--size-text-mobile);
-	--lineheight-button-big-mobile: var(--lineheight-text-mobile);
-	--size-button-big-desktop: var(--size-text-desktop);
-	--lineheight-button-big-desktop: var(--lineheight-text-desktop);
+	--size-button-big-mobile: var(--size-subtitle-mobile);
+	--lineheight-button-big-mobile: var(--lineheight-subtitle-mobile);
+	--size-button-big-desktop: var(--size-subtitle-desktop);
+	--lineheight-button-big-desktop: var(--lineheight-subtitle-desktop);
 }

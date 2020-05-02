@@ -227,8 +227,11 @@ class Typography extends Component {
 							</div>
 							<H3>Button</H3>
 							<Row>
-								<Col xs={12} lg={12}>
-									<Button>Button</Button>
+								<Col xs={12} lg={6}>
+									<Button>Button Regular</Button>
+								</Col>
+								<Col xs={12} lg={6}>
+									<Button big>Button Big</Button>
 								</Col>
 							</Row>
 						</Readable>

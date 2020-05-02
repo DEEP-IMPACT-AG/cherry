@@ -11,6 +11,7 @@ interface ButtonProps {
 	href?: string;
 	target?: string;
 	rel?: string;
+	big?: boolean;
 }
 
 function Button({
@@ -21,13 +22,18 @@ function Button({
 	href,
 	target,
 	rel,
+	big,
 }: ButtonProps) {
+	const ownClassName = classNames(styles.button, className, {
+		[styles.big]: big,
+	});
+
 	if (href) {
 		return (
 			<a
 				href={href}
 				target={target}
-				className={classNames(styles.button, className)}
+				className={ownClassName}
 				id={id}
 				rel={rel}
 			>
@@ -37,11 +43,7 @@ function Button({
 	}
 
 	return (
-		<button
-			onClick={onClick}
-			className={classNames(styles.button, className)}
-			id={id}
-		>
+		<button onClick={onClick} className={ownClassName} id={id}>
 			{children}
 		</button>
 	);
