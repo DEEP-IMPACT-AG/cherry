@@ -37,7 +37,7 @@ class Sketch extends Component {
 								title="Preview"
 							>
 								<img
-									src="https://cherry-design.s3-eu-west-1.amazonaws.com/img/cherry.jpg"
+									src="https://cherry-design.s3-eu-west-1.amazonaws.com/img/cherry.png"
 									alt="Cherry Sketch"
 								/>
 							</a>
