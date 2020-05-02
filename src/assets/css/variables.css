@@ -40,10 +40,6 @@
 	--color-warning: #ffc107;
 	--color-info: #17a2b8;
 
-	--color-border-primary: var(--color-gray-light);
-	--color-border-secondary: var(--color-gray-medium);
-	--color-border-tertiary: var(--color-gray-dark);
-
 	/* Fonts ------------------------------------------------------ */
 	--font-text: 'Roboto', sans-serif;
 	--font-head: var(--font-text);
@@ -131,14 +127,24 @@
 
 	/* --> Blockquote --------------------------------------------- */
 	--size-blockquote-mobile: var(--size-h3-mobile);
+	--lineheight-blockquote-mobile: var(--lineheight-h3-mobile);
 	--size-blockquote-desktop: var(--size-h3-desktop);
+	--lineheight-blockquote-desktop: var(--lineheight-h3-desktop);
 
 	/* --> List --------------------------------------------------- */
 	--size-list-mobile: var(--size-text-mobile);
+	--lineheight-list-mobile: var(--lineheight-text-mobile);
 	--size-list-desktop: var(--size-text-desktop);
+	--lineheight-list-desktop: var(--lineheight-text-desktop);
 
 	/* --> Buttons ------------------------------------------------ */
-	--size-button-mobile: var(--size-text-mobile);
-	--size-button-desktop: var(--size-text-desktop);
+	--size-button-regular-mobile: var(--size-text-mobile);
+	--lineheight-button-regular-mobile: var(--lineheight-text-mobile);
+	--size-button-regular-desktop: var(--size-text-desktop);
+	--lineheight-button-regular-desktop: var(--lineheight-text-desktop);
 
+	--size-button-big-mobile: var(--size-text-mobile);
+	--lineheight-button-big-mobile: var(--lineheight-text-mobile);
+	--size-button-big-desktop: var(--size-text-desktop);
+	--lineheight-button-big-desktop: var(--lineheight-text-desktop);
 }
