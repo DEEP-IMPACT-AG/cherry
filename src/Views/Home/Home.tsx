@@ -11,7 +11,7 @@ class Home extends Component {
 			<Fragment>
 				<Head title="Cherry • Design System" />
 				<ContentPusher>
-					<Readable noOrderedLists>
+					<Readable noOrderedLists isHome>
 						<div className={styles.limit}>
 							<h1>Introduction</h1>
 							<h4>

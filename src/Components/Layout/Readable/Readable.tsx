@@ -7,6 +7,7 @@ interface ReadableProps {
 	className?: string;
 	noUnorderedLists?: boolean;
 	noOrderedLists?: boolean;
+	isHome?: boolean;
 }
 
 function Readable({
@@ -14,12 +15,14 @@ function Readable({
 	className,
 	noUnorderedLists,
 	noOrderedLists,
+	isHome,
 }: ReadableProps) {
 	return (
 		<div
 			className={classNames(styles.readable, className, {
 				[styles.noUnorderedLists]: noUnorderedLists,
 				[styles.noOrderedLists]: noOrderedLists,
+				[styles.home]: isHome,
 			})}
 		>
 			{children}

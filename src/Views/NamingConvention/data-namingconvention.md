@@ -123,14 +123,6 @@ Another empty line at the end of each file ☝
 
 	***
 
-	`--color-border-primary`
-
-	`--color-border-secondary`
-
-	`--color-border-tertiary`
-
-	***
-
 - **Font Family**
 
 	***
@@ -197,7 +189,7 @@ Another empty line at the end of each file ☝
 
 		***
 
-		`--size-blockquotes-[mobile|desktop]`
+		`--size-blockquote-[mobile|desktop]`
 
 		***
 
@@ -205,7 +197,7 @@ Another empty line at the end of each file ☝
 
 		***
 
-		`--size-button-[mobile|desktop]`
+		`--size-button-[regular|big]-[mobile|desktop]`
 
 		***
 
@@ -257,7 +249,7 @@ Another empty line at the end of each file ☝
 
 		***
 
-		`--lineheight-blockquotes-[mobile|desktop]`
+		`--lineheight-blockquote-[mobile|desktop]`
 
 		***
 
@@ -265,7 +257,7 @@ Another empty line at the end of each file ☝
 
 		***
 
-		`--lineheight-button-[mobile|desktop]`
+		`--lineheight-button-[regular|big]-[mobile|desktop]`
 
 	***
 
@@ -281,23 +273,19 @@ Another empty line at the end of each file ☝
 
 	***
 
-	`--btn-[primary|secondary|tertiary]-small`
-
 	`--btn-[primary|secondary|tertiary]-default`
 
 	`--btn-[primary|secondary|tertiary]-big`
 
 	***
 
-	`--btn-[primary|secondary|tertiary]-[small|default|big]-disabled`
+	`--btn-[primary|secondary|tertiary]-[default|big]-disabled`
 
-	`--btn-[primary|secondary|tertiary]-[small|default|big]-hover`
+	`--btn-[primary|secondary|tertiary]-[default|big]-hover`
 
-	`--btn-[primary|secondary|tertiary]-[small|default|big]-active`
+	`--btn-[primary|secondary|tertiary]-[default|big]-active`
 
-	`--btn-[primary|secondary|tertiary]-[small|default|big]-inverted`
-
-	`--btn-[primary|secondary|tertiary]-[small|default|big]-visited`
+	`--btn-[primary|secondary|tertiary]-[default|big]-visited`
 
 	***
 

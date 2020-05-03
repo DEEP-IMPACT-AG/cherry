@@ -9,7 +9,7 @@
 	border-radius: 30px;
 	margin: 10px 0;
 	white-space: nowrap;
-	font-size: var(--size-button-mobile);
+	font-size: var(--size-button-regular-mobile);
 	box-shadow: 0 0 0 0 var(--color-secondary);
 	transform: translate(0, 0);
 	font-weight: 600;
@@ -28,6 +28,14 @@
 	}
 
 	@media (--screen-lg) {
-		font-size: var(--size-button-mobile);
+		font-size: var(--size-button-regular-mobile);
+	}
+
+	&.big {
+		font-size: var(--size-button-big-desktop);
+
+		@media (--screen-lg) {
+			font-size: var(--size-button-big-desktop);
+		}
 	}
 }
