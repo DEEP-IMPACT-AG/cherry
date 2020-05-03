@@ -43,8 +43,16 @@
 	}
 }
 
-.colSpacing {
-	padding: 10px 20px;
+div.colSpacing {
+	clear: both;
+
+	& h3 {
+		padding: 10px 20px;
+	}
+
+	& hr:last-of-type {
+		margin-bottom: -1px;
+	}
 }
 
 .firstList {

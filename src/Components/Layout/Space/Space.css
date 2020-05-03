@@ -6,7 +6,7 @@
 	&.mobileOnly {
 		display: block;
 
-		@media (--screen-xl) {
+		@media (--screen-lg) {
 			display: none;
 		}
 	}
@@ -14,7 +14,7 @@
 	&.desktopOnly {
 		display: none;
 
-		@media (--screen-xl) {
+		@media (--screen-lg) {
 			display: block;
 		}
 	}
@@ -25,7 +25,7 @@
 		&.mobileOnly {
 			display: inline-block;
 
-			@media (--screen-xl) {
+			@media (--screen-lg) {
 				display: none;
 			}
 		}
@@ -33,7 +33,7 @@
 		&.desktopOnly {
 			display: none;
 
-			@media (--screen-xl) {
+			@media (--screen-lg) {
 				display: inline-block;
 			}
 		}

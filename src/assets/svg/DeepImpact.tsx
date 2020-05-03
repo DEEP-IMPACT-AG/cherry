@@ -27,4 +27,4 @@ function Svg({ className }: SvgProps) {
 	);
 }
 
-export default Svg;
+export { Svg as DeepImpact };

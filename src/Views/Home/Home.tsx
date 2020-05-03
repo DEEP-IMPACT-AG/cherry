@@ -1,7 +1,14 @@
 import React, { Component, Fragment } from "react";
 import classNames from "classnames";
 import Head from "../../Components/Head";
-import { ContentPusher, Readable, Row, Col } from "../../Components/Layout";
+import {
+	ContentPusher,
+	Readable,
+	Row,
+	Col,
+	IconElement,
+} from "../../Components/Layout";
+import { Space } from "../../Components/Layout/Space/Space";
 const styles = require("./Home.css");
 const data = require("./data-home.md");
 
@@ -29,6 +36,7 @@ class Home extends Component {
 								as fast as possible.
 							</p>
 						</div>
+						<Space size={50} desktopOnly />
 						<Row className={styles.row}>
 							<Col xs={12} lg={8} className={styles.col}>
 								<Row className={styles.row}>
@@ -41,23 +49,43 @@ class Home extends Component {
 										)}
 									>
 										<div className={styles.colSpacing}>
-											<h3>Cherry can be used as:</h3>
-											<ul className={styles.firstList}>
-												<li>
-													🤔 - A design philosophy
-												</li>
-												<li>💎 - Sketch library</li>
-												<li>
-													🎨 - PostCSS variables and
-													mixins
-												</li>
-												<li>
-													🖊 - Single purpose CSS
-													classes
-												</li>
-												<li>💅 - Styled components</li>
-												<li>🚀 - React components</li>
-											</ul>
+											<h3>
+												<strong>Cherry</strong> can be
+												used as:
+											</h3>
+											<hr />
+											<IconElement
+												emoji="🤔"
+												description="A design philosophy."
+											/>
+											<hr />
+											<IconElement
+												emoji="💎"
+												description="Sketch library."
+											/>
+											<hr />
+											<IconElement
+												emoji="🎨"
+												description="PostCSS variables and
+												mixins."
+											/>
+											<hr />
+											<IconElement
+												emoji="🖊"
+												description="Single purpose CSS
+												classes."
+											/>
+											<hr />
+											<IconElement
+												emoji="💅"
+												description="Styled components."
+											/>
+											<hr />
+											<IconElement
+												emoji="🚀"
+												description="React components."
+											/>
+											<hr />
 										</div>
 									</Col>
 									<Col
@@ -70,6 +98,35 @@ class Home extends Component {
 									>
 										<div className={styles.colSpacing}>
 											<h3>PostCSS Main Styling Files</h3>
+											<hr />
+											<IconElement
+												title="Styles.css"
+												description="Main entry point with imports."
+												icon="css"
+												link="#"
+											/>
+											<hr />
+											<IconElement
+												title="Variables.css"
+												description="Variable definitions."
+												icon="css"
+												link="#"
+											/>
+											<hr />
+											<IconElement
+												title="Mixins.css"
+												description="Chunks of reusable css."
+												icon="css"
+												link="#"
+											/>
+											<hr />
+											<IconElement
+												title="Globals.css"
+												description="Global styles."
+												icon="css"
+												link="#"
+											/>
+											<hr />
 										</div>
 									</Col>
 								</Row>
@@ -85,6 +142,43 @@ class Home extends Component {
 							>
 								<div className={styles.colSpacing}>
 									<h3>PostCSS Plugins</h3>
+									<hr />
+									<IconElement
+										icon="postcss"
+										title="postcss-preset-env"
+										link="#"
+									/>
+									<hr />
+									<IconElement
+										icon="postcss"
+										title="postcss-import"
+										link="#"
+									/>
+									<hr />
+									<IconElement
+										icon="postcss"
+										title="postcss-for"
+										link="#"
+									/>
+									<hr />
+									<IconElement
+										icon="postcss"
+										title="postcss-mixins"
+										link="#"
+									/>
+									<hr />
+									<IconElement
+										icon="postcss"
+										title="postcss-calc"
+										link="#"
+									/>
+									<hr />
+									<IconElement
+										icon="postcss"
+										title="postcss-flexbugs-fixes"
+										link="#"
+									/>
+									<hr />
 								</div>
 							</Col>
 						</Row>

@@ -1,8 +1,35 @@
 @import '../../../assets/css/variables.css';
 
 .iconElement {
+	padding: 10px 20px;
+
 	& span,
 	& em {
 		font-style: normal;
+	}
+
+	& strong {
+		vertical-align: middle;
+
+		& .link {
+			line-height: 1;
+			display: inline-flex;
+			transform: translateY(2px);
+
+			& span {
+				display: inline-block;
+				margin: auto 0 auto 10px;
+			}
+
+			& svg {
+				margin: auto 0;
+				max-height: 20px;
+			}
+		}
+	}
+
+	& em {
+		vertical-align: initial;
+		color: var(--color-secondary);
 	}
 }

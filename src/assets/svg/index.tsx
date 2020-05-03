@@ -1,21 +1,10 @@
-import Arrow from "./Arrow";
-import DeepImpact from "./DeepImpact";
-import GitHub from "./GitHub";
-import Logo from "./Logo";
-import PostCSS from "./PostCSS";
-import Quote from "./Quote";
-import ReactLogo from "./ReactLogo";
-import Riangle from "./Riangle";
-import Sketch from "./Sketch";
-
-export {
-	Arrow,
-	DeepImpact,
-	GitHub,
-	Logo,
-	PostCSS,
-	Quote,
-	ReactLogo,
-	Riangle,
-	Sketch,
-};
+export { Arrow } from "./Arrow";
+export { CSS } from "./CSS";
+export { DeepImpact } from "./DeepImpact";
+export { GitHub } from "./GitHub";
+export { Logo } from "./Logo";
+export { PostCSS } from "./PostCSS";
+export { Quote } from "./Quote";
+export { ReactLogo } from "./ReactLogo";
+export { Riangle } from "./Riangle";
+export { Sketch } from "./Sketch";
