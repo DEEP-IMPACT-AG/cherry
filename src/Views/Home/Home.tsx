@@ -43,10 +43,18 @@ class Home extends Component {
 										<div className={styles.colSpacing}>
 											<h3>Cherry can be used as:</h3>
 											<ul className={styles.firstList}>
-												<li>🤔 - A design philosophy</li>
+												<li>
+													🤔 - A design philosophy
+												</li>
 												<li>💎 - Sketch library</li>
-												<li>🎨 - PostCSS variables and mixins</li>
-												<li>🖊 - Single purpose CSS classes</li>
+												<li>
+													🎨 - PostCSS variables and
+													mixins
+												</li>
+												<li>
+													🖊 - Single purpose CSS
+													classes
+												</li>
 												<li>💅 - Styled components</li>
 												<li>🚀 - React components</li>
 											</ul>

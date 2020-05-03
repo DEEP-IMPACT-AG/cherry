@@ -8,15 +8,9 @@ interface IconElementProps {
 	className?: string;
 }
 
-function IconElement({
-	title,
-	description,
-	className,
-}: IconElementProps) {
+function IconElement({ title, description, className }: IconElementProps) {
 	return (
-		<div
-			className={classNames(styles.iconElement, className, {})}
-		>
+		<div className={classNames(styles.iconElement, className, {})}>
 			{title && <strong>{title}</strong>}
 			{description && <em>{description}</em>}
 		</div>

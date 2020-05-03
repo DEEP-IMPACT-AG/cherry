@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-const styles =  require("./Space.css");
+const styles = require("./Space.css");
 
 interface SpaceProps {
 	size: number;

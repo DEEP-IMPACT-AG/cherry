@@ -11,10 +11,10 @@ function Loading() {
 				<Readable>
 					<div className={styles.loading}>
 						<div className={styles.spinner}>
-							<div/>
-							<div/>
-							<div/>
-							<div/>
+							<div />
+							<div />
+							<div />
+							<div />
 						</div>
 					</div>
 				</Readable>
