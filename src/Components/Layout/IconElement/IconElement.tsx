@@ -24,7 +24,11 @@ function IconElement({
 		<div className={classNames(styles.iconElement, className, {})}>
 			<strong>
 				{link && (
-					<a href={link} target="_blank" className={styles.link}>
+					<a
+						href={`${link}/?ref=cherry.design`}
+						target="_blank"
+						className={styles.link}
+					>
 						{icon && icon === "css" && <CSS />}
 						{icon && icon === "postcss" && <PostCSS />}
 						<span>{title}</span>

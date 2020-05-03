@@ -43,7 +43,7 @@ class Sketch extends Component {
 							</a>
 
 							<Button
-								href="https://gum.co/pdYIq"
+								href="https://gum.co/pdYIq/?ref=cherry.design"
 								target="_blank"
 								rel="noopener"
 							>
