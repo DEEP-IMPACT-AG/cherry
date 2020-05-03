@@ -1,7 +1,7 @@
 export { Arrow } from "./Arrow";
 export { CSS } from "./CSS";
 export { DeepImpact } from "./DeepImpact";
-export { GitHub } from "./GitHub";
+export { GitHubIcon } from "./GitHubIcon";
 export { Logo } from "./Logo";
 export { PostCSS } from "./PostCSS";
 export { Quote } from "./Quote";

@@ -22,4 +22,4 @@ function Svg({ className }: SvgProps) {
 	);
 }
 
-export { Svg as GitHub };
+export { Svg as GitHubIcon };

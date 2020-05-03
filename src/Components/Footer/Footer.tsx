@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import { GitHub } from "../../assets/svg";
+import { GitHubIcon } from "../../assets/svg";
 import { ContentPusher } from "../Layout";
 const styles = require("./Footer.css");
 
@@ -18,7 +18,7 @@ function Footer({ className }: FooterProps) {
 					rel="noopener"
 					aria-label="GitHub Repository"
 				>
-					<GitHub />
+					<GitHubIcon />
 				</a>
 			</ContentPusher>
 		</footer>
