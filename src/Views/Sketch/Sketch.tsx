@@ -47,7 +47,7 @@ class Sketch extends Component {
 								target="_blank"
 								rel="noopener"
 							>
-								<SketchIcon /> Download Sketch Template
+								<SketchIcon /> Download
 							</Button>
 						</Readable>
 					</Container>

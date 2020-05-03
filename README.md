@@ -18,6 +18,10 @@ Cherry is technology agnostic – meaning that it can be applied independently o
 
 ---
 
+# 💎 Sketch Library
+Cherry provides a Sketch library, mapping the same variables / naming-conventions from design to code. Helping with a smooth transition, implementation and planning.
+- [Download Sketch Template](https://gum.co/pdYIq)
+
 ## PostCSS
 
 - [Styles](./src/assets/css/styles.css) - Main entry point with all imports.
