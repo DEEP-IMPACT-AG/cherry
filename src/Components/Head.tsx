@@ -5,7 +5,7 @@ const favicon =
 const preview =
 	"https://cherry-design.s3-eu-west-1.amazonaws.com/meta/preview.jpg";
 const icon512 = "https://cherry-design.s3-eu-west-1.amazonaws.com/meta/512.png";
-const icon192 = "https://cherry-design.s3-eu-west-1.amazonaws.com/meta/192.jpg";
+const icon192 = "https://cherry-design.s3-eu-west-1.amazonaws.com/meta/192.png";
 
 const isProd = process.env.NODE_ENV === "production";
 
