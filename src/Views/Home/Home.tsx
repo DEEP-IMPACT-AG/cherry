@@ -8,10 +8,11 @@ import {
 	Col,
 	IconElement,
 	SketchBlock,
+	NPMBlock,
+	GitHubBlock,
 } from "../../Components/Layout";
 import { Space } from "../../Components/Layout/Space/Space";
 const styles = require("./Home.css");
-const data = require("./data-home.md");
 
 class Home extends Component {
 	render() {
@@ -53,7 +54,7 @@ class Home extends Component {
 										<div className={styles.colSpacing}>
 											<h3>
 												<strong>Cherry</strong> can be
-												used as:
+												used as
 											</h3>
 											<hr />
 											<IconElement
@@ -181,6 +182,15 @@ class Home extends Component {
 									/>
 									<hr />
 								</div>
+							</Col>
+						</Row>
+						<h2>NPM Libraries</h2>
+						<Row className={styles.row}>
+							<Col xs={12} lg={6} className={styles.col}>
+								<GitHubBlock />
+							</Col>
+							<Col xs={12} lg={6} className={styles.col}>
+								<NPMBlock />
 							</Col>
 						</Row>
 					</Readable>

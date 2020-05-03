@@ -1,8 +1,12 @@
 export { Arrow } from "./Arrow";
 export { CSS } from "./CSS";
 export { DeepImpact } from "./DeepImpact";
+export { External } from "./External";
 export { GitHubIcon } from "./GitHubIcon";
+export { GitHubName } from "./GitHubName";
 export { Logo } from "./Logo";
+export { NPMIcon } from "./NPMIcon";
+export { NPMName } from "./NPMName";
 export { PostCSS } from "./PostCSS";
 export { Quote } from "./Quote";
 export { ReactLogo } from "./ReactLogo";

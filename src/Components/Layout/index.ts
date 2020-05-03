@@ -1,5 +1,5 @@
 export { Col, Row, Container } from "cherry-grid";
-export { SketchBlock } from "./Blocks";
+export { GitHubBlock, SketchBlock, NPMBlock } from "./Blocks";
 export { Button } from "./Button";
 export { ContentPusher } from "./ContentPusher";
 export { IconElement } from "./IconElement";
