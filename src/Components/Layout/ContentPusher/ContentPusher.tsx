@@ -25,4 +25,4 @@ function ContentPusher({
 	);
 }
 
-export default ContentPusher;
+export { ContentPusher };

@@ -8,17 +8,18 @@ function Svg({ className }: SvgProps) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="19"
-			height="16"
-			viewBox="0 0 19 16"
+			width="20"
+			height="20"
+			viewBox="0 0 20 20"
 			className={className}
 		>
 			<polygon
-				fillRule="evenodd"
-				points="4.536 7.832 0 15.66 18.152 15.66 9.076 0 4.536 7.832 13.609 7.832 9.073 15.66"
+				fill="#CB3837"
+				points="9.895 22 9.895 7.03 14.947 7.03 14.947 22 20 22 20 2 0 2 0 22"
+				transform="translate(0 -2)"
 			/>
 		</svg>
 	);
 }
 
-export { Svg as Riangle };
+export { Svg as NPMIcon };

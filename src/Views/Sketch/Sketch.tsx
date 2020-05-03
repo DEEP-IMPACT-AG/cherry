@@ -9,7 +9,7 @@ import {
 	Row,
 	Col,
 } from "../../Components/Layout";
-import { Sketch as SketchIcon } from "../../assets/svg";
+import { SketchIcon } from "../../assets/svg";
 const styles = require("./Sketch.css");
 const data = require("./data-sketch.md");
 
@@ -43,7 +43,7 @@ class Sketch extends Component {
 							</a>
 
 							<Button
-								href="https://gum.co/pdYIq"
+								href="https://gum.co/pdYIq/?ref=cherry.design"
 								target="_blank"
 								rel="noopener"
 							>

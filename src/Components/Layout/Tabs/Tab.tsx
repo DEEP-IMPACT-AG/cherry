@@ -35,4 +35,4 @@ class Tab extends Component<TabProps, any> {
 	};
 }
 
-export default Tab;
+export { Tab };

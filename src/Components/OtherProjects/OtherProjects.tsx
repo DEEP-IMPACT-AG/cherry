@@ -1,5 +1,5 @@
 import React from "react";
-import { GitHub } from "../../assets/svg";
+import { GitHubIcon } from "../../assets/svg";
 const styles = require("./OtherProjects.css");
 
 function OtherProjects() {
@@ -17,7 +17,7 @@ function OtherProjects() {
 					<span>Development workflow for WordPress themes.</span>
 					<div className={styles.linkWrapper}>
 						<a href="https://github.com/luangjokaj/wordpressify">
-							<GitHub />
+							<GitHubIcon />
 						</a>
 						<em>or</em>
 						<a
@@ -43,7 +43,7 @@ function OtherProjects() {
 					</span>
 					<div className={styles.linkWrapper}>
 						<a href="https://github.com/luangjokaj/gopablo">
-							<GitHub />
+							<GitHubIcon />
 						</a>
 						<em>or</em>
 						<a
@@ -68,7 +68,7 @@ function OtherProjects() {
 					</span>
 					<div className={styles.linkWrapper}>
 						<a href="https://github.com/luangjokaj/fuzzymail">
-							<GitHub />
+							<GitHubIcon />
 						</a>
 						<em>or</em>
 						<a

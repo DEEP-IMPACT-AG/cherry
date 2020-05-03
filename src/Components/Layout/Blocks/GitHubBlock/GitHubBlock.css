@@ -1,0 +1,114 @@
+@import '../../../../assets/css/variables.css';
+
+.github {
+	background: #000;
+	text-align: center;
+	position: relative;
+	height: 300px;
+	transition: all 0.3s ease;
+
+	@media (hover: hover) {
+		&:hover {
+			background: #222;
+		}
+	}
+
+	& a {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		height: 100%;
+
+		@media (hover: hover) {
+			&:hover {
+				& .icon {
+					transform: translate3d(0,0,0) translate(-50%, -50%) translateY(-25px) scale(1.1);
+				}
+
+				& em {
+					transform: translate3d(0,0,0) translate(-50%, -50%) translateX(80%) translateY(30px);
+				}
+			}
+		}
+
+		&:active {
+			& .icon {
+				transform: translate3d(0,0,0) translate(-50%, -50%) translateY(-25px) scale(0.95);
+			}
+
+			& em {
+				transform: translate3d(0,0,0) translate(-50%, -50%) translateX(80%) translateY(20px);
+			}
+		}
+
+		& .icon {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate3d(0,0,0) translate(-50%, -50%) translateY(-25px) scale(1);
+		}
+	}
+
+	& em {
+		font-style: normal;
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate3d(0,0,0) translate(-50%, -50%) translateX(80%) translateY(25px);
+		font-size: var(--size-small-desktop);
+		font-family: var(--font-mono);
+		font-weight: 500;
+		color: var(--color-light);
+		transition: all 0.3s ease;
+	}
+
+	& span {
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		font-size: var(--size-small-mobile);
+		color: var(--color-light);
+		font-weight: 500;
+	}
+
+	& .external {
+		position: absolute;
+		right: 20px;
+		bottom: 20px;
+	}
+}
+
+.bottomLink {
+	vertical-align: middle;
+	padding: 20px 0;
+	display: block;
+	border-bottom: solid 2px #000;
+	font-weight: 700;
+
+	@media (hover: hover) {
+		&:hover {
+			& span {
+				transform: translate3d(0,0,0) translateX(5px) scale(1.05);
+			}
+		}
+	}
+
+	& span {
+		display: inline-block;
+		transition: all 0.3s ease;
+		transform: translate3d(0,0,0) translateX(0) scale(1);
+	}
+
+	& * {
+		vertical-align: middle;
+	}
+
+	& svg {
+		margin-right: 10px;
+	}
+}

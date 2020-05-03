@@ -1,20 +1,20 @@
 import React from "react";
 import { Container } from "cherry-grid";
-import ContentPusher from "../ContentPusher";
-import Readable from "../Readable";
+import { ContentPusher } from "../ContentPusher";
+import { Readable } from "../Readable";
 const styles = require("./Loading.css");
 
 function Loading() {
 	return (
-		<ContentPusher delay={0}>
+		<ContentPusher>
 			<Container>
 				<Readable>
 					<div className={styles.loading}>
 						<div className={styles.spinner}>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
+							<div />
+							<div />
+							<div />
+							<div />
 						</div>
 					</div>
 				</Readable>
@@ -23,4 +23,4 @@ function Loading() {
 	);
 }
 
-export default Loading;
+export { Loading };
