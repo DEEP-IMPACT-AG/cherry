@@ -2,6 +2,9 @@
 
 .iconElement {
 	padding: 10px 20px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
 
 	& span,
 	& em {

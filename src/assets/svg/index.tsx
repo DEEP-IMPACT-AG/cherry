@@ -7,4 +7,4 @@ export { PostCSS } from "./PostCSS";
 export { Quote } from "./Quote";
 export { ReactLogo } from "./ReactLogo";
 export { Riangle } from "./Riangle";
-export { Sketch } from "./Sketch";
+export { SketchIcon } from "./SketchIcon";

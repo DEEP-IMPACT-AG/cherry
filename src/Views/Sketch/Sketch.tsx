@@ -9,7 +9,7 @@ import {
 	Row,
 	Col,
 } from "../../Components/Layout";
-import { Sketch as SketchIcon } from "../../assets/svg";
+import { SketchIcon } from "../../assets/svg";
 const styles = require("./Sketch.css");
 const data = require("./data-sketch.md");
 

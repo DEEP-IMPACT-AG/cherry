@@ -1,0 +1,56 @@
+@import '../../../../assets/css/variables.css';
+
+.sketch {
+	background: #EC8947;
+	text-align: center;
+	position: relative;
+	height: 150px;
+	transition: all 0.3s ease;
+
+	@media (hover: hover) {
+		&:hover {
+			background: #FF9E5D;
+		}
+	}
+
+	& a {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		height: 100%;
+
+		@media (hover: hover) {
+			&:hover {
+				& svg {
+					transform: translate3d(0,0,0) translate(-50%, -50%) scale(1.1);
+				}
+			}
+		}
+
+		&:active {
+			& svg {
+				transform: translate3d(0,0,0) translate(-50%, -50%) scale(0.95);
+			}
+		}
+
+		& svg {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate3d(0,0,0) translate(-50%, -50%) scale(1);
+		}
+	}
+
+	& span {
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		font-size: var(--size-small-mobile);
+		color: var(--color-light);
+		font-weight: 500;
+	}
+}

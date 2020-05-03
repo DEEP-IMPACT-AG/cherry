@@ -32,7 +32,7 @@ function IconElement({
 				)}
 				{emoji && emoji}
 			</strong>
-			{description && <em> - {description}</em>}
+			{description && <em title={description}> - {description}</em>}
 		</div>
 	);
 }

@@ -46,4 +46,4 @@ function Svg({ className }: SvgProps) {
 	);
 }
 
-export { Svg as Sketch };
+export { Svg as SketchIcon };

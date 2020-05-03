@@ -7,6 +7,7 @@ import {
 	Row,
 	Col,
 	IconElement,
+	SketchBlock,
 } from "../../Components/Layout";
 import { Space } from "../../Components/Layout/Space/Space";
 const styles = require("./Home.css");
@@ -38,7 +39,7 @@ class Home extends Component {
 						</div>
 						<Space size={50} desktopOnly />
 						<Row className={styles.row}>
-							<Col xs={12} lg={8} className={styles.col}>
+							<Col xs={12} xl={8} className={styles.col}>
 								<Row className={styles.row}>
 									<Col
 										xs={12}
@@ -46,6 +47,7 @@ class Home extends Component {
 										className={classNames(
 											styles.col,
 											styles.innerCol,
+											styles.noMobileBorder,
 										)}
 									>
 										<div className={styles.colSpacing}>
@@ -66,14 +68,12 @@ class Home extends Component {
 											<hr />
 											<IconElement
 												emoji="🎨"
-												description="PostCSS variables and
-												mixins."
+												description="PostCSS variables and mixins."
 											/>
 											<hr />
 											<IconElement
 												emoji="🖊"
-												description="Single purpose CSS
-												classes."
+												description="Single purpose CSS classes."
 											/>
 											<hr />
 											<IconElement
@@ -130,10 +130,11 @@ class Home extends Component {
 										</div>
 									</Col>
 								</Row>
+								<SketchBlock />
 							</Col>
 							<Col
 								xs={12}
-								lg={4}
+								xl={4}
 								className={classNames(
 									styles.col,
 									styles.innerCol,
