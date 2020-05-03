@@ -4,30 +4,64 @@
 	box-sizing: border-box;
 	width: 100%;
 	margin: auto;
-	padding: 0;
+	padding: 0 20px;
 	text-align: center;
 	border-top: solid 1px var(--color-gray-light);
 
+	& .flex {
+		margin-top: 20px;
+
+		@media (--screen-lg) {
+			margin-top: 0;
+			padding-right: 0;
+			padding-left: 0;
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	& p {
+		&.copyright {
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
+
+		&.repoLink {
+			padding-top: 0;
+			margin-top: 0;
+
+			@media (--screen-lg) {
+				padding: 15px 0;
+			}
+		}
+
+		@media (--screen-lg) {
+			height: 60px;
+			padding: 15px 0;
+			margin: 0;
+		}
+	}
+
 	& a {
-		height: 60px;
-		display: flex;
+		vertical-align: middle;
+		font-weight: 500;
 
 		& svg {
 			width: 20px;
 			vertical-align: middle;
-			margin: auto;
-			transform: scale(1);
+			margin: auto auto auto 5px;
+			transform: translate3d(0,0,0) translateY(-2px) scale(1);
 		}
 
 		&:hover {
 			& svg {
-				transform: scale(1.1);
+				transform: translate3d(0,0,0) translateY(-2px) scale(1.1);
 			}
 		}
 
 		&:active {
 			& svg {
-				transform: scale(1);
+				transform: translate3d(0,0,0) translateY(-2px) scale(1);
 			}
 		}
 	}
