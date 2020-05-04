@@ -31,27 +31,6 @@ export default ({ clientStats }) => (req, res) => {
 		console.log("Error 404: ", req.originalUrl);
 	}
 
-	if (req.url == "/manifest.json" || req.url == "/Manifest.json") {
-		return res
-			.header("Content-Type", "application/manifest+json")
-			.status(status)
-			.send(manifest);
-	}
-
-	if (req.url == "/sitemap.xml") {
-		return res
-			.header("Content-Type", "application/xml")
-			.status(status)
-			.send(sitemap);
-	}
-
-	if (req.url == "/robots.txt" || req.url == "/Robots.txt") {
-		return res
-			.header("Content-Type", "text/plain")
-			.status(status)
-			.send(robots);
-	}
-
 	if (context.url) {
 		const redirectStatus = context.status || 302;
 		res.redirect(redirectStatus, context.url);

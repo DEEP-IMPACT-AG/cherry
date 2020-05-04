@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import { SketchIcon, External } from "../../../assets/svg";
+import { External } from "../../../assets/svg";
 import { Link } from "react-router-dom";
 const styles = require("./FatBlock.css");
 
@@ -63,32 +63,4 @@ function FatBlock({
 	);
 }
 
-interface FatBlockLabelProps {
-	children: React.ReactNode;
-}
-
-function FatBlockLabel({ children }: FatBlockLabelProps) {
-	return <span className={styles.blockLabel}>{children}</span>;
-}
-
-interface FatBlockSuspendedLabelProps {
-	children: React.ReactNode;
-}
-
-function FatBlockSuspendedLabel({ children }: FatBlockSuspendedLabelProps) {
-	return (
-		<em className={styles.suspendedLabel} data-suspended-label>
-			{children}
-		</em>
-	);
-}
-
-interface FatBlockLinkLabelProps {
-	children: React.ReactNode;
-}
-
-function FatBlockLinkLabel({ children }: FatBlockLabelProps) {
-	return <span className={styles.blockLinkLabel}>{children}</span>;
-}
-
-export { FatBlock, FatBlockLabel, FatBlockSuspendedLabel, FatBlockLinkLabel };
+export { FatBlock };

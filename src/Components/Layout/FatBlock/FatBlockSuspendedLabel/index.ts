@@ -1,0 +1,1 @@
+export { FatBlockSuspendedLabel } from "./FatBlockSuspendedLabel";

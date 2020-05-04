@@ -1,0 +1,1 @@
+export { FatBlockLabel } from "./FatBlockLabel";
