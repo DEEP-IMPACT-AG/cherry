@@ -1,8 +1,8 @@
 # Sketch
 
 Cherry provides a [Sketch Library](https://www.sketchapp.com/docs/libraries/) to be used as a template for every new project you start designing.
-The library conains all the typography variations with the corresponding naming convention.
+The template contains the typography styles with the corresponding naming conventions, buttons and form elements.
 
-Helping with a smooth transition, implementation and planning from design to code.
+This template will help with implementation and planning from design to code.
 
 **v0.0.1**
