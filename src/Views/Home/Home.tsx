@@ -6,13 +6,13 @@ import {
 	Readable,
 	Row,
 	Col,
+	Space,
 	IconElement,
 	FatBlock,
 	FatBlockLabel,
 	FatBlockSuspendedLabel,
 	FatBlockLinkLabel,
 } from "../../Components/Layout";
-import { Space } from "../../Components/Layout/Space/Space";
 import {
 	SketchIcon,
 	GitHubName,

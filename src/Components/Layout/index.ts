@@ -10,5 +10,6 @@ export {
 export { IconElement } from "./IconElement";
 export { Loading } from "./Loading";
 export { Readable } from "./Readable";
-export { Text } from "./Text";
+export { Space } from "./Space";
 export { Tabs, Tab } from "./Tabs";
+export { Text } from "./Text";

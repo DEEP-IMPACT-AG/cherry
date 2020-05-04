@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
-import { External } from "../../../assets/svg";
 import { Link } from "react-router-dom";
+import { External } from "../../../assets/svg";
 const styles = require("./FatBlock.css");
 
 interface FatBlockProps {
