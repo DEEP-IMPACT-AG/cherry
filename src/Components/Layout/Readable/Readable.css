@@ -15,6 +15,13 @@ div.readable {
 		}
 	}
 
+	&.normalLinks {
+		& a:not([class]) {
+			display: inline-block;
+			padding: 0;
+		}
+	}
+
 	@media (--screen-lg) {
 		min-height: calc(100vh - 189px);
 		margin: 64px auto;

@@ -23,7 +23,7 @@ class Sketch extends Component {
 				<Head title="Sketch - Cherry • Design System" image={image1} />
 				<ContentPusher>
 					<Container className={styles.images}>
-						<Readable>
+						<Readable normalLinks>
 							<div
 								className={styles.content}
 								dangerouslySetInnerHTML={{
