@@ -6,7 +6,11 @@
 
 	& img {
 		transform: scale(1);
-		box-shadow: 0 5px 30px -20px color-mod(var(--color-primary) alpha(30%));
+		box-shadow: 0 0 30px -20px color-mod(var(--color-primary) alpha(30%));
 		transition: all 0.3s ease;
 	}
+}
+
+.button {
+	margin-bottom: 0;
 }

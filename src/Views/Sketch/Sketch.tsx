@@ -46,6 +46,7 @@ class Sketch extends Component {
 								href="https://gum.co/pdYIq/?ref=cherry.design"
 								target="_blank"
 								rel="noopener"
+								className={styles.button}
 							>
 								<SketchIcon /> Download
 							</Button>
