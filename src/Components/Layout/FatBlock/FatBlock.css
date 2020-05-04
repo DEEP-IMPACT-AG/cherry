@@ -1,0 +1,182 @@
+@import '../../../assets/css/variables.css';
+
+.fatblock {
+	background: var(--color-dark);
+	text-align: center;
+	position: relative;
+	height: 150px;
+	transition: all 0.3s ease;
+
+	&.orange {
+		background: #EC8947;
+
+		@media (hover: hover) {
+			&:hover {
+				background: #FF9E5D;
+			}
+		}
+	}
+
+	&.black {
+		background: #000;
+
+		@media (hover: hover) {
+			&:hover {
+				background: #222;
+			}
+		}
+	}
+
+	&.red {
+		background: #CB3837;
+
+		@media (hover: hover) {
+			&:hover {
+				background: #F24A48;
+			}
+		}
+	}
+
+	&.external {
+		height: 300px;
+
+		& a {
+			@media (hover: hover) {
+				&:hover {
+					& svg:not([class]) {
+						transform: translate3d(0,0,0) translate(-50%, -50%) translateY(-25px) scale(1.1);
+					}
+				}
+			}
+
+			&:active {
+				& svg:not([class]) {
+					transform: translate3d(0,0,0) translate(-50%, -50%) translateY(-25px) scale(0.95);
+				}
+			}
+
+			& svg:not([class]) {
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate3d(0,0,0) translate(-50%, -50%) translateY(-25px) scale(1);
+			}
+		}
+	}
+
+	& a {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		height: 100%;
+
+		@media (hover: hover) {
+			&:hover {
+				& svg:not([class]) {
+					transform: translate3d(0,0,0) translate(-50%, -50%) scale(1.1);
+				}
+
+				& [data-suspended-label] {
+					transform: translate3d(0,0,0) translate(-50%, -50%) translateX(80%) translateY(30px);
+				}
+			}
+		}
+
+		&:active {
+			& svg:not([class]) {
+				transform: translate3d(0,0,0) translate(-50%, -50%) scale(0.95);
+			}
+
+			& [data-suspended-label] {
+				transform: translate3d(0,0,0) translate(-50%, -50%) translateX(80%) translateY(20px);
+			}
+		}
+
+		& svg:not([class]) {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate3d(0,0,0) translate(-50%, -50%) scale(1);
+		}
+	}
+
+	& .externalIcon {
+		position: absolute;
+		right: 20px;
+		bottom: 20px;
+	}
+}
+
+.bottomLink {
+	vertical-align: middle;
+	padding: 20px 0;
+	display: block;
+	border-bottom: solid 2px var(--color-dark);
+	font-weight: 700;
+	color: var(--color-dark);
+
+	&.orange {
+		border-color: ;
+	}
+
+	&.black {
+		border-color: #000;
+	}
+
+	&.red {
+		border-color: #CB3837;
+	}
+
+	@media (hover: hover) {
+		&:hover {
+			& span {
+				transform: translate3d(0,0,0) translateX(5px) scale(1.05);
+			}
+		}
+	}
+
+	& span {
+		transform: translate3d(0,0,0) translateX(0) scale(1);
+	}
+
+	& * {
+		vertical-align: middle;
+	}
+
+	& svg {
+		margin-right: 10px;
+	}
+}
+
+.blockLabel {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	font-size: var(--size-small-mobile);
+	color: var(--color-light);
+	font-weight: 500;
+}
+
+.blockLinkLabel {
+	display: inline-block;
+	transition: all 0.3s ease;
+}
+
+.suspendedLabel {
+	font-style: normal;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(0,0,0) translate(-50%, -50%) translateX(80%) translateY(25px);
+	font-size: var(--size-small-desktop);
+	font-family: var(--font-mono);
+	font-weight: 500;
+	color: var(--color-light);
+	transition: all 0.3s ease;
+}

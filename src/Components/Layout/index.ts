@@ -1,7 +1,12 @@
 export { Col, Row, Container } from "cherry-grid";
-export { GitHubBlock, SketchBlock, NPMBlock } from "./Blocks";
 export { Button } from "./Button";
 export { ContentPusher } from "./ContentPusher";
+export {
+	FatBlock,
+	FatBlockLabel,
+	FatBlockSuspendedLabel,
+	FatBlockLinkLabel,
+} from "./FatBlock";
 export { IconElement } from "./IconElement";
 export { Loading } from "./Loading";
 export { Readable } from "./Readable";

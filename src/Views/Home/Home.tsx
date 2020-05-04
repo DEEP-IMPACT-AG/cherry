@@ -7,11 +7,19 @@ import {
 	Row,
 	Col,
 	IconElement,
-	SketchBlock,
-	NPMBlock,
-	GitHubBlock,
+	FatBlock,
+	FatBlockLabel,
+	FatBlockSuspendedLabel,
+	FatBlockLinkLabel,
 } from "../../Components/Layout";
 import { Space } from "../../Components/Layout/Space/Space";
+import {
+	SketchIcon,
+	GitHubName,
+	CSS,
+	NPMName,
+	NPMIcon,
+} from "../../assets/svg";
 const styles = require("./Home.css");
 
 class Home extends Component {
@@ -131,7 +139,12 @@ class Home extends Component {
 										</div>
 									</Col>
 								</Row>
-								<SketchBlock />
+								<FatBlock link="/design/sketch" color="orange">
+									<SketchIcon />
+									<FatBlockLabel>
+										🍒 Cherry Design System
+									</FatBlockLabel>
+								</FatBlock>
 							</Col>
 							<Col
 								xs={12}
@@ -187,10 +200,50 @@ class Home extends Component {
 						<h2>NPM Libraries</h2>
 						<Row className={styles.row}>
 							<Col xs={12} lg={6} className={styles.col}>
-								<GitHubBlock />
+								<FatBlock
+									color="black"
+									external="https://github.com/DEEP-IMPACT-AG/cherry-grid"
+									link="/css/cherry-grid"
+									linkChildren={
+										<>
+											<CSS />
+											<FatBlockLinkLabel>
+												CSS Grid Documentation
+											</FatBlockLinkLabel>
+										</>
+									}
+								>
+									<GitHubName />
+									<FatBlockSuspendedLabel>
+										Repository
+									</FatBlockSuspendedLabel>
+									<FatBlockLabel>
+										🍒 Cherry Grid
+									</FatBlockLabel>
+								</FatBlock>
 							</Col>
 							<Col xs={12} lg={6} className={styles.col}>
-								<NPMBlock />
+								<FatBlock
+									color="red"
+									external="https://www.npmjs.com/package/cherry-grid"
+									link="/npm/cherry-grid"
+									linkChildren={
+										<>
+											<NPMIcon />
+											<FatBlockLinkLabel>
+												CSS Grid Documentation
+											</FatBlockLinkLabel>
+										</>
+									}
+								>
+									<NPMName />
+									<FatBlockSuspendedLabel>
+										Package
+									</FatBlockSuspendedLabel>
+									<FatBlockLabel>
+										🍒 Cherry Grid
+									</FatBlockLabel>
+								</FatBlock>
 							</Col>
 						</Row>
 					</Readable>

@@ -1,1 +1,0 @@
-export { GitHubBlock } from "./GitHubBlock";
