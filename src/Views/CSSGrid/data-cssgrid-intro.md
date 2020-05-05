@@ -7,7 +7,7 @@ Cherry’s grid system uses a series of containers, rows, and columns to layout 
 
 ## Install
 
-💾 [Repository](https://github.com/DEEP-IMPACT-AG/cherry-grid) - 📦 [NPM Package](https://www.npmjs.com/package/cherry-grid) - 📌 [CSS Direct Link](https://cherry-design.s3-eu-west-1.amazonaws.com/cherry-grid/v.0.1.22.css)
+💾 [Repository](https://github.com/DEEP-IMPACT-AG/cherry-grid) - 📦 [NPM Package](https://www.npmjs.com/package/cherry-grid) - 📌 [CSS Direct Link](https://cherry-design.s3-eu-west-1.amazonaws.com/cherry-grid/v.0.1.23.css)
 
 **To install Cherry Grid, run the command:**
 
@@ -27,11 +27,20 @@ When you only need to include Cherry's CSS, you can use CherryCDN.
 <link 
 	rel="stylesheet"
 	type="text/css"
-	href="https://cherry-design.s3-eu-west-1.amazonaws.com/cherry-grid.css"
+	href="https://cherry-design.s3-eu-west-1.amazonaws.com/cherry-grid/v.0.1.23.css"
 />
 ```
 
-  ***
+### Features
+
+|👇| Feature|
+|:-:|:---|
+|💻| Responsive|
+|📱| Mobile first|
+|📦| 12 columns grid|
+|🍦| Vanilla CSS|
+|🚀| Components|
+|↔️| Column gaps|
 
 ### Sample usage
 Below you will find a typical example of the grid usage.
@@ -46,7 +55,7 @@ Below you will find a typical example of the grid usage.
 		<link 
 			rel="stylesheet"
 			type="text/css"
-			href="https://cherry-design.s3-eu-west-1.amazonaws.com/cherry-grid.css"
+			href="https://cherry-design.s3-eu-west-1.amazonaws.com/cherry-grid/v.0.1.23.css"
 		/>
 	</head>
 	<body>
@@ -91,9 +100,14 @@ The `class="row"` element is a direct or non direct child of the `class="contain
 - `class="align-items-[variation]"` Use the align-items class name to align the items vertically.
 
 	**Variations:** `stretch`, `center`, `flex-start`, `flex-end`, `baseline`, `initial`.
-- `justify-content-[variation]` - *string* - Use the justify-content property to align the items horizontally.
+- `class="justify-content-[variation]"` - *string* - Use the justify-content property to align the items horizontally.
 
 	**Variations:** `flex-start`, `flex-end`, `center`, `space-between`, `space-around`, `initial`.
+- `class="[media-query]-gaps-[variation]"` - *string* - Use the gaps property to adjust the spacing between columns.
+
+	**Media-Queries:** `xs`, `sm`, `md`, `lg`, `xl`, `xxl`, `xxxl`.
+
+	**Variations:** `none`, `default`, `medium`, `big`.
 
 
   ***
@@ -104,7 +118,7 @@ The `class="col"` elements should **always** be direct childen of the `class="ro
   ***
 **Available variations:**
   ***
-- `text-align-[variation]` - *string* - Text align property.
+- `class="text-align-[variation]"` - *string* - Text align property.
 
 	**Variations:** `right`, `left`, `center`.
 - `class="col-[1-12|auto]"` - Column size for **all** media query.

@@ -2,10 +2,21 @@
 
 :global {
 	& .data-custom-row {
-		padding-right: 5px;
-		padding-left: 5px;
+		padding-right: 0;
+		padding-left: 0;
+		margin-right: -5px;
+		margin-left: -5px;
 	}
+}
 
+.introContent {
+	& table {
+		display: table;
+		width: initial;
+	}
+}
+
+.endContent {
 	& table {
 		width: 100%;
 		display: block;

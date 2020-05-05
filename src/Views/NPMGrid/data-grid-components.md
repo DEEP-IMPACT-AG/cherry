@@ -12,7 +12,16 @@ Cherry’s grid system uses a series of containers, rows, and columns to layout 
 npm install cherry-grid
 ```
 
-  ***
+### Features
+
+|👇| Feature|
+|:-:|:---|
+|💻| Responsive|
+|📱| Mobile first|
+|📦| 12 columns grid|
+|🍦| Vanilla CSS|
+|🚀| Components|
+|↔️| Column gaps|
 
 ### Sample usage
 Below you will find a typical example of the grid usage.
@@ -70,7 +79,15 @@ The `<Row>` component is a direct or non direct child of the `<Container>` compo
 - `justifyContent` - *string* - Use the justify-content property to align the items horizontally. Default: *not set*.
 
 	**Props:** `flex-start`, `flex-end`, `center`, `space-between`, `space-around`, `initial`.
+	- `gapsXs` - *string*  - Column gaps on `xs` media query. Default: `default`.
+	- `gapsSm` - *string*  - Column gaps on `sm` media query.
+	- `gapsMd` - *string*  - Column gaps on `md` media query.
+	- `gapsLg` - *string*  - Column gaps on `lg` media query.
+	- `gapsXl` - *string*  - Column gaps on `xl` media query.
+	- `gapsXxl` - *string*  - Column gaps on `xxl` media query.
+	- `gapsXxxl` - *string*  - Column gaps on `xxxl` media query.
 
+	**Props:** `none`, `default`, `medium`, `big`.
 
   ***
 
@@ -133,10 +150,14 @@ Import the [mixins.css](https://raw.githubusercontent.com/DEEP-IMPACT-AG/cherry/
 	--margin-container-child-mobile: 10px;
 	--margin-container-child-desktop: 10px;
 
-	--margin-row-mobile: -20px;
-	--margin-row-desktop: -20px;
-	--gutter-col-mobile: 20px;
-	--gutter-col-desktop: 20px;
+	--margin-row-none: 0;
+	--margin-row-default: -10px;
+	--margin-row-medium: -30px;
+	--margin-row-big: -50px;
+	--gutter-col-none: 0;
+	--gutter-col-default: 10px;
+	--gutter-col-medium: 30px;
+	--gutter-col-big: 50px;
 }
 ```
 

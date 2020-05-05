@@ -33,7 +33,7 @@ class CSSGrid extends Component {
 					<Container>
 						<Readable>
 							<div
-								className={styles.content}
+								className={styles.introContent}
 								dangerouslySetInnerHTML={{
 									__html: dataIntro.__content,
 								}}
@@ -132,7 +132,7 @@ class CSSGrid extends Component {
 								</div>
 							</div>
 							<div
-								className={styles.content}
+								className={styles.endContent}
 								dangerouslySetInnerHTML={{
 									__html: dataMediaQueries.__content,
 								}}

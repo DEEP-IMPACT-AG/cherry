@@ -59,13 +59,21 @@ Another empty line at the end of each file ☝
 
 	`--margin-container-child-desktop`
 
-	`--margin-row-mobile`
+	`--margin-row-none`
 
-	`--margin-row-desktop`
+	`--margin-row-default`
 
-	`--gutter-col-mobile`
+	`--margin-row-medium `
 
-	`--gutter-col-desktop`
+	`--margin-row-big`
+
+	`--gutter-col-none`
+
+	`--gutter-col-default`
+
+	`--gutter-col-medium`
+
+	`--gutter-col-big`
 
 ---
 
