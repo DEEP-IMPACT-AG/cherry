@@ -47,9 +47,9 @@ class Home extends Component {
 							</p>
 						</div>
 						<Space size={50} desktopOnly />
-						<Row className={styles.row}>
+						<Row className={styles.row} gapsXs="none">
 							<Col xs={12} xl={8} className={styles.col}>
-								<Row className={styles.row}>
+								<Row className={styles.row} gapsXs="none">
 									<Col
 										xs={12}
 										lg={6}
@@ -198,7 +198,7 @@ class Home extends Component {
 							</Col>
 						</Row>
 						<h2>NPM Libraries</h2>
-						<Row className={styles.row}>
+						<Row className={styles.row} gapsXs="none">
 							<Col xs={12} lg={6} className={styles.col}>
 								<FatBlock
 									color="black"
