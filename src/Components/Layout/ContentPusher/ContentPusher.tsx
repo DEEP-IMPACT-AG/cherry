@@ -23,7 +23,6 @@ function ContentPusher({
 			className={classNames(styles.contentPusher, className, {
 				[styles.noMinHeight]: noMinHeight,
 			})}
-			visibleClassName={styles.visible}
 			delay={delay}
 		>
 			<div id={id}>{children}</div>

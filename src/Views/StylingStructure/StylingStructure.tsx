@@ -1,14 +1,7 @@
 import React, { Component, Fragment } from "react";
 import Prism from "prismjs";
 import Head from "../../Components/Head";
-import {
-	ContentPusher,
-	Container,
-	Readable,
-	Button,
-	Tabs,
-	Tab,
-} from "../../Components/Layout";
+import { Container, Readable } from "../../Components/Layout";
 const styles = require("./StylingStructure.css");
 const data = require("./data-stylingstructure.md");
 
@@ -21,18 +14,16 @@ class StylingStructure extends Component {
 		return (
 			<Fragment>
 				<Head title="Styling Structure - Cherry • Design System" />
-				<ContentPusher id="content-pusher">
-					<Container>
-						<Readable>
-							<div
-								className={styles.content}
-								dangerouslySetInnerHTML={{
-									__html: data.__content,
-								}}
-							/>
-						</Readable>
-					</Container>
-				</ContentPusher>
+				<Container>
+					<Readable>
+						<div
+							className={styles.content}
+							dangerouslySetInnerHTML={{
+								__html: data.__content,
+							}}
+						/>
+					</Readable>
+				</Container>
 			</Fragment>
 		);
 	}

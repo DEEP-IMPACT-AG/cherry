@@ -20,17 +20,7 @@
 	}
 	
 
-	&.visible {
-		transform: translate3d(0,0,0) translateY(0);
-		opacity: 1;
-	}
-
-	&:global(.animateOut) {
-		transform: translate3d(0,0,0) translateY(-30px);
-		opacity: 0;
-	}
-
-	&:global(.animateIn) {
+	&:global(.visible) {
 		transform: translate3d(0,0,0) translateY(0);
 		opacity: 1;
 		transition-delay: 0.3s;
