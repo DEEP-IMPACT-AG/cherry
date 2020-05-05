@@ -9,7 +9,7 @@ function NotFound() {
 		<Fragment>
 			<Head title="Cherry • Not Found" />
 			<Status code={404} />
-			<ContentPusher>
+			<ContentPusher id="content-pusher">
 				<Container>
 					<Readable>
 						<h1>Not Found</h1>

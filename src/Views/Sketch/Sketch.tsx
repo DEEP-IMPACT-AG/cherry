@@ -21,7 +21,7 @@ class Sketch extends Component {
 		return (
 			<Fragment>
 				<Head title="Sketch - Cherry • Design System" image={image1} />
-				<ContentPusher>
+				<ContentPusher id="content-pusher">
 					<Container className={styles.images}>
 						<Readable normalLinks>
 							<div

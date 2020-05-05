@@ -11,7 +11,7 @@ interface FooterProps {
 function Footer({ className }: FooterProps) {
 	return (
 		<footer className={classNames(styles.footer, className)}>
-			<ContentPusher>
+			<ContentPusher noMinHeight>
 				<div className={styles.flex}>
 					<p className={styles.copyright}>
 						All rights reserved © 2019

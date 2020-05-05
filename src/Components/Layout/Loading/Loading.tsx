@@ -6,7 +6,7 @@ const styles = require("./Loading.css");
 
 function Loading() {
 	return (
-		<ContentPusher>
+		<ContentPusher id="content-pusher">
 			<Container>
 				<Readable>
 					<div className={styles.loading}>

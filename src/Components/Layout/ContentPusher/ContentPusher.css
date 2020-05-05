@@ -8,10 +8,17 @@
 	opacity: 0;
 	transition: all 0.3s ease;
 	transition-delay: 0s;
-	
+	min-height: calc(100vh - var(--padding-top-body-mobile));
+
 	@media (--screen-lg) {
 		padding-left: 335px;
+		min-height: calc(100vh - 60px);
 	}
+
+	&.noMinHeight {
+		min-height: 0;
+	}
+	
 
 	&.visible {
 		transform: translate3d(0,0,0) translateY(0);

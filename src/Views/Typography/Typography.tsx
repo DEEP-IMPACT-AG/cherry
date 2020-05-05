@@ -18,7 +18,7 @@ class Typography extends Component {
 		return (
 			<Fragment>
 				<Head title="Typography - Cherry • Design System" />
-				<ContentPusher>
+				<ContentPusher id="content-pusher">
 					<Container>
 						<Readable>
 							<H1>Typography</H1>

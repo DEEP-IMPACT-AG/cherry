@@ -4,7 +4,6 @@ div.readable {
 	box-sizing: border-box;
 	width: 100%;
 	margin: 20px auto;
-	min-height: calc(100vh - 171px);
 	position: relative;
 	max-width: 992px;
 
@@ -23,7 +22,6 @@ div.readable {
 	}
 
 	@media (--screen-lg) {
-		min-height: calc(100vh - 189px);
 		margin: 64px auto;
 	}
 

@@ -21,7 +21,7 @@ class StylingStructure extends Component {
 		return (
 			<Fragment>
 				<Head title="Styling Structure - Cherry • Design System" />
-				<ContentPusher>
+				<ContentPusher id="content-pusher">
 					<Container>
 						<Readable>
 							<div

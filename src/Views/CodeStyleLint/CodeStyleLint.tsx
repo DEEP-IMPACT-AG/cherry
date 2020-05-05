@@ -14,7 +14,7 @@ class NamingConvention extends Component {
 		return (
 			<Fragment>
 				<Head title="Naming Convention - Cherry • Design System" />
-				<ContentPusher>
+				<ContentPusher id="content-pusher">
 					<Container>
 						<Readable>
 							<div
