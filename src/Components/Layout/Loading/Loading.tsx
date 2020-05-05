@@ -6,18 +6,18 @@ const styles = require("./Loading.css");
 
 function Loading() {
 	return (
-			<Container>
-				<Readable minHeight>
-					<div className={styles.loading}>
-						<div className={styles.spinner}>
-							<div />
-							<div />
-							<div />
-							<div />
-						</div>
+		<Container>
+			<Readable minHeight>
+				<div className={styles.loading}>
+					<div className={styles.spinner}>
+						<div />
+						<div />
+						<div />
+						<div />
 					</div>
-				</Readable>
-			</Container>
+				</div>
+			</Readable>
+		</Container>
 	);
 }
 
