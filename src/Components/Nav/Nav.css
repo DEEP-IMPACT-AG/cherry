@@ -34,11 +34,13 @@
 		transform: translateY(-20px);
 		transition: all 0.5s ease;
 		pointer-events: none;
+		transition-delay: 0.3s;
 
 		&.active {
 			opacity: 1;
 			transform: translateY(0);
 			pointer-events: all;
+			transition-delay: 0s;
 		}
 
 		& .navItem,
