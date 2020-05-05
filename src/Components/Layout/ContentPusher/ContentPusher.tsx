@@ -20,7 +20,7 @@ function ContentPusher({
 			visibleClassName={styles.visible}
 			delay={delay}
 		>
-			<div>{children}</div>
+			<div id="content-pusher">{children}</div>
 		</AppearAfter>
 	);
 }

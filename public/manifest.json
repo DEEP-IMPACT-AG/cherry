@@ -4,7 +4,7 @@
 	"description": "Cherry is a live inventory of definitions for the UI components, design patterns, naming conventions, brand assets and code guidelines.",
 	"icons": [
 		{
-			"src": "https://cherry-design.s3-eu-west-1.amazonaws.com/meta/192.jpg",
+			"src": "https://cherry-design.s3-eu-west-1.amazonaws.com/meta/192.png",
 			"sizes": "192x192",
 			"type": "image/png"
 		},

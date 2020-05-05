@@ -9,11 +9,12 @@ import {
 } from "react-router-dom";
 import NavItem from "./NavItem";
 import { Logo, Riangle, DeepImpact } from "../../assets/svg";
+import { clickEvent } from "../util";
 const styles = require("./Nav.css");
 
 interface NavProps {
 	location: any;
-	lang: string;
+	history: any;
 }
 
 interface NavState {
@@ -29,17 +30,14 @@ class Nav extends Component<NavProps, NavState> {
 		};
 	}
 
-	toggleMenu = () => {
-		this.setState({ menu: !this.state.menu });
-	};
-
-	closeMenu = () => {
+	closeMenu = (event: any, to: any, push: any) => {
 		this.setState({ menu: false });
+		clickEvent(event, to, push);
 	};
 
 	render() {
 		const { menu } = this.state;
-		const { location, lang } = this.props;
+		const { location, history } = this.props;
 
 		return (
 			<AppearAfter
@@ -47,12 +45,18 @@ class Nav extends Component<NavProps, NavState> {
 				visibleClassName={styles.visible}
 			>
 				<header>
-					<Link to="/" className={styles.logo}>
+					<Link
+						to="/"
+						className={styles.logo}
+						onClick={(e) => clickEvent(e, "/", history.push)}
+					>
 						<Logo />
 						<h1>Cherry - Design System</h1>
 					</Link>
 					<button
-						onClick={this.toggleMenu}
+						onClick={() =>
+							this.setState({ menu: !this.state.menu })
+						}
 						className={classNames(styles.burger, {
 							[styles.active]: menu,
 						})}
@@ -80,7 +84,9 @@ class Nav extends Component<NavProps, NavState> {
 									<NavLink
 										to="/"
 										activeClassName={styles.active}
-										onClick={this.closeMenu}
+										onClick={(e) =>
+											this.closeMenu(e, "/", history.push)
+										}
 										exact
 									>
 										Introduction
@@ -90,7 +96,13 @@ class Nav extends Component<NavProps, NavState> {
 									<NavLink
 										to="/naming-convention"
 										activeClassName={styles.active}
-										onClick={this.closeMenu}
+										onClick={(e) =>
+											this.closeMenu(
+												e,
+												"/naming-convention",
+												history.push,
+											)
+										}
 									>
 										Naming Convention
 									</NavLink>
@@ -99,7 +111,13 @@ class Nav extends Component<NavProps, NavState> {
 									<NavLink
 										to="/code-style-lint"
 										activeClassName={styles.active}
-										onClick={this.closeMenu}
+										onClick={(e) =>
+											this.closeMenu(
+												e,
+												"/code-style-lint",
+												history.push,
+											)
+										}
 									>
 										Code Styles & Linting
 									</NavLink>
@@ -121,7 +139,13 @@ class Nav extends Component<NavProps, NavState> {
 									<NavLink
 										to="/design/sketch"
 										activeClassName={styles.active}
-										onClick={this.closeMenu}
+										onClick={(e) =>
+											this.closeMenu(
+												e,
+												"/design/sketch",
+												history.push,
+											)
+										}
 									>
 										Sketch
 									</NavLink>
@@ -130,7 +154,13 @@ class Nav extends Component<NavProps, NavState> {
 									<NavLink
 										to="/design/typography"
 										activeClassName={styles.active}
-										onClick={this.closeMenu}
+										onClick={(e) =>
+											this.closeMenu(
+												e,
+												"/design/typography",
+												history.push,
+											)
+										}
 									>
 										Typography
 									</NavLink>
@@ -151,7 +181,13 @@ class Nav extends Component<NavProps, NavState> {
 									<NavLink
 										to="/css/styling-structure"
 										activeClassName={styles.active}
-										onClick={this.closeMenu}
+										onClick={(e) =>
+											this.closeMenu(
+												e,
+												"/css/styling-structure",
+												history.push,
+											)
+										}
 									>
 										Styling Structure
 									</NavLink>
@@ -160,7 +196,13 @@ class Nav extends Component<NavProps, NavState> {
 									<NavLink
 										to="/css/cherry-grid"
 										activeClassName={styles.active}
-										onClick={this.closeMenu}
+										onClick={(e) =>
+											this.closeMenu(
+												e,
+												"/css/cherry-grid",
+												history.push,
+											)
+										}
 									>
 										Cherry Grid
 									</NavLink>
@@ -180,7 +222,13 @@ class Nav extends Component<NavProps, NavState> {
 									<NavLink
 										to="/npm/cherry-grid"
 										activeClassName={styles.active}
-										onClick={this.closeMenu}
+										onClick={(e) =>
+											this.closeMenu(
+												e,
+												"/npm/cherry-grid",
+												history.push,
+											)
+										}
 									>
 										Cherry Grid
 									</NavLink>

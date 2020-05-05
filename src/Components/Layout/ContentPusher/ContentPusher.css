@@ -4,7 +4,7 @@
 .contentPusher {
 	box-sizing: border-box;
 	width: 100%;
-	transform: translateY(-30px);
+	transform: translate3d(0,0,0) translateY(-30px);
 	opacity: 0;
 	transition: all 0.5s ease;
 	
@@ -13,7 +13,17 @@
 	}
 
 	&.visible {
-		transform: translateY(0);
+		transform: translate3d(0,0,0) translateY(0);
+		opacity: 1;
+	}
+
+	&:global(.animateOut) {
+		transform: translate3d(0,0,0) translateY(-30px);
+		opacity: 0;
+	}
+
+	&:global(.animateIn) {
+		transform: translate3d(0,0,0) translateY(0);
 		opacity: 1;
 	}
 

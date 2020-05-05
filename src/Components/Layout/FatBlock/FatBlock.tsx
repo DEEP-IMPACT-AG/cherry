@@ -1,6 +1,8 @@
 import React from "react";
 import classNames from "classnames";
-import { Link } from "react-router-dom";
+import { withRouter } from "react-router";
+import { Link, RouteComponentProps } from "react-router-dom";
+import { clickEvent } from "../../util";
 import { External } from "../../../assets/svg";
 const styles = require("./FatBlock.css");
 
@@ -10,6 +12,7 @@ interface FatBlockProps {
 	color: "orange" | "black" | "red";
 	external?: string;
 	linkChildren?: React.ReactNode;
+	history: any;
 }
 
 function FatBlock({
@@ -18,6 +21,7 @@ function FatBlock({
 	color,
 	external,
 	linkChildren,
+	history,
 }: FatBlockProps) {
 	if (external) {
 		return (
@@ -42,6 +46,7 @@ function FatBlock({
 						[styles.black]: color === "black",
 						[styles.red]: color === "red",
 					})}
+					onClick={(e) => clickEvent(e, link, history.push)}
 					data-bottom-link
 				>
 					{linkChildren}
@@ -58,9 +63,13 @@ function FatBlock({
 				[styles.red]: color === "red",
 			})}
 		>
-			<Link to={link}>{children}</Link>
+			<Link to={link} onClick={(e) => clickEvent(e, link, history.push)}>
+				{children}
+			</Link>
 		</div>
 	);
 }
 
-export { FatBlock };
+const FatBlockHocs = withRouter<any, any>(FatBlock);
+
+export { FatBlockHocs as FatBlock };
