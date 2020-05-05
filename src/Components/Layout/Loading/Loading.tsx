@@ -6,9 +6,8 @@ const styles = require("./Loading.css");
 
 function Loading() {
 	return (
-		<ContentPusher id="content-pusher">
 			<Container>
-				<Readable>
+				<Readable minHeight>
 					<div className={styles.loading}>
 						<div className={styles.spinner}>
 							<div />
@@ -19,7 +18,6 @@ function Loading() {
 					</div>
 				</Readable>
 			</Container>
-		</ContentPusher>
 	);
 }
 

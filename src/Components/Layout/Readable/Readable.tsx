@@ -9,6 +9,7 @@ interface ReadableProps {
 	noOrderedLists?: boolean;
 	isHome?: boolean;
 	normalLinks?: boolean;
+	minHeight?: boolean;
 }
 
 function Readable({
@@ -18,6 +19,7 @@ function Readable({
 	noOrderedLists,
 	isHome,
 	normalLinks,
+	minHeight,
 }: ReadableProps) {
 	return (
 		<div
@@ -26,6 +28,7 @@ function Readable({
 				[styles.noOrderedLists]: noOrderedLists,
 				[styles.home]: isHome,
 				[styles.normalLinks]: normalLinks,
+				[styles.minHeight]: minHeight,
 			})}
 		>
 			{children}

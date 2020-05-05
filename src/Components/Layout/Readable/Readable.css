@@ -7,6 +7,14 @@ div.readable {
 	position: relative;
 	max-width: 992px;
 
+	&.minHeight {
+		min-height: calc(100vh - 108px);
+
+		@media (--screen-lg) {
+			min-height: calc(100vh - 128px);
+		}
+	}
+
 	&.home {
 		@media (--screen-lg) {
 			padding-left: 80px;
