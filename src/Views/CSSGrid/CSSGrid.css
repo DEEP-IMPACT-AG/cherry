@@ -13,6 +13,16 @@
 	& table {
 		display: table;
 		width: initial;
+
+		& td,
+		& th {
+			font-size: var(--size-text-desktop);
+		}
+
+		& th:first-of-type,
+		& td:first-of-type {
+			padding-right: 0;
+		}
 	}
 }
 
