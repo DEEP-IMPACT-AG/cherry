@@ -19,7 +19,7 @@
 
 @define-mixin heading {
 	font-family: var(--font-head);
-	font-weight: 300;
+	font-weight: 700;
 	margin: 0;
 	padding: 0;
 }
@@ -159,7 +159,7 @@
 }
 
 @define-mixin text {
-	color: var(--color-secondary);
+	color: var(--color-gray-medium);
 	font-size: var(--size-text-mobile);
 	line-height: var(--lineheight-text-mobile);
 
