@@ -44,6 +44,10 @@ div.readable {
 		margin: 20px 0;
 	}
 
+	& p {
+		color: var(--color-secondary);
+	}
+
 	& a:not([class]) {
 		display: inline-block;
 		padding: 5px 0;
