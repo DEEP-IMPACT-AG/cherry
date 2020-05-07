@@ -19,7 +19,7 @@ class CSSGrid extends Component {
 					<link
 						rel="stylesheet"
 						type="text/css"
-						href="https://cherry-design.s3-eu-west-1.amazonaws.com/cherry-grid/v.0.1.22.css"
+						href="https://cherry-design.s3-eu-west-1.amazonaws.com/cherry-grid/v.0.1.25.css"
 					/>
 				</Head>
 				<Container>
