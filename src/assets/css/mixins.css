@@ -362,6 +362,54 @@
 		@mixin row;
 	}
 
+	& div[justify-content="flex-start"] {
+		justify-content: flex-start;
+	}
+
+	& div[justify-content="flex-end"] {
+		justify-content: flex-end;
+	}
+
+	& div[justify-content="center"] {
+		justify-content: center;
+	}
+
+	& div[justify-content="space-between"] {
+		justify-content: space-between;
+	}
+
+	& div[justify-content="space-around"] {
+		justify-content: space-around;
+	}
+
+	& div[justify-content=initial] {
+		justify-content: initial;
+	}
+
+	& div[align-items="stretch"] {
+		align-items: stretch;
+	}
+
+	& div[align-items="center"] {
+		align-items: center;
+	}
+
+	& div[align-items="flex-start"] {
+		align-items: flex-start;
+	}
+
+	& div[align-items="flex-end"] {
+		align-items: flex-end;
+	}
+
+	& div[align-items="baseline"] {
+		align-items: baseline;
+	}
+
+	& div[align-items="initial"] {
+		align-items: initial;
+	}
+
 	& div[xs-gaps="none"] {
 		@media (--screen-xs) {
 			margin-right: var(--margin-row-none);
