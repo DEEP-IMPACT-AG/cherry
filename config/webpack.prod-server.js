@@ -130,10 +130,10 @@ module.exports = {
 				],
 			},
 		}),
-		new CopyWebpackPlugin([
-			{
-				from: 'public',
-			},
-		]),
+		new CopyWebpackPlugin({
+			patterns: [
+				{ from: "./**", to: "./", context: "./public" },
+			],
+		}),
 	],
 };

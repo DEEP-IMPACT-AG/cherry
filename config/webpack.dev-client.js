@@ -143,11 +143,11 @@ module.exports = {
 				WEBPACK: true,
 			},
 		}),
-		new CopyWebpackPlugin([
-			{
-				from: 'public',
-			},
-		]),
+		new CopyWebpackPlugin({
+			patterns: [
+				{ from: "./**", to: "./", context: "./public" },
+			],
+		}),
 		new webpack.HotModuleReplacementPlugin(),
 	],
 };
