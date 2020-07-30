@@ -49,10 +49,10 @@ module.exports = {
 					{
 						loader: 'css-loader',
 						options: {
-							onlyLocals: true,
 							modules: {
 								mode: 'local',
 								localIdentName: '[hash:base64:5]',
+								namedExport: true,
 							},
 						},
 					},
