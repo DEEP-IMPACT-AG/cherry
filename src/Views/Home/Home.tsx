@@ -194,7 +194,7 @@ class Home extends Component {
 							</div>
 						</Col>
 					</Row>
-					<h2>NPM Libraries</h2>
+					<h2>The Grid</h2>
 					<Row className={styles.row} gapsXs="none">
 						<Col xs={12} lg={6} className={styles.col}>
 							<FatBlock
