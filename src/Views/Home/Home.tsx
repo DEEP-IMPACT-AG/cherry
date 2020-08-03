@@ -73,13 +73,13 @@ class Home extends Component {
 										/>
 										<hr />
 										<IconElement
-											emoji="🎨"
-											description="PostCSS variables and mixins."
+											emoji="🖊"
+											description="Single purpose CSS classes."
 										/>
 										<hr />
 										<IconElement
-											emoji="🖊"
-											description="Single purpose CSS classes."
+											emoji="🎨"
+											description="PostCSS variables and mixins."
 										/>
 										<hr />
 										<IconElement
